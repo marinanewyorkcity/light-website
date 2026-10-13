@@ -318,7 +318,7 @@ def shop_content():
           <div class="product-body">
             <h2>Presets</h2>
             <p>My signature photo presets for Lightroom CC, Lightroom Classic, and Lightroom Mobile. The exact looks I use on my New York photos.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener">Shop Presets</a>
+            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/digitalproducts" target="_blank" rel="noopener">Shop Presets</a>
           </div>
         </article>
         <article class="product-card reveal">
@@ -326,7 +326,7 @@ def shop_content():
           <div class="product-body">
             <h2>Merch</h2>
             <p>Hoodies, ornaments, candles, and more with my New York City designs.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener">Shop Merch</a>
+            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/mymerch" target="_blank" rel="noopener">Shop Merch</a>
           </div>
         </article>
         <article class="product-card reveal">
@@ -334,7 +334,7 @@ def shop_content():
           <div class="product-body">
             <h2>Prints</h2>
             <p>Museum-quality prints of my New York City photography for your walls.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener">Shop Prints</a>
+            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/prints" target="_blank" rel="noopener">Shop Prints</a>
           </div>
         </article>
       </div>
