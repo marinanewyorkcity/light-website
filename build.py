@@ -1,30 +1,198 @@
 #!/usr/bin/env python3
-"""Builds the marinanewyorkcity.com static site. Run: python3 build.py
-Generates all HTML pages from the templates below + events.json + styles.css.
+"""Faithful rebuild of marinanewyorkcity.com as a coded multi-page static site.
+Matches the original Canva design: layout, sections, colors, copy, videos.
+Run: python3 build.py [--base URL]  (staging: --base https://marinanewyorkcity.github.io/light-website/)
 """
-import json, os
+import json, os, sys
 
 OUT = os.path.dirname(os.path.abspath(__file__))
+BASE = ""
+for i, a in enumerate(sys.argv):
+    if a == "--base" and i + 1 < len(sys.argv):
+        BASE = sys.argv[i + 1].rstrip("/") + "/"
+
+IMG = lambda f: BASE + f  # images (repo root on main; absolute on staging)
+VID_HOME = "https://marinanewyorkcity.com/_assets/video/960b5df3138e40986a1aa055cc0a916c.mp4"
+VID_EVENTS = "https://marinanewyorkcity.com/_assets/video/0df6b23fd5de47ec80502dc6ff8bac1e.mp4"
 
 SOCIALS = [
-    ("Instagram", "https://www.instagram.com/marina.newyorkcity/"),
-    ("TikTok", "https://www.tiktok.com/@marina.newyorkcity"),
-    ("Facebook", "https://www.facebook.com/marina.nycity"),
-    ("YouTube", "https://www.youtube.com/@marina.newyorkcity"),
-    ("Threads", "https://www.threads.com/@Marina.newyorkcity"),
-    ("Pinterest", "https://www.pinterest.com/marinanewyorkcity/"),
+    ("TikTok", "@marina.newyorkcity", "https://www.tiktok.com/@marina.newyorkcity"),
+    ("Facebook", "@marina.nycity", "https://www.facebook.com/marina.nycity"),
+    ("YouTube", "@marina.newyorkcity", "https://www.youtube.com/@marina.newyorkcity"),
+    ("Threads", "@marina.newyorkcity", "https://www.threads.com/@Marina.newyorkcity"),
+    ("Pinterest", "@marinanewyorkcity", "https://www.pinterest.com/marinanewyorkcity/"),
 ]
 
 NAV = [
-    ("Home", "index.html"),
-    ("NYC Events", "events.html"),
-    ("Shop", "shop.html"),
-    ("Guides", "guides.html"),
-    ("About", "about.html"),
-    ("Contact", "contact.html"),
+    ("home", "index.html"),
+    ("nyc events", "events.html"),
+    ("news and press", "news-and-press.html"),
+    ("guides", "guides.html"),
+    ("shop", "shop.html"),
+    ("contact us", "contact.html"),
 ]
 
-def head(title, desc):
+CSS = """
+@font-face {
+  font-family: 'Noto Serif Display XC';
+  src: url('fonts/NotoSerifDisplay-ExtraCondensed-Italic.woff2') format('woff2');
+  font-weight: 100 900; font-stretch: 62.5% 100%; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif Display XC';
+  src: url('fonts/NotoSerifDisplay-ExtraCondensed.woff2') format('woff2');
+  font-weight: 100 900; font-stretch: 62.5% 100%; font-style: normal; font-display: swap;
+}
+:root {
+  --gold: #FFDE59; --ink: #100D0C; --pine: #071211; --cream: #EDE7E1; --card: #110D0C;
+  --serif: 'Noto Serif Display XC', 'Noto Serif Display', Georgia, serif;
+  --sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --round: 'Nunito', 'Inter', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--ink); color: var(--cream); font-family: var(--sans); font-size: 18px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+a { color: var(--gold); }
+::selection { background: var(--gold); color: var(--ink); }
+.serif-i { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; color: var(--gold); letter-spacing: -0.055em; text-shadow: 0 2px 7px rgba(0,0,0,.33); font-weight: 500; line-height: 1.02; }
+
+/* header */
+.site-header { position: absolute; top: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 2.4rem; }
+.site-header.solid { position: sticky; background: rgba(16,13,12,.92); backdrop-filter: blur(10px); }
+.brand img { height: 104px; width: auto; }
+.site-header nav { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: flex-end; }
+.site-header nav a { color: #fff; text-decoration: none; font-size: 1.28rem; font-weight: 500; }
+.site-header nav a:hover { color: var(--gold); }
+.site-header nav a.active { color: var(--gold); }
+
+/* hero */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); overflow: hidden; }
+.hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .7; }
+.hero-inner { position: relative; z-index: 2; padding: 2rem; }
+.hero h1 { font-size: clamp(4.5rem, 13vw, 9.5rem); }
+.hero .sub { font-family: var(--round); font-weight: 800; color: #fff; font-size: clamp(1.3rem, 3vw, 1.9rem); margin-top: 1rem; letter-spacing: .01em; }
+
+/* sections */
+.section { padding: 5.5rem 2rem; }
+.wrap { max-width: 72rem; margin: 0 auto; }
+.pine { background: var(--pine); }
+.section h2.sec-title { font-size: clamp(2.4rem, 5.5vw, 3.9rem); margin-bottom: 2.2rem; }
+.center { text-align: center; }
+
+/* about */
+.about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 4rem; align-items: center; }
+.about-grid p { font-size: 1.32rem; color: var(--cream); margin-bottom: 1.2rem; }
+.blob { width: 100%; max-width: 420px; aspect-ratio: .86; object-fit: cover; border-radius: 48% 52% 55% 45% / 52% 46% 54% 48%; border: 2px solid rgba(237,231,225,.55); justify-self: center; }
+.pill { display: inline-block; margin-top: 1.6rem; padding: .85rem 2.6rem; border: 1.5px solid var(--gold); border-radius: 999px; color: #fff; text-decoration: underline; text-underline-offset: 4px; font-size: 1.15rem; background: transparent; transition: background .25s; }
+.pill:hover { background: rgba(255,222,89,.14); color: #fff; }
+
+/* video band */
+.video-band { background: var(--cream); padding: 0; }
+.video-band video { display: block; width: 100%; max-height: 88vh; object-fit: cover; }
+.video-wrap { position: relative; }
+.video-wrap .watermark { position: absolute; right: 2rem; bottom: 1.6rem; width: 92px; opacity: .92; }
+
+/* services */
+.svc-row { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; padding: 1.7rem .4rem; border-bottom: 1px solid rgba(237,231,225,.5); align-items: baseline; }
+.svc-row:first-of-type { border-top: 1px solid rgba(237,231,225,.5); }
+.svc-row .k { font-weight: 700; font-size: 1.25rem; color: var(--cream); }
+.svc-row .d { color: var(--cream); font-size: 1.12rem; }
+
+/* marquee */
+.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); margin-top: 1rem; }
+.marquee-track { display: flex; gap: 3.2rem; align-items: center; width: max-content; animation: mq 30s linear infinite; }
+.marquee-track img { height: 46px; width: auto; filter: grayscale(1) brightness(1.7); opacity: .8; }
+@keyframes mq { to { transform: translateX(-50%); } }
+
+/* follow */
+.follow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.soc-row { display: flex; align-items: center; gap: 1rem; padding: .7rem 0; font-size: 1.2rem; }
+.soc-row a { color: var(--cream); text-decoration: none; }
+.soc-row a:hover { color: var(--gold); }
+.soc-row .dot { width: 34px; height: 34px; border: 1.5px solid var(--gold); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: .8rem; color: var(--gold); font-weight: 700; flex: none; }
+.empire-strip { width: 100%; max-width: 300px; height: 100%; min-height: 420px; object-fit: cover; border-radius: 10px; justify-self: end; }
+.footer-line { text-align: center; color: #fff; font-size: .95rem; padding: 2.2rem 1rem 2.6rem; }
+
+/* events */
+.events-hero { position: relative; min-height: 72vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); overflow: hidden; }
+.events-hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .72; }
+.events-hero .hero-inner { z-index: 2; }
+.events-hero h1 { font-size: clamp(3.6rem, 10vw, 7.5rem); }
+.month-pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2.6rem 0; }
+.month-pills a { padding: .7rem 2.2rem; border: 1.5px solid var(--gold); border-radius: 999px; color: #fff; text-decoration: none; font-size: 1.1rem; }
+.month-pills a:hover, .month-pills a.on { background: rgba(255,222,89,.16); color: var(--gold); }
+.picks-head { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.picks-dates { font-family: var(--serif); font-style: italic; color: #fff; font-size: 1.5rem; margin: .4rem 0 2rem; }
+.event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.event-card { background: var(--card); border: 2px solid #fff; border-radius: 24px; padding: 2rem; }
+.event-card h3 { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.7rem; line-height: 1.1; margin-bottom: 1rem; }
+.event-card h3 a { color: #fff; text-decoration: none; }
+.event-card h3 a:hover { color: var(--gold); }
+.event-card .f { margin: .45rem 0; font-size: 1.02rem; }
+.event-card .f b { color: var(--gold); font-weight: 600; display: inline-block; min-width: 92px; }
+.event-card .why { color: var(--cream); margin-top: .8rem; }
+.event-card .off { display: inline-block; margin-top: 1.1rem; color: var(--gold); font-weight: 600; }
+
+/* planner */
+.planner { background: var(--pine); }
+.planner-form { display: flex; gap: 1rem; justify-content: center; align-items: flex-end; flex-wrap: wrap; margin-top: 2rem; }
+.planner-field { display: grid; gap: .4rem; text-align: left; }
+.planner-field label { font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.planner-field input { background: var(--card); border: 1px solid rgba(255,222,89,.4); border-radius: 10px; color: var(--cream); padding: .8rem 1rem; font-family: var(--sans); font-size: 1rem; color-scheme: dark; }
+.planner-results { margin-top: 2rem; display: grid; gap: 1rem; max-width: 56rem; margin-left: auto; margin-right: auto; }
+.planner-hit { background: var(--card); border: 1px solid rgba(255,255,255,.35); border-radius: 16px; padding: 1.2rem 1.6rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.planner-hit h4 { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.4rem; }
+.planner-hit h4 a { color: #fff; text-decoration: none; }
+.planner-hit p { font-size: .95rem; color: var(--cream); opacity: .85; }
+
+/* shop */
+.shop-hero { position: relative; min-height: 62vh; display: flex; align-items: center; justify-content: center; background: var(--ink); overflow: hidden; }
+.shop-hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .75; }
+.shop-hero h1 { position: relative; font-size: clamp(3.6rem, 10vw, 7rem); }
+.shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.shop-card { display: block; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); transition: transform .3s, border-color .3s; text-decoration: none; }
+.shop-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+.shop-card img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.shop-card .cap { padding: 1.2rem; text-align: center; font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.6rem; color: var(--gold); }
+
+/* about page */
+.about-page { background: #000; min-height: 100vh; padding: 3rem 2rem 5rem; }
+.about-page .top { max-width: 72rem; margin: 0 auto 3rem; }
+.about-page .top img { height: 88px; }
+.about-page h1 { font-family: var(--serif); font-stretch: 62.5%; color: #fff; letter-spacing: .35em; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 500; margin-bottom: 3rem; }
+.about-page .cols { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; max-width: 72rem; margin: 0 auto; align-items: start; }
+.about-page .cols p { color: #fff; margin-bottom: 1.3rem; font-size: 1.12rem; }
+.about-page .niche { margin-top: 2rem; color: var(--gold); }
+.soc-icons { display: flex; gap: 1rem; margin-top: 2.4rem; flex-wrap: wrap; }
+.soc-icons a { width: 52px; height: 52px; border: 1.5px solid rgba(255,255,255,.5); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; font-size: .75rem; font-weight: 700; }
+.soc-icons a:hover { border-color: var(--gold); color: var(--gold); }
+
+/* generic page */
+.page-head { padding: 9rem 2rem 3rem; text-align: center; background: var(--ink); }
+.page-head h1 { font-size: clamp(3rem, 8vw, 6rem); }
+.prose { max-width: 46rem; margin: 0 auto; }
+.prose p { margin-bottom: 1.2rem; color: var(--cream); }
+
+/* reveal */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .marquee-track { animation: none; } }
+
+@media (max-width: 900px) {
+  .about-grid, .follow-grid, .about-page .cols { grid-template-columns: 1fr; }
+  .event-grid { grid-template-columns: 1fr; }
+  .shop-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .svc-row { grid-template-columns: 1fr; gap: .4rem; }
+  .brand img { height: 76px; }
+  .site-header nav a { font-size: 1.02rem; }
+  .site-header { padding: 1rem; }
+  .empire-strip { justify-self: start; min-height: 300px; }
+}
+</style>
+"""
+
+def head(title, desc, extra_font_css=""):
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,404 +200,286 @@ def head(title, desc):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content="{desc}">
-  <link rel="canonical" href="https://marinanewyorkcity.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{title}">
-  <meta property="og:description" content="{desc}">
-  <meta property="og:url" content="https://marinanewyorkcity.com/">
-  <meta property="og:image" content="https://marinanewyorkcity.com/hero.jpg">
-  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Garet:wght@300;400;500;600;700&family=League+Gothic&family=Noto+Serif+Display:ital,wdth,wght@0,62,400..900;1,62,400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,400..900&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  <style>{CSS}</style>
 </head>
 <body>
 """
 
-def header(active):
-    links = "\n".join(
-        f'      <a href="{href}"{" class=\"active\"" if name == active else ""}>{name}</a>'
-        for name, href in NAV
-    )
-    return f"""  <header class="site-header">
-    <a class="wordmark" href="index.html"><img src="logo.png" alt="Marina New York City logo"> <span>Marina <em>New York City</em></span></a>
-    <nav aria-label="Main navigation">
+def header(active, solid=False):
+    cls = "site-header" + (" solid" if solid else "")
+    links = []
+    for name, href in NAV:
+        act = ' class="active"' if name == active else ''
+        links.append(f'      <a href="{href}"{act}>{name}</a>')
+    links = "\n".join(links)
+    return f"""<header class="{cls}">
+  <a class="brand" href="index.html" aria-label="Marina New York City home"><img src="{IMG('logo.png')}" alt="marina newyorkcity content creator logo"></a>
+  <nav aria-label="Main navigation">
 {links}
-    </nav>
-  </header>
-
-  <main>
+  </nav>
+</header>
 """
 
 def footer():
-    socials = "\n".join(
-        f'        <a href="{url}" target="_blank" rel="noopener">{name}</a>'
-        for name, url in SOCIALS
+    soc = "\n".join(
+        f'      <div class="soc-row"><span class="dot">{n[0]}</span><a href="{u}" target="_blank" rel="noopener">{n} {h}</a></div>'
+        for n, h, u in SOCIALS
     )
-    return f"""  </main>
-
-  <section class="follow" aria-label="Follow Marina">
-    <p class="section-kicker reveal">Follow and Stay Connected</p>
-    <div class="follow-links reveal">
-{socials}
-        <a href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener">All My Links</a>
+    return f"""<section class="section pine" style="padding-bottom:0">
+  <div class="wrap">
+    <h2 class="serif-i sec-title reveal">Follow and stay connected</h2>
+    <div class="follow-grid">
+      <div class="reveal">
+{soc}
+        <div class="soc-row"><span class="dot">M</span><a href="https://kit.marinanewyorkcity.com" target="_blank" rel="noopener"><strong>media kit</strong></a></div>
+        <div class="soc-row"><span class="dot">L</span><a href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener"><strong>links.marinanewyorkcity.com</strong></a></div>
+        <div style="margin-top:1.4rem"><a class="pill" href="contact.html">Contact me</a></div>
+      </div>
+      <img class="empire-strip reveal" src="{IMG('empire.jpg')}" alt="Empire State Building at sunset, New York City" loading="lazy">
     </div>
-  </section>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 @marina.newyorkcity. All Rights Reserved.</p>
-  </footer>
-
-  <script src="site.js"></script>
+  </div>
+  <p class="footer-line">&copy; 2026 @marina.newyorkcity. All Rights Reserved.</p>
+</section>
+<script src="{BASE}site.js"></script>
 </body>
 </html>
 """
 
-def page(name, title, desc, active, content, extra_scripts=""):
-    html = head(title, desc) + header(active) + content + footer()
-    if extra_scripts:
-        html = html.replace('<script src="site.js"></script>', extra_scripts + '\n  <script src="site.js"></script>')
+def page(name, title, desc, content):
     with open(os.path.join(OUT, name), "w") as f:
-        f.write(html)
+        f.write(content)
     print("wrote", name)
 
-# ---------------------------------------------------------------- home ---
+# ------------------------------------------------------------------ home ---
+SERVICES = [
+    ("cinematic storytelling", "Authentic short-form content that seamlessly integrates brands into compelling NYC stories."),
+    ("luxury & lifestyle", "Elevated visuals for premium products, destinations, and experiences."),
+    ("tech & innovation", "Technology showcased naturally in aspirational, real-world settings."),
+    ("new york city", "Deep local expertise in NYC culture, events, locations, and visual storytelling."),
+    ("extended production", "For larger campaigns, access to professional photo and video crews, licensed drone operators, and original music and sound design."),
+    ("content licensing", "Licensing cinematic New York City photo and video content for editorial, commercial, tourism, hospitality, media, and digital campaigns."),
+]
+
 def home_content():
-    return """
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-bg-wrap"><img class="hero-bg" src="hero.jpg" alt="New York City skyline at night with the Brooklyn Bridge" fetchpriority="high"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <p class="hero-kicker reveal">Where Magic Begins</p>
-        <h1 class="reveal">New York, New York</h1>
-        <p class="hero-sub reveal">Cinematic iPhone videography by <a href="https://www.instagram.com/marina.newyorkcity/" target="_blank" rel="noopener">@marina.newyorkcity</a></p>
-        <div class="hero-cta reveal">
-          <a class="btn btn-gold" href="contact.html">Work With Me</a>
-          <a class="btn btn-ghost" href="events.html">Explore NYC Events</a>
-        </div>
-      </div>
-      <a class="scroll-hint" href="#stats" aria-label="Scroll down"><span></span></a>
-    </section>
-
-    <section class="stats" id="stats" aria-label="By the numbers">
-      <div class="stat reveal">
-        <p class="stat-number"><span class="counter" data-target="30" data-suffix="M+">0</span></p>
-        <p class="stat-label">Monthly Reel Views</p>
-      </div>
-      <div class="stat reveal">
-        <p class="stat-number"><span class="counter" data-target="149" data-suffix="K+">0</span></p>
-        <p class="stat-label">Instagram Followers</p>
-      </div>
-      <div class="stat reveal">
-        <p class="stat-number"><span class="counter" data-target="100" data-suffix="%">0</span></p>
-        <p class="stat-label">Shot on iPhone</p>
-      </div>
-    </section>
-
-    <section class="about" id="about" aria-label="About Marina">
-      <div class="about-photos reveal">
-        <img src="about-marina.jpg" alt="Marina Kapler, NYC content creator and iPhone videographer" loading="lazy">
-        <img src="empire.jpg" alt="Empire State Building at sunrise, New York City" loading="lazy">
-      </div>
-      <div class="about-text reveal">
-        <p class="section-kicker">About Marina</p>
-        <h2>The Creator Behind <em>@marina.newyorkcity</em></h2>
-        <p>Marina Kapler is the creator behind <a href="https://www.instagram.com/marina.newyorkcity/" target="_blank" rel="noopener">@marina.newyorkcity</a>.</p>
-        <p>A NYC-based content creator, marketing professional, and visual storyteller with a background in media, psychology, and design.</p>
-        <p>Specializing in cinematic iPhone videography, I consistently produce short-form content that goes viral, with individual Reels reaching over 30M monthly views across my platforms.</p>
-        <p><a class="text-link" href="about.html">More about me</a></p>
-      </div>
-    </section>
-
-    <section class="services" id="services" aria-label="Services">
-      <p class="section-kicker reveal">Cinematic Storytelling</p>
-      <h2 class="reveal">What I Do</h2>
-      <p class="section-lead reveal">Authentic short-form content that seamlessly integrates brands into compelling NYC stories.</p>
-      <div class="service-grid">
-        <article class="service-card reveal"><h3>Social Media</h3><p>Thumb-stopping short-form content built for reach, saves, and shares.</p></article>
-        <article class="service-card reveal"><h3>Luxury &amp; Lifestyle</h3><p>Elevated visuals for premium products, destinations, and experiences.</p></article>
-        <article class="service-card reveal"><h3>Tech &amp; Innovation</h3><p>Technology showcased naturally in aspirational, real-world settings.</p></article>
-        <article class="service-card reveal"><h3>New York City</h3><p>Deep local expertise in NYC culture, events, locations, and visual storytelling.</p></article>
-        <article class="service-card reveal"><h3>Extended Production</h3><p>For larger campaigns, access to professional photo and video crews, licensed drone operators, and original music and sound design.</p></article>
-        <article class="service-card reveal"><h3>Content Licensing</h3><p>Licensing cinematic New York City photo and video content for editorial, commercial, tourism, hospitality, media, and digital campaigns.</p></article>
-      </div>
-    </section>
-
-    <section class="gallery" id="gallery" aria-label="Photo gallery">
-      <p class="section-kicker reveal">Gallery</p>
-      <h2 class="reveal">New York, <em>Frame by Frame</em></h2>
-      <p class="section-lead reveal">A few frames from the city I never got used to. Tap any photo to view it full screen.</p>
-      <div class="gallery-grid reveal" id="gallery-grid"></div>
-    </section>
-
-    <section class="clients" id="clients" aria-label="Clients and partners">
-      <p class="section-kicker reveal">Our Clients and Partners</p>
-      <h2 class="reveal">Brands I've Worked With</h2>
-      <div class="marquee reveal" aria-label="Client logos">
-        <div class="marquee-track" id="marquee-track"></div>
-      </div>
-    </section>
-
-    <section class="news" id="news" aria-label="NYC news and events">
-      <p class="section-kicker reveal">NYC News &amp; Events</p>
-      <h2 class="reveal">What's Happening <em>in New York</em></h2>
-      <p class="section-lead reveal">The city's biggest moments, curated by a local. Updated regularly.</p>
-      <div class="news-list reveal" id="news-list"></div>
-      <p class="center reveal" style="margin-top:2rem"><a class="btn btn-ghost" href="events.html">All NYC Events</a></p>
-    </section>
-
-    <section class="planner" id="planner" aria-label="Trip planner">
-      <p class="section-kicker reveal">Plan Your Trip</p>
-      <h2 class="reveal">Visiting <em>New York?</em></h2>
-      <p class="section-lead reveal">Enter your travel dates and I'll show you what's happening in the city while you're here.</p>
-      <form class="planner-form reveal" id="planner-form">
-        <div class="planner-field">
-          <label for="arrival">Arrival</label>
-          <input type="date" id="arrival" name="arrival" required>
-        </div>
-        <div class="planner-field">
-          <label for="departure">Departure</label>
-          <input type="date" id="departure" name="departure" required>
-        </div>
-        <button type="submit" class="btn btn-gold">Show Me What's On</button>
-      </form>
-      <p class="planner-error" id="planner-error" hidden>Please pick an arrival date and a departure date on or after it.</p>
-      <div class="planner-results" id="planner-results" aria-live="polite"></div>
-    </section>
-
-    <section class="contact" id="contact" aria-label="Contact">
-      <p class="section-kicker reveal">Contact Me</p>
-      <h2 class="reveal">Let's Create <em>Together</em></h2>
-      <p class="section-lead reveal">For brand collaborations, reach out below. For footage licensing inquiries, use the licensing email.</p>
-      <div class="contact-buttons reveal">
-        <a class="btn btn-gold" href="mailto:info@marinanewyorkcity.com?subject=Brand%20Collaboration%20Inquiry">info@marinanewyorkcity.com</a>
-        <a class="btn btn-ghost" href="mailto:pr@marinanewyorkcity.com?subject=Footage%20Licensing%20Inquiry">Footage Licensing: pr@marinanewyorkcity.com</a>
-      </div>
-    </section>
-"""
-
-# ------------------------------------------------------------ events hub ---
-def events_hub_content():
-    return """
-    <section class="page-hero" aria-label="NYC Events">
-      <p class="section-kicker reveal">NYC Events</p>
-      <h1 class="reveal">What's On <em>in New York</em></h1>
-      <p class="section-lead reveal">My top picks this week, plus full month-by-month guides. Updated regularly.</p>
-    </section>
-
-    <section class="picks" aria-label="Top picks">
-      <h2 class="reveal">Top Picks</h2>
-      <div class="event-grid reveal" id="picks-grid"></div>
-    </section>
-
-    <section class="months" aria-label="Events by month">
-      <h2 class="reveal">Browse by Month</h2>
-      <div class="month-grid">
-        <a class="month-card reveal" href="events-september.html"><span class="month-name">September</span><span class="month-cta">View events</span></a>
-        <a class="month-card reveal" href="events-october.html"><span class="month-name">October</span><span class="month-cta">View events</span></a>
-        <a class="month-card reveal" href="events-november.html"><span class="month-name">November</span><span class="month-cta">View events</span></a>
-        <a class="month-card reveal" href="events-december.html"><span class="month-name">December</span><span class="month-cta">View events</span></a>
-      </div>
-    </section>
-
-    <section class="planner" id="planner" aria-label="Trip planner">
-      <p class="section-kicker reveal">Plan Your Trip</p>
-      <h2 class="reveal">Visiting <em>New York?</em></h2>
-      <p class="section-lead reveal">Enter your travel dates and I'll show you what's happening in the city while you're here.</p>
-      <form class="planner-form reveal" id="planner-form">
-        <div class="planner-field">
-          <label for="arrival">Arrival</label>
-          <input type="date" id="arrival" name="arrival" required>
-        </div>
-        <div class="planner-field">
-          <label for="departure">Departure</label>
-          <input type="date" id="departure" name="departure" required>
-        </div>
-        <button type="submit" class="btn btn-gold">Show Me What's On</button>
-      </form>
-      <p class="planner-error" id="planner-error" hidden>Please pick an arrival date and a departure date on or after it.</p>
-      <div class="planner-results" id="planner-results" aria-live="polite"></div>
-    </section>
-"""
-
-# ---------------------------------------------------------- monthly page ---
-MONTH_TITLES = {
-    "2026-09": ("September", "events-september.html"),
-    "2026-10": ("October", "events-october.html"),
-    "2026-11": ("November", "events-november.html"),
-    "2026-12": ("December", "events-december.html"),
-}
-
-def month_content(month):
-    name, _ = MONTH_TITLES[month]
-    others = "\n".join(
-        f'        <a class="month-card small reveal" href="{href}"><span class="month-name">{n}</span></a>'
-        for m, (n, href) in MONTH_TITLES.items() if m != month
+    svc = "\n".join(
+        f'      <div class="svc-row reveal"><div class="k">{k}</div><div class="d">{d}</div></div>'
+        for k, d in SERVICES
     )
-    if month == "2026-09":
-        note = """<p class="section-lead reveal">September has passed. Here are the months still ahead:</p>
-      <div class="month-grid">
-        <a class="month-card reveal" href="events-october.html"><span class="month-name">October</span><span class="month-cta">View events</span></a>
-        <a class="month-card reveal" href="events-november.html"><span class="month-name">November</span><span class="month-cta">View events</span></a>
-        <a class="month-card reveal" href="events-december.html"><span class="month-name">December</span><span class="month-cta">View events</span></a>
-      </div>"""
-        grid = ""
-    else:
-        note = f'<p class="section-lead reveal">Every event worth your time in New York this {name}.</p>'
-        grid = f'      <div class="event-grid reveal" id="month-grid" data-month="{month}"></div>'
     return f"""
-    <section class="page-hero" aria-label="{name} events">
-      <p class="section-kicker reveal"><a class="text-link" href="events.html">NYC Events</a></p>
-      <h1 class="reveal">{name} <em>Events</em></h1>
-      {note}
-    </section>
+<section class="hero">
+  <img class="bg" src="{IMG('hero.jpg')}" alt="New York City skyline at night with the Brooklyn Bridge" fetchpriority="high">
+  <div class="hero-inner">
+    <h1 class="serif-i reveal">New York</h1>
+    <p class="sub reveal">where magic begins</p>
+  </div>
+</section>
 
-    <section class="month-events" aria-label="{name} event list">
-{grid}
-    </section>
+<section class="section pine">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <h2 class="serif-i sec-title">About Marina</h2>
+      <p>Marina Kapler is the creator behind <a href="https://www.instagram.com/marina.newyorkcity/" target="_blank" rel="noopener">@marina.newyorkcity</a>.</p>
+      <p>A NYC-based content creator, marketing professional, and visual storyteller with a background in media, psychology, and design.</p>
+      <p>Specializing in cinematic iPhone videography, I consistently produce short-form content that goes viral, with individual Reels reaching over 30M monthly views across my platforms.</p>
+      <a class="pill" href="contact.html">Contact me</a>
+    </div>
+    <img class="blob reveal" src="{IMG('about-marina.jpg')}" alt="Marina Kapler, NYC content creator" loading="lazy">
+  </div>
+</section>
 
-    <section class="months" aria-label="Other months">
-      <h2 class="reveal">Other Months</h2>
-      <div class="month-grid">
+<section class="video-band">
+  <div class="video-wrap">
+    <video src="{VID_HOME}" autoplay muted loop playsinline preload="metadata" aria-label="Daytime New York City street montage"></video>
+    <img class="watermark" src="{IMG('logo.png')}" alt="" aria-hidden="true">
+  </div>
+</section>
+
+<section class="section pine">
+  <div class="wrap">
+    <h2 class="serif-i sec-title reveal">Social Media and more</h2>
+{svc}
+  </div>
+</section>
+
+<section class="section pine" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="serif-i sec-title reveal">Our clients and partners</h2>
+    <div class="marquee reveal"><div class="marquee-track" id="marquee-track"></div></div>
+  </div>
+</section>
+"""
+
+def home_page():
+    c = head("Marina New York City | Cinematic iPhone Videography",
+             "Marina Kapler (@marina.newyorkcity) films New York City like she never got used to it. Cinematic iPhone videography, NYC events, presets, and brand collaborations.")
+    c += header("home") + "<main>" + home_content() + "</main>" + footer()
+    page("index.html", "", "", c)
+
+# ----------------------------------------------------------------- events ---
+MONTHS = [("September", "events-september.html", "2026-09"),
+          ("October", "events-october.html", "2026-10"),
+          ("November", "events-november.html", "2026-11"),
+          ("December", "events-december.html", "2026-12")]
+
+def events_hub():
+    pills = "\n".join(
+        f'    <a href="{href}">{name}</a>' for name, href, _ in MONTHS
+    )
+    c = head("NYC Events | Marina New York City",
+             "What's happening in New York City: curated top picks and month-by-month event guides by @marina.newyorkcity.")
+    c += header("nyc events", solid=True) + "<main>" + f"""
+<section class="events-hero">
+  <video src="{VID_EVENTS}" autoplay muted loop playsinline controls preload="metadata" aria-label="Tall ship with fireworks over the Manhattan skyline at night"></video>
+  <div class="hero-inner">
+    <h1 class="serif-i reveal">Monthly Events</h1>
+  </div>
+</section>
+
+<section class="section" style="background:var(--ink)">
+  <div class="wrap center">
+    <div class="month-pills reveal">
+{pills}
+    </div>
+    <div class="reveal"><a class="pill" href="events-october.html">Full list of October Events</a></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--ink);padding-top:0">
+  <div class="wrap">
+    <h2 class="serif-i picks-head reveal">Top Picks This Week</h2>
+    <p class="picks-dates reveal" id="picks-dates"></p>
+    <div class="event-grid reveal" id="picks-grid"></div>
+  </div>
+</section>
+
+<section class="section planner">
+  <div class="wrap center">
+    <h2 class="serif-i sec-title reveal">Plan your trip</h2>
+    <p class="reveal">Enter your travel dates and see what's happening in New York while you're here.</p>
+    <form class="planner-form reveal" id="planner-form">
+      <div class="planner-field"><label for="arrival">Arrival</label><input type="date" id="arrival" required></div>
+      <div class="planner-field"><label for="departure">Departure</label><input type="date" id="departure" required></div>
+      <button type="submit" class="pill" style="text-decoration:none;cursor:pointer">Show me what's on</button>
+    </form>
+    <div class="planner-results" id="planner-results" aria-live="polite"></div>
+  </div>
+</section>
+""" + "</main>" + footer().replace(f'<script src="{BASE}site.js"></script>',
+        f'<script src="{BASE}events.js"></script>\n<script src="{BASE}site.js"></script>')
+    page("events.html", "", "", c)
+
+def month_page(name, fname, code):
+    others = []
+    for n, h, _ in MONTHS:
+        on = ' class="on"' if h == fname else ''
+        others.append(f'    <a href="{h}"{on}>{n}</a>')
+    others = "\n".join(others)
+    if code == "2026-09":
+        body = """<div class="wrap center"><p class="reveal" style="font-size:1.2rem">September has passed. See what's on now:</p>
+        <div class="month-pills reveal">
+          <a href="events-october.html">October</a><a href="events-november.html">November</a><a href="events-december.html">December</a>
+        </div></div>"""
+    else:
+        body = f"""<div class="wrap"><div class="event-grid reveal" id="month-grid" data-month="{code}"></div></div>"""
+    c = head(f"{name} Events in NYC | Marina New York City",
+             f"Every event worth your time in New York City this {name}, curated by @marina.newyorkcity.")
+    c += header("nyc events", solid=True) + "<main>" + f"""
+<div class="page-head"><h1 class="serif-i reveal">{name} Events</h1>
+  <div class="month-pills reveal">
 {others}
+  </div>
+</div>
+<section class="section" style="background:var(--ink);padding-top:2rem">{body}</section>
+""" + "</main>" + footer().replace(f'<script src="{BASE}site.js"></script>',
+        f'<script src="{BASE}events.js"></script>\n<script src="{BASE}site.js"></script>')
+    page(fname, "", "", c)
+
+# ------------------------------------------------------------------- shop ---
+def shop_page():
+    c = head("Shop | Marina New York City",
+             "Shop Marina New York City: signature Lightroom presets, merch, and photo prints.")
+    c += header("shop", solid=True) + "<main>" + f"""
+<section class="shop-hero">
+  <img class="bg" src="{IMG('shop_1497e287ac001e7518291d50759676f8.png')}" onerror="this.onerror=null;this.src='{IMG('hero.jpg')}'" alt="New York City skyline at night">
+  <h1 class="serif-i reveal">Shop</h1>
+</section>
+<section class="section" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="shop-grid">
+      <a class="shop-card reveal" href="https://links.marinanewyorkcity.com/prints" target="_blank" rel="noopener">
+        <img src="{IMG('shop_0ed1f8bfca8363b555fb7ab90963650b.png')}" alt="Marina New York City photo prints" loading="lazy">
+        <div class="cap">Prints</div></a>
+      <a class="shop-card reveal" href="https://links.marinanewyorkcity.com/digitalproducts" target="_blank" rel="noopener">
+        <img src="{IMG('shop_9fe2629bd34048f71182689d85ac3101.png')}" alt="Marina New York City Lightroom presets" loading="lazy">
+        <div class="cap">Presets</div></a>
+      <a class="shop-card reveal" href="https://links.marinanewyorkcity.com/mymerch" target="_blank" rel="noopener">
+        <img src="{IMG('shop_1245552432c51e4794ac1de673313fca.png')}" alt="Marina New York City merch" loading="lazy">
+        <div class="cap">Merch</div></a>
+    </div>
+  </div>
+</section>
+""" + "</main>" + footer()
+    page("shop.html", "", "", c)
+
+# ------------------------------------------------------------------ about ---
+def about_page():
+    icons = "\n".join(
+        f'      <a href="{u}" target="_blank" rel="noopener" aria-label="{n}">{n[:2].upper()}</a>'
+        for n, h, u in SOCIALS
+    )
+    c = head("About Me | Marina New York City",
+             "About Marina Kapler, the creator behind @marina.newyorkcity: NYC content creator, iPhone videographer, and visual storyteller.")
+    c += "<main>" + f"""
+<section class="about-page">
+  <div class="top"><a href="index.html" aria-label="home"><img src="{IMG('logo.png')}" alt="marina newyorkcity logo"></a></div>
+  <h1 class="reveal">ABOUT ME</h1>
+  <div class="cols">
+    <img class="blob reveal" src="{IMG('about-marina.jpg')}" alt="Marina Kapler" loading="lazy">
+    <div class="reveal">
+      <p>I hold a Bachelor of Arts in Mass Media and Communication, with an additional focus in Psychology, which gives me a unique perspective on my work. My understanding of psychological principles enhances my ability to craft compelling narratives that resonate deeply with diverse audiences. This expertise has been instrumental in my years of experience in top marketing positions, including my role as a Marketing Events Director across different industries.</p>
+      <p>In addition to my work as a content creator, I am an accomplished graphic designer and social media marketing expert. My background in psychology informs my approach to audience engagement, allowing me to create content that truly connects with people on an emotional level.</p>
+      <p class="niche"><strong>Niche / focus:</strong> NYC visuals, NYC events, cinematic reels, tourism and lifestyle, photography and mobile videography, tech.</p>
+      <div class="soc-icons">
+{icons}
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+""" + "</main>" + f"""
+<script src="{BASE}site.js"></script>
+</body>
+</html>
 """
+    page("about.html", "", "", c)
 
-# ------------------------------------------------------------------ shop ---
-def shop_img(local, remote, alt):
-    return f'<img src="{local}" onerror="this.onerror=null;this.src=\'{remote}\'" alt="{alt}" loading="lazy">'
-
-def shop_content():
-    base = "https://marinanewyorkcity.com/_assets/media/"
-    return """
-    <section class="page-hero" aria-label="Shop">
-      <p class="section-kicker reveal">Shop</p>
-      <h1 class="reveal">The <em>Shop</em></h1>
-      <p class="section-lead reveal">My presets, merch, and prints. Everything I sell lives in my store.</p>
-    </section>
-
-    <section class="products" aria-label="Products">
-      <div class="product-grid">
-        <article class="product-card reveal">
-          """ + shop_img("shop_9fe2629bd34048f71182689d85ac3101.png", base + "9fe2629bd34048f71182689d85ac3101.png", "Marina New York City Lightroom presets") + """
-          <div class="product-body">
-            <h2>Presets</h2>
-            <p>My signature photo presets for Lightroom CC, Lightroom Classic, and Lightroom Mobile. The exact looks I use on my New York photos.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/digitalproducts" target="_blank" rel="noopener">Shop Presets</a>
-          </div>
-        </article>
-        <article class="product-card reveal">
-          """ + shop_img("shop_1245552432c51e4794ac1de673313fca.png", base + "1245552432c51e4794ac1de673313fca.png", "Marina New York City merch") + """
-          <div class="product-body">
-            <h2>Merch</h2>
-            <p>Hoodies, ornaments, candles, and more with my New York City designs.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/mymerch" target="_blank" rel="noopener">Shop Merch</a>
-          </div>
-        </article>
-        <article class="product-card reveal">
-          """ + shop_img("shop_0ed1f8bfca8363b555fb7ab90963650b.png", base + "0ed1f8bfca8363b555fb7ab90963650b.png", "Marina New York City photo prints") + """
-          <div class="product-body">
-            <h2>Prints</h2>
-            <p>Museum-quality prints of my New York City photography for your walls.</p>
-            <a class="btn btn-gold" href="https://links.marinanewyorkcity.com/prints" target="_blank" rel="noopener">Shop Prints</a>
-          </div>
-        </article>
-      </div>
-    </section>
-"""
-
-# ----------------------------------------------------------------- about ---
-def about_content():
-    return """
-    <section class="page-hero" aria-label="About Marina">
-      <p class="section-kicker reveal">About Me</p>
-      <h1 class="reveal">Hi, I'm <em>Marina</em></h1>
-    </section>
-
-    <section class="about-page" aria-label="Marina's story">
-      <div class="about-photos reveal">
-        <img src="about-marina.jpg" alt="Marina Kapler, NYC content creator and iPhone videographer" loading="lazy">
-        <img src="empire.jpg" alt="Empire State Building at sunrise, New York City" loading="lazy">
-      </div>
-      <div class="about-text reveal">
-        <p>I hold a Bachelor of Arts in Mass Media and Communication, with an additional focus in Psychology, which gives me a unique perspective on my work. My understanding of psychological principles enhances my ability to craft compelling narratives that resonate deeply with diverse audiences. This expertise has been instrumental in my years of experience in top marketing positions, including my role as a Marketing Events Director across different industries.</p>
-        <p>In addition to my work as a content creator, I am an accomplished graphic designer and social media marketing expert. My background in psychology informs my approach to audience engagement, allowing me to create content that truly connects with people on an emotional level.</p>
-        <p>I film New York like I never got used to it. Every Reel is shot on iPhone, edited with intention, and built to make people feel something about this city.</p>
-        <p class="brand-line">"I film New York like I never got used to it."</p>
-      </div>
-    </section>
-"""
-
-# ---------------------------------------------------------------- guides ---
-def guides_content():
-    return """
-    <section class="page-hero" aria-label="Guides">
-      <p class="section-kicker reveal">Guides</p>
-      <h1 class="reveal">NYC <em>Guides</em></h1>
-      <p class="section-lead reveal">My in-depth New York City guides are coming soon. The Christmas guide is first.</p>
-    </section>
-
-    <section class="guides-soon" aria-label="Coming soon">
-      <article class="guide-teaser reveal">
-        <h2>Christmas in New York</h2>
-        <p>The complete interactive guide: tree lightings, markets, shows, photo spots, day-by-day itineraries, and a tappable map. Coming soon.</p>
-        <a class="btn btn-gold" href="contact.html">Get Notified</a>
-      </article>
-    </section>
-"""
-
-# --------------------------------------------------------------- contact ---
-def contact_content():
-    return """
-    <section class="page-hero" aria-label="Contact">
-      <p class="section-kicker reveal">Contact Me</p>
-      <h1 class="reveal">Let's Create <em>Together</em></h1>
-      <p class="section-lead reveal">For brand collaborations, reach out below. For footage licensing inquiries, use the licensing email.</p>
-    </section>
-
-    <section class="contact-page" aria-label="Contact details">
-      <div class="contact-buttons reveal">
-        <a class="btn btn-gold" href="mailto:info@marinanewyorkcity.com?subject=Brand%20Collaboration%20Inquiry">info@marinanewyorkcity.com</a>
-        <a class="btn btn-ghost" href="mailto:pr@marinanewyorkcity.com?subject=Footage%20Licensing%20Inquiry">Footage Licensing: pr@marinanewyorkcity.com</a>
-      </div>
-      <div class="social-grid reveal">
-""" + "\n".join(
-        f'        <a class="social-card" href="{url}" target="_blank" rel="noopener"><span>{name}</span></a>'
-        for name, url in SOCIALS
-    ) + """
-      </div>
-    </section>
-"""
-
-# ------------------------------------------------------------------ main ---
-EVENTS_SCRIPT = '  <script src="events.js"></script>'
+# ------------------------------------------------- news / guides / contact ---
+def simple_page(fname, nav, title, heading, body_html):
+    c = head(title, title + " - Marina New York City")
+    c += header(nav, solid=True) + "<main>" + f"""
+<div class="page-head"><h1 class="serif-i reveal">{heading}</h1></div>
+<section class="section pine"><div class="wrap prose reveal">
+{body_html}
+</div></section>
+""" + "</main>" + footer()
+    page(fname, "", "", c)
 
 def main():
-    page("index.html", "Marina New York City | Cinematic iPhone Videography",
-         "Marina Kapler (@marina.newyorkcity) films New York City like she never got used to it. Cinematic iPhone videography, NYC events, presets, and brand collaborations.",
-         "Home", home_content(), EVENTS_SCRIPT)
-    page("events.html", "NYC Events | Marina New York City",
-         "What's happening in New York City: curated top picks and month-by-month event guides by @marina.newyorkcity.",
-         "NYC Events", events_hub_content(), EVENTS_SCRIPT)
-    for month, (name, fname) in MONTH_TITLES.items():
-        page(fname, f"{name} Events in NYC | Marina New York City",
-             f"Every event worth your time in New York City this {name}, curated by @marina.newyorkcity.",
-             "NYC Events", month_content(month), EVENTS_SCRIPT)
-    page("shop.html", "Shop Presets, Merch & Prints | Marina New York City",
-         "Shop Marina New York City: signature Lightroom presets, merch, and photo prints.",
-         "Shop", shop_content())
-    page("about.html", "About Marina | Marina New York City",
-         "About Marina Kapler, the creator behind @marina.newyorkcity: NYC content creator, iPhone videographer, and visual storyteller.",
-         "About", about_content())
-    page("guides.html", "NYC Guides | Marina New York City",
-         "In-depth New York City guides by @marina.newyorkcity. Coming soon.",
-         "Guides", guides_content())
-    page("contact.html", "Contact | Marina New York City",
-         "Contact Marina New York City for brand collaborations and footage licensing.",
-         "Contact", contact_content())
+    home_page()
+    events_hub()
+    for n, f, code in MONTHS:
+        month_page(n, f, code)
+    shop_page()
+    about_page()
+    simple_page("news-and-press.html", "news and press", "News and Press",
+                "News and Press",
+                "<p>Press features, interviews, and media mentions of @marina.newyorkcity.</p><p>For press inquiries: <a href='mailto:pr@marinanewyorkcity.com'>pr@marinanewyorkcity.com</a></p>")
+    simple_page("guides.html", "guides", "Guides", "Guides",
+                "<p>My in-depth New York City guides are coming soon.</p><p><strong>Christmas in New York</strong>, the complete interactive guide: tree lightings, markets, shows, photo spots, day-by-day itineraries, and a tappable map. Coming soon.</p>")
+    simple_page("contact.html", "contact us", "Contact Us", "Contact Me",
+                "<p>For brand collaborations:</p><p><a class='pill' href='mailto:info@marinanewyorkcity.com?subject=Brand%20Collaboration%20Inquiry' style='text-decoration:none'>info@marinanewyorkcity.com</a></p><p style='margin-top:2rem'>For footage licensing:</p><p><a href='mailto:pr@marinanewyorkcity.com?subject=Footage%20Licensing%20Inquiry'>pr@marinanewyorkcity.com</a></p>")
 
 if __name__ == "__main__":
     main()
