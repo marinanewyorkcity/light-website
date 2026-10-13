@@ -10,7 +10,7 @@
   <meta property="og:title" content="Marina New York City | NYC Creator &amp; iPhone Videographer">
   <meta property="og:description" content="Cinematic iPhone videography, brand storytelling, and licensed NYC footage by Marina Kapler, creator behind @marina.newyorkcity.">
   <meta property="og:url" content="https://marinanewyorkcity.com/">
-  <meta property="og:image" content="https://marinanewyorkcity.com/./hero.jpg">
+  <meta property="og:image" content="https://marinanewyorkcity.com/hero.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Marina New York City | NYC Creator &amp; iPhone Videographer">
   <meta name="twitter:description" content="Cinematic iPhone videography, brand storytelling, and licensed NYC footage by @marina.newyorkcity.">
@@ -47,7 +47,10 @@
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
       <a href="#clients">Clients</a>
+      <a href="#news">News</a>
+      <a href="#planner">Trip Planner</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -55,25 +58,41 @@
   <main id="top">
 
     <section class="hero" aria-label="Introduction">
-      <img class="hero-bg" src="hero.jpg" alt="Cinematic New York City skyline at dusk" fetchpriority="high">
+      <div class="hero-bg-wrap"><img class="hero-bg" src="hero.jpg" alt="New York City skyline at night with the Brooklyn Bridge" fetchpriority="high"></div>
       <div class="hero-overlay"></div>
       <div class="hero-inner">
-        <p class="hero-kicker">Where Magic Begins</p>
-        <h1>New York, New York</h1>
-        <p class="hero-sub">Cinematic iPhone videography by <a href="https://www.instagram.com/marina.newyorkcity/">@marina.newyorkcity</a></p>
-        <div class="hero-cta">
+        <p class="hero-kicker reveal">Where Magic Begins</p>
+        <h1 class="reveal">New York, New York</h1>
+        <p class="hero-sub reveal">Cinematic iPhone videography by <a href="https://www.instagram.com/marina.newyorkcity/">@marina.newyorkcity</a></p>
+        <div class="hero-cta reveal">
           <a class="btn btn-gold" href="#contact">Work With Me</a>
           <a class="btn btn-ghost" href="https://www.instagram.com/marina.newyorkcity/">Follow on Instagram</a>
         </div>
       </div>
+      <a class="scroll-hint" href="#stats" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section class="stats" id="stats" aria-label="By the numbers">
+      <div class="stat reveal">
+        <p class="stat-number"><span class="counter" data-target="30" data-suffix="M+">0</span></p>
+        <p class="stat-label">Monthly Reel Views</p>
+      </div>
+      <div class="stat reveal">
+        <p class="stat-number"><span class="counter" data-target="149" data-suffix="K+">0</span></p>
+        <p class="stat-label">Instagram Followers</p>
+      </div>
+      <div class="stat reveal">
+        <p class="stat-number"><span class="counter" data-target="100" data-suffix="%">0</span></p>
+        <p class="stat-label">Shot on iPhone</p>
+      </div>
     </section>
 
     <section class="about" id="about" aria-label="About Marina">
-      <div class="about-photos">
+      <div class="about-photos reveal">
         <img src="about-marina.jpg" alt="Marina Kapler, NYC content creator and iPhone videographer" loading="lazy">
         <img src="empire.jpg" alt="Empire State Building at sunrise, New York City" loading="lazy">
       </div>
-      <div class="about-text">
+      <div class="about-text reveal">
         <p class="section-kicker">About Marina</p>
         <h2>The Creator Behind <em>@marina.newyorkcity</em></h2>
         <p>Marina Kapler is the creator behind <a href="https://www.instagram.com/marina.newyorkcity/">@marina.newyorkcity</a>.</p>
@@ -83,58 +102,91 @@
     </section>
 
     <section class="services" id="services" aria-label="Services">
-      <p class="section-kicker">Cinematic Storytelling</p>
-      <h2>What I Do</h2>
-      <p class="section-lead">Authentic short-form content that seamlessly integrates brands into compelling NYC stories.</p>
+      <p class="section-kicker reveal">Cinematic Storytelling</p>
+      <h2 class="reveal">What I Do</h2>
+      <p class="section-lead reveal">Authentic short-form content that seamlessly integrates brands into compelling NYC stories.</p>
       <div class="service-grid">
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>Social Media</h3>
           <p>Thumb-stopping short-form content built for reach, saves, and shares.</p>
         </article>
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>Luxury &amp; Lifestyle</h3>
           <p>Elevated visuals for premium products, destinations, and experiences.</p>
         </article>
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>Tech &amp; Innovation</h3>
           <p>Technology showcased naturally in aspirational, real-world settings.</p>
         </article>
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>New York City</h3>
           <p>Deep local expertise in NYC culture, events, locations, and visual storytelling.</p>
         </article>
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>Extended Production</h3>
           <p>For larger campaigns, access to professional photo and video crews, licensed drone operators, and original music and sound design.</p>
         </article>
-        <article class="service-card">
+        <article class="service-card reveal">
           <h3>Content Licensing</h3>
           <p>Licensing cinematic New York City photo and video content for editorial, commercial, tourism, hospitality, media, and digital campaigns. Custom footage, event coverage, and archive content available across social, web, advertising, and broadcast platforms.</p>
         </article>
       </div>
     </section>
 
+    <section class="gallery" id="gallery" aria-label="Photo gallery">
+      <p class="section-kicker reveal">Gallery</p>
+      <h2 class="reveal">New York, <em>Frame by Frame</em></h2>
+      <p class="section-lead reveal">A few frames from the city I never got used to. Tap any photo to view it full screen.</p>
+      <div class="gallery-grid reveal" id="gallery-grid"></div>
+    </section>
+
     <section class="clients" id="clients" aria-label="Clients and partners">
-      <p class="section-kicker">Our Clients and Partners</p>
-      <h2>Brands I've Worked With</h2>
-      <div class="logo-grid" id="logo-grid" aria-label="Client logos">
-        <!-- logos injected -->
+      <p class="section-kicker reveal">Our Clients and Partners</p>
+      <h2 class="reveal">Brands I've Worked With</h2>
+      <div class="marquee reveal" aria-label="Client logos">
+        <div class="marquee-track" id="marquee-track"></div>
       </div>
     </section>
 
+    <section class="news" id="news" aria-label="NYC news and events">
+      <p class="section-kicker reveal">NYC News &amp; Events</p>
+      <h2 class="reveal">What's Happening <em>in New York</em></h2>
+      <p class="section-lead reveal">The city's biggest moments, curated by a local. Updated regularly.</p>
+      <div class="news-list reveal" id="news-list"></div>
+    </section>
+
+    <section class="planner" id="planner" aria-label="Trip planner">
+      <p class="section-kicker reveal">Plan Your Trip</p>
+      <h2 class="reveal">Visiting <em>New York?</em></h2>
+      <p class="section-lead reveal">Enter your travel dates and I'll show you what's happening in the city while you're here.</p>
+      <form class="planner-form reveal" id="planner-form">
+        <div class="planner-field">
+          <label for="arrival">Arrival</label>
+          <input type="date" id="arrival" name="arrival" required>
+        </div>
+        <div class="planner-field">
+          <label for="departure">Departure</label>
+          <input type="date" id="departure" name="departure" required>
+        </div>
+        <button type="submit" class="btn btn-gold">Show Me What's On</button>
+      </form>
+      <p class="planner-error" id="planner-error" hidden>Please pick an arrival date and a departure date on or after it.</p>
+      <div class="planner-results" id="planner-results" aria-live="polite"></div>
+    </section>
+
     <section class="contact" id="contact" aria-label="Contact">
-      <p class="section-kicker">Contact Me</p>
-      <h2>Let's Create Together</h2>
-      <p class="section-lead">For brand collaborations, reach out below. For footage licensing inquiries, use the licensing email.</p>
-      <div class="contact-buttons">
+      <p class="section-kicker reveal">Contact Me</p>
+      <h2 class="reveal">Let's Create <em>Together</em></h2>
+      <p class="section-lead reveal">For brand collaborations, reach out below. For footage licensing inquiries, use the licensing email.</p>
+      <div class="contact-buttons reveal">
         <a class="btn btn-gold" href="mailto:info@marinanewyorkcity.com?subject=Brand%20Collaboration%20Inquiry">info@marinanewyorkcity.com</a>
         <a class="btn btn-ghost" href="mailto:pr@marinanewyorkcity.com?subject=Footage%20Licensing%20Inquiry">Footage Licensing: pr@marinanewyorkcity.com</a>
       </div>
     </section>
 
     <section class="follow" aria-label="Follow Marina">
-      <p class="section-kicker">Follow and Stay Connected</p>
-      <div class="follow-links">
+      <p class="section-kicker reveal">Follow and Stay Connected</p>
+      <div class="follow-links reveal">
         <a href="https://www.instagram.com/marina.newyorkcity/">Instagram</a>
         <a href="https://www.facebook.com/marina.newyorkcity">Facebook</a>
         <a href="https://www.threads.com/@marina.newyorkcity">Threads</a>
@@ -148,18 +200,213 @@
     <p>&copy; 2026 @marina.newyorkcity. All Rights Reserved.</p>
   </footer>
 
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
   <script>
-    // Client logos: files are ./logo-01.png through ./logo-24.png
+    /* ---------- Scroll reveals ---------- */
     (function () {
-      var grid = document.getElementById('logo-grid');
-      for (var i = 1; i <= 24; i++) {
-        var n = ('0' + i).slice(-2);
-        var img = document.createElement('img');
-        img.src = 'logo-' + n + '.png';
-        img.alt = 'Client logo ' + i;
-        img.loading = 'lazy';
-        grid.appendChild(img);
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('visible'); });
+        return;
       }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+
+    /* ---------- Hero parallax ---------- */
+    (function () {
+      var bg = document.querySelector('.hero-bg-wrap');
+      var ticking = false;
+      function onScroll() {
+        var y = window.scrollY;
+        if (y < window.innerHeight * 1.2) {
+          bg.style.transform = 'translateY(' + (y * 0.28) + 'px)';
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; }
+      }, { passive: true });
+    })();
+
+    /* ---------- Animated counters ---------- */
+    (function () {
+      var counters = document.querySelectorAll('.counter');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          io.unobserve(el);
+          var target = parseInt(el.dataset.target, 10);
+          var suffix = el.dataset.suffix || '';
+          var start = null, dur = 1600;
+          function step(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * eased) + suffix;
+            if (p < 1) window.requestAnimationFrame(step);
+          }
+          window.requestAnimationFrame(step);
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function (c) { io.observe(c); });
+    })();
+
+    /* ---------- Client logo marquee (logos duplicated for a seamless loop) ---------- */
+    (function () {
+      var track = document.getElementById('marquee-track');
+      function addLogos() {
+        for (var i = 1; i <= 24; i++) {
+          var n = ('0' + i).slice(-2);
+          var img = document.createElement('img');
+          img.src = 'logo-' + n + '.png';
+          img.alt = 'Client logo ' + i;
+          img.loading = 'lazy';
+          img.onerror = function () { this.remove(); };
+          track.appendChild(img);
+        }
+      }
+      addLogos();
+      addLogos(); /* second copy for the loop */
+    })();
+
+    /* ---------- Gallery with lightbox ----------
+       Built-in photos plus gallery-01.jpg … gallery-08.jpg:
+       drop files with those names into the repo root and they appear automatically. */
+    (function () {
+      var grid = document.getElementById('gallery-grid');
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      var photos = [
+        { src: 'hero.jpg', alt: 'New York City skyline at night with the Brooklyn Bridge' },
+        { src: 'about-marina.jpg', alt: 'Marina Kapler, NYC content creator' },
+        { src: 'empire.jpg', alt: 'Empire State Building at sunrise' }
+      ];
+      for (var i = 1; i <= 8; i++) {
+        photos.push({ src: 'gallery-' + ('0' + i).slice(-2) + '.jpg', alt: 'New York City by @marina.newyorkcity' });
+      }
+      photos.forEach(function (p) {
+        var img = document.createElement('img');
+        img.src = p.src;
+        img.alt = p.alt;
+        img.loading = 'lazy';
+        img.onerror = function () { this.remove(); };
+        img.addEventListener('click', function () {
+          lbImg.src = p.src;
+          lbImg.alt = p.alt;
+          lb.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
+        grid.appendChild(img);
+      });
+      function close() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      document.getElementById('lightbox-close').addEventListener('click', close);
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    })();
+
+    /* ---------- Events data (shared by News and Trip Planner — edit events.json to update) ---------- */
+    var EVENTS = [];
+    function formatRange(item) {
+      function fmt(d) {
+        var parts = d.split('-');
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        return months[parseInt(parts[1], 10) - 1] + ' ' + parseInt(parts[2], 10) + ', ' + parts[0];
+      }
+      if (item.end && item.end !== item.start) return fmt(item.start) + ' – ' + fmt(item.end);
+      return fmt(item.start);
+    }
+    function eventCard(item) {
+      var card = document.createElement('article');
+      card.className = 'news-card';
+      var date = document.createElement('p');
+      date.className = 'news-date';
+      date.textContent = formatRange(item);
+      var title = document.createElement('h3');
+      title.textContent = item.title;
+      var text = document.createElement('p');
+      text.textContent = item.text;
+      card.appendChild(date);
+      card.appendChild(title);
+      card.appendChild(text);
+      if (item.location) {
+        var loc = document.createElement('p');
+        loc.className = 'news-location';
+        loc.textContent = item.location;
+        card.appendChild(loc);
+      }
+      return card;
+    }
+    function loadEvents() {
+      return fetch('events.json').then(function (r) { return r.json(); }).then(function (items) {
+        EVENTS = items.slice().sort(function (a, b) { return a.start < b.start ? -1 : 1; });
+        return EVENTS;
+      });
+    }
+
+    /* ---------- News: the next 3 upcoming events ---------- */
+    (function () {
+      var list = document.getElementById('news-list');
+      loadEvents().then(function () {
+        var today = new Date().toISOString().slice(0, 10);
+        var upcoming = EVENTS.filter(function (e) { return (e.end || e.start) >= today; }).slice(0, 3);
+        if (!upcoming.length) { list.innerHTML = '<p>Fresh NYC updates coming soon.</p>'; return; }
+        upcoming.forEach(function (item) { list.appendChild(eventCard(item)); });
+      }).catch(function () { list.innerHTML = '<p>Fresh NYC updates coming soon.</p>'; });
+    })();
+
+    /* ---------- Trip planner: events overlapping the visitor's dates ---------- */
+    (function () {
+      var form = document.getElementById('planner-form');
+      var err = document.getElementById('planner-error');
+      var out = document.getElementById('planner-results');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        err.hidden = true;
+        out.innerHTML = '';
+        var a = document.getElementById('arrival').value;
+        var d = document.getElementById('departure').value;
+        if (!a || !d || d < a) { err.hidden = false; return; }
+        function ensureEvents(done) {
+          if (EVENTS.length) return done();
+          loadEvents().then(done).catch(done);
+        }
+        ensureEvents(function () {
+          var matches = EVENTS.filter(function (ev) {
+            var s = ev.start, en = ev.end || ev.start;
+            return s <= d && en >= a;
+          });
+          var head = document.createElement('h3');
+          head.className = 'planner-headline';
+          if (!matches.length) {
+            head.textContent = 'No big-ticket events in those dates';
+            var p = document.createElement('p');
+            p.className = 'planner-empty';
+            p.textContent = 'But this is New York: the skyline, the neighborhoods, and the energy are always on. Check the news section above for what is coming next, or reach out and I will point you to the good stuff.';
+            out.appendChild(head);
+            out.appendChild(p);
+            return;
+          }
+          head.textContent = matches.length === 1
+            ? 'One event during your trip'
+            : matches.length + ' events during your trip';
+          out.appendChild(head);
+          matches.forEach(function (item) { out.appendChild(eventCard(item)); });
+          out.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+      });
     })();
   </script>
 
