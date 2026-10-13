@@ -1,37 +1,792 @@
 [
-  {
-    "end": "2026-10-31",
-    "location": "Sixth Avenue, Greenwich Village",
-    "start": "2026-10-31",
-    "text": "New York's most creative night of the year. Tens of thousands of costumed marchers take over Sixth Avenue in Greenwich Village, with giant puppets, bands, and dancers. Free to watch, free to join in costume.",
-    "title": "Village Halloween Parade"
-  },
-  {
-    "end": "2026-11-07",
-    "location": "Rockefeller Plaza, Midtown Manhattan",
-    "start": "2026-11-07",
-    "text": "The famous Norway spruce arrives in Midtown and is raised by crane into Rockefeller Plaza on Meet the Tree Day, the unofficial start of the holiday season.",
-    "title": "Rockefeller Center Tree Arrival"
-  },
-  {
-    "end": "2026-11-26",
-    "location": "Central Park West to Herald Square",
-    "start": "2026-11-26",
-    "text": "America's most famous parade: giant balloons, floats, and performances marching from the Upper West Side to Herald Square. Arrive early for a spot along Central Park West.",
-    "title": "Macy's Thanksgiving Day Parade"
-  },
-  {
-    "end": "2026-12-02",
-    "location": "Rockefeller Plaza, Midtown Manhattan",
-    "start": "2026-12-02",
-    "text": "The switch is flipped on the world's most famous Christmas tree, topped with the Swarovski star, in a live televised ceremony with musical performances. Expect big crowds around the plaza.",
-    "title": "Rockefeller Center Tree Lighting"
-  },
-  {
-    "end": "2027-01-10",
-    "location": "Rockefeller Plaza, Midtown Manhattan",
-    "start": "2026-12-02",
-    "text": "Once lit, the tree glows daily from 5 AM to midnight through the holiday season, staying lit around the clock on Christmas Day. Free to visit, best on weekday mornings.",
-    "title": "Rockefeller Center Christmas Tree"
-  }
+ {
+  "title": "Archtober",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 1-31, 2026",
+  "start": "2026-10-01",
+  "end": "2026-10-31",
+  "time": "Schedule varies by program",
+  "location": "Architecture sites across New York City",
+  "price": "FREE + TICKETED",
+  "why": "A month of tours, talks and behind-the-scenes access to New York architecture.",
+  "goodFor": "Architecture fans, locals, visitors, design lovers",
+  "url": "https://www.archtober.org",
+  "picks": false
+ },
+ {
+  "title": "Queens Farm Pumpkin Patch",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 1-31, 2026",
+  "start": "2026-10-01",
+  "end": "2026-10-31",
+  "time": "Weekdays 1-5 PM; weekends 10 AM-5 PM",
+  "location": "Queens County Farm Museum, Floral Park",
+  "price": "FREE ADMISSION, pumpkins extra",
+  "why": "Pick a pumpkin at New York City's largest remaining tract of farmland.",
+  "goodFor": "Families, fall outings, kids, couples",
+  "url": "https://www.queensfarm.org",
+  "picks": false
+ },
+ {
+  "title": "Little Red Lighthouse Festival",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 3, 2026",
+  "start": "2026-10-03",
+  "end": "2026-10-03",
+  "time": "12-4 PM",
+  "location": "Fort Washington Park, Washington Heights",
+  "price": "FREE",
+  "why": "Celebrate Manhattan's only lighthouse with music, activities and riverside views.",
+  "goodFor": "Families, history lovers, outdoor explorers",
+  "url": "https://www.nycgovparks.org",
+  "picks": false
+ },
+ {
+  "title": "Queens Night Market",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 3, 10, 17, 24 & 31, 2026",
+  "start": "2026-10-03",
+  "end": "2026-10-31",
+  "time": "4 PM-midnight",
+  "location": "Flushing Meadows Corona Park, Queens",
+  "price": "FREE ENTRY, food extra",
+  "why": "Sample affordable dishes from dozens of cultures in one lively outdoor market.",
+  "goodFor": "Food lovers, families, groups, visitors",
+  "url": "https://queensnightmarket.com",
+  "picks": true
+ },
+ {
+  "title": "Hank Willis Thomas: Art in Focus",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Through Oct 6, 2026",
+  "start": "2026-09-01",
+  "end": "2026-10-06",
+  "time": "During Rockefeller Center hours",
+  "location": "Rockefeller Center, Midtown",
+  "price": "FREE",
+  "why": "See contemporary public art throughout one of Midtown's most iconic complexes.",
+  "goodFor": "Art lovers, Midtown visitors, free outings",
+  "url": "https://www.rockefellercenter.com",
+  "picks": false
+ },
+ {
+  "title": "New York Comic Con",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 8-11, 2026",
+  "start": "2026-10-08",
+  "end": "2026-10-11",
+  "time": "Hours vary by day",
+  "location": "Javits Center, 429 11th Ave",
+  "price": "TICKETED, prices vary",
+  "why": "Four days of comics, anime, gaming, cosplay, panels and celebrity guests.",
+  "goodFor": "Fans, collectors, cosplayers, families",
+  "url": "https://www.newyorkcomiccon.com",
+  "picks": false
+ },
+ {
+  "title": "New York Film Festival",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Through Oct 12, 2026",
+  "start": "2026-09-25",
+  "end": "2026-10-12",
+  "time": "Screening times vary",
+  "location": "Film at Lincoln Center + select NYC venues",
+  "price": "TICKETED, prices vary",
+  "why": "See major premieres, international cinema and filmmaker conversations.",
+  "goodFor": "Film lovers, culture seekers, date nights",
+  "url": "https://www.filmlinc.org",
+  "picks": false
+ },
+ {
+  "title": "Amazing Maize Maze",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Selected October weekends",
+  "start": "2026-10-03",
+  "end": "2026-10-25",
+  "time": "11 AM-4 PM; check selected date",
+  "location": "Queens County Farm Museum, Floral Park",
+  "price": "$10-$17",
+  "why": "Navigate a three-acre corn maze and solve its seasonal puzzle.",
+  "goodFor": "Families, friends, fall outings, kids",
+  "url": "https://www.queensfarm.org",
+  "picks": false
+ },
+ {
+  "title": "Maze by Moonlight",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 10, 2026",
+  "start": "2026-10-10",
+  "end": "2026-10-10",
+  "time": "6-10 PM",
+  "location": "Queens County Farm Museum, Floral Park",
+  "price": "TICKETED, check current price",
+  "why": "Tackle the corn maze after dark with only the moon and your flashlight.",
+  "goodFor": "Friends, couples, teens, fall adventure",
+  "url": "https://www.queensfarm.org",
+  "picks": false
+ },
+ {
+  "title": "NYC Columbus Day Parade",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 12, 2026",
+  "start": "2026-10-12",
+  "end": "2026-10-12",
+  "time": "Approx. 11 AM-3 PM",
+  "location": "Fifth Ave, 44th St to 72nd St",
+  "price": "FREE",
+  "why": "Watch marching bands, floats and Italian American cultural celebrations.",
+  "goodFor": "Families, parade fans, visitors, culture lovers",
+  "url": "https://columbuscitizens.org",
+  "picks": false
+ },
+ {
+  "title": "NYC Wine & Food Festival",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 15-18, 2026",
+  "start": "2026-10-15",
+  "end": "2026-10-18",
+  "time": "Times vary by event",
+  "location": "Seaport + venues across NYC",
+  "price": "TICKETED, prices vary",
+  "why": "Taste food from notable chefs at dinners, demos and large-scale events.",
+  "goodFor": "Food lovers, date nights, culinary fans",
+  "url": "https://nycwff.org",
+  "picks": true
+ },
+ {
+  "title": "Open House New York Weekend",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 16-18, 2026",
+  "start": "2026-10-16",
+  "end": "2026-10-18",
+  "time": "Times vary by site",
+  "location": "300+ sites across all five boroughs",
+  "price": "MOSTLY FREE, some tickets required",
+  "why": "Enter remarkable buildings and spaces that are usually closed to the public.",
+  "goodFor": "Architecture fans, curious locals, visitors",
+  "url": "https://ohny.org",
+  "picks": true
+ },
+ {
+  "title": "Tompkins Square Halloween Dog Parade",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 17, 2026",
+  "start": "2026-10-17",
+  "end": "2026-10-17",
+  "time": "Check official schedule",
+  "location": "Tompkins Square Park, East Village",
+  "price": "FREE TO WATCH",
+  "why": "See inventive costumes at one of New York's most beloved pet traditions.",
+  "goodFor": "Dog lovers, families, costume fans",
+  "url": "https://www.nydogparade.org",
+  "picks": true
+ },
+ {
+  "title": "LuminoCity Dino Safari",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Through Oct 18, 2026",
+  "start": "2026-09-01",
+  "end": "2026-10-18",
+  "time": "Evening sessions; check calendar",
+  "location": "Walt Whitman Shops, Huntington Station",
+  "price": "TICKETED, prices vary",
+  "why": "Walk through a glowing outdoor world of large illuminated dinosaurs.",
+  "goodFor": "Families, kids, Long Island day trips",
+  "url": "https://www.luminocityfestival.com",
+  "picks": false
+ },
+ {
+  "title": "Central Park Fall Foliage Route",
+  "months": [
+   "2026-10",
+   "2026-11"
+  ],
+  "dateText": "Late Oct - early Nov",
+  "start": "2026-10-20",
+  "end": "2026-11-10",
+  "time": "Best during daylight",
+  "location": "Gapstow Bridge to Belvedere Castle",
+  "price": "FREE",
+  "why": "Follow a scenic route through bridges, water views and peak autumn color.",
+  "goodFor": "Walkers, couples, families, visitors",
+  "url": "https://www.centralparknyc.org",
+  "picks": true
+ },
+ {
+  "title": "Halloween Brownstones & Decorated Streets",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 20-31, 2026",
+  "start": "2026-10-20",
+  "end": "2026-10-31",
+  "time": "Daylight and early evening",
+  "location": "Upper East Side, West Village, Chelsea + UWS",
+  "price": "FREE",
+  "why": "Stroll through classic neighborhoods filled with imaginative Halloween decor.",
+  "goodFor": "Families, walkers, visitors, Halloween fans",
+  "url": "https://www.nyctourism.com",
+  "picks": true
+ },
+ {
+  "title": "Seaport Fall Transformation",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Late October 2026",
+  "start": "2026-10-20",
+  "end": "2026-10-31",
+  "time": "All day",
+  "location": "Fulton St, Tin Building + Pier 17",
+  "price": "FREE",
+  "why": "Enjoy seasonal decor, waterfront views, dining and historic cobblestone streets.",
+  "goodFor": "Couples, families, visitors, waterfront walks",
+  "url": "https://theseaport.nyc",
+  "picks": false
+ },
+ {
+  "title": "Seaport Pumpkin Arch",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "October, date TBA",
+  "start": "2026-10-15",
+  "end": "2026-10-31",
+  "time": "All day once installed",
+  "location": "Pier 17, South Street Seaport",
+  "price": "FREE",
+  "why": "Visit the waterfront's popular pumpkin installation if it returns this season.",
+  "goodFor": "Families, couples, fall outings",
+  "url": "https://theseaport.nyc",
+  "picks": false
+ },
+ {
+  "title": "OktoberFest NYC",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Through Oct 31, 2026",
+  "start": "2026-09-18",
+  "end": "2026-10-31",
+  "time": "Hours vary by day",
+  "location": "Watermark, Pier 15, Seaport",
+  "price": "FREE ENTRY, food and drinks extra",
+  "why": "Celebrate with German beer, food, live entertainment and East River views.",
+  "goodFor": "Groups, adults, food lovers, waterfront outings",
+  "url": "https://oktober-fest.nyc",
+  "picks": true
+ },
+ {
+  "title": "Bryant Park Winter Village Ice Rink",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Opens late October, date TBA",
+  "start": "2026-10-25",
+  "end": "2027-01-31",
+  "time": "Hours and reservations vary",
+  "location": "Bryant Park, Midtown",
+  "price": "FREE ADMISSION, rentals extra",
+  "why": "Skate beneath the skyline and browse the holiday market's first days.",
+  "goodFor": "Families, couples, skaters, visitors",
+  "url": "https://bryantpark.org",
+  "picks": false
+ },
+ {
+  "title": "Village Halloween Parade",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 31, 2026",
+  "start": "2026-10-31",
+  "end": "2026-10-31",
+  "time": "7-11 PM",
+  "location": "Sixth Ave, Canal St to 15th St",
+  "price": "FREE TO WATCH",
+  "why": "Experience giant puppets, costumes, bands and New York's biggest Halloween procession.",
+  "goodFor": "Costume fans, visitors, groups, night owls",
+  "url": "https://halloween-nyc.com",
+  "picks": true
+ },
+ {
+  "title": "Village Halloween Parade: Early Arrivals",
+  "months": [
+   "2026-10"
+  ],
+  "dateText": "Oct 31, 2026",
+  "start": "2026-10-31",
+  "end": "2026-10-31",
+  "time": "Approx. 5:30-7 PM",
+  "location": "SoHo and Greenwich Village staging area",
+  "price": "FREE",
+  "why": "Arrive early to see elaborate costumes and the neighborhood build-up before the parade.",
+  "goodFor": "Early arrivals, costume fans, families",
+  "url": "https://halloween-nyc.com",
+  "picks": false
+ },
+ {
+  "title": "Roberto Lugo: Alfarero del Barrio",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Through Dec 6, 2026",
+  "start": "2026-06-01",
+  "end": "2026-12-06",
+  "time": "During park hours",
+  "location": "Madison Square Park, Flatiron",
+  "price": "FREE",
+  "why": "See vivid ceramic sculpture connecting public art, identity and neighborhood culture.",
+  "goodFor": "Art lovers, walkers, families, visitors",
+  "url": "https://madisonsquarepark.org/art/exhibitions/roberto-lugo/",
+  "picks": false
+ },
+ {
+  "title": "Times Square Midnight Moment",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nightly",
+  "start": "2026-10-01",
+  "end": "2026-12-31",
+  "time": "11:57 PM-midnight",
+  "location": "Times Square digital billboards",
+  "price": "FREE",
+  "why": "Watch the world's largest recurring digital public-art display take over the screens.",
+  "goodFor": "Night owls, art lovers, visitors, date nights",
+  "url": "https://www.timessquarenyc.org/arts/midnight-moment",
+  "picks": false
+ },
+ {
+  "title": "TCS New York City Marathon",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 1, 2026",
+  "start": "2026-11-01",
+  "end": "2026-11-01",
+  "time": "Wave starts vary; finish area open all day",
+  "location": "Five-borough route to Central Park",
+  "price": "FREE TO WATCH",
+  "why": "Cheer runners from around the world along one of New York's most exciting annual routes.",
+  "goodFor": "Families, sports fans, visitors, community spirit",
+  "url": "https://www.nyrr.org/tcsnycmarathon",
+  "picks": true
+ },
+ {
+  "title": "Rockefeller Center Christmas Tree Arrival",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 7, 2026",
+  "start": "2026-11-07",
+  "end": "2026-11-07",
+  "time": "Morning; final schedule TBA",
+  "location": "Rockefeller Plaza, Midtown",
+  "price": "FREE",
+  "why": "Watch the iconic tree arrive and be raised before the holiday crowds begin.",
+  "goodFor": "Families, holiday fans, visitors, early risers",
+  "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
+  "picks": true
+ },
+ {
+  "title": "NYC Veterans Day Parade",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 11, 2026",
+  "start": "2026-11-11",
+  "end": "2026-11-11",
+  "time": "Approx. 12:30-3:30 PM",
+  "location": "Fifth Ave, 26th St to 45th St",
+  "price": "FREE",
+  "why": "Honor veterans with marching bands, service groups and classic Fifth Avenue views.",
+  "goodFor": "Families, history lovers, visitors, community events",
+  "url": "https://parade.uwvc.org/",
+  "picks": false
+ },
+ {
+  "title": "LuminoCity Holiday Lights Festival",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 11, 2026 - Jan 3, 2027",
+  "start": "2026-11-11",
+  "end": "2027-01-03",
+  "time": "Evening sessions; check calendar",
+  "location": "Eisenhower Park, East Meadow",
+  "price": "TICKETED, prices vary",
+  "why": "Walk through an immersive landscape of illuminated sculptures and holiday scenes.",
+  "goodFor": "Families, couples, kids, Long Island outings",
+  "url": "https://www.luminocityfestival.com/",
+  "picks": false
+ },
+ {
+  "title": "NYBG Holiday Train Show",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 14, 2026 - Jan 10, 2027",
+  "start": "2026-11-14",
+  "end": "2027-01-10",
+  "time": "Timed entry; hours vary",
+  "location": "New York Botanical Garden, Bronx",
+  "price": "TICKETED, prices vary",
+  "why": "Model trains travel around nearly 200 miniature New York landmarks made from plants.",
+  "goodFor": "Families, train fans, architecture lovers, visitors",
+  "url": "https://www.nybg.org/event/holiday-train-show/",
+  "picks": true
+ },
+ {
+  "title": "Lightscape",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 20, 2026 - Jan 3, 2027",
+  "start": "2026-11-20",
+  "end": "2027-01-03",
+  "time": "Timed evening entry",
+  "location": "Brooklyn Botanic Garden",
+  "price": "TICKETED, prices vary",
+  "why": "Follow a glowing outdoor trail of tunnels, projections and large-scale light art.",
+  "goodFor": "Families, couples, art lovers, holiday outings",
+  "url": "https://www.bbg.org/lightscape",
+  "picks": true
+ },
+ {
+  "title": "Bronx Zoo Holiday Lights",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Late Nov 2026 - early Jan 2027",
+  "start": "2026-11-20",
+  "end": "2027-01-05",
+  "time": "Evenings; selected dates",
+  "location": "Bronx Zoo",
+  "price": "TICKETED, prices vary",
+  "why": "See animal lantern trails, performers and a synchronized holiday-tree show.",
+  "goodFor": "Families, kids, animal lovers, holiday outings",
+  "url": "https://bronxzoo.com/holiday-lights",
+  "picks": false
+ },
+ {
+  "title": "Fifth Avenue Holiday Window Unveilings",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Mid-late November 2026",
+  "start": "2026-11-15",
+  "end": "2026-11-30",
+  "time": "Best after sunset",
+  "location": "Fifth Ave, 49th St to 59th St",
+  "price": "FREE",
+  "why": "See luxury flagships reveal their elaborate seasonal windows and decorations.",
+  "goodFor": "Holiday fans, shoppers, families, visitors",
+  "url": "https://fifthavenue.nyc/holiday/",
+  "picks": true
+ },
+ {
+  "title": "Macy's Herald Square Holiday Windows",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Mid-late November 2026",
+  "start": "2026-11-15",
+  "end": "2026-12-31",
+  "time": "Best after sunset",
+  "location": "Macy's Herald Square, 34th St",
+  "price": "FREE",
+  "why": "Enjoy animated holiday scenes outside the famous flagship store.",
+  "goodFor": "Families, shoppers, visitors, holiday fans",
+  "url": "https://www.macys.com",
+  "picks": false
+ },
+ {
+  "title": "Hudson Yards Shine Bright",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Mid-late November 2026",
+  "start": "2026-11-15",
+  "end": "2026-12-31",
+  "time": "Best after sunset",
+  "location": "Hudson Yards Public Square + Shops",
+  "price": "FREE",
+  "why": "Millions of lights transform the neighborhood with illuminated trees and installations.",
+  "goodFor": "Families, couples, visitors, holiday outings",
+  "url": "https://www.hudsonyardsnewyork.com/shine-bright",
+  "picks": false
+ },
+ {
+  "title": "Bryant Park Holiday Shops",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Throughout November 2026",
+  "start": "2026-11-01",
+  "end": "2026-12-31",
+  "time": "Hours vary by day",
+  "location": "Bryant Park, Midtown",
+  "price": "FREE ENTRY",
+  "why": "Browse artisan shops and seasonal food around the Winter Village rink.",
+  "goodFor": "Shoppers, families, food lovers, visitors",
+  "url": "https://bryantpark.org/activities/holiday-shops",
+  "picks": true
+ },
+ {
+  "title": "Union Square Holiday Market",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "November opening date TBA",
+  "start": "2026-11-15",
+  "end": "2026-12-24",
+  "time": "Hours vary by day",
+  "location": "Union Square Park",
+  "price": "FREE ENTRY",
+  "why": "Shop local vendors and seasonal food at one of Manhattan's most atmospheric markets.",
+  "goodFor": "Shoppers, food lovers, locals, visitors",
+  "url": "https://urbanspacenyc.com/union-square-holiday-market/",
+  "picks": false
+ },
+ {
+  "title": "Columbus Circle Holiday Market",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Late November opening date TBA",
+  "start": "2026-11-25",
+  "end": "2026-12-24",
+  "time": "Hours vary by day",
+  "location": "Columbus Circle, Central Park entrance",
+  "price": "FREE ENTRY",
+  "why": "Explore holiday stalls beside Central Park and the illuminated circle.",
+  "goodFor": "Shoppers, families, visitors, Central Park walks",
+  "url": "https://urbanspacenyc.com/columbus-circle-holiday-market/",
+  "picks": false
+ },
+ {
+  "title": "Grand Central Holiday Fair",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "November opening date TBA",
+  "start": "2026-11-15",
+  "end": "2026-12-24",
+  "time": "Terminal hours; fair schedule varies",
+  "location": "Vanderbilt Hall, Grand Central Terminal",
+  "price": "FREE ENTRY",
+  "why": "Shop an indoor holiday market inside one of New York's grandest landmarks.",
+  "goodFor": "Shoppers, commuters, rainy days, visitors",
+  "url": "https://www.grandcentralterminal.com/event/grand-central-holiday-fair/",
+  "picks": false
+ },
+ {
+  "title": "Macy's Parade Balloon Inflation",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 25, 2026",
+  "start": "2026-11-25",
+  "end": "2026-11-25",
+  "time": "Afternoon-evening; access details TBA",
+  "location": "Upper West Side near AMNH",
+  "price": "FREE",
+  "why": "See the parade's giant character balloons inflated at street level.",
+  "goodFor": "Families, parade fans, visitors, Thanksgiving traditions",
+  "url": "https://www.macys.com/s/parade/",
+  "picks": true
+ },
+ {
+  "title": "100th Macy's Thanksgiving Day Parade",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 26, 2026",
+  "start": "2026-11-26",
+  "end": "2026-11-26",
+  "time": "8:30 AM-noon",
+  "location": "Central Park West to Macy's Herald Square",
+  "price": "FREE TO WATCH",
+  "why": "Celebrate the historic 100th parade with balloons, floats, bands and performers.",
+  "goodFor": "Families, visitors, parade fans, Thanksgiving",
+  "url": "https://www.macys.com/s/parade/",
+  "picks": true
+ },
+ {
+  "title": "Bryant Park Winter Village",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Throughout November 2026",
+  "start": "2026-11-01",
+  "end": "2026-12-31",
+  "time": "Hours vary; skating reservations recommended",
+  "location": "Bryant Park, Midtown",
+  "price": "FREE ENTRY, rentals extra",
+  "why": "Combine ice skating, holiday shops, seasonal food and skyline views.",
+  "goodFor": "Families, couples, skaters, visitors",
+  "url": "https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park",
+  "picks": false
+ },
+ {
+  "title": "Central Park Fall Foliage",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Early November 2026",
+  "start": "2026-11-01",
+  "end": "2026-11-15",
+  "time": "Best during daylight",
+  "location": "The Ramble, Reservoir + North Woods",
+  "price": "FREE",
+  "why": "Catch some of Manhattan's richest late-season color along scenic walking routes.",
+  "goodFor": "Walkers, families, couples, visitors",
+  "url": "https://www.centralparknyc.org/articles/fall-foliage",
+  "picks": false
+ },
+ {
+  "title": "Holiday Under the Stars",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Mid-November through December",
+  "start": "2026-11-15",
+  "end": "2026-12-31",
+  "time": "Light shows throughout the day",
+  "location": "The Shops at Columbus Circle",
+  "price": "FREE",
+  "why": "Large hanging stars create a synchronized indoor music-and-light display.",
+  "goodFor": "Families, shoppers, rainy days, visitors",
+  "url": "https://www.theshopsatcolumbuscircle.com/events/holiday-under-the-stars/",
+  "picks": false
+ },
+ {
+  "title": "Brookfield Place Holiday Installation",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Late November through December",
+  "start": "2026-11-25",
+  "end": "2026-12-31",
+  "time": "Best after sunset",
+  "location": "Winter Garden, Brookfield Place",
+  "price": "FREE",
+  "why": "See a glowing indoor holiday installation in the waterfront Winter Garden.",
+  "goodFor": "Families, couples, rainy days, downtown visitors",
+  "url": "https://bfplny.com/holiday/",
+  "picks": false
+ },
+ {
+  "title": "Dyker Heights Christmas Lights",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Late November through December",
+  "start": "2026-11-25",
+  "end": "2026-12-31",
+  "time": "Best 5-9 PM",
+  "location": "11th-13th Aves, 83rd-86th Sts, Brooklyn",
+  "price": "FREE",
+  "why": "Walk past famously extravagant home displays with lights, figures and music.",
+  "goodFor": "Families, groups, visitors, holiday-light fans",
+  "url": "https://www.nyctourism.com",
+  "picks": true
+ },
+ {
+  "title": "Radio City Christmas Spectacular",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 6, 2026 - Jan 4, 2027",
+  "start": "2026-11-06",
+  "end": "2027-01-04",
+  "time": "Multiple showtimes",
+  "location": "Radio City Music Hall, Midtown",
+  "price": "TICKETED, prices vary",
+  "why": "See the Rockettes, the Parade of the Wooden Soldiers and classic holiday scenes.",
+  "goodFor": "Families, theater fans, visitors, holiday traditions",
+  "url": "https://www.rockettes.com/christmas/",
+  "picks": true
+ },
+ {
+  "title": "Rockefeller Center Christmas Tree Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 2, 2026",
+  "start": "2026-12-02",
+  "end": "2026-12-02",
+  "time": "Ceremony from 7 PM; lighting around 10 PM",
+  "location": "Rockefeller Plaza, Midtown Manhattan",
+  "price": "FREE",
+  "why": "The switch is flipped on the world's most famous Christmas tree, topped with the Swarovski star, in a live televised ceremony with musical performances.",
+  "goodFor": "Holiday fans, visitors, couples, families",
+  "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
+  "picks": true
+ },
+ {
+  "title": "Rockefeller Center Christmas Tree",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 2, 2026 - early Jan 2027",
+  "start": "2026-12-02",
+  "end": "2027-01-10",
+  "time": "Daily 5 AM - midnight",
+  "location": "Rockefeller Plaza, Midtown Manhattan",
+  "price": "FREE",
+  "why": "Once lit, the tree glows daily through the holiday season. Best on weekday mornings to beat the crowds.",
+  "goodFor": "Holiday fans, visitors, photographers, families",
+  "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
+  "picks": true
+ }
 ]
