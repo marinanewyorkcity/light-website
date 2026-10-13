@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Events | Marina New York City</title>
+  <meta name="description" content="What's happening in New York City: curated top picks and month-by-month event guides by @marina.newyorkcity.">
+  <link rel="canonical" href="https://marinanewyorkcity.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NYC Events | Marina New York City">
+  <meta property="og:description" content="What's happening in New York City: curated top picks and month-by-month event guides by @marina.newyorkcity.">
+  <meta property="og:url" content="https://marinanewyorkcity.com/">
+  <meta property="og:image" content="https://marinanewyorkcity.com/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Garet:wght@300;400;500;600;700&family=League+Gothic&family=Noto+Serif+Display:ital,wdth,wght@0,62,400..900;1,62,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html"><img src="logo.png" alt="Marina New York City logo"> <span>Marina <em>New York City</em></span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html" class="active">NYC Events</a>
+      <a href="shop.html">Shop</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-label="NYC Events">
+      <p class="section-kicker reveal">NYC Events</p>
+      <h1 class="reveal">What's On <em>in New York</em></h1>
+      <p class="section-lead reveal">My top picks this week, plus full month-by-month guides. Updated regularly.</p>
+    </section>
+
+    <section class="picks" aria-label="Top picks">
+      <h2 class="reveal">Top Picks</h2>
+      <div class="event-grid reveal" id="picks-grid"></div>
+    </section>
+
+    <section class="months" aria-label="Events by month">
+      <h2 class="reveal">Browse by Month</h2>
+      <div class="month-grid">
+        <a class="month-card reveal" href="events-september.html"><span class="month-name">September</span><span class="month-cta">View events</span></a>
+        <a class="month-card reveal" href="events-october.html"><span class="month-name">October</span><span class="month-cta">View events</span></a>
+        <a class="month-card reveal" href="events-november.html"><span class="month-name">November</span><span class="month-cta">View events</span></a>
+        <a class="month-card reveal" href="events-december.html"><span class="month-name">December</span><span class="month-cta">View events</span></a>
+      </div>
+    </section>
+
+    <section class="planner" id="planner" aria-label="Trip planner">
+      <p class="section-kicker reveal">Plan Your Trip</p>
+      <h2 class="reveal">Visiting <em>New York?</em></h2>
+      <p class="section-lead reveal">Enter your travel dates and I'll show you what's happening in the city while you're here.</p>
+      <form class="planner-form reveal" id="planner-form">
+        <div class="planner-field">
+          <label for="arrival">Arrival</label>
+          <input type="date" id="arrival" name="arrival" required>
+        </div>
+        <div class="planner-field">
+          <label for="departure">Departure</label>
+          <input type="date" id="departure" name="departure" required>
+        </div>
+        <button type="submit" class="btn btn-gold">Show Me What's On</button>
+      </form>
+      <p class="planner-error" id="planner-error" hidden>Please pick an arrival date and a departure date on or after it.</p>
+      <div class="planner-results" id="planner-results" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <section class="follow" aria-label="Follow Marina">
+    <p class="section-kicker reveal">Follow and Stay Connected</p>
+    <div class="follow-links reveal">
+        <a href="https://www.instagram.com/marina.newyorkcity/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@marina.newyorkcity" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/marina.nycity" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.youtube.com/@marina.newyorkcity" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.threads.com/@Marina.newyorkcity" target="_blank" rel="noopener">Threads</a>
+        <a href="https://www.pinterest.com/marinanewyorkcity/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener">All My Links</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 @marina.newyorkcity. All Rights Reserved.</p>
+  </footer>
+
+    <script src="events.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
