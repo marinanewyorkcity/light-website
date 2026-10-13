@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News and Press</title>
+  <meta name="description" content="News and Press - Marina New York City">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,400..900&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+@font-face {
+  font-family: 'Noto Serif Display XC';
+  src: url('fonts/NotoSerifDisplay-ExtraCondensed-Italic.woff2') format('woff2');
+  font-weight: 100 900; font-stretch: 62.5% 100%; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif Display XC';
+  src: url('fonts/NotoSerifDisplay-ExtraCondensed.woff2') format('woff2');
+  font-weight: 100 900; font-stretch: 62.5% 100%; font-style: normal; font-display: swap;
+}
+:root {
+  --gold: #FFDE59; --ink: #100D0C; --pine: #071211; --cream: #EDE7E1; --card: #110D0C;
+  --serif: 'Noto Serif Display XC', 'Noto Serif Display', Georgia, serif;
+  --sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --round: 'Nunito', 'Inter', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--ink); color: var(--cream); font-family: var(--sans); font-size: 18px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+a { color: var(--gold); }
+::selection { background: var(--gold); color: var(--ink); }
+.serif-i { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; color: var(--gold); letter-spacing: -0.055em; text-shadow: 0 2px 7px rgba(0,0,0,.33); font-weight: 500; line-height: 1.02; }
+
+/* header */
+.site-header { position: absolute; top: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 1.4rem 2.4rem; }
+.site-header.solid { position: sticky; background: rgba(16,13,12,.92); backdrop-filter: blur(10px); }
+.brand img { height: 104px; width: auto; }
+.site-header nav { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: flex-end; }
+.site-header nav a { color: #fff; text-decoration: none; font-size: 1.28rem; font-weight: 500; }
+.site-header nav a:hover { color: var(--gold); }
+.site-header nav a.active { color: var(--gold); }
+
+/* hero */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); overflow: hidden; }
+.hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .7; }
+.hero-inner { position: relative; z-index: 2; padding: 2rem; }
+.hero h1 { font-size: clamp(4.5rem, 13vw, 9.5rem); }
+.hero .sub { font-family: var(--round); font-weight: 800; color: #fff; font-size: clamp(1.3rem, 3vw, 1.9rem); margin-top: 1rem; letter-spacing: .01em; }
+
+/* sections */
+.section { padding: 5.5rem 2rem; }
+.wrap { max-width: 72rem; margin: 0 auto; }
+.pine { background: var(--pine); }
+.section h2.sec-title { font-size: clamp(2.4rem, 5.5vw, 3.9rem); margin-bottom: 2.2rem; }
+.center { text-align: center; }
+
+/* about */
+.about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 4rem; align-items: center; }
+.about-grid p { font-size: 1.32rem; color: var(--cream); margin-bottom: 1.2rem; }
+.blob { width: 100%; max-width: 420px; aspect-ratio: .86; object-fit: cover; border-radius: 48% 52% 55% 45% / 52% 46% 54% 48%; border: 2px solid rgba(237,231,225,.55); justify-self: center; }
+.pill { display: inline-block; margin-top: 1.6rem; padding: .85rem 2.6rem; border: 1.5px solid var(--gold); border-radius: 999px; color: #fff; text-decoration: underline; text-underline-offset: 4px; font-size: 1.15rem; background: transparent; transition: background .25s; }
+.pill:hover { background: rgba(255,222,89,.14); color: #fff; }
+
+/* video band */
+.video-band { background: var(--cream); padding: 0; }
+.video-band video { display: block; width: 100%; max-height: 88vh; object-fit: cover; }
+.video-wrap { position: relative; }
+.video-wrap .watermark { position: absolute; right: 2rem; bottom: 1.6rem; width: 92px; opacity: .92; }
+
+/* services */
+.svc-row { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; padding: 1.7rem .4rem; border-bottom: 1px solid rgba(237,231,225,.5); align-items: baseline; }
+.svc-row:first-of-type { border-top: 1px solid rgba(237,231,225,.5); }
+.svc-row .k { font-weight: 700; font-size: 1.25rem; color: var(--cream); }
+.svc-row .d { color: var(--cream); font-size: 1.12rem; }
+
+/* marquee */
+.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); margin-top: 1rem; }
+.marquee-track { display: flex; gap: 3.2rem; align-items: center; width: max-content; animation: mq 30s linear infinite; }
+.marquee-track img { height: 46px; width: auto; filter: grayscale(1) brightness(1.7); opacity: .8; }
+@keyframes mq { to { transform: translateX(-50%); } }
+
+/* follow */
+.follow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.soc-row { display: flex; align-items: center; gap: 1rem; padding: .7rem 0; font-size: 1.2rem; }
+.soc-row a { color: var(--cream); text-decoration: none; }
+.soc-row a:hover { color: var(--gold); }
+.soc-row .dot { width: 34px; height: 34px; border: 1.5px solid var(--gold); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: .8rem; color: var(--gold); font-weight: 700; flex: none; }
+.empire-strip { width: 100%; max-width: 300px; height: 100%; min-height: 420px; object-fit: cover; border-radius: 10px; justify-self: end; }
+.footer-line { text-align: center; color: #fff; font-size: .95rem; padding: 2.2rem 1rem 2.6rem; }
+
+/* events */
+.events-hero { position: relative; min-height: 72vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--ink); overflow: hidden; }
+.events-hero video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .72; }
+.events-hero .hero-inner { z-index: 2; }
+.events-hero h1 { font-size: clamp(3.6rem, 10vw, 7.5rem); }
+.month-pills { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2.6rem 0; }
+.month-pills a { padding: .7rem 2.2rem; border: 1.5px solid var(--gold); border-radius: 999px; color: #fff; text-decoration: none; font-size: 1.1rem; }
+.month-pills a:hover, .month-pills a.on { background: rgba(255,222,89,.16); color: var(--gold); }
+.picks-head { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.picks-dates { font-family: var(--serif); font-style: italic; color: #fff; font-size: 1.5rem; margin: .4rem 0 2rem; }
+.event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.event-card { background: var(--card); border: 2px solid #fff; border-radius: 24px; padding: 2rem; }
+.event-card h3 { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.7rem; line-height: 1.1; margin-bottom: 1rem; }
+.event-card h3 a { color: #fff; text-decoration: none; }
+.event-card h3 a:hover { color: var(--gold); }
+.event-card .f { margin: .45rem 0; font-size: 1.02rem; }
+.event-card .f b { color: var(--gold); font-weight: 600; display: inline-block; min-width: 92px; }
+.event-card .why { color: var(--cream); margin-top: .8rem; }
+.event-card .off { display: inline-block; margin-top: 1.1rem; color: var(--gold); font-weight: 600; }
+
+/* planner */
+.planner { background: var(--pine); }
+.planner-form { display: flex; gap: 1rem; justify-content: center; align-items: flex-end; flex-wrap: wrap; margin-top: 2rem; }
+.planner-field { display: grid; gap: .4rem; text-align: left; }
+.planner-field label { font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.planner-field input { background: var(--card); border: 1px solid rgba(255,222,89,.4); border-radius: 10px; color: var(--cream); padding: .8rem 1rem; font-family: var(--sans); font-size: 1rem; color-scheme: dark; }
+.planner-results { margin-top: 2rem; display: grid; gap: 1rem; max-width: 56rem; margin-left: auto; margin-right: auto; }
+.planner-hit { background: var(--card); border: 1px solid rgba(255,255,255,.35); border-radius: 16px; padding: 1.2rem 1.6rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.planner-hit h4 { font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.4rem; }
+.planner-hit h4 a { color: #fff; text-decoration: none; }
+.planner-hit p { font-size: .95rem; color: var(--cream); opacity: .85; }
+
+/* shop */
+.shop-hero { position: relative; min-height: 62vh; display: flex; align-items: center; justify-content: center; background: var(--ink); overflow: hidden; }
+.shop-hero img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .75; }
+.shop-hero h1 { position: relative; font-size: clamp(3.6rem, 10vw, 7rem); }
+.shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.shop-card { display: block; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); transition: transform .3s, border-color .3s; text-decoration: none; }
+.shop-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+.shop-card img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.shop-card .cap { padding: 1.2rem; text-align: center; font-family: var(--serif); font-style: italic; font-stretch: 62.5%; font-size: 1.6rem; color: var(--gold); }
+
+/* about page */
+.about-page { background: #000; min-height: 100vh; padding: 3rem 2rem 5rem; }
+.about-page .top { max-width: 72rem; margin: 0 auto 3rem; }
+.about-page .top img { height: 88px; }
+.about-page h1 { font-family: var(--serif); font-stretch: 62.5%; color: #fff; letter-spacing: .35em; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 500; margin-bottom: 3rem; }
+.about-page .cols { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; max-width: 72rem; margin: 0 auto; align-items: start; }
+.about-page .cols p { color: #fff; margin-bottom: 1.3rem; font-size: 1.12rem; }
+.about-page .niche { margin-top: 2rem; color: var(--gold); }
+.soc-icons { display: flex; gap: 1rem; margin-top: 2.4rem; flex-wrap: wrap; }
+.soc-icons a { width: 52px; height: 52px; border: 1.5px solid rgba(255,255,255,.5); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; font-size: .75rem; font-weight: 700; }
+.soc-icons a:hover { border-color: var(--gold); color: var(--gold); }
+
+/* generic page */
+.page-head { padding: 9rem 2rem 3rem; text-align: center; background: var(--ink); }
+.page-head h1 { font-size: clamp(3rem, 8vw, 6rem); }
+.prose { max-width: 46rem; margin: 0 auto; }
+.prose p { margin-bottom: 1.2rem; color: var(--cream); }
+
+/* reveal */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .marquee-track { animation: none; } }
+
+@media (max-width: 900px) {
+  .about-grid, .follow-grid, .about-page .cols { grid-template-columns: 1fr; }
+  .event-grid { grid-template-columns: 1fr; }
+  .shop-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .svc-row { grid-template-columns: 1fr; gap: .4rem; }
+  .brand img { height: 76px; }
+  .site-header nav a { font-size: 1.02rem; }
+  .site-header { padding: 1rem; }
+  .empire-strip { justify-self: start; min-height: 300px; }
+}
+</style>
+</style>
+</head>
+<body>
+<header class="site-header solid">
+  <a class="brand" href="index.html" aria-label="Marina New York City home"><img src="https://marinanewyorkcity.github.io/light-website/logo.png" alt="marina newyorkcity content creator logo"></a>
+  <nav aria-label="Main navigation">
+      <a href="index.html">home</a>
+      <a href="events.html">nyc events</a>
+      <a href="news-and-press.html" class="active">news and press</a>
+      <a href="guides.html">guides</a>
+      <a href="shop.html">shop</a>
+      <a href="contact.html">contact us</a>
+  </nav>
+</header>
+<main>
+<div class="page-head"><h1 class="serif-i reveal">News and Press</h1></div>
+<section class="section pine"><div class="wrap prose reveal">
+<p>Press features, interviews, and media mentions of @marina.newyorkcity.</p><p>For press inquiries: <a href='mailto:pr@marinanewyorkcity.com'>pr@marinanewyorkcity.com</a></p>
+</div></section>
+</main><section class="section pine" style="padding-bottom:0">
+  <div class="wrap">
+    <h2 class="serif-i sec-title reveal">Follow and stay connected</h2>
+    <div class="follow-grid">
+      <div class="reveal">
+      <div class="soc-row"><span class="dot">T</span><a href="https://www.tiktok.com/@marina.newyorkcity" target="_blank" rel="noopener">TikTok @marina.newyorkcity</a></div>
+      <div class="soc-row"><span class="dot">F</span><a href="https://www.facebook.com/marina.nycity" target="_blank" rel="noopener">Facebook @marina.nycity</a></div>
+      <div class="soc-row"><span class="dot">Y</span><a href="https://www.youtube.com/@marina.newyorkcity" target="_blank" rel="noopener">YouTube @marina.newyorkcity</a></div>
+      <div class="soc-row"><span class="dot">T</span><a href="https://www.threads.com/@Marina.newyorkcity" target="_blank" rel="noopener">Threads @marina.newyorkcity</a></div>
+      <div class="soc-row"><span class="dot">P</span><a href="https://www.pinterest.com/marinanewyorkcity/" target="_blank" rel="noopener">Pinterest @marinanewyorkcity</a></div>
+        <div class="soc-row"><span class="dot">M</span><a href="https://kit.marinanewyorkcity.com" target="_blank" rel="noopener"><strong>media kit</strong></a></div>
+        <div class="soc-row"><span class="dot">L</span><a href="https://links.marinanewyorkcity.com" target="_blank" rel="noopener"><strong>links.marinanewyorkcity.com</strong></a></div>
+        <div style="margin-top:1.4rem"><a class="pill" href="contact.html">Contact me</a></div>
+      </div>
+      <img class="empire-strip reveal" src="https://marinanewyorkcity.github.io/light-website/empire.jpg" alt="Empire State Building at sunset, New York City" loading="lazy">
+    </div>
+  </div>
+  <p class="footer-line">&copy; 2026 @marina.newyorkcity. All Rights Reserved.</p>
+</section>
+<script src="https://marinanewyorkcity.github.io/light-website/site.js"></script>
+</body>
+</html>
