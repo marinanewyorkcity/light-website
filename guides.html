@@ -666,7 +666,6 @@ h1,h2,h3,h4{font-family:'Noto Serif Display XC','Noto Serif Display',Georgia,ser
 (function(){
  var heroVideo=document.querySelector(".inner-hero-video");
  if(heroVideo){heroVideo.muted=true;heroVideo.load();var heroPlayback=heroVideo.play();if(heroPlayback&&heroPlayback.catch)heroPlayback.catch(function(){});}
- );
  function report(){window.parent.postMessage({type:"marina-height",height:Math.max(document.documentElement.scrollHeight,document.body.scrollHeight)},"*");}
  window.addEventListener("load",function(){setTimeout(report,250)});if(window.ResizeObserver)new ResizeObserver(report).observe(document.documentElement);
  var contactTrigger=document.querySelector("[data-scroll-contact]"),contactSection=document.getElementById("contact-form-section");if(contactTrigger&&contactSection)contactTrigger.addEventListener("click",function(){var reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;contactSection.scrollIntoView({behavior:reduceMotion?"auto":"smooth",block:"start"});});
