@@ -541,6 +541,34 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
   object-fit: cover;
 }
 </style>
+
+<style>
+@media (max-width: 640px) {
+  .footer-main {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 1.5rem !important;
+    text-align: left !important;
+  }
+  .footer-brand {
+    flex: 0 0 auto !important;
+    max-width: 38% !important;
+  }
+  .footer-brand-logo {
+    max-width: 120px !important;
+  }
+  .footer-follow-group,
+  .footer-socials {
+    text-align: right !important;
+  }
+  .footer-newsletter {
+    flex-basis: 100% !important;
+    margin-top: 1rem !important;
+  }
+}
+</style>
 </head>
 <body>
 
