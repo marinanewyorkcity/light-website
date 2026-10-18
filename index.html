@@ -792,6 +792,37 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
   }
 }
 </style>
+
+<style>
+@media (max-width: 640px) {
+  /* Gallery: single line, smaller, auto-sliding */
+  #gallery-grid.gallery-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 0.6rem !important;
+    overflow: hidden !important;
+    padding: 0.5rem 0 !important;
+  }
+  #gallery-grid.gallery-grid img {
+    flex: 0 0 auto !important;
+    width: 110px !important;
+    height: 110px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    animation: gallerySlide 18s linear infinite !important;
+  }
+  @keyframes gallerySlide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-5 * (110px + 0.6rem))); }
+  }
+  /* The track slides seamlessly because images are duplicated */
+  /* Pause on touch */
+  #gallery-grid.gallery-grid:active img {
+    animation-play-state: paused !important;
+  }
+}
+</style>
+</head>
 </head>
 </head>
 </head>
@@ -1127,7 +1158,9 @@ window.MARINA_GALLERY_PHOTOS = [
       var grid = document.getElementById('gallery-grid');
       var lb = document.getElementById('lightbox');
       var lbImg = document.getElementById('lightbox-img');
-      var photos = (window.MARINA_GALLERY_PHOTOS || []).slice(-3);
+      var isMobileGallery = window.innerWidth <= 640;
+      var photos = (window.MARINA_GALLERY_PHOTOS || []).slice(isMobileGallery ? -5 : -3);
+      if (isMobileGallery) { photos = photos.concat(photos); }
       photos.forEach(function (p) {
         var img = document.createElement('img');
         img.src = p.thumb;
