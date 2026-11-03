@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Site Admin | Marina New York City</title>
+<style>
+  :root { --gold: #FFDE59; --black: #100D0C; --panel: #1a1512; --cream: #EDE7E1; --muted: #a89f96; --line: rgba(255,222,89,.18); --danger: #ff7a7a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--black); color: var(--cream); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; line-height: 1.5; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 1rem; }
+  header.admin-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--black); z-index: 10; }
+  header.admin-head h1 { font-size: 1.1rem; margin: 0; color: var(--gold); letter-spacing: .04em; }
+  header.admin-head .who { font-size: .8rem; color: var(--muted); }
+  button { font: inherit; cursor: pointer; }
+  .btn { background: var(--gold); color: #100D0C; border: 0; border-radius: 8px; padding: .6rem 1.1rem; font-weight: 600; }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .btn-ghost { background: transparent; color: var(--gold); border: 1px solid var(--line); border-radius: 8px; padding: .55rem 1rem; }
+  .btn-danger { background: transparent; color: var(--danger); border: 1px solid rgba(255,122,122,.4); border-radius: 8px; padding: .45rem .8rem; font-size: .85rem; }
+  .btn-small { padding: .35rem .7rem; font-size: .85rem; border-radius: 6px; }
+  input[type=text], input[type=date], input[type=url], select, textarea { width: 100%; background: var(--panel); border: 1px solid var(--line); color: var(--cream); border-radius: 8px; padding: .6rem .7rem; font: inherit; margin: .25rem 0 .8rem; }
+  textarea { min-height: 90px; resize: vertical; }
+  label { display: block; font-size: .82rem; color: var(--muted); letter-spacing: .03em; margin-top: .4rem; }
+  label input[type=checkbox] { width: auto; margin-right: .4rem; }
+  .tabs { display: flex; gap: .4rem; padding: .8rem 1rem 0; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .tabs button { background: none; border: 0; color: var(--muted); padding: .7rem .9rem; font-size: .95rem; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .tabs button.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .view { display: none; padding: 1rem; }
+  .view.active { display: block; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; margin-bottom: .7rem; }
+  .card h3 { margin: 0 0 .3rem; font-size: 1rem; }
+  .card .meta { font-size: .82rem; color: var(--muted); }
+  .row { display: flex; gap: .5rem; align-items: center; }
+  .row .grow { flex: 1; }
+  .toolbar { display: flex; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  .toolbar input[type=text] { margin: 0; }
+  .status { padding: .7rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .9rem; display: none; }
+  .status.ok { display: block; background: rgba(255,222,89,.12); border: 1px solid var(--line); color: var(--gold); }
+  .status.err { display: block; background: rgba(255,122,122,.1); border: 1px solid rgba(255,122,122,.4); color: var(--danger); }
+  .login-box { max-width: 420px; margin: 4rem auto; padding: 2rem; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+  .login-box h2 { color: var(--gold); margin-top: 0; }
+  .login-box ol { font-size: .88rem; color: var(--muted); padding-left: 1.2rem; }
+  .login-box ol a { color: var(--gold); }
+  .hidden { display: none !important; }
+  .block-item { border: 1px dashed var(--line); border-radius: 8px; padding: .7rem; margin-bottom: .6rem; }
+  .block-item .kind { font-size: .75rem; color: var(--gold); text-transform: uppercase; letter-spacing: .08em; }
+  .upload-item { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: .5rem 0; border-bottom: 1px solid var(--line); font-size: .85rem; }
+  .upload-item code { color: var(--muted); word-break: break-all; }
+  .preview-modal { position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 50; overflow-y: auto; padding: 1rem; }
+  .preview-inner { max-width: 700px; margin: 2rem auto; background: var(--black); border: 1px solid var(--line); border-radius: 12px; padding: 1.5rem; }
+  .preview-inner .close-row { text-align: right; margin-bottom: 1rem; }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-view" class="wrap">
+  <div class="login-box">
+    <h2>Site Admin</h2>
+    <p style="color:var(--muted);font-size:.9rem">Manage events, top picks, news, and uploads for marinanewyorkcity.com. Your login stays on this device only.</p>
+    <label>GitHub personal access token</label>
+    <input type="text" id="token-input" placeholder="ghp_..." autocomplete="off">
+    <label><input type="checkbox" id="remember-token" checked> Remember on this device</label>
+    <div style="margin-top:.6rem"><button class="btn" id="login-btn">Log in</button></div>
+    <div class="status err" id="login-error"></div>
+    <ol>
+      <li>Go to <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">github.com/settings/tokens/new</a></li>
+      <li>Note: "website admin". Expiration: 90 days.</li>
+      <li>Check the <b>repo</b> box. Generate, copy the token.</li>
+      <li>Paste it above and log in.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app-view" class="hidden">
+  <header class="admin-head">
+    <h1>Site Admin</h1>
+    <div class="row">
+      <span class="who" id="who"></span>
+      <button class="btn-ghost btn-small" id="logout-btn">Log out</button>
+    </div>
+  </header>
+  <nav class="tabs">
+    <button data-tab="events" class="active">Events</button>
+    <button data-tab="picks">Top Picks</button>
+    <button data-tab="news">News</button>
+    <button data-tab="uploads">Uploads</button>
+  </nav>
+
+  <div class="wrap">
+    <div class="status" id="status"></div>
+
+    <!-- EVENTS -->
+    <section class="view active" id="view-events">
+      <div class="toolbar">
+        <input type="text" id="event-search" placeholder="Search events..." class="grow">
+        <button class="btn" id="event-add">+ Add event</button>
+        <button class="btn-ghost" id="event-save">Save all to site</button>
+      </div>
+      <div id="event-list"></div>
+      <div id="event-editor" class="hidden">
+        <h3 id="event-editor-title">Edit event</h3>
+        <div class="card">
+          <label>Title</label><input type="text" id="ev-title">
+          <div class="row">
+            <div class="grow"><label>Start date (YYYY-MM-DD)</label><input type="text" id="ev-start" placeholder="2026-12-01"></div>
+            <div class="grow"><label>End date (YYYY-MM-DD)</label><input type="text" id="ev-end" placeholder="2026-12-31"></div>
+          </div>
+          <label>Date text (shown on card)</label><input type="text" id="ev-datetext" placeholder="Dec 1 - 31, 2026">
+          <label>Time</label><input type="text" id="ev-time" placeholder="10 AM - 8 PM">
+          <label>Location</label><input type="text" id="ev-location">
+          <label>Price</label><input type="text" id="ev-price" placeholder="Free">
+          <label>Link URL</label><input type="url" id="ev-url">
+          <label>Why go (1-2 sentences)</label><textarea id="ev-why"></textarea>
+          <label>Good for (tags, comma separated)</label><input type="text" id="ev-goodfor">
+          <label>Months (comma separated, YYYY-MM)</label><input type="text" id="ev-months" placeholder="2026-12, 2027-01">
+          <label><input type="checkbox" id="ev-picks"> Mark as pick-worthy</label>
+          <div class="row" style="margin-top:.8rem">
+            <button class="btn" id="ev-done">Done</button>
+            <button class="btn-ghost" id="ev-cancel">Cancel</button>
+            <button class="btn-danger" id="ev-delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP PICKS -->
+    <section class="view" id="view-picks">
+      <label>Week label (shown above the picks)</label>
+      <input type="text" id="picks-week" placeholder="November 9 to 15, 2026">
+      <div id="picks-list"></div>
+      <div class="toolbar">
+        <button class="btn-ghost" id="pick-add">+ Add pick</button>
+        <button class="btn" id="picks-save">Save to site</button>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="view" id="view-news">
+      <div class="toolbar">
+        <button class="btn" id="news-add">+ New article</button>
+        <button class="btn-ghost" id="news-save">Save all to site</button>
+      </div>
+      <div id="news-list"></div>
+      <div id="news-editor" class="hidden">
+        <h3 id="news-editor-title">Edit article</h3>
+        <div class="card">
+          <label>Headline</label><input type="text" id="nw-headline">
+          <div class="row">
+            <div class="grow"><label>Date</label><input type="date" id="nw-date"></div>
+            <div class="grow"><label>Type</label>
+              <select id="nw-type"><option>press release</option><option>original coverage</option></select>
+            </div>
+          </div>
+          <label>URL slug (lowercase, dashes)</label><input type="text" id="nw-id" placeholder="my-new-story-2026">
+          <label>Lede (one short paragraph)</label><textarea id="nw-lede"></textarea>
+          <label><input type="checkbox" id="nw-featured"> Featured story</label>
+          <h4 style="color:var(--gold);margin:1rem 0 .4rem">Story blocks</h4>
+          <div id="nw-blocks"></div>
+          <div class="toolbar">
+            <button class="btn-ghost btn-small" id="blk-add-text">+ Text</button>
+            <button class="btn-ghost btn-small" id="blk-add-ig">+ Instagram</button>
+            <button class="btn-ghost btn-small" id="blk-add-yt">+ YouTube</button>
+          </div>
+          <div class="row" style="margin-top:.8rem;flex-wrap:wrap">
+            <button class="btn" id="nw-done">Done</button>
+            <button class="btn-ghost" id="nw-preview">Preview</button>
+            <button class="btn-ghost" id="nw-cancel">Cancel</button>
+            <button class="btn-danger" id="nw-delete">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPLOADS -->
+    <section class="view" id="view-uploads">
+      <div class="card">
+        <label>Upload an image (goes to assets/uploads/)</label>
+        <input type="file" id="upload-file" accept="image/*">
+        <button class="btn" id="upload-btn">Upload</button>
+        <div id="upload-result" style="margin-top:.6rem;font-size:.85rem"></div>
+      </div>
+      <h3 style="color:var(--gold)">Existing uploads</h3>
+      <div id="uploads-list"><p style="color:var(--muted)">Loading...</p></div>
+    </section>
+  </div>
+</div>
+
+<div id="preview-modal" class="preview-modal hidden">
+  <div class="preview-inner">
+    <div class="close-row"><button class="btn-ghost btn-small" id="preview-close">Close</button></div>
+    <div id="preview-body"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var REPO = 'marinanewyorkcity/light-website';
+  var API = 'https://api.github.com/repos/' + REPO;
+  var token = localStorage.getItem('mnyc_admin_token') || '';
+
+  function $(id) { return document.getElementById(id); }
+  function status(msg, ok) {
+    var s = $('status');
+    s.textContent = msg;
+    s.className = 'status ' + (ok ? 'ok' : 'err');
+    if (ok) setTimeout(function () { s.className = 'status'; }, 4000);
+    window.scrollTo(0, 0);
+  }
+  function b64e(str) { return btoa(unescape(encodeURIComponent(str))); }
+  function b64d(b64) { return decodeURIComponent(escape(atob(b64.replace(/\n/g, '')))); }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function gh(path, method, body) {
+    return fetch(API + path, {
+      method: method || 'GET',
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) {
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
+        throw new Error('GitHub ' + r.status + (j.message ? ': ' + j.message : ''));
+      });
+      return r.json();
+    });
+  }
+  function readFile(path) {
+    return gh('/contents/' + path).then(function (j) {
+      return { sha: j.sha, text: b64d(j.content) };
+    });
+  }
+  function writeFile(path, text, sha, message) {
+    return gh('/contents/' + path, 'PUT', { message: message, content: b64e(text), sha: sha });
+  }
+
+  /* ---------- login ---------- */
+  function showApp(user) {
+    $('login-view').classList.add('hidden');
+    $('app-view').classList.remove('hidden');
+    $('who').textContent = user ? ('@' + user.login) : '';
+    loadEvents(); loadPicks(); loadNews(); loadUploads();
+  }
+  function tryLogin() {
+    token = $('token-input').value.trim();
+    if (!token) return;
+    $('login-btn').disabled = true;
+    gh('/').then(function () { return fetch('https://api.github.com/user', { headers: { 'Authorization': 'Bearer ' + token } }).then(function (r) { return r.json(); }); })
+      .then(function (user) {
+        if ($('remember-token').checked) localStorage.setItem('mnyc_admin_token', token);
+        else localStorage.removeItem('mnyc_admin_token');
+        showApp(user);
+      })
+      .catch(function (e) {
+        $('login-error').textContent = 'Login failed: ' + e.message + '. Check the token and that it has the "repo" scope.';
+        $('login-error').style.display = 'block';
+      })
+      .finally(function () { $('login-btn').disabled = false; });
+  }
+  $('login-btn').addEventListener('click', tryLogin);
+  $('token-input').addEventListener('keydown', function (e) { if (e.key === 'Enter') tryLogin(); });
+  $('logout-btn').addEventListener('click', function () {
+    localStorage.removeItem('mnyc_admin_token'); token = '';
+    $('app-view').classList.add('hidden'); $('login-view').classList.remove('hidden');
+    $('token-input').value = '';
+  });
+  if (token) { $('token-input').value = token; tryLogin(); }
+
+  /* ---------- tabs ---------- */
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.tabs button').forEach(function (x) { x.classList.remove('active'); });
+      document.querySelectorAll('.view').forEach(function (x) { x.classList.remove('active'); });
+      b.classList.add('active');
+      $('view-' + b.dataset.tab).classList.add('active');
+    });
+  });
+
+  /* ---------- events ---------- */
+  var events = [], eventsSha = null, editingEvent = -1;
+  function loadEvents() {
+    readFile('events.json').then(function (f) {
+      eventsSha = f.sha;
+      events = JSON.parse(f.text);
+      renderEventList('');
+    }).catch(function (e) { status('Could not load events: ' + e.message, false); });
+  }
+  function renderEventList(q) {
+    q = (q || '').toLowerCase();
+    var html = '';
+    events.forEach(function (ev, i) {
+      if (q && (ev.title + ' ' + (ev.dateText || '')).toLowerCase().indexOf(q) === -1) return;
+      html += '<div class="card"><div class="row"><div class="grow"><h3>' + esc(ev.title) + '</h3>' +
+        '<div class="meta">' + esc(ev.dateText || '') + (ev.picks ? ' · ★ pick' : '') + '</div></div>' +
+        '<button class="btn-ghost btn-small" data-ev="' + i + '">Edit</button></div></div>';
+    });
+    $('event-list').innerHTML = html || '<p style="color:var(--muted)">No events found.</p>';
+    $('event-list').querySelectorAll('[data-ev]').forEach(function (b) {
+      b.addEventListener('click', function () { openEventEditor(parseInt(b.dataset.ev, 10)); });
+    });
+  }
+  $('event-search').addEventListener('input', function () { renderEventList($('event-search').value); });
+  function openEventEditor(i) {
+    editingEvent = i;
+    var ev = i >= 0 ? events[i] : { title: '', start: '', end: '', dateText: '', time: '', location: '', price: '', url: '', why: '', goodFor: '', months: [], picks: false };
+    $('event-editor-title').textContent = i >= 0 ? 'Edit event' : 'New event';
+    $('ev-title').value = ev.title || '';
+    $('ev-start').value = ev.start || '';
+    $('ev-end').value = ev.end || '';
+    $('ev-datetext').value = ev.dateText || '';
+    $('ev-time').value = ev.time || '';
+    $('ev-location').value = ev.location || '';
+    $('ev-price').value = ev.price || '';
+    $('ev-url').value = ev.url || '';
+    $('ev-why').value = ev.why || '';
+    $('ev-goodfor').value = ev.goodFor || '';
+    $('ev-months').value = (ev.months || []).join(', ');
+    $('ev-picks').checked = !!ev.picks;
+    $('ev-delete').style.display = i >= 0 ? '' : 'none';
+    $('event-editor').classList.remove('hidden');
+    $('event-editor').scrollIntoView();
+  }
+  $('event-add').addEventListener('click', function () { openEventEditor(-1); });
+  $('ev-cancel').addEventListener('click', function () { $('event-editor').classList.add('hidden'); });
+  $('ev-done').addEventListener('click', function () {
+    var ev = {
+      title: $('ev-title').value.trim(),
+      start: $('ev-start').value.trim(),
+      end: $('ev-end').value.trim() || $('ev-start').value.trim(),
+      dateText: $('ev-datetext').value.trim(),
+      time: $('ev-time').value.trim(),
+      location: $('ev-location').value.trim(),
+      price: $('ev-price').value.trim(),
+      url: $('ev-url').value.trim(),
+      why: $('ev-why').value.trim(),
+      goodFor: $('ev-goodfor').value.trim(),
+      months: $('ev-months').value.split(',').map(function (s) { return s.trim(); }).filter(Boolean),
+      picks: $('ev-picks').checked
+    };
+    if (!ev.title) { status('Title is required.', false); return; }
+    if (editingEvent >= 0) events[editingEvent] = ev; else events.push(ev);
+    $('event-editor').classList.add('hidden');
+    renderEventList($('event-search').value);
+    status('Event saved locally. Press "Save all to site" to publish.', true);
+  });
+  $('ev-delete').addEventListener('click', function () {
+    if (editingEvent < 0) return;
+    if (!confirm('Delete "' + events[editingEvent].title + '"?')) return;
+    events.splice(editingEvent, 1);
+    $('event-editor').classList.add('hidden');
+    renderEventList($('event-search').value);
+    status('Event deleted locally. Press "Save all to site" to publish.', true);
+  });
+  $('event-save').addEventListener('click', function () {
+    $('event-save').disabled = true;
+    writeFile('events.json', JSON.stringify(events, null, 1), eventsSha, 'Admin: update events')
+      .then(function (j) { eventsSha = j.content.sha; status('Events published. ' + events.length + ' events live.', true); })
+      .catch(function (e) { status('Publish failed: ' + e.message, false); })
+      .finally(function () { $('event-save').disabled = false; });
+  });
+
+  /* ---------- top picks ---------- */
+  var picks = { weekLabel: '', picks: [] }, picksSha = null, allTitles = [];
+  function loadPicks() {
+    readFile('top-picks.json').then(function (f) {
+      picksSha = f.sha;
+      picks = JSON.parse(f.text);
+      $('picks-week').value = picks.weekLabel || '';
+      renderPicks();
+    }).catch(function (e) { status('Could not load top picks: ' + e.message, false); });
+  }
+  function renderPicks() {
+    allTitles = events.map(function (e) { return e.title; }).sort();
+    var html = '';
+    picks.picks.forEach(function (p, i) {
+      var opts = allTitles.map(function (t) { return '<option' + (t === p.title ? ' selected' : '') + '>' + esc(t) + '</option>'; }).join('');
+      html += '<div class="card"><label>Pick ' + (i + 1) + '</label>' +
+        '<select data-pick-title="' + i + '">' + opts + '</select>' +
+        '<label>Date text override</label><input type="text" data-pick-date="' + i + '" value="' + esc(p.dateText || '') + '">' +
+        '<div class="row"><button class="btn-ghost btn-small" data-pick-up="' + i + '">↑</button>' +
+        '<button class="btn-ghost btn-small" data-pick-down="' + i + '">↓</button>' +
+        '<button class="btn-danger btn-small" data-pick-del="' + i + '">Remove</button></div></div>';
+    });
+    $('picks-list').innerHTML = html || '<p style="color:var(--muted)">No picks yet.</p>';
+    $('picks-list').querySelectorAll('[data-pick-title]').forEach(function (s) {
+      s.addEventListener('change', function () { picks.picks[parseInt(s.dataset.pickTitle, 10)].title = s.value; });
+    });
+    $('picks-list').querySelectorAll('[data-pick-date]').forEach(function (inp) {
+      inp.addEventListener('input', function () { picks.picks[parseInt(inp.dataset.pickDate, 10)].dateText = inp.value; });
+    });
+    $('picks-list').querySelectorAll('[data-pick-up]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var i = parseInt(b.dataset.pickUp, 10);
+        if (i > 0) { var t = picks.picks[i - 1]; picks.picks[i - 1] = picks.picks[i]; picks.picks[i] = t; renderPicks(); }
+      });
+    });
+    $('picks-list').querySelectorAll('[data-pick-down]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var i = parseInt(b.dataset.pickDown, 10);
+        if (i < picks.picks.length - 1) { var t = picks.picks[i + 1]; picks.picks[i + 1] = picks.picks[i]; picks.picks[i] = t; renderPicks(); }
+      });
+    });
+    $('picks-list').querySelectorAll('[data-pick-del]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        picks.picks.splice(parseInt(b.dataset.pickDel, 10), 1); renderPicks();
+      });
+    });
+  }
+  $('pick-add').addEventListener('click', function () {
+    picks.picks.push({ title: allTitles[0] || '', dateText: '' });
+    renderPicks();
+  });
+  $('picks-save').addEventListener('click', function () {
+    picks.weekLabel = $('picks-week').value.trim();
+    $('picks-save').disabled = true;
+    writeFile('top-picks.json', JSON.stringify(picks, null, 1), picksSha, 'Admin: update top picks')
+      .then(function (j) { picksSha = j.content.sha; status('Top picks published.', true); })
+      .catch(function (e) { status('Publish failed: ' + e.message, false); })
+      .finally(function () { $('picks-save').disabled = false; });
+  });
+
+  /* ---------- news ---------- */
+  var articles = [], newsSha = null, editingNews = -1, editBlocks = [];
+  function loadNews() {
+    readFile('news.json').then(function (f) {
+      newsSha = f.sha;
+      articles = JSON.parse(f.text);
+      renderNewsList();
+    }).catch(function (e) { status('Could not load news: ' + e.message, false); });
+  }
+  function renderNewsList() {
+    var sorted = articles.slice().sort(function (a, b) { return b.date < a.date ? -1 : 1; });
+    var html = '';
+    sorted.forEach(function (a) {
+      var idx = articles.indexOf(a);
+      html += '<div class="card"><div class="row"><div class="grow"><h3>' + esc(a.headline) + '</h3>' +
+        '<div class="meta">' + esc(a.date) + ' · ' + esc(a.type) + (a.featured ? ' · featured' : '') + '</div></div>' +
+        '<button class="btn-ghost btn-small" data-nw="' + idx + '">Edit</button></div></div>';
+    });
+    $('news-list').innerHTML = html || '<p style="color:var(--muted)">No articles yet.</p>';
+    $('news-list').querySelectorAll('[data-nw]').forEach(function (b) {
+      b.addEventListener('click', function () { openNewsEditor(parseInt(b.dataset.nw, 10)); });
+    });
+  }
+  function openNewsEditor(i) {
+    editingNews = i;
+    var a = i >= 0 ? articles[i] : { id: '', date: new Date().toISOString().slice(0, 10), type: 'press release', headline: '', lede: '', featured: false, blocks: [] };
+    $('news-editor-title').textContent = i >= 0 ? 'Edit article' : 'New article';
+    $('nw-headline').value = a.headline || '';
+    $('nw-date').value = a.date || '';
+    $('nw-type').value = a.type || 'press release';
+    $('nw-id').value = a.id || '';
+    $('nw-lede').value = a.lede || '';
+    $('nw-featured').checked = !!a.featured;
+    editBlocks = JSON.parse(JSON.stringify(a.blocks || []));
+    renderBlocks();
+    $('nw-delete').style.display = i >= 0 ? '' : 'none';
+    $('news-editor').classList.remove('hidden');
+    $('news-editor').scrollIntoView();
+  }
+  function renderBlocks() {
+    var html = '';
+    editBlocks.forEach(function (b, i) {
+      html += '<div class="block-item"><div class="kind">' + esc(b.kind) + '</div>';
+      if (b.kind === 'text') html += '<textarea data-blk="' + i + '" data-f="html" placeholder="Paragraph text (links allowed as <a href=...>)">' + esc(b.html) + '</textarea>';
+      if (b.kind === 'instagram') {
+        html += '<label>Instagram URL</label><input type="url" data-blk="' + i + '" data-f="url" value="' + esc(b.url || '') + '">';
+        html += '<label>Link label</label><input type="text" data-blk="' + i + '" data-f="label" value="' + esc(b.label || '') + '">';
+      }
+      if (b.kind === 'youtube') {
+        html += '<label>YouTube URL or video ID</label><input type="text" data-blk="' + i + '" data-f="id" value="' + esc(b.id || '') + '" placeholder="https://youtu.be/...">';
+        html += '<label>Video title</label><input type="text" data-blk="' + i + '" data-f="title" value="' + esc(b.title || '') + '">';
+      }
+      html += '<div class="row"><button class="btn-ghost btn-small" data-blk-up="' + i + '">↑</button>' +
+        '<button class="btn-ghost btn-small" data-blk-down="' + i + '">↓</button>' +
+        '<button class="btn-danger btn-small" data-blk-del="' + i + '">Remove</button></div></div>';
+    });
+    $('nw-blocks').innerHTML = html || '<p style="color:var(--muted)">No blocks. Add text or embeds.</p>';
+    $('nw-blocks').querySelectorAll('[data-blk]').forEach(function (el) {
+      el.addEventListener('input', function () {
+        var b = editBlocks[parseInt(el.dataset.blk, 10)];
+        var f = el.dataset.f, v = el.value;
+        if (b.kind === 'youtube' && f === 'id') {
+          var m = v.match(/(?:youtu\.be\/|v=)([\w-]{6,})/);
+          b.id = m ? m[1] : v.trim(); b.watch = m ? v.trim() : ('https://youtu.be/' + v.trim());
+        } else b[f] = v;
+      });
+    });
+    $('nw-blocks').querySelectorAll('[data-blk-up]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var i = parseInt(btn.dataset.blkUp, 10);
+        if (i > 0) { var t = editBlocks[i - 1]; editBlocks[i - 1] = editBlocks[i]; editBlocks[i] = t; renderBlocks(); }
+      });
+    });
+    $('nw-blocks').querySelectorAll('[data-blk-down]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var i = parseInt(btn.dataset.blkDown, 10);
+        if (i < editBlocks.length - 1) { var t = editBlocks[i + 1]; editBlocks[i + 1] = editBlocks[i]; editBlocks[i] = t; renderBlocks(); }
+      });
+    });
+    $('nw-blocks').querySelectorAll('[data-blk-del]').forEach(function (btn) {
+      btn.addEventListener('click', function () { editBlocks.splice(parseInt(btn.dataset.blkDel, 10), 1); renderBlocks(); });
+    });
+  }
+  $('blk-add-text').addEventListener('click', function () { editBlocks.push({ kind: 'text', html: '' }); renderBlocks(); });
+  $('blk-add-ig').addEventListener('click', function () { editBlocks.push({ kind: 'instagram', url: '', label: '' }); renderBlocks(); });
+  $('blk-add-yt').addEventListener('click', function () { editBlocks.push({ kind: 'youtube', id: '', title: '', watch: '' }); renderBlocks(); });
+  $('news-add').addEventListener('click', function () { openNewsEditor(-1); });
+  $('nw-cancel').addEventListener('click', function () { $('news-editor').classList.add('hidden'); });
+  function slugify(s) {
+    return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+  }
+  $('nw-done').addEventListener('click', function () {
+    var a = {
+      id: $('nw-id').value.trim() || slugify($('nw-headline').value),
+      date: $('nw-date').value,
+      type: $('nw-type').value,
+      headline: $('nw-headline').value.trim(),
+      lede: $('nw-lede').value.trim(),
+      featured: $('nw-featured').checked,
+      blocks: editBlocks.filter(function (b) {
+        return b.kind === 'text' ? b.html.trim() : (b.kind === 'instagram' ? b.url.trim() : b.id.trim());
+      })
+    };
+    if (!a.headline || !a.date) { status('Headline and date are required.', false); return; }
+    if (editingNews >= 0) articles[editingNews] = a; else articles.push(a);
+    $('news-editor').classList.add('hidden');
+    renderNewsList();
+    status('Article saved locally. Press "Save all to site" to publish.', true);
+  });
+  $('nw-delete').addEventListener('click', function () {
+    if (editingNews < 0) return;
+    if (!confirm('Delete "' + articles[editingNews].headline + '"?')) return;
+    articles.splice(editingNews, 1);
+    $('news-editor').classList.add('hidden');
+    renderNewsList();
+    status('Article deleted locally. Press "Save all to site" to publish.', true);
+  });
+  $('news-save').addEventListener('click', function () {
+    articles.sort(function (a, b) { return b.date < a.date ? -1 : 1; });
+    $('news-save').disabled = true;
+    writeFile('news.json', JSON.stringify(articles, null, 1), newsSha, 'Admin: update news')
+      .then(function (j) { newsSha = j.content.sha; renderNewsList(); status('News published. ' + articles.length + ' articles live.', true); })
+      .catch(function (e) { status('Publish failed: ' + e.message, false); })
+      .finally(function () { $('news-save').disabled = false; });
+  });
+  $('nw-preview').addEventListener('click', function () {
+    var a = {
+      id: $('nw-id').value.trim() || 'preview', date: $('nw-date').value || '2026-01-01',
+      type: $('nw-type').value, headline: $('nw-headline').value, lede: $('nw-lede').value,
+      featured: $('nw-featured').checked, blocks: editBlocks
+    };
+    var d = new Date(a.date + 'T12:00:00');
+    var dateStr = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    var body = a.blocks.map(function (b) {
+      if (b.kind === 'text') return '<p>' + b.html + '</p>';
+      if (b.kind === 'instagram') return '<p style="color:var(--gold)">[Instagram embed: ' + esc(b.url) + ']</p>';
+      if (b.kind === 'youtube') return '<p style="color:var(--gold)">[YouTube embed: ' + esc(b.id) + ']</p>';
+      return '';
+    }).join('');
+    $('preview-body').innerHTML =
+      '<div class="article-meta"><time>' + esc(dateStr) + '</time> <span>' + esc(a.type) + '</span></div>' +
+      '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p><hr>' + body;
+    $('preview-modal').classList.remove('hidden');
+  });
+  $('preview-close').addEventListener('click', function () { $('preview-modal').classList.add('hidden'); });
+
+  /* ---------- uploads ---------- */
+  function loadUploads() {
+    gh('/contents/assets/uploads').then(function (items) {
+      var html = '';
+      items.filter(function (f) { return f.type === 'file'; }).reverse().forEach(function (f) {
+        var url = 'https://marinanewyorkcity.com/assets/uploads/' + f.name;
+        html += '<div class="upload-item"><code>' + esc(f.name) + '</code>' +
+          '<button class="btn-ghost btn-small" data-copy="' + esc(url) + '">Copy URL</button></div>';
+      });
+      $('uploads-list').innerHTML = html || '<p style="color:var(--muted)">No uploads yet.</p>';
+      $('uploads-list').querySelectorAll('[data-copy]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          navigator.clipboard.writeText(b.dataset.copy).then(function () { status('URL copied.', true); });
+        });
+      });
+    }).catch(function () { $('uploads-list').innerHTML = '<p style="color:var(--muted)">Uploads folder is empty or could not be listed.</p>'; });
+  }
+  $('upload-btn').addEventListener('click', function () {
+    var file = $('upload-file').files[0];
+    if (!file) { status('Choose a file first.', false); return; }
+    $('upload-btn').disabled = true;
+    $('upload-result').textContent = 'Uploading...';
+    var reader = new FileReader();
+    reader.onload = function () {
+      var b64 = reader.result.split(',')[1];
+      var name = Date.now() + '-' + file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
+      gh('/contents/assets/uploads/' + name, 'PUT', { message: 'Admin: upload ' + name, content: b64 })
+        .then(function () {
+          var url = 'https://marinanewyorkcity.com/assets/uploads/' + name;
+          $('upload-result').innerHTML = 'Uploaded: <a href="' + url + '" target="_blank" style="color:var(--gold)">' + esc(name) + '</a>';
+          loadUploads();
+        })
+        .catch(function (e) { status('Upload failed: ' + e.message, false); })
+        .finally(function () { $('upload-btn').disabled = false; });
+    };
+    reader.readAsDataURL(file);
+  });
+})();
+</script>
+</body>
+</html>
