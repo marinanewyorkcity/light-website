@@ -13,7 +13,10 @@
   "why": "A month of tours, talks and behind-the-scenes access to New York architecture.",
   "goodFor": "Architecture fans, locals, visitors, design lovers",
   "url": "https://www.archtober.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Queens Farm Pumpkin Patch",
@@ -29,7 +32,11 @@
   "why": "Pick a pumpkin at New York City's largest remaining tract of farmland.",
   "goodFor": "Families, fall outings, kids, couples",
   "url": "https://www.queensfarm.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Food"
+  ]
  },
  {
   "title": "Little Red Lighthouse Festival",
@@ -45,7 +52,11 @@
   "why": "Celebrate Manhattan's only lighthouse with music, activities and riverside views.",
   "goodFor": "Families, history lovers, outdoor explorers",
   "url": "https://www.nycgovparks.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Cultural"
+  ]
  },
  {
   "title": "Queens Night Market",
@@ -61,7 +72,11 @@
   "why": "Sample affordable dishes from dozens of cultures in one lively outdoor market.",
   "goodFor": "Food lovers, families, groups, visitors",
   "url": "https://queensnightmarket.com",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Food",
+   "Cultural"
+  ]
  },
  {
   "title": "Hank Willis Thomas: Art in Focus",
@@ -77,7 +92,10 @@
   "why": "See contemporary public art throughout one of Midtown's most iconic complexes.",
   "goodFor": "Art lovers, Midtown visitors, free outings",
   "url": "https://www.rockefellercenter.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "New York Comic Con",
@@ -93,7 +111,10 @@
   "why": "Four days of comics, anime, gaming, cosplay, panels and celebrity guests.",
   "goodFor": "Fans, collectors, cosplayers, families",
   "url": "https://www.newyorkcomiccon.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "New York Film Festival",
@@ -109,7 +130,10 @@
   "why": "See major premieres, international cinema and filmmaker conversations.",
   "goodFor": "Film lovers, culture seekers, date nights",
   "url": "https://www.filmlinc.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Amazing Maize Maze",
@@ -125,7 +149,10 @@
   "why": "Navigate a three-acre corn maze and solve its seasonal puzzle.",
   "goodFor": "Families, friends, fall outings, kids",
   "url": "https://www.queensfarm.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Maze by Moonlight",
@@ -141,7 +168,11 @@
   "why": "Tackle the corn maze after dark with only the moon and your flashlight.",
   "goodFor": "Friends, couples, teens, fall adventure",
   "url": "https://www.queensfarm.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Halloween"
+  ]
  },
  {
   "title": "NYC Columbus Day Parade",
@@ -157,7 +188,11 @@
   "why": "Watch marching bands, floats and Italian American cultural celebrations.",
   "goodFor": "Families, parade fans, visitors, culture lovers",
   "url": "https://columbuscitizens.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Parade",
+   "Cultural"
+  ]
  },
  {
   "title": "NYC Wine & Food Festival",
@@ -173,7 +208,10 @@
   "why": "Taste food from notable chefs at dinners, demos and large-scale events.",
   "goodFor": "Food lovers, date nights, culinary fans",
   "url": "https://nycwff.org",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Food"
+  ]
  },
  {
   "title": "Open House New York Weekend",
@@ -189,7 +227,11 @@
   "why": "Enter remarkable buildings and spaces that are usually closed to the public.",
   "goodFor": "Architecture fans, curious locals, visitors",
   "url": "https://ohny.org",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition",
+   "Cultural"
+  ]
  },
  {
   "title": "Tompkins Square Halloween Dog Parade",
@@ -205,7 +247,11 @@
   "why": "See inventive costumes at one of New York's most beloved pet traditions.",
   "goodFor": "Dog lovers, families, costume fans",
   "url": "https://www.nydogparade.org",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Halloween",
+   "Parade"
+  ]
  },
  {
   "title": "LuminoCity Dino Safari",
@@ -221,7 +267,11 @@
   "why": "Walk through a glowing outdoor world of large illuminated dinosaurs.",
   "goodFor": "Families, kids, Long Island day trips",
   "url": "https://www.luminocityfestival.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Lights"
+  ]
  },
  {
   "title": "Halloween Brownstones & Decorated Streets",
@@ -237,7 +287,10 @@
   "why": "Stroll through classic neighborhoods filled with imaginative Halloween decor.",
   "goodFor": "Families, walkers, visitors, Halloween fans",
   "url": "https://www.nyctourism.com",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Halloween"
+  ]
  },
  {
   "title": "Seaport Fall Transformation",
@@ -253,7 +306,10 @@
   "why": "Enjoy seasonal decor, waterfront views, dining and historic cobblestone streets.",
   "goodFor": "Couples, families, visitors, waterfront walks",
   "url": "https://theseaport.nyc",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Seaport Pumpkin Arch",
@@ -269,7 +325,11 @@
   "why": "Visit the waterfront's popular pumpkin installation if it returns this season.",
   "goodFor": "Families, couples, fall outings",
   "url": "https://theseaport.nyc",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Halloween"
+  ]
  },
  {
   "title": "OktoberFest NYC",
@@ -285,7 +345,11 @@
   "why": "Celebrate with German beer, food, live entertainment and East River views.",
   "goodFor": "Groups, adults, food lovers, waterfront outings",
   "url": "https://oktober-fest.nyc",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Food",
+   "Fall"
+  ]
  },
  {
   "title": "Bryant Park Winter Village Ice Rink",
@@ -303,7 +367,11 @@
   "why": "Skate beneath the skyline and browse the holiday market's first days.",
   "goodFor": "Families, couples, skaters, visitors",
   "url": "https://bryantpark.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Ice skating",
+   "Christmas"
+  ]
  },
  {
   "title": "Village Halloween Parade",
@@ -319,7 +387,11 @@
   "why": "Experience giant puppets, costumes, bands and New York's biggest Halloween procession.",
   "goodFor": "Costume fans, visitors, groups, night owls",
   "url": "https://halloween-nyc.com",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Halloween",
+   "Parade"
+  ]
  },
  {
   "title": "Village Halloween Parade: Early Arrivals",
@@ -335,7 +407,11 @@
   "why": "Arrive early to see elaborate costumes and the neighborhood build-up before the parade.",
   "goodFor": "Early arrivals, costume fans, families",
   "url": "https://halloween-nyc.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Halloween",
+   "Parade"
+  ]
  },
  {
   "title": "Roberto Lugo: Alfarero del Barrio",
@@ -353,7 +429,10 @@
   "why": "See vivid ceramic sculpture connecting public art, identity and neighborhood culture.",
   "goodFor": "Art lovers, walkers, families, visitors",
   "url": "https://madisonsquarepark.org/art/exhibitions/roberto-lugo/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Times Square Midnight Moment",
@@ -371,7 +450,10 @@
   "why": "Watch the world's largest recurring digital public-art display take over the screens.",
   "goodFor": "Night owls, art lovers, visitors, date nights",
   "url": "https://www.timessquarenyc.org/arts/midnight-moment",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "TCS New York City Marathon",
@@ -387,7 +469,10 @@
   "why": "Cheer runners from around the world along one of New York's most exciting annual routes.",
   "goodFor": "Families, sports fans, visitors, community spirit",
   "url": "https://www.nyrr.org/tcsnycmarathon",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Rockefeller Center Christmas Tree Arrival",
@@ -403,7 +488,11 @@
   "why": "Watch the iconic tree arrive and be raised before the holiday crowds begin.",
   "goodFor": "Families, holiday fans, visitors, early risers",
   "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "NYC Veterans Day Parade",
@@ -419,7 +508,10 @@
   "why": "Honor veterans with marching bands, service groups and classic Fifth Avenue views.",
   "goodFor": "Families, history lovers, visitors, community events",
   "url": "https://parade.uwvc.org/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Parade"
+  ]
  },
  {
   "title": "LuminoCity Holiday Lights Festival",
@@ -436,7 +528,11 @@
   "why": "Walk through an immersive landscape of illuminated sculptures and holiday scenes.",
   "goodFor": "Families, couples, kids, Long Island outings",
   "url": "https://www.luminocityfestival.com/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "NYBG Holiday Train Show",
@@ -453,7 +549,11 @@
   "why": "Model trains travel around nearly 200 miniature New York landmarks made from plants.",
   "goodFor": "Families, train fans, architecture lovers, visitors",
   "url": "https://www.nybg.org/event/holiday-train-show/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "Lightscape",
@@ -470,7 +570,11 @@
   "why": "Follow a glowing outdoor trail of tunnels, projections and large-scale light art.",
   "goodFor": "Families, couples, art lovers, holiday outings",
   "url": "https://www.bbg.org/lightscape",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Bronx Zoo Holiday Lights",
@@ -487,7 +591,11 @@
   "why": "See animal lantern trails, performers and a synchronized holiday-tree show.",
   "goodFor": "Families, kids, animal lovers, holiday outings",
   "url": "https://bronxzoo.com/holiday-lights",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Fifth Avenue Holiday Window Unveilings",
@@ -503,7 +611,11 @@
   "why": "See luxury flagships reveal their elaborate seasonal windows and decorations.",
   "goodFor": "Holiday fans, shoppers, families, visitors",
   "url": "https://fifthavenue.nyc/holiday/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Macy's Herald Square Holiday Windows",
@@ -521,7 +633,10 @@
   "why": "See the 2026 windows tell the story of the Blue Hippopotamus, a Macy's Thanksgiving Day Parade character from 1931, in animated holiday scenes outside the flagship.",
   "goodFor": "Families, shoppers, visitors, holiday fans",
   "url": "https://www.macys.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "Bryant Park Holiday Shops",
@@ -538,7 +653,11 @@
   "why": "Browse artisan shops and seasonal food around the Winter Village rink.",
   "goodFor": "Shoppers, families, food lovers, visitors",
   "url": "https://bryantpark.org/activities/holiday-shops",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Union Square Holiday Market",
@@ -555,7 +674,11 @@
   "why": "Shop local vendors and seasonal food at one of Manhattan's most atmospheric markets.",
   "goodFor": "Shoppers, food lovers, locals, visitors",
   "url": "https://urbanspacenyc.com/union-square-holiday-market/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Columbus Circle Holiday Market",
@@ -571,7 +694,11 @@
   "why": "Explore holiday stalls beside Central Park and the illuminated circle.",
   "goodFor": "Shoppers, families, visitors, Central Park walks",
   "url": "https://urbanspacenyc.com/columbus-circle-holiday-market/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Grand Central Holiday Fair",
@@ -588,7 +715,11 @@
   "why": "Shop an indoor holiday market inside one of New York's grandest landmarks.",
   "goodFor": "Shoppers, commuters, rainy days, visitors",
   "url": "https://www.grandcentralterminal.com/event/grand-central-holiday-fair/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Macy's Parade Balloon Inflation",
@@ -604,7 +735,11 @@
   "why": "See the parade's giant character balloons inflated at street level.",
   "goodFor": "Families, parade fans, visitors, Thanksgiving traditions",
   "url": "https://www.macys.com/s/parade/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Parade",
+   "Christmas"
+  ]
  },
  {
   "title": "100th Macy's Thanksgiving Day Parade",
@@ -620,7 +755,11 @@
   "why": "Celebrate the historic 100th parade with balloons, floats, bands and performers.",
   "goodFor": "Families, visitors, parade fans, Thanksgiving",
   "url": "https://www.macys.com/s/parade/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Parade",
+   "Christmas"
+  ]
  },
  {
   "title": "Central Park Fall Foliage",
@@ -637,7 +776,10 @@
   "why": "Catch some of Manhattan's richest late-season color along scenic walking routes.",
   "goodFor": "Walkers, families, couples, visitors",
   "url": "https://www.centralparknyc.org/articles/fall-foliage",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Holiday Under the Stars",
@@ -655,7 +797,11 @@
   "why": "300,000 twinkling lights and 44 illuminated stars fill the Shops, with Broadway Under the Stars performances, a personalization station and a festive scavenger hunt.",
   "goodFor": "Families, shoppers, rainy days, visitors",
   "url": "https://www.theshopsatcolumbuscircle.com/events/holiday-under-the-stars/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Brookfield Place Holiday Installation",
@@ -672,7 +818,11 @@
   "why": "See a glowing indoor holiday installation in the waterfront Winter Garden.",
   "goodFor": "Families, couples, rainy days, downtown visitors",
   "url": "https://bfplny.com/holiday/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Dyker Heights Christmas Lights",
@@ -689,7 +839,11 @@
   "why": "Walk past famously extravagant home displays with lights, figures and music.",
   "goodFor": "Families, groups, visitors, holiday-light fans",
   "url": "https://www.nyctourism.com",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Rockefeller Center Christmas Tree Lighting",
@@ -706,7 +860,11 @@
   "why": "The 76-foot Norway spruce from West Edmeston lights up on December 2 and stays on display through January 9, 2027.",
   "goodFor": "Holiday fans, visitors, couples, families",
   "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "NYC Off-Broadway Week",
@@ -722,7 +880,10 @@
   "why": "Discover inventive productions in intimate theaters with 2-for-1 tickets to 25 shows.",
   "goodFor": "Theater fans, couples, visitors, last-minute plans",
   "url": "https://www.nyctourism.com/offbroadwayweek",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Theater"
+  ]
  },
  {
   "title": "Italian Wine Week",
@@ -738,7 +899,11 @@
   "why": "Explore regional Italian wines through curated selections at neighborhood shops across the city.",
   "goodFor": "Wine lovers, foodies, shoppers, Italian culture fans",
   "url": "https://worldlifestyler.com/italian-trade-agency-launches-inaugural-italian-wine-week-retail-activation-across-new-york-city/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Food",
+   "Cultural"
+  ]
  },
  {
   "title": "The Rink at Rockefeller Center",
@@ -756,7 +921,11 @@
   "why": "Skate beneath the city skyline during the rink's special 90th anniversary season.",
   "goodFor": "Families, couples, visitors, classic NYC experiences",
   "url": "https://www.rockefellercenter.com/attractions/the-rink-at-rockefeller-center/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Ice skating",
+   "Christmas"
+  ]
  },
  {
   "title": "Times Square New Year's Eve",
@@ -772,7 +941,11 @@
   "why": "Watch the world-famous ball drop and ring in 2027 in the Crossroads of the World.",
   "goodFor": "Everyone, bucket-list visitors, night owls",
   "url": "https://www.timessquarenyc.org",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "New Year's Eve",
+   "Fireworks"
+  ]
  },
  {
   "title": "Grand Army Plaza Menorah Lighting",
@@ -788,7 +961,11 @@
   "why": "See the nightly lighting of one of the world's largest menorahs during Hanukkah.",
   "goodFor": "Families, visitors, holiday traditions",
   "url": "https://www.nyc.gov",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Lights",
+   "Cultural"
+  ]
  },
  {
   "title": "Kwanzaa",
@@ -804,7 +981,10 @@
   "why": "Celebrate African heritage and culture with a week of community events across the city.",
   "goodFor": "Families, culture seekers, locals",
   "url": "https://www.nyc.gov",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Saks Fifth Avenue Holiday Light Show",
@@ -822,7 +1002,11 @@
   "why": "Watch the iconic facade light show dance across the flagship store.",
   "goodFor": "Everyone, photographers, holiday magic",
   "url": "https://www.saksfifthavenue.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "New York City Ballet: The Nutcracker",
@@ -839,7 +1023,11 @@
   "why": "The beloved holiday ballet returns to Lincoln Center for its annual run.",
   "goodFor": "Families, ballet fans, holiday traditions",
   "url": "https://www.nycballet.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Washington Square Park Tree Lighting",
@@ -855,7 +1043,11 @@
   "why": "The 103rd annual Washington Square Park tree lighting under the Arch, one of the city's most beloved neighborhood ceremonies.",
   "goodFor": "Locals, families, romantics",
   "url": "https://www.nycgovparks.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Madison Square Park Tree Lighting",
@@ -871,7 +1063,11 @@
   "why": "Madison Square Park lights its 40-foot Norway spruce, the site of America's first public tree lighting in 1912, with a full afternoon holiday festival.",
   "goodFor": "Locals, families, evening strolls",
   "url": "https://madisonsquarepark.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Bryant Park Tree Lighting",
@@ -887,7 +1083,11 @@
   "why": "Bryant Park lights its 45-foot tree with 12,000 lights, the official start of the Winter Village holiday season.",
   "goodFor": "Everyone, skaters, holiday shoppers",
   "url": "https://bryantpark.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Fifth Avenue Snowflake Illumination",
@@ -904,7 +1104,11 @@
   "why": "Walk under the sparkling snowflakes that turn Fifth Avenue into a winter wonderland.",
   "goodFor": "Everyone, photographers, evening walks",
   "url": "https://www.fifthavenue.nyc",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Central Park New Year's Eve Fireworks",
@@ -920,7 +1124,11 @@
   "why": "Watch midnight fireworks over the park to welcome 2027.",
   "goodFor": "Night owls, romantics, locals",
   "url": "https://www.centralparknyc.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "New Year's Eve",
+   "Fireworks"
+  ]
  },
  {
   "title": "Snuggle x Peanuts immersive pop-up",
@@ -936,7 +1144,11 @@
   "why": "Peanuts-inspired nostalgic sets centered on Linus and the Snuggle Bear, with photo moments and giveaways.",
   "goodFor": "Pop-up",
   "url": "https://www.eventbrite.com/e/snuggle-x-peanuts-celebrate-comfort-nostalgia-with-a-free-nyc-pop-up-tickets-2003080750446",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Pop-up",
+   "Christmas"
+  ]
  },
  {
   "title": "Lanolips x Ulta Ceramide Café",
@@ -952,7 +1164,10 @@
   "why": "Milkshake-themed beauty café with samples, drinks, personalized keychains and pastel photo installations.",
   "goodFor": "Pop-up",
   "url": "https://www.eventbrite.com/e/welcome-to-the-lanolips-ceramide-cafe-tickets-2002965540851",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Pop-up"
+  ]
  },
  {
   "title": "Good American NYC brand experience",
@@ -968,7 +1183,10 @@
   "why": "Vintage American diner environment with Fall/Holiday fashion, NYC merchandise and special daily programming.",
   "goodFor": "Pop-up",
   "url": "https://www.goodamerican.com/pages/nyc-pop-up",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up"
+  ]
  },
  {
   "title": "Allure Best of Beauty LIVE",
@@ -984,7 +1202,11 @@
   "why": "Beauty activations, treatments, consultations, masterclasses, samples and an evening VIP gathering.",
   "goodFor": "Beauty event",
   "url": "https://events.allure.com/allure-best-of-beauty-live-2026",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Fashion"
+  ]
  },
  {
   "title": "EWG Verified pop-up",
@@ -1000,7 +1222,10 @@
   "why": "Beauty and personal-care sampling from EWG Verified brands with product activations.",
   "goodFor": "Beauty event",
   "url": "https://www.eventbrite.com/e/ewg-verified-pop-up-tickets-2001372222589",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up"
+  ]
  },
  {
   "title": "Times Square Durga Puja",
@@ -1016,7 +1241,10 @@
   "why": "Large Indian cultural celebration with religious displays, traditional clothing, music and performances.",
   "goodFor": "Cultural festival",
   "url": "https://www.eventbrite.com/e/3rd-global-times-square-durga-puja-2026-tickets-2002923233308",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Windup Watch Fair NYC",
@@ -1032,7 +1260,10 @@
   "why": "Large consumer watch fair with more than 160 brands, launches and installations.",
   "goodFor": "Fair",
   "url": "https://windupwatchfair.com/new-york-city",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Disability Pride NYC Parade and Block Party",
@@ -1048,7 +1279,11 @@
   "why": "Annual disability-pride march followed by a public block party and performances.",
   "goodFor": "Parade",
   "url": "https://www.nycdisabilityprideparade.org/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Parade",
+   "Cultural"
+  ]
  },
  {
   "title": "Carl Schurz Park Halloween Howl",
@@ -1064,7 +1299,10 @@
   "why": "Neighborhood Halloween celebration and dog-costume gathering.",
   "goodFor": "Halloween",
   "url": "https://www.carlschurzparknyc.org/events",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Halloween"
+  ]
  },
  {
   "title": "Better Homes & Gardens Red Plaid Café",
@@ -1080,7 +1318,11 @@
   "why": "Autumn café with crafts, seasonal drinks, baked goods, bouquet bar and photo booth.",
   "goodFor": "Pop-up",
   "url": "https://bhgredplaidcafe.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Pop-up",
+   "Food"
+  ]
  },
  {
   "title": "Diwali at Times Square",
@@ -1096,7 +1338,11 @@
   "why": "Festival of Lights celebration with music, dance, art, food and cultural performances.",
   "goodFor": "Cultural festival",
   "url": "https://diwalitimessquare.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Cultural",
+   "Lights"
+  ]
  },
  {
   "title": "Pumpkin Point",
@@ -1112,7 +1358,11 @@
   "why": "Large pumpkin patch with arts, crafts, trick-or-treating, performances and seasonal food.",
   "goodFor": "Fall festival",
   "url": "https://www.govisland.com/things-to-do/events/pumpkin-point-2026",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Fall",
+   "Halloween"
+  ]
  },
  {
   "title": "Brooklyn Botanic Garden Fall Harvest Festival",
@@ -1128,7 +1378,11 @@
   "why": "Seasonal garden festival with fall activities and a costume-friendly atmosphere.",
   "goodFor": "Fall festival",
   "url": "https://www.bbg.org/visit/event/fall_harvest_festival",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall",
+   "Food"
+  ]
  },
  {
   "title": "Upper Broadway Harvest Fair",
@@ -1144,7 +1398,10 @@
   "why": "Neighborhood street fair with food, merchandise and fall-season activity.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Court Street Spectacular",
@@ -1160,7 +1417,10 @@
   "why": "Large neighborhood fair with merchants, food vendors and family attractions.",
   "goodFor": "Street fair",
   "url": "https://brooklynstreetfair.com/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Bank of America Winter Village at Bryant Park",
@@ -1178,7 +1438,12 @@
   "why": "Holiday shops, free-admission ice rink and rinkside food hall. The full season continues to February 28, 2027.",
   "goodFor": "Holiday market",
   "url": "https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Holiday market",
+   "Ice skating"
+  ]
  },
  {
   "title": "Mercer Labs Masquerade",
@@ -1194,7 +1459,10 @@
   "why": "Twelve zodiac-inspired rooms with projections, LEDs, performers, 4D sound and a ballroom dance party.",
   "goodFor": "Nightlife / immersive",
   "url": "https://secret.hello.cx/series/weekend/one",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Halloween"
+  ]
  },
  {
   "title": "SKULLPANDA OFF MODE",
@@ -1210,7 +1478,10 @@
   "why": "Three immersive rooms based on emotional states, followed by a retail space.",
   "goodFor": "Immersive pop-up",
   "url": "https://www.eventbrite.com/e/pop-marts-skullpanda-off-mode-pop-up-experience-tickets-2003145314559",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Pop-up"
+  ]
  },
  {
   "title": "Clouds by Olaf Breuning",
@@ -1226,7 +1497,10 @@
   "why": "Six monumental cloud sculptures rising up to 33 feet above Midtown. Installation continues to March 2027.",
   "goodFor": "Public art",
   "url": "https://garmentdistrict.nyc/clouds",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Día de los Muertos at NYBG",
@@ -1242,7 +1516,11 @@
   "why": "Marigolds, ofrendas, calaveras and live weekend programming celebrating Día de los Muertos.",
   "goodFor": "Exhibition",
   "url": "https://www.nybg.org/event/dia-de-los-muertos/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition",
+   "Cultural"
+  ]
  },
  {
   "title": "Christmas Spectacular Starring the Radio City Rockettes",
@@ -1260,7 +1538,11 @@
   "why": "See the Rockettes, the Parade of the Wooden Soldiers and classic holiday scenes. The 2026 production includes 230 performances and a new Rockettes number.",
   "goodFor": "Families, theater fans, visitors, holiday traditions",
   "url": "https://www.rockettes.com/christmas/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Fulton Mall / MetroTech Series Fair",
@@ -1276,7 +1558,10 @@
   "why": "Downtown Brooklyn market with vendors, handmade goods, food and live music.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Rockefeller Center Holiday Chalets",
@@ -1292,7 +1577,10 @@
   "why": "Private heated chalets overlooking The Rink and, after December 2, the Christmas Tree. Run continues to January 2, 2027.",
   "goodFor": "Holiday experience",
   "url": "https://www.rockefellercenter.com/holidays/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "Gingerbread NYC: The Great Borough Bake-Off",
@@ -1308,7 +1596,11 @@
   "why": "Edible recreations of iconic New York buildings and places. Exhibition continues to January 18, 2027.",
   "goodFor": "Exhibition",
   "url": "https://www.mcny.org/exhibition/gingerbread-nyc-2026",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "Midtown West Fair",
@@ -1324,7 +1616,10 @@
   "why": "Eight-block food and merchandise street fair in Midtown West.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Union Square Autumn Fair",
@@ -1340,7 +1635,10 @@
   "why": "Fall market with produce, food, clothing and local vendors.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Veterans Day Festival",
@@ -1356,7 +1654,10 @@
   "why": "Lower Manhattan street festival scheduled alongside Veterans Day activities.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Financial Community Fall Fair",
@@ -1372,7 +1673,10 @@
   "why": "Financial District fall fair with food and merchandise vendors.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Thanksgiving Celebration on Sixth Avenue",
@@ -1388,7 +1692,10 @@
   "why": "Late-season street fair with food and merchandise vendors through Chelsea, Flatiron and NoMad.",
   "goodFor": "Street fair",
   "url": "https://www.nyc.gov/site/cecm/permitting/street-events.page",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fall"
+  ]
  },
  {
   "title": "Shine Bright at Hudson Yards",
@@ -1404,7 +1711,11 @@
   "why": "More than two million lights, illuminated evergreens, toy soldiers and a giant indoor hot-air balloon. Continues to January 7, 2027.",
   "goodFor": "Holiday lights",
   "url": "https://www.hudsonyardsnewyork.com/shine-bright-hudson-yards",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Vessel Lighting Ceremony",
@@ -1420,7 +1731,11 @@
   "why": "Hudson Yards kicks off the holiday season with a lighting ceremony at Vessel, featuring live performances from well-known artists, hosted by Helen Little of 106.7 LiteFM. Stay to the end and see Vessel illuminate with a new light show and Mistletoe photo experience.",
   "goodFor": "Holiday fans, photographers, videographers, families",
   "url": "https://www.hudsonyardsnewyork.com/shine-bright-hudson-yards",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Harlem Holiday Lights",
@@ -1436,7 +1751,12 @@
   "why": "Illuminated floats, live music and performances celebrating Harlem and the holiday season.",
   "goodFor": "Holiday parade",
   "url": "https://harlemlightitup.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Lights",
+   "Parade"
+  ]
  },
  {
   "title": "A Christmas Carol at PAC NYC",
@@ -1452,7 +1772,11 @@
   "why": "A holiday-stage adaptation of Dickens’ classic. Run continues to January 3, 2027.",
   "goodFor": "Theater",
   "url": "https://pacnyc.org/whats-on/a-christmas-carol/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Fifth Avenue holiday season",
@@ -1468,7 +1792,10 @@
   "why": "Seasonal décor, photo moments, the Fifth Avenue snowflake, major windows and the expected Saks light show.",
   "goodFor": "Holiday sights",
   "url": "https://fifthavenue.nyc/holiday",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "The Photography Triennial: After Dark",
@@ -1484,7 +1811,10 @@
   "why": "Contemporary photography exploring New York City after sunset.",
   "goodFor": "Exhibition",
   "url": "https://www.mcny.org/exhibition/photography-triennial-after-dark",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "AMNH Origami Holiday Tree",
@@ -1500,7 +1830,11 @@
   "why": "Thirteen-foot tree decorated with more than 1,000 handmade origami models, themed around sports for 2026.",
   "goodFor": "Holiday exhibition",
   "url": "https://www.amnh.org/exhibitions/origami-holiday-tree",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "Macy’s Santaland NYC",
@@ -1516,7 +1850,10 @@
   "why": "Completely reimagined immersive journey to meet Santa at Herald Square.",
   "goodFor": "Holiday attraction",
   "url": "https://www.macys.com/s/holiday-celebrations/nyc-santaland/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "Illuminate the Farm",
@@ -1532,7 +1869,11 @@
   "why": "Historic farm grounds transform into an illuminated winter display. Continues to January 7, 2027.",
   "goodFor": "Holiday lights",
   "url": "https://www.queensfarm.org/event/holiday-trees-wreaths/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "George Balanchine’s The Nutcracker",
@@ -1548,7 +1889,11 @@
   "why": "New York City Ballet’s classic holiday production. Run continues to January 3, 2027.",
   "goodFor": "Ballet",
   "url": "https://www.nycballet.com/discover/ballet-repertory/george-balanchines-the-nutcracker/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Holiday Trees & Wreaths at Queens Farm",
@@ -1564,7 +1909,11 @@
   "why": "Seasonal tree and wreath market on the historic farm grounds.",
   "goodFor": "Holiday market",
   "url": "https://www.queensfarm.org/events-calendar/month/2026-12/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "103rd NYSE Annual Tree Lighting",
@@ -1580,7 +1929,11 @@
   "why": "Public Wall Street celebration with the iconic NYSE tree, live performances, activations and refreshments.",
   "goodFor": "Tree lighting",
   "url": "https://www.nyse.com/event/annual-tree-lighting",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Seaport Christmas Tree Lighting",
@@ -1596,7 +1949,11 @@
   "why": "The Seaport lights its tree on Fulton Street with live performances, plus the Jack Daniel's Barrel Tree on Pier 17.",
   "goodFor": "Tree lighting",
   "url": "https://theseaport.nyc/events/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Queens County Farm Tree Lighting Ceremony",
@@ -1612,7 +1969,11 @@
   "why": "Annual tree lighting at the historic farm during its illuminated holiday season.",
   "goodFor": "Tree lighting",
   "url": "https://www.queensfarm.org/event/tree-lighting-ceremony/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Nutcracker! Magical Christmas Ballet",
@@ -1628,7 +1989,11 @@
   "why": "Touring family production with an international cast, elaborate costumes and holiday staging.",
   "goodFor": "Ballet",
   "url": "https://www.unitedpalace.org/upcoming-events/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "CMOM Winter Village Metropolis",
@@ -1644,7 +2009,11 @@
   "why": "Collaborative hand-built winter city that grows as children add glowing decorations and miniature structures.",
   "goodFor": "Family installation",
   "url": "https://cmom.org/cmom-programs/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "New York Philharmonic holiday programs",
@@ -1660,7 +2029,11 @@
   "why": "Seasonal lineup including Handel’s Messiah, film-with-orchestra programming and family matinees.",
   "goodFor": "Concert series",
   "url": "https://www.nyphil.org/concerts-tickets/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Concert"
+  ]
  },
  {
   "title": "Princess Lockerooo’s The NutWAACKer",
@@ -1676,7 +2049,11 @@
   "why": "Contemporary holiday dance concert pairing Tchaikovsky with waacking, vogue, hip-hop and house.",
   "goodFor": "Dance",
   "url": "https://www.guggenheim.org/calendar",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Omnium Circus: I’mPossible Holiday Wonders",
@@ -1692,7 +2069,11 @@
   "why": "Accessible holiday circus with live music, storytelling, captions, ASL and audio description.",
   "goodFor": "Circus",
   "url": "https://www.bam.org/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
  },
  {
   "title": "Fifth Avenue Holiday Open Streets",
@@ -1708,7 +2089,10 @@
   "why": "Pedestrian-only holiday promenade with live entertainment, food, shopping and brand activations.",
   "goodFor": "Open streets",
   "url": "https://fifthavenue.nyc/holiday",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "NYRR Midnight Run",
@@ -1724,7 +2108,10 @@
   "why": "Four-mile New Year’s race beginning with midnight fireworks.",
   "goodFor": "New Year’s Eve",
   "url": "https://www.nyrr.org/races/nyrrmidnightrun",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "New Year's Eve"
+  ]
  },
  {
   "title": "New Year’s Eve Concert for Peace",
@@ -1740,7 +2127,11 @@
   "why": "Long-running New Year’s Eve concert followed by the cathedral’s Watchnight observance.",
   "goodFor": "Concert",
   "url": "https://www.stjohndivine.org/calendar/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "New Year's Eve",
+   "Concert"
+  ]
  },
  {
   "title": "WOODS by Jordyn Pop-Up",
@@ -1757,7 +2148,10 @@
   "why": "Jordyn Woods brings her fashion label to NYC for its first-ever retail experience: a two-day Halloween weekend pop-up with fashion, handbags and footwear.",
   "goodFor": "Pop-up",
   "url": "https://events.shopifyny.com/jordynwoodspopup",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Pop-up"
+  ]
  },
  {
   "title": "Neue Galerie 25th Anniversary Exhibition: Masterworks from the Neue Galerie",
@@ -1775,7 +2169,10 @@
   "why": "The museum reopens after its summer restoration with a 25th anniversary show filling the entire building, including Klimt's Portrait of Adele Bloch-Bauer I and the Viennese Cafe Sabarsky.",
   "goodFor": "Art lovers, museum visits, date nights",
   "url": "https://www.neuegalerie.org/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "NY Transit Museum Holiday Train Show",
@@ -1794,7 +2191,11 @@
   "why": "Model trains wind through a miniature NYC with Polar Express and North Pole scenes, free inside Grand Central. New for 2026: miniature NYC landmarks by artist Danny Cortes.",
   "goodFor": "Families, train fans, free outings, holiday",
   "url": "https://secretnyc.co/new-york-transit-museum-holiday-train-show-2026/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "Na Mira: NO SMOKING at MoMA",
@@ -1813,7 +2214,10 @@
   "why": "Na Mira's first solo museum show in NYC: a newly commissioned media installation using radio frequencies, infrared heat and holography, drawing on Korean shamanism.",
   "goodFor": "Art lovers, immersive installations",
   "url": "https://www.moma.org/calendar/exhibitions/5869",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Kenny Scharf: Scary and the Dancers!",
@@ -1830,7 +2234,11 @@
   "why": "A 34-foot hot-orange inflatable creature and six dancing air-dancer sculptures take over Rockefeller Center for Halloween, with murals and 100 artist-designed flags across the campus.",
   "goodFor": "Art lovers, photographers, families, Halloween fans",
   "url": "https://www.artproductionfund.org/projects/kennyscharf",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Exhibition",
+   "Halloween"
+  ]
  },
  {
   "title": "Canstruction at Brookfield Place",
@@ -1847,7 +2255,11 @@
   "why": "Architects and engineers build giant sculptures entirely from canned food, on display in the Winter Garden before the cans are donated to City Harvest.",
   "goodFor": "Families, design lovers, photographers, downtown visitors",
   "url": "https://www.bfplny.com/events/canstruction/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
  },
  {
   "title": "Macy's Holiday Square",
@@ -1865,7 +2277,11 @@
   "why": "A 50,000-square-foot holiday market inside the flagship with 35+ local vendors including Eataly, Levain and Pearl River Mart, plus workshops and a Museum of Ice Cream Sprinkle Pool.",
   "goodFor": "Shoppers, food lovers, families, holiday fans",
   "url": "https://www.retaildive.com/news/macys-holiday-revamped-santaland/833826/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Santa's Winter Wonderland at Watermark",
@@ -1882,7 +2298,10 @@
   "why": "Heated glass igloos, a mini carousel, Santa meet and greets and s'mores by the fire on a pier over the East River, with skyline views.",
   "goodFor": "Families, couples, photographers, holiday outings",
   "url": "https://watermarkny.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "The Elf Experience",
@@ -1900,7 +2319,11 @@
   "why": "Step inside the film Elf at Rockefeller Center: the Candy Cane Forest, the Sea of Swirly Twirly Gumdrops, Santa's Workshop and Gimbels, with original props and artwork from the film.",
   "goodFor": "Families, film fans, holiday outings, immersive experiences",
   "url": "https://www.elftheexperience.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Pop-up"
+  ]
  },
  {
   "title": "The Plaza Hotel Tree Lighting",
@@ -1916,7 +2339,11 @@
   "why": "The Plaza lights its Christmas tree first among the city's grand hotels, with a small celebration outside its Fifth Avenue entrance.",
   "goodFor": "Photographers, holiday fans, Midtown visitors",
   "url": "http://mychristmasinnewyork.com/when-do-christmas-trees-go-up-in-new-york/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Santacon 2026",
@@ -1932,7 +2359,10 @@
   "why": "Thousands of Santas take over Manhattan bars for the city's biggest holiday pub crawl, a wild and wildly photogenic December tradition.",
   "goodFor": "Photographers, holiday fans, nightlife",
   "url": "https://www.averagesocialite.com/average-socialite/2025/8/1/holidays2026",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "Brancusi at MoMA",
@@ -1952,7 +2382,10 @@
   "why": "A major exhibition of Constantin Brancusi with rarely loaned works from his Paris studio, plus handmade furniture, photographs and personal objects.",
   "goodFor": "Art lovers, museum visitors, sculpture fans",
   "url": "https://celinaprentiss.substack.com/p/20-exhibitions-to-see-in-nyc-this",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "Candy Land NYC",
@@ -1969,7 +2402,11 @@
   "why": "The first immersive Candy Land retail experience in the US: walk the life-size board through the Candied Apple Orchard, Gummy Mountains and Lollipop Forest, ending at a graham-cracker Candy Castle.",
   "goodFor": "Families, pop culture fans, holiday shoppers",
   "url": "https://visitcandylandstores.com/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Pop-up"
+  ]
  },
  {
   "title": "Herald Holiday Fair",
@@ -1987,7 +2424,11 @@
   "why": "Midtown's holiday fair returns with a double-decker Christmas carousel, a snow slide and a VR sleigh ride in Greeley Square, plus an Urbanspace holiday market in Herald Square from Dec 2.",
   "goodFor": "Families, couples, holiday outings, photographers",
   "url": "https://secretnyc.co/herald-holiday-fair-nyc-2026/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Mariah Carey Holiday Bar",
@@ -2004,7 +2445,11 @@
   "why": "Mariah Carey's holiday pop-up bar returns to NYC: festive cocktails with her Black Irish cream liqueur, interactive experiences and full holiday decor for the 'All I Want for Christmas' season.",
   "goodFor": "Holiday fans, nightlife, festive photos",
   "url": "https://www.travelpulse.com/news/entertainment/mariah-carey-pop-up-holiday-themed-bars-expand-to-8-cities-for-2026",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Food"
+  ]
  },
  {
   "title": "Roebling Rink at Brooklyn Bridge Park",
@@ -2022,7 +2467,11 @@
   "why": "NYC's most scenic rink returns for its third season: skate under the Brooklyn Bridge with panoramic Manhattan skyline views, plus free opening-day sessions Nov 14.",
   "goodFor": "Skaters, photographers, skyline views, winter outings",
   "url": "https://secretnyc.co/roebling-rink-ice-skating-brooklyn-bridge-park-2026/",
-  "picks": true
+  "picks": true,
+  "tags": [
+   "Ice skating",
+   "Christmas"
+  ]
  },
  {
   "title": "DUMBO Holiday Tree Lighting",
@@ -2038,7 +2487,11 @@
   "why": "Brooklyn's neighborhood tree lighting under the Manhattan Bridge archway, free and family-friendly, a great outer-borough alternative to the Midtown crowds.",
   "goodFor": "Tree lighting",
   "url": "https://dumbo.nyc",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Park Avenue Tree Lighting",
@@ -2054,7 +2507,11 @@
   "why": "The Upper East Side's elegant Park Avenue tree lighting, a 70-year tradition honoring WWII fallen, quieter and more local than the big Midtown lightings.",
   "goodFor": "Tree lighting",
   "url": "https://fundforparkavenue.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Carl Schurz Park Holiday Tree Lighting",
@@ -2070,7 +2527,11 @@
   "why": "A beloved Upper East Side community lighting with carols by the Cantori New York choir and the New York Brass Quintet, plus free hot chocolate, cookies and candy canes, rain, snow or shine.",
   "goodFor": "Tree lighting",
   "url": "https://www.carlschurzparknyc.org/events",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Tree Lighting at Historic Richmond Town",
@@ -2086,7 +2547,11 @@
   "why": "Staten Island's free annual tree lighting in a living-history village, with local musical groups and a visit from Santa before the tree lights up.",
   "goodFor": "Tree lighting",
   "url": "https://www.historicrichmondtown.org/events/tree-lighting-at-historic-richmond-town",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Bronx Little Italy Christmas Tree Lighting Ceremony",
@@ -2102,7 +2567,11 @@
   "why": "The Bronx's Little Italy lights its neighborhood tree with Santa, carols, Italian cookies and hot chocolate from local bakeries, plus a toy giveaway, an easy pair with dinner on Arthur Avenue.",
   "goodFor": "Tree lighting",
   "url": "https://bronxlittleitaly.com/events/page/7/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
  },
  {
   "title": "Washington Square Christmas Eve Caroling",
@@ -2118,7 +2587,11 @@
   "why": "The Washington Square Association's Christmas Eve sing-along under the Arch with the Rob Susman Brass Quartet, a quiet, local alternative to the big Christmas Eve crowds.",
   "goodFor": "Holiday event",
   "url": "http://www.washingtonsquarenyc.org/the-annual-holiday-tree-lighting",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Concert"
+  ]
  },
  {
   "title": "Wollman Rink, Central Park",
@@ -2138,7 +2611,11 @@
   "why": "Central Park's largest rink, open late October through mid-March, with skyline views and a much calmer scene than Rockefeller Center.",
   "goodFor": "Skaters, photographers, skyline views, winter outings",
   "url": "https://www.wollmanrinknyc.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Ice skating",
+   "Christmas"
+  ]
  },
  {
   "title": "Winter Lantern Festival at Snug Harbor",
@@ -2156,7 +2633,11 @@
   "why": "Hundreds of glowing handcrafted lanterns fill Snug Harbor's historic grounds for its 50th anniversary season, one of the city's most photogenic after-dark holiday walks, a free Staten Island Ferry ride away.",
   "goodFor": "Holiday lights",
   "url": "https://snug-harbor.org/event/winter-lantern-festival/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Winter Lantern Festival at Queens County Farm",
@@ -2174,7 +2655,11 @@
   "why": "The lantern festival's Queens edition lights up the historic farm grounds. Separate from the Queens County Farm Tree Lighting Ceremony on Dec 5, already on the site.",
   "goodFor": "Holiday lights",
   "url": "https://www.queensfarm.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
  },
  {
   "title": "Holiday Nostalgia Rides",
@@ -2190,7 +2675,10 @@
   "why": "Ride the Transit Museum's restored 1930s subway cars, decked with wreaths and bows, for the price of a regular swipe, one of the city's most beloved and most filmable holiday traditions.",
   "goodFor": "Families, train fans, free outings, holiday",
   "url": "https://www.nytransitmuseum.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "New Year's Eve Fireworks in Prospect Park",
@@ -2206,7 +2694,11 @@
   "why": "Brooklyn's free 46-year New Year's Eve tradition: live entertainment from 10 PM and fireworks over Prospect Park at midnight, the family-friendly alternative to Times Square.",
   "goodFor": "New Year's Eve",
   "url": "https://www.prospectpark.org/event/new-years-eve-fireworks-in-prospect-park-3/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "New Year's Eve",
+   "Fireworks"
+  ]
  },
  {
   "title": "Christmas in Historic Richmond Town",
@@ -2222,7 +2714,10 @@
   "why": "A one-weekend-only Christmas celebration in a living-history village: Santa arrives at noon aboard antique fire Engine No. 1, with Victorian carolers, a holiday market, ornament making and seasonal food.",
   "goodFor": "Families, history lovers, visitors, community events",
   "url": "https://www.nyctourism.com/events/christmas-in-historic-richmond-town/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Christmas"
+  ]
  },
  {
   "title": "MINISO x Rilakkuma Pop-Up",
@@ -2239,7 +2734,11 @@
   "why": "MINISO's Rilakkuma pop-up brings the beloved San-X bear characters to Flushing for the holidays, with free photo ops and exclusive plushies and collectibles.",
   "goodFor": "Pop-up",
   "url": "https://www.miniso-us.com/events",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas"
+  ]
  },
  {
   "title": "Walmart Holiday Wonderland",
@@ -2255,7 +2754,11 @@
   "why": "A free two-day Walmart holiday experience in the West Village with festive photo ops and seasonal fun, no RSVP needed.",
   "goodFor": "Pop-up",
   "url": "https://www.walmart.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas"
+  ]
  },
  {
   "title": "L'Occitane Maison Holiday House",
@@ -2271,7 +2774,11 @@
   "why": "L'Occitane's free holiday house in the West Village, a Provencal-themed seasonal pop-up with gifts and samples.",
   "goodFor": "Pop-up",
   "url": "https://www.instagram.com/reel/DfVqjN9vAjK/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas"
+  ]
  },
  {
   "title": "Times Square 42 Holiday Pop-Up",
@@ -2288,7 +2795,12 @@
   "why": "A free open-air holiday market in the heart of Times Square, running daily into mid-December, easy to film between other Midtown stops.",
   "goodFor": "Pop-up",
   "url": "https://www.timessquarenyc.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Times Square Holiday Pop-Up",
@@ -2305,7 +2817,12 @@
   "why": "A second free Times Square holiday market a few blocks up Broadway, with vendors and festive stalls under the billboards.",
   "goodFor": "Pop-up",
   "url": "https://www.timessquarenyc.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas",
+   "Holiday market"
+  ]
  },
  {
   "title": "Holidays at the Park",
@@ -2322,7 +2839,11 @@
   "why": "Free weekend holiday programming in Hudson Yards' Bella Abzug Park, a neighborhood-scale festive stop next to the Shine Bright lights.",
   "goodFor": "Pop-up",
   "url": "https://www.hudsonyardsnewyork.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Pop-up",
+   "Christmas"
+  ]
  },
  {
   "title": "Coney Island Polar Bear Plunge",
@@ -2338,7 +2859,10 @@
   "why": "New York's most iconic New Year's Day tradition since 1903: thousands of swimmers charge into the Atlantic at Coney Island, free to watch and wildly photogenic.",
   "goodFor": "Families, sports fans, visitors, community spirit",
   "url": "https://runsignup.com/Race/NY/Brooklyn/ConeyIslandPolarBearPlunge",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Three Kings Day Parade",
@@ -2354,7 +2878,11 @@
   "why": "El Museo del Barrio's beloved Three Kings Day Parade winds through East Harlem celebrating Dia de los Reyes, one of the city's most colorful winter cultural traditions, free and family-friendly.",
   "goodFor": "Parade",
   "url": "https://www.elmuseo.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Parade",
+   "Cultural"
+  ]
  },
  {
   "title": "NYC Winter Jazzfest",
@@ -2370,7 +2898,10 @@
   "why": "The 23rd Winter Jazzfest, themed Collective Radiance, with a Coltrane 100 celebration and marathon nights filling a dozen clubs on one pass, the city's biggest January music week.",
   "goodFor": "Concert",
   "url": "https://www.winterjazzfest.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Concert"
+  ]
  },
  {
   "title": "Jazz Congress",
@@ -2386,7 +2917,10 @@
   "why": "Two days of panels, workshops and concerts bringing the global jazz community to Columbus Circle, running alongside Winter Jazzfest.",
   "goodFor": "Concert",
   "url": "https://www.jazz.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Concert"
+  ]
  },
  {
   "title": "Unity Jazz Festival",
@@ -2402,7 +2936,10 @@
   "why": "20+ acts across five stages in the House of Swing, an intergenerational, global lineup that pairs with the Winter Jazzfest marathon nights.",
   "goodFor": "Concert",
   "url": "https://www.jazz.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Concert"
+  ]
  },
  {
   "title": "New York Boat Show",
@@ -2418,7 +2955,10 @@
   "why": "The annual boat show has opened New York's boating season since 1905, with hundreds of boats on display plus hands-on activities, an affordable indoor winter outing.",
   "goodFor": "Exhibition",
   "url": "https://www.nyboatshow.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "BroadwayCon",
@@ -2434,7 +2974,11 @@
   "why": "The fan convention devoted to Broadway and musical theater, held each winter in the heart of the Theater District.",
   "goodFor": "Exhibition",
   "url": "https://www.broadwaycon.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Theater",
+   "Cultural"
+  ]
  },
  {
   "title": "Westminster Kennel Club Dog Show",
@@ -2451,7 +2995,10 @@
   "why": "The 151st Westminster Kennel Club Dog Show returns to New York, with 2,500+ champion dogs, daytime breed judging at Javits and the Best in Show finale at Madison Square Garden on Tuesday night.",
   "goodFor": "Families, dog lovers, visitors",
   "url": "https://www.westminsterkennelclub.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural"
+  ]
  },
  {
   "title": "Lunar New Year Firecracker Ceremony & Cultural Festival",
@@ -2467,7 +3014,11 @@
   "why": "The Better Chinatown Society's 29th Firecracker Ceremony kicks off the Year of the Fire Goat on Lunar New Year's Day itself, with 600,000 firecrackers, lion dances, music and food vendors, free.",
   "goodFor": "Cultural festival",
   "url": "https://betterchinatown.com/category/events/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Cultural",
+   "Parade"
+  ]
  },
  {
   "title": "NYBG Orchid Show",
@@ -2483,7 +3034,10 @@
   "why": "The Garden's beloved orchid exhibition fills the conservatory with hundreds of orchids, the classic late-winter color break and one of the Bronx's biggest draws.",
   "goodFor": "Exhibition",
   "url": "https://www.nybg.org",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Exhibition"
+  ]
  },
  {
   "title": "New York Fashion Week",
@@ -2499,7 +3053,10 @@
   "why": "Fashion week takes over the city for the Fall/Winter 2027 collections, with street style outside the shows and public ticketed runway shows at Gotham Hall and Sony Hall for anyone who wants a front-row seat.",
   "goodFor": "Fashion, photographers, visitors",
   "url": "https://cfda.com",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Fashion"
+  ]
  },
  {
   "title": "Chinatown Lunar New Year Parade & Festival",
@@ -2515,6 +3072,10 @@
   "why": "The 29th annual Chinatown Lunar New Year Parade, the Year of the Fire Goat, with dragon and lion dancers, floats, marching bands and a confetti finale, one of the city's biggest free winter street celebrations.",
   "goodFor": "Parade",
   "url": "https://betterchinatown.com/category/events/",
-  "picks": false
+  "picks": false,
+  "tags": [
+   "Parade",
+   "Cultural"
+  ]
  }
 ]

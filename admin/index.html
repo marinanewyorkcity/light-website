@@ -115,6 +115,7 @@
           <label>Link URL</label><input type="url" id="ev-url">
           <label>Why go (1-2 sentences)</label><textarea id="ev-why"></textarea>
           <label>Good for (tags, comma separated)</label><input type="text" id="ev-goodfor">
+          <label>Tags (comma separated, e.g. Christmas, Pop-up, Tree lighting)</label><input type="text" id="ev-tags" placeholder="Christmas, Tree lighting">
           <label>Months (comma separated, YYYY-MM)</label><input type="text" id="ev-months" placeholder="2026-12, 2027-01">
           <label><input type="checkbox" id="ev-picks"> Mark as pick-worthy</label>
           <div class="row" style="margin-top:.8rem">
@@ -259,7 +260,8 @@
     return '<details class="event-card"><summary><div class="event-card-main">' +
       '<span class="' + dateCls + '">' + esc(ev.dateText || '') + '</span>' +
       '<h3 class="event-title">' + esc(ev.title || '') + '</h3>' +
-      '<p class="event-location">' + esc(ev.location || '') + '</p></div>' +
+      '<p class="event-location">' + esc(ev.location || '') + '</p>' +
+      ((ev.tags || []).length ? '<div class="event-tags">' + ev.tags.map(function (t) { return '<span class="event-tag">' + esc(t) + '</span>'; }).join('') + '</div>' : '') + '</div>' +
       '<div class="event-meta-side"><span class="price-pill">' + esc(ev.price || '') + '</span>' +
       '<span class="expand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span>' +
       '</div></summary><div class="event-details">' +
@@ -405,6 +407,7 @@
     $('ev-url').value = ev.url || '';
     $('ev-why').value = ev.why || '';
     $('ev-goodfor').value = ev.goodFor || '';
+    $('ev-tags').value = (ev.tags || []).join(', ');
     $('ev-months').value = (ev.months || []).join(', ');
     $('ev-picks').checked = !!ev.picks;
     $('ev-delete').style.display = i >= 0 ? '' : 'none';
@@ -425,6 +428,7 @@
       url: $('ev-url').value.trim(),
       why: $('ev-why').value.trim(),
       goodFor: $('ev-goodfor').value.trim(),
+      tags: $('ev-tags').value.split(',').map(function (s) { return s.trim(); }).filter(Boolean),
       months: $('ev-months').value.split(',').map(function (s) { return s.trim(); }).filter(Boolean),
       picks: $('ev-picks').checked
     };
