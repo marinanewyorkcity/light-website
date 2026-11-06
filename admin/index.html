@@ -216,6 +216,94 @@
     return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
+
+  function fmtDateLong(iso) {
+    var d = new Date(iso + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+  function newsBlockHtml(b) {
+    if (b.kind === 'text') return '<p>' + b.html + '</p>';
+    if (b.kind === 'instagram') {
+      var url = esc(b.url), label = esc(b.label || 'Watch on Instagram');
+      return '<div class="instagram-embed-wrap">' +
+        '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="' + url + '" data-instgrm-version="14">' +
+        '<a href="' + url + '">' + label + '</a></blockquote>' +
+        '<p class="instagram-embed-fallback"><a href="' + url + '" target="_blank" rel="noopener noreferrer">Watch on Instagram</a></p></div>';
+    }
+    if (b.kind === 'youtube') {
+      var id = esc(b.id), title = esc(b.title || 'YouTube video'), watch = esc(b.watch || ('https://youtu.be/' + b.id));
+      return '<div class="social-embed-card youtube-frame"><iframe src="https://www.youtube.com/embed/' + id + '" title="' + title + '" ' +
+        'sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" ' +
+        'referrerpolicy="strict-origin-when-cross-origin" loading="lazy" ' +
+        'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>' +
+        '<a class="social-source-link" href="' + watch + '" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>';
+    }
+    return '';
+  }
+  function renderNewsStatic(list) {
+    var sorted = list.slice().sort(function (a, b) { return b.date < a.date ? -1 : 1; });
+    var out = ['<!-- NEWS-STATIC-START -->'];
+    sorted.forEach(function (a) {
+      var cls = 'article-entry' + (a.featured ? ' featured-story' : '');
+      var body = (a.blocks || []).map(newsBlockHtml).join('');
+      out.push('<article class="' + cls + '" id="' + esc(a.id) + '">' +
+        '<div class="article-meta"><time datetime="' + esc(a.date) + '">' + esc(fmtDateLong(a.date)) + '</time><span>' + esc(a.type) + '</span></div>' +
+        '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p>' +
+        '<details><summary>read more</summary><div class="article-body">' + body + '</div></details></article>');
+    });
+    out.push('<!-- NEWS-STATIC-END -->');
+    return out.join('\n');
+  }
+  function eventCardStatic(ev) {
+    var dateCls = /^Official date/i.test(ev.dateText || '') ? 'event-date event-date--estimate' : 'event-date';
+    return '<details class="event-card"><summary><div class="event-card-main">' +
+      '<span class="' + dateCls + '">' + esc(ev.dateText || '') + '</span>' +
+      '<h3 class="event-title">' + esc(ev.title || '') + '</h3>' +
+      '<p class="event-location">' + esc(ev.location || '') + '</p></div>' +
+      '<div class="event-meta-side"><span class="price-pill">' + esc(ev.price || '') + '</span>' +
+      '<span class="expand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span>' +
+      '</div></summary><div class="event-details">' +
+      '<div><span class="detail-label">time</span><p class="detail-value">' + esc(ev.time || '') + '</p></div>' +
+      '<div><span class="detail-label">price</span><p class="detail-value">' + esc(ev.price || '') + '</p></div>' +
+      '<div><span class="detail-label">why visit</span><p class="detail-value">' + esc(ev.why || '') + '</p></div>' +
+      '<div><span class="detail-label">good for</span><p class="detail-value">' + esc(ev.goodFor || '') + '</p></div>' +
+      '<div><a class="official-link" href="' + esc(ev.url || '') + '" target="_blank" rel="noopener noreferrer">official event page<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M18 13v6H5V6h6"></path></svg></a></div>' +
+      '</div></details>';
+  }
+  function renderPicksStatic(pickList, eventList) {
+    var byTitle = {};
+    eventList.forEach(function (e) { byTitle[e.title] = e; });
+    var out = ['<!-- PICKS-STATIC-START -->'];
+    pickList.picks.forEach(function (spec) {
+      var src = byTitle[spec.title];
+      if (!src) return;
+      var ev = Object.assign({}, src, { dateText: spec.dateText || src.dateText });
+      out.push(eventCardStatic(ev));
+    });
+    out.push('<!-- PICKS-STATIC-END -->');
+    return out.join('\n');
+  }
+  function renderEventsStatic(eventList) {
+    var today = new Date().toISOString().slice(0, 10);
+    var upcoming = eventList.filter(function (e) { return (e.end || e.start || '') >= today; })
+      .sort(function (a, b) { return a.start < b.start ? -1 : 1; });
+    var out = ['<!-- EVENTS-STATIC-START -->'];
+    upcoming.forEach(function (e) { out.push(eventCardStatic(e)); });
+    out.push('<!-- EVENTS-STATIC-END -->');
+    return out.join('\n');
+  }
+  function replaceBlock(html, startMarker, endMarker, replacement) {
+    var s = html.indexOf(startMarker), e = html.indexOf(endMarker);
+    if (s === -1 || e === -1 || e < s) throw new Error('Static block markers not found in page');
+    return html.slice(0, s) + replacement + html.slice(e + endMarker.length);
+  }
+  function updatePageStatic(path, startMarker, endMarker, replacement) {
+    return readFile(path).then(function (f) {
+      var updated = replaceBlock(f.text, startMarker, endMarker, replacement);
+      return writeFile(path, updated, f.sha, 'Admin: refresh static content snapshot');
+    });
+  }
+
   function gh(path, method, body) {
     return fetch(API + path, {
       method: method || 'GET',
@@ -357,7 +445,9 @@
   $('event-save').addEventListener('click', function () {
     $('event-save').disabled = true;
     writeFile('events.json', JSON.stringify(events, null, 1), eventsSha, 'Admin: update events')
-      .then(function (j) { eventsSha = j.content.sha; status('Events published. ' + events.length + ' events live.', true); })
+      .then(function (j) { eventsSha = j.content.sha; return updatePageStatic('nyc-events.html', '<!-- EVENTS-STATIC-START -->', '<!-- EVENTS-STATIC-END -->', renderEventsStatic(events)); })
+      .then(function () { return updatePageStatic('nyc-events.html', '<!-- PICKS-STATIC-START -->', '<!-- PICKS-STATIC-END -->', renderPicksStatic(picks, events)); })
+      .then(function () { status('Events published. ' + events.length + ' events live.', true); })
       .catch(function (e) { status('Publish failed: ' + e.message, false); })
       .finally(function () { $('event-save').disabled = false; });
   });
@@ -417,7 +507,8 @@
     picks.weekLabel = $('picks-week').value.trim();
     $('picks-save').disabled = true;
     writeFile('top-picks.json', JSON.stringify(picks, null, 1), picksSha, 'Admin: update top picks')
-      .then(function (j) { picksSha = j.content.sha; status('Top picks published.', true); })
+      .then(function (j) { picksSha = j.content.sha; return updatePageStatic('nyc-events.html', '<!-- PICKS-STATIC-START -->', '<!-- PICKS-STATIC-END -->', renderPicksStatic(picks, events)); })
+      .then(function () { status('Top picks published.', true); })
       .catch(function (e) { status('Publish failed: ' + e.message, false); })
       .finally(function () { $('picks-save').disabled = false; });
   });
@@ -543,7 +634,8 @@
     articles.sort(function (a, b) { return b.date < a.date ? -1 : 1; });
     $('news-save').disabled = true;
     writeFile('news.json', JSON.stringify(articles, null, 1), newsSha, 'Admin: update news')
-      .then(function (j) { newsSha = j.content.sha; renderNewsList(); status('News published. ' + articles.length + ' articles live.', true); })
+      .then(function (j) { newsSha = j.content.sha; return updatePageStatic('news-and-press.html', '<!-- NEWS-STATIC-START -->', '<!-- NEWS-STATIC-END -->', renderNewsStatic(articles)); })
+      .then(function () { renderNewsList(); status('News published. ' + articles.length + ' articles live.', true); })
       .catch(function (e) { status('Publish failed: ' + e.message, false); })
       .finally(function () { $('news-save').disabled = false; });
   });
