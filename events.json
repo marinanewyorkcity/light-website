@@ -224,23 +224,6 @@
   "picks": false
  },
  {
-  "title": "Central Park Fall Foliage Route",
-  "months": [
-   "2026-10",
-   "2026-11"
-  ],
-  "dateText": "Late Oct - early Nov",
-  "start": "2026-10-20",
-  "end": "2026-11-10",
-  "time": "Best during daylight",
-  "location": "Gapstow Bridge to Belvedere Castle",
-  "price": "FREE",
-  "why": "Follow a scenic route through bridges, water views and peak autumn color.",
-  "goodFor": "Walkers, couples, families, visitors",
-  "url": "https://www.centralparknyc.org",
-  "picks": true
- },
- {
   "title": "Halloween Brownstones & Decorated Streets",
   "months": [
    "2026-10"
@@ -541,23 +524,6 @@
   "picks": false
  },
  {
-  "title": "Hudson Yards Shine Bright",
-  "months": [
-   "2026-11",
-   "2026-12"
-  ],
-  "dateText": "Mid-late November 2026",
-  "start": "2026-11-15",
-  "end": "2026-12-31",
-  "time": "Best after sunset",
-  "location": "Hudson Yards Public Square + Shops",
-  "price": "FREE",
-  "why": "Millions of lights transform the neighborhood with illuminated trees and installations.",
-  "goodFor": "Families, couples, visitors, holiday outings",
-  "url": "https://www.hudsonyardsnewyork.com/shine-bright",
-  "picks": false
- },
- {
   "title": "Bryant Park Holiday Shops",
   "months": [
    "2026-11",
@@ -633,7 +599,7 @@
   "start": "2026-11-25",
   "end": "2026-11-25",
   "time": "Afternoon-evening; access details TBA",
-  "location": "Upper West Side near AMNH",
+  "location": "Upper West Side near the American Museum of Natural History, Manhattan",
   "price": "FREE",
   "why": "See the parade's giant character balloons inflated at street level.",
   "goodFor": "Families, parade fans, visitors, Thanksgiving traditions",
@@ -657,32 +623,16 @@
   "picks": true
  },
  {
-  "title": "Bryant Park Winter Village",
-  "months": [
-   "2026-11",
-   "2026-12"
-  ],
-  "dateText": "Throughout November 2026",
-  "start": "2026-11-01",
-  "end": "2026-12-31",
-  "time": "Hours vary; skating reservations recommended",
-  "location": "Bryant Park, Midtown",
-  "price": "FREE ENTRY, rentals extra",
-  "why": "Combine ice skating, holiday shops, seasonal food and skyline views.",
-  "goodFor": "Families, couples, skaters, visitors",
-  "url": "https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park",
-  "picks": false
- },
- {
   "title": "Central Park Fall Foliage",
   "months": [
+   "2026-10",
    "2026-11"
   ],
-  "dateText": "Early November 2026",
-  "start": "2026-11-01",
+  "dateText": "Oct 20 - Nov 15, 2026",
+  "start": "2026-10-20",
   "end": "2026-11-15",
   "time": "Best during daylight",
-  "location": "The Ramble, Reservoir + North Woods",
+  "location": "The Ramble, Reservoir, North Woods; Gapstow Bridge to Belvedere Castle",
   "price": "FREE",
   "why": "Catch some of Manhattan's richest late-season color along scenic walking routes.",
   "goodFor": "Walkers, families, couples, visitors",
@@ -742,51 +692,19 @@
   "picks": true
  },
  {
-  "title": "Radio City Christmas Spectacular",
-  "months": [
-   "2026-11",
-   "2026-12"
-  ],
-  "dateText": "Nov 6, 2026 - Jan 4, 2027",
-  "start": "2026-11-06",
-  "end": "2027-01-04",
-  "time": "Multiple showtimes",
-  "location": "Radio City Music Hall, Midtown",
-  "price": "TICKETED, prices vary",
-  "why": "See the Rockettes, the Parade of the Wooden Soldiers and classic holiday scenes.",
-  "goodFor": "Families, theater fans, visitors, holiday traditions",
-  "url": "https://www.rockettes.com/christmas/",
-  "picks": true
- },
- {
   "title": "Rockefeller Center Christmas Tree Lighting",
   "months": [
-   "2026-12"
+   "2026-12",
+   "2027-01"
   ],
-  "dateText": "Dec 2, 2026",
+  "dateText": "Dec 2, 2026; on display through Jan 9, 2027",
   "start": "2026-12-02",
-  "end": "2026-12-02",
+  "end": "2027-01-09",
   "time": "Ceremony from 7 PM; lighting around 10 PM",
   "location": "Rockefeller Plaza, Midtown Manhattan",
   "price": "FREE",
-  "why": "The switch is flipped on the world's most famous Christmas tree, topped with the Swarovski star, in a live televised ceremony with musical performances.",
+  "why": "The 76-foot Norway spruce from West Edmeston lights up on December 2 and stays on display through January 9, 2027.",
   "goodFor": "Holiday fans, visitors, couples, families",
-  "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
-  "picks": true
- },
- {
-  "title": "Rockefeller Center Christmas Tree",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Dec 2, 2026 - early Jan 2027",
-  "start": "2026-12-02",
-  "end": "2027-01-10",
-  "time": "Daily 5 AM - midnight",
-  "location": "Rockefeller Plaza, Midtown Manhattan",
-  "price": "FREE",
-  "why": "Once lit, the tree glows daily through the holiday season. Best on weekday mornings to beat the crowds.",
-  "goodFor": "Holiday fans, visitors, photographers, families",
   "url": "https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/",
   "picks": true
  },
@@ -928,13 +846,13 @@
   "months": [
    "2026-12"
   ],
-  "dateText": "Official date not announced; typically early December",
-  "start": "2026-12-09",
-  "end": "2026-12-09",
-  "time": "Evening ceremony",
+  "dateText": "Dec 8, 2026",
+  "start": "2026-12-08",
+  "end": "2026-12-08",
+  "time": "6:00-7:00 PM",
   "location": "Washington Square Park",
   "price": "FREE",
-  "why": "Join the village tradition under the park's famous arch.",
+  "why": "The 103rd annual Washington Square Park tree lighting under the Arch, one of the city's most beloved neighborhood ceremonies.",
   "goodFor": "Locals, families, romantics",
   "url": "https://www.nycgovparks.org",
   "picks": false
@@ -944,32 +862,15 @@
   "months": [
    "2026-12"
   ],
-  "dateText": "Official date not announced; typically early December",
-  "start": "2026-12-08",
-  "end": "2026-12-08",
-  "time": "Evening ceremony",
+  "dateText": "Dec 3, 2026",
+  "start": "2026-12-03",
+  "end": "2026-12-03",
+  "time": "Holiday Festival 12:00-5:30 PM; tree lighting 5:00 PM",
   "location": "Madison Square Park",
   "price": "FREE",
-  "why": "See the park's tree light up in the heart of the Flatiron district.",
+  "why": "Madison Square Park lights its 40-foot Norway spruce, the site of America's first public tree lighting in 1912, with a full afternoon holiday festival.",
   "goodFor": "Locals, families, evening strolls",
   "url": "https://madisonsquarepark.org",
-  "picks": false
- },
- {
-  "title": "Seaport Tree Lighting",
-  "months": [
-   "2026-11",
-   "2026-12"
-  ],
-  "dateText": "Official date not announced; typically late Nov - early Dec",
-  "start": "2026-11-28",
-  "end": "2026-11-28",
-  "time": "Evening ceremony",
-  "location": "South Street Seaport",
-  "price": "FREE",
-  "why": "Waterfront tree lighting with historic ships and skyline views.",
-  "goodFor": "Families, photographers, downtown explorers",
-  "url": "https://www.theseaport.nyc",
   "picks": false
  },
  {
@@ -977,31 +878,15 @@
   "months": [
    "2026-12"
   ],
-  "dateText": "Official date not announced; typically early December",
-  "start": "2026-12-02",
-  "end": "2026-12-02",
-  "time": "Evening ceremony",
+  "dateText": "Dec 1, 2026",
+  "start": "2026-12-01",
+  "end": "2026-12-01",
+  "time": "5:30 PM (entry from 3:30 PM, first come first served)",
   "location": "Bryant Park",
   "price": "FREE",
-  "why": "The Winter Village tree lights up Midtown's favorite park.",
+  "why": "Bryant Park lights its 45-foot tree with 12,000 lights, the official start of the Winter Village holiday season.",
   "goodFor": "Everyone, skaters, holiday shoppers",
   "url": "https://bryantpark.org",
-  "picks": false
- },
- {
-  "title": "NYSE Tree Lighting",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Official date not announced; typically early December",
-  "start": "2026-12-03",
-  "end": "2026-12-03",
-  "time": "Evening ceremony",
-  "location": "New York Stock Exchange, Wall Street",
-  "price": "FREE",
-  "why": "The Financial District's century-old tree lighting tradition.",
-  "goodFor": "History buffs, downtown visitors",
-  "url": "https://www.nyse.com",
   "picks": false
  },
  {
@@ -1280,7 +1165,9 @@
  {
   "title": "Bank of America Winter Village at Bryant Park",
   "months": [
-   "2026-10"
+   "2026-10",
+   "2026-11",
+   "2026-12"
   ],
   "dateText": "Oct 28 - Dec 31, 2026",
   "start": "2026-10-28",
@@ -1360,16 +1247,18 @@
  {
   "title": "Christmas Spectacular Starring the Radio City Rockettes",
   "months": [
-   "2026-11"
+   "2026-11",
+   "2026-12",
+   "2027-01"
   ],
-  "dateText": "Nov 4 - Dec 31, 2026",
+  "dateText": "Nov 4, 2026 - Jan 4, 2027",
   "start": "2026-11-04",
-  "end": "2026-12-31",
-  "time": "Multiple daily showtimes; see calendar",
+  "end": "2027-01-04",
+  "time": "Multiple daily showtimes",
   "location": "Radio City Music Hall, 1260 Sixth Avenue, Manhattan",
-  "price": "Ticketed; dynamic pricing",
-  "why": "The 2026 production includes 230 performances and a new Rockettes number. Run continues to January 4, 2027.",
-  "goodFor": "Holiday show",
+  "price": "Ticketed; prices vary",
+  "why": "See the Rockettes, the Parade of the Wooden Soldiers and classic holiday scenes. The 2026 production includes 230 performances and a new Rockettes number.",
+  "goodFor": "Families, theater fans, visitors, holiday traditions",
   "url": "https://www.rockettes.com/christmas/",
   "picks": true
  },
@@ -1614,38 +1503,6 @@
   "picks": true
  },
  {
-  "title": "Macy’s Parade Balloon Inflation",
-  "months": [
-   "2026-11"
-  ],
-  "dateText": "Nov 25, 2026",
-  "start": "2026-11-25",
-  "end": "2026-11-25",
-  "time": "Public viewing hours to be announced",
-  "location": "Upper West Side near the American Museum of Natural History, Manhattan",
-  "price": "Free",
-  "why": "Macy’s giant character balloons are prepared for the next day’s parade.",
-  "goodFor": "Thanksgiving tradition",
-  "url": "https://www.macys.com/s/parade/faqs/",
-  "picks": true
- },
- {
-  "title": "100th Macy’s Thanksgiving Day Parade",
-  "months": [
-   "2026-11"
-  ],
-  "dateText": "Nov 26, 2026",
-  "start": "2026-11-26",
-  "end": "2026-11-26",
-  "time": "8:30 AM–noon",
-  "location": "Central Park West to Macy’s Herald Square, Manhattan",
-  "price": "Free to watch",
-  "why": "Centennial parade with giant balloons, floats, performers, Broadway casts and celebrity appearances.",
-  "goodFor": "Parade",
-  "url": "https://www.macys.com/s/parade/",
-  "picks": true
- },
- {
   "title": "Macy’s Santaland NYC",
   "months": [
    "2026-11"
@@ -1730,13 +1587,13 @@
   "months": [
    "2026-12"
   ],
-  "dateText": "Dec 3, 2026",
-  "start": "2026-12-03",
-  "end": "2026-12-03",
-  "time": "Evening; exact program time to be confirmed",
-  "location": "The Seaport, near Pier 17, Manhattan",
+  "dateText": "Dec 1, 2026",
+  "start": "2026-12-01",
+  "end": "2026-12-01",
+  "time": "7:00 PM",
+  "location": "Fulton & Front Streets, South Street Seaport, Manhattan",
   "price": "Free",
-  "why": "Annual waterfront holiday tree lighting and seasonal celebration.",
+  "why": "The Seaport lights its tree on Fulton Street with live performances, plus the Jack Daniel's Barrel Tree on Pier 17.",
   "goodFor": "Tree lighting",
   "url": "https://theseaport.nyc/events/",
   "picks": true
@@ -1851,22 +1708,6 @@
   "why": "Pedestrian-only holiday promenade with live entertainment, food, shopping and brand activations.",
   "goodFor": "Open streets",
   "url": "https://fifthavenue.nyc/holiday",
-  "picks": true
- },
- {
-  "title": "Times Square New Year’s Eve Ball Drop",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Dec 31, 2026",
-  "start": "2026-12-31",
-  "end": "2026-12-31",
-  "time": "Public celebration begins around 6 PM; Ball drops at midnight",
-  "location": "Times Square, Manhattan",
-  "price": "Free",
-  "why": "Global New Year’s Eve celebration with live entertainment, confetti and the midnight Ball Drop.",
-  "goodFor": "New Year’s Eve",
-  "url": "https://www.timessquarenyc.org/nye",
   "picks": true
  },
  {
@@ -2182,5 +2023,498 @@
   "goodFor": "Skaters, photographers, skyline views, winter outings",
   "url": "https://secretnyc.co/roebling-rink-ice-skating-brooklyn-bridge-park-2026/",
   "picks": true
+ },
+ {
+  "title": "DUMBO Holiday Tree Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 3, 2026",
+  "start": "2026-12-03",
+  "end": "2026-12-03",
+  "time": "4:00-7:00 PM; tree lit 5:30 PM",
+  "location": "DUMBO Archway + Pearl Plaza, Brooklyn",
+  "price": "FREE",
+  "why": "Brooklyn's neighborhood tree lighting under the Manhattan Bridge archway, free and family-friendly, a great outer-borough alternative to the Midtown crowds.",
+  "goodFor": "Tree lighting",
+  "url": "https://dumbo.nyc",
+  "picks": false
+ },
+ {
+  "title": "Park Avenue Tree Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 6, 2026",
+  "start": "2026-12-06",
+  "end": "2026-12-06",
+  "time": "6:30-7:30 PM",
+  "location": "Brick Presbyterian Church, 1140 Park Ave, Manhattan",
+  "price": "FREE",
+  "why": "The Upper East Side's elegant Park Avenue tree lighting, a 70-year tradition honoring WWII fallen, quieter and more local than the big Midtown lightings.",
+  "goodFor": "Tree lighting",
+  "url": "https://fundforparkavenue.org",
+  "picks": false
+ },
+ {
+  "title": "Carl Schurz Park Holiday Tree Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 6, 2026",
+  "start": "2026-12-06",
+  "end": "2026-12-06",
+  "time": "5:00-6:00 PM",
+  "location": "Carl Schurz Park, 86th St at East End Ave, Manhattan",
+  "price": "FREE",
+  "why": "A beloved Upper East Side community lighting with carols by the Cantori New York choir and the New York Brass Quintet, plus free hot chocolate, cookies and candy canes, rain, snow or shine.",
+  "goodFor": "Tree lighting",
+  "url": "https://www.carlschurzparknyc.org/events",
+  "picks": false
+ },
+ {
+  "title": "Tree Lighting at Historic Richmond Town",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 4, 2026",
+  "start": "2026-12-04",
+  "end": "2026-12-04",
+  "time": "5:00-6:00 PM; tree lit 6:00 PM",
+  "location": "Historic Richmond Town, 441 Clarke Ave, Staten Island",
+  "price": "FREE",
+  "why": "Staten Island's free annual tree lighting in a living-history village, with local musical groups and a visit from Santa before the tree lights up.",
+  "goodFor": "Tree lighting",
+  "url": "https://www.historicrichmondtown.org/events/tree-lighting-at-historic-richmond-town",
+  "picks": false
+ },
+ {
+  "title": "Bronx Little Italy Christmas Tree Lighting Ceremony",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 5, 2026",
+  "start": "2026-12-05",
+  "end": "2026-12-05",
+  "time": "4:00-6:00 PM",
+  "location": "Ciccarone Park, Arthur Ave & E 188th St, Belmont, Bronx",
+  "price": "FREE",
+  "why": "The Bronx's Little Italy lights its neighborhood tree with Santa, carols, Italian cookies and hot chocolate from local bakeries, plus a toy giveaway, an easy pair with dinner on Arthur Avenue.",
+  "goodFor": "Tree lighting",
+  "url": "https://bronxlittleitaly.com/events/page/7/",
+  "picks": false
+ },
+ {
+  "title": "Washington Square Christmas Eve Caroling",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 24, 2026",
+  "start": "2026-12-24",
+  "end": "2026-12-24",
+  "time": "5:00 PM",
+  "location": "Under the Arch, Washington Square Park",
+  "price": "FREE",
+  "why": "The Washington Square Association's Christmas Eve sing-along under the Arch with the Rob Susman Brass Quartet, a quiet, local alternative to the big Christmas Eve crowds.",
+  "goodFor": "Holiday event",
+  "url": "http://www.washingtonsquarenyc.org/the-annual-holiday-tree-lighting",
+  "picks": false
+ },
+ {
+  "title": "Wollman Rink, Central Park",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12",
+   "2027-01",
+   "2027-02"
+  ],
+  "dateText": "Oct 28, 2026 - Mar 16, 2027",
+  "start": "2026-10-28",
+  "end": "2027-03-16",
+  "time": "Daily; hours vary by session",
+  "location": "Wollman Rink, Central Park",
+  "price": "Adults $16-40, kids 4-12 $12, skate rental $12",
+  "why": "Central Park's largest rink, open late October through mid-March, with skyline views and a much calmer scene than Rockefeller Center.",
+  "goodFor": "Skaters, photographers, skyline views, winter outings",
+  "url": "https://www.wollmanrinknyc.com",
+  "picks": false
+ },
+ {
+  "title": "Winter Lantern Festival at Snug Harbor",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 19, 2026 - Jan 10, 2027",
+  "start": "2026-11-19",
+  "end": "2027-01-10",
+  "time": "Thu-Sun 5:00-10:00 PM (last entry 9:00 PM); opening night Nov 19, 6:30 PM",
+  "location": "Snug Harbor Cultural Center, 1000 Richmond Terrace, Staten Island",
+  "price": "From $18; kids under 3 free",
+  "why": "Hundreds of glowing handcrafted lanterns fill Snug Harbor's historic grounds for its 50th anniversary season, one of the city's most photogenic after-dark holiday walks, a free Staten Island Ferry ride away.",
+  "goodFor": "Holiday lights",
+  "url": "https://snug-harbor.org/event/winter-lantern-festival/",
+  "picks": false
+ },
+ {
+  "title": "Winter Lantern Festival at Queens County Farm",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 19, 2026 - Jan 3, 2027",
+  "start": "2026-11-19",
+  "end": "2027-01-03",
+  "time": "Thu-Sun 5:00-10:00 PM (last entry 9:00 PM)",
+  "location": "Queens County Farm Museum, 73-50 Little Neck Pkwy, Queens",
+  "price": "From $18; kids under 3 free",
+  "why": "The lantern festival's Queens edition lights up the historic farm grounds. Separate from the Queens County Farm Tree Lighting Ceremony on Dec 5, already on the site.",
+  "goodFor": "Holiday lights",
+  "url": "https://www.queensfarm.org",
+  "picks": false
+ },
+ {
+  "title": "Holiday Nostalgia Rides",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 6, 13, 20 & 27, 2026",
+  "start": "2026-12-06",
+  "end": "2026-12-27",
+  "time": "10:00 AM-5:00 PM",
+  "location": "Vintage 1930s subway cars, Sundays in December",
+  "price": "Regular subway fare, no advance ticket",
+  "why": "Ride the Transit Museum's restored 1930s subway cars, decked with wreaths and bows, for the price of a regular swipe, one of the city's most beloved and most filmable holiday traditions.",
+  "goodFor": "Families, train fans, free outings, holiday",
+  "url": "https://www.nytransitmuseum.org",
+  "picks": false
+ },
+ {
+  "title": "New Year's Eve Fireworks in Prospect Park",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 31, 2026",
+  "start": "2026-12-31",
+  "end": "2026-12-31",
+  "time": "10:00 PM-12:30 AM; fireworks at midnight",
+  "location": "Grand Army Plaza, Brooklyn",
+  "price": "FREE (RSVP recommended, not required)",
+  "why": "Brooklyn's free 46-year New Year's Eve tradition: live entertainment from 10 PM and fireworks over Prospect Park at midnight, the family-friendly alternative to Times Square.",
+  "goodFor": "New Year's Eve",
+  "url": "https://www.prospectpark.org/event/new-years-eve-fireworks-in-prospect-park-3/",
+  "picks": false
+ },
+ {
+  "title": "Christmas in Historic Richmond Town",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 5-6, 2026",
+  "start": "2026-12-05",
+  "end": "2026-12-06",
+  "time": "12:00-4:00 PM",
+  "location": "Historic Richmond Town, 441 Clarke Ave, Staten Island",
+  "price": "Ticketed",
+  "why": "A one-weekend-only Christmas celebration in a living-history village: Santa arrives at noon aboard antique fire Engine No. 1, with Victorian carolers, a holiday market, ornament making and seasonal food.",
+  "goodFor": "Families, history lovers, visitors, community events",
+  "url": "https://www.nyctourism.com/events/christmas-in-historic-richmond-town/",
+  "picks": false
+ },
+ {
+  "title": "MINISO x Rilakkuma Pop-Up",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 18 - Dec 31, 2026",
+  "start": "2026-11-18",
+  "end": "2026-12-31",
+  "time": "Mall hours",
+  "location": "Tangram, 133-33 39th Ave, Flushing, Queens",
+  "price": "FREE entry (plushies and collectibles for purchase)",
+  "why": "MINISO's Rilakkuma pop-up brings the beloved San-X bear characters to Flushing for the holidays, with free photo ops and exclusive plushies and collectibles.",
+  "goodFor": "Pop-up",
+  "url": "https://www.miniso-us.com/events",
+  "picks": false
+ },
+ {
+  "title": "Walmart Holiday Wonderland",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 20-21, 2026",
+  "start": "2026-11-20",
+  "end": "2026-11-21",
+  "time": "Hours TBA",
+  "location": "16 West 10th St, Manhattan",
+  "price": "FREE, no RSVP required",
+  "why": "A free two-day Walmart holiday experience in the West Village with festive photo ops and seasonal fun, no RSVP needed.",
+  "goodFor": "Pop-up",
+  "url": "https://www.walmart.com",
+  "picks": false
+ },
+ {
+  "title": "L'Occitane Maison Holiday House",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 6-8, 2026",
+  "start": "2026-11-06",
+  "end": "2026-11-08",
+  "time": "11:00 AM-6:00 PM",
+  "location": "16 West 10th St, Manhattan",
+  "price": "FREE",
+  "why": "L'Occitane's free holiday house in the West Village, a Provencal-themed seasonal pop-up with gifts and samples.",
+  "goodFor": "Pop-up",
+  "url": "https://www.instagram.com/reel/DfVqjN9vAjK/",
+  "picks": false
+ },
+ {
+  "title": "Times Square 42 Holiday Pop-Up",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 6 - Dec 18, 2026",
+  "start": "2026-11-06",
+  "end": "2026-12-18",
+  "time": "Daily 11:00 AM-midnight",
+  "location": "Broadway, 41st-42nd St, Times Square",
+  "price": "FREE",
+  "why": "A free open-air holiday market in the heart of Times Square, running daily into mid-December, easy to film between other Midtown stops.",
+  "goodFor": "Pop-up",
+  "url": "https://www.timessquarenyc.org",
+  "picks": false
+ },
+ {
+  "title": "Times Square Holiday Pop-Up",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 6 - Dec 19, 2026",
+  "start": "2026-11-06",
+  "end": "2026-12-19",
+  "time": "Daily 11:00 AM-midnight",
+  "location": "Broadway, 47th-48th St, Times Square",
+  "price": "FREE",
+  "why": "A second free Times Square holiday market a few blocks up Broadway, with vendors and festive stalls under the billboards.",
+  "goodFor": "Pop-up",
+  "url": "https://www.timessquarenyc.org",
+  "picks": false
+ },
+ {
+  "title": "Holidays at the Park",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Weekends Nov 21 - Dec 13, 2026",
+  "start": "2026-11-21",
+  "end": "2026-12-13",
+  "time": "Weekends; hours TBA",
+  "location": "Bella Abzug Park, Hudson Yards",
+  "price": "FREE",
+  "why": "Free weekend holiday programming in Hudson Yards' Bella Abzug Park, a neighborhood-scale festive stop next to the Shine Bright lights.",
+  "goodFor": "Pop-up",
+  "url": "https://www.hudsonyardsnewyork.com",
+  "picks": false
+ },
+ {
+  "title": "Coney Island Polar Bear Plunge",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 1, 2027",
+  "start": "2027-01-01",
+  "end": "2027-01-01",
+  "time": "Check-in 10:00 AM; plunge 11:00 AM-1:30 PM; registration closes 1:00 PM",
+  "location": "Coney Island Beach at Stillwell Ave, Brooklyn",
+  "price": "FREE (registration required; $30 donation encouraged)",
+  "why": "New York's most iconic New Year's Day tradition since 1903: thousands of swimmers charge into the Atlantic at Coney Island, free to watch and wildly photogenic.",
+  "goodFor": "Families, sports fans, visitors, community spirit",
+  "url": "https://runsignup.com/Race/NY/Brooklyn/ConeyIslandPolarBearPlunge",
+  "picks": false
+ },
+ {
+  "title": "Three Kings Day Parade",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 6, 2027",
+  "start": "2027-01-06",
+  "end": "2027-01-06",
+  "time": "Parade time TBA (typically late morning)",
+  "location": "East Harlem, Manhattan",
+  "price": "FREE",
+  "why": "El Museo del Barrio's beloved Three Kings Day Parade winds through East Harlem celebrating Dia de los Reyes, one of the city's most colorful winter cultural traditions, free and family-friendly.",
+  "goodFor": "Parade",
+  "url": "https://www.elmuseo.org",
+  "picks": false
+ },
+ {
+  "title": "NYC Winter Jazzfest",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 12-19, 2027",
+  "start": "2027-01-12",
+  "end": "2027-01-19",
+  "time": "Evenings; Manhattan Marathon Jan 15, Brooklyn Marathon Jan 16",
+  "location": "Clubs across Manhattan & Brooklyn",
+  "price": "Ticketed (marathon passes available)",
+  "why": "The 23rd Winter Jazzfest, themed Collective Radiance, with a Coltrane 100 celebration and marathon nights filling a dozen clubs on one pass, the city's biggest January music week.",
+  "goodFor": "Concert",
+  "url": "https://www.winterjazzfest.com",
+  "picks": false
+ },
+ {
+  "title": "Jazz Congress",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 13-14, 2027",
+  "start": "2027-01-13",
+  "end": "2027-01-14",
+  "time": "Daytime panels and workshops; evening concerts",
+  "location": "Jazz at Lincoln Center, Columbus Circle",
+  "price": "Ticketed",
+  "why": "Two days of panels, workshops and concerts bringing the global jazz community to Columbus Circle, running alongside Winter Jazzfest.",
+  "goodFor": "Concert",
+  "url": "https://www.jazz.org",
+  "picks": false
+ },
+ {
+  "title": "Unity Jazz Festival",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 15-16, 2027",
+  "start": "2027-01-15",
+  "end": "2027-01-16",
+  "time": "Music from 6:00 PM",
+  "location": "Jazz at Lincoln Center, Columbus Circle",
+  "price": "Ticketed",
+  "why": "20+ acts across five stages in the House of Swing, an intergenerational, global lineup that pairs with the Winter Jazzfest marathon nights.",
+  "goodFor": "Concert",
+  "url": "https://www.jazz.org",
+  "picks": false
+ },
+ {
+  "title": "New York Boat Show",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 20-24, 2027",
+  "start": "2027-01-20",
+  "end": "2027-01-24",
+  "time": "Wed-Fri 12:00-8:00 PM; Sat 10:00 AM-8:00 PM; Sun 10:00 AM-4:00 PM",
+  "location": "Jacob K. Javits Convention Center, 655 W 34th St",
+  "price": "Ticketed",
+  "why": "The annual boat show has opened New York's boating season since 1905, with hundreds of boats on display plus hands-on activities, an affordable indoor winter outing.",
+  "goodFor": "Exhibition",
+  "url": "https://www.nyboatshow.com",
+  "picks": false
+ },
+ {
+  "title": "BroadwayCon",
+  "months": [
+   "2027-01"
+  ],
+  "dateText": "Jan 22-24, 2027",
+  "start": "2027-01-22",
+  "end": "2027-01-24",
+  "time": "Hours TBA",
+  "location": "Theater District, Manhattan",
+  "price": "Ticketed",
+  "why": "The fan convention devoted to Broadway and musical theater, held each winter in the heart of the Theater District.",
+  "goodFor": "Exhibition",
+  "url": "https://www.broadwaycon.com",
+  "picks": false
+ },
+ {
+  "title": "Westminster Kennel Club Dog Show",
+  "months": [
+   "2027-01",
+   "2027-02"
+  ],
+  "dateText": "Jan 30 - Feb 2, 2027",
+  "start": "2027-01-30",
+  "end": "2027-02-02",
+  "time": "Javits daytime 7:30 AM-5:00 PM; MSG evenings Feb 1, 7:30 PM, Feb 2, 7:00 PM (Best in Show Tue night)",
+  "location": "Jacob K. Javits Convention Center & Madison Square Garden",
+  "price": "Ticketed",
+  "why": "The 151st Westminster Kennel Club Dog Show returns to New York, with 2,500+ champion dogs, daytime breed judging at Javits and the Best in Show finale at Madison Square Garden on Tuesday night.",
+  "goodFor": "Families, dog lovers, visitors",
+  "url": "https://www.westminsterkennelclub.org",
+  "picks": false
+ },
+ {
+  "title": "Lunar New Year Firecracker Ceremony & Cultural Festival",
+  "months": [
+   "2027-02"
+  ],
+  "dateText": "Feb 6, 2027",
+  "start": "2027-02-06",
+  "end": "2027-02-06",
+  "time": "11:00 AM-3:30 PM",
+  "location": "Sara D. Roosevelt Park at Grand St, Chinatown",
+  "price": "FREE",
+  "why": "The Better Chinatown Society's 29th Firecracker Ceremony kicks off the Year of the Fire Goat on Lunar New Year's Day itself, with 600,000 firecrackers, lion dances, music and food vendors, free.",
+  "goodFor": "Cultural festival",
+  "url": "https://betterchinatown.com/category/events/",
+  "picks": false
+ },
+ {
+  "title": "NYBG Orchid Show",
+  "months": [
+   "2027-02"
+  ],
+  "dateText": "Feb 6 - Apr 25, 2027",
+  "start": "2027-02-06",
+  "end": "2027-04-25",
+  "time": "Garden hours",
+  "location": "New York Botanical Garden, Bronx",
+  "price": "Ticketed (garden admission)",
+  "why": "The Garden's beloved orchid exhibition fills the conservatory with hundreds of orchids, the classic late-winter color break and one of the Bronx's biggest draws.",
+  "goodFor": "Exhibition",
+  "url": "https://www.nybg.org",
+  "picks": false
+ },
+ {
+  "title": "New York Fashion Week",
+  "months": [
+   "2027-02"
+  ],
+  "dateText": "Feb 10-16, 2027",
+  "start": "2027-02-10",
+  "end": "2027-02-16",
+  "time": "Shows throughout the week",
+  "location": "Venues across Manhattan",
+  "price": "Mostly invite-only; public shows: The Bureau Feb 11-14 at Gotham Hall from $105; Runway 7 Feb 10-14 at Sony Hall",
+  "why": "Fashion week takes over the city for the Fall/Winter 2027 collections, with street style outside the shows and public ticketed runway shows at Gotham Hall and Sony Hall for anyone who wants a front-row seat.",
+  "goodFor": "Fashion, photographers, visitors",
+  "url": "https://cfda.com",
+  "picks": false
+ },
+ {
+  "title": "Chinatown Lunar New Year Parade & Festival",
+  "months": [
+   "2027-02"
+  ],
+  "dateText": "Feb 21, 2027",
+  "start": "2027-02-21",
+  "end": "2027-02-21",
+  "time": "1:00-4:30 PM",
+  "location": "Mott St & Canal St through Chinatown to Sara D. Roosevelt Park",
+  "price": "FREE",
+  "why": "The 29th annual Chinatown Lunar New Year Parade, the Year of the Fire Goat, with dragon and lion dancers, floats, marching bands and a confetti finale, one of the city's biggest free winter street celebrations.",
+  "goodFor": "Parade",
+  "url": "https://betterchinatown.com/category/events/",
+  "picks": false
  }
 ]
