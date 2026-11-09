@@ -1,5 +1,51 @@
 [
  {
+  "id": "rockefeller-center-tree-arrival-2026",
+  "date": "2026-11-09",
+  "type": "original coverage",
+  "headline": "The 2026 Rockefeller Center Christmas Tree Has Arrived in New York City",
+  "lede": "New York City officially kicked off the holiday season on Saturday, November 7, as the 2026 Rockefeller Center Christmas Tree arrived in Midtown.",
+  "featured": false,
+  "blocks": [
+   {
+    "kind": "youtube",
+    "id": "VCBK2mRaBqs",
+    "title": "Rockefeller Center Christmas Tree Arrival NYC 2026 | Best Moments and Highlights",
+    "watch": "https://youtu.be/VCBK2mRaBqs"
+   },
+   {
+    "kind": "text",
+    "html": "Marina filmed the whole arrival from Rockefeller Plaza, from the tree rolling onto Center Plaza to the crane lifting the 76-foot spruce into place in front of 30 Rock. Watch the full 8-minute video above."
+   },
+   {
+    "kind": "text",
+    "html": "The 76-foot Norway spruce comes from West Edmeston, New York, about 200 miles from the city. It was planted around 75 years ago by Carl Camenga, the home's original builder, together with his son Wade. Carl, a local mailman, died on Christmas Day ten years ago, and his family still lives nearby. Rebecca Decker, who moved into the house with her three children five years ago, thought Rockefeller Center was joking when they asked for the tree. She had even considered cutting it down herself, worried it might fall on the house. Head gardener Erik Pauze, who has chosen the Rockefeller tree for more than thirty years, had been eyeing this spruce since before she bought the property, after a tip from Jackie and Matt McGinley, who donated the 2023 tree."
+   },
+   {
+    "kind": "text",
+    "html": "The tree was cut on Thursday, November 5, and arrived in Manhattan on Saturday, November 7. It pulled up on 49th Street at 7am, moved onto Center Plaza around 7:30am, the spike was hammered in at 8:30am, and the crane lifted it into place at about 9am. It weighs about 11 tons."
+   },
+   {
+    "kind": "text",
+    "html": "From the shoot, Marina's two best-viewed reels:"
+   },
+   {
+    "kind": "instagram",
+    "url": "https://www.instagram.com/reel/DfcReqmsSye/",
+    "label": "Watch Marina's Rockefeller Center Christmas Tree arrival reel on Instagram"
+   },
+   {
+    "kind": "instagram",
+    "url": "https://www.instagram.com/reel/DfeLQXXsQqR/",
+    "label": "Watch Marina's reel with CJ, the Mayor of Rockefeller Center, on Instagram"
+   },
+   {
+    "kind": "text",
+    "html": "The tree will be lit at the 94th annual lighting ceremony on Wednesday, December 2, from 7 to 10 p.m., with 50,000 LED lights and the Swarovski star, and will stay on display through January 9, 2027. After the holidays, it will be milled into lumber and donated to Habitat for Humanity."
+   }
+  ]
+ },
+ {
   "id": "nyse-christmas-tree-lighting-2026",
   "date": "2026-11-02",
   "type": "press release",
