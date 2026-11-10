@@ -925,6 +925,16 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
       }, 500);
       setTimeout(function () { clearInterval(iv); }, 10000);
     }
+
+    /* Deep link: news-and-press#<article-id> opens that story and scrolls to it */
+    if (location.hash) {
+      var target = document.getElementById(location.hash.slice(1));
+      if (target) {
+        var det = target.querySelector('details');
+        if (det) det.open = true;
+        target.scrollIntoView();
+      }
+    }
   }).catch(function () {
     list.innerHTML = '<p>Stories could not be loaded. Please refresh the page.</p>';
   });
