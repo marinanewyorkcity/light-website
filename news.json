@@ -1,5 +1,32 @@
 [
   {
+    "id": "vessel-holiday-lighting-ceremony-2026",
+    "date": "2026-11-17",
+    "type": "original coverage",
+    "headline": "Vessel Holiday Lighting Ceremony Kicks Off the Christmas Season at Hudson Yards",
+    "lede": "Hudson Yards kicked off the holiday season on Monday, November 16, with the second annual Vessel Holiday Lighting Ceremony, bringing live performances, music, and Christmas magic to the Vessel.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The ceremony featured Anthony Ramos headlining the night, with performances by the New York Pops, NY Vocal Collective, BK United Marching Band, Carolina Rial, and Carnegie Hall Citywide. Helen Little from 106.7 LiteFM hosted the evening."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df07yM1s4_j/",
+        "label": "Watch Marina's reel from the Vessel Holiday Lighting Ceremony on Instagram"
+      },
+      {
+        "kind": "text",
+        "html": "Marina filmed the ceremony from the plaza, capturing the performances and the moment the Vessel lit up."
+      },
+      {
+        "kind": "text",
+        "html": "The Vessel lit up at 6pm, and the light show will run daily from the plaza through January 7, free to watch. The Vessel interior also reopened for the evening with an 18-foot mistletoe photo spot, included with Vessel tickets."
+      }
+    ]
+  },
+  {
     "id": "meta-bh-edits-club-panel-2026",
     "date": "2026-11-17",
     "type": "original coverage",
