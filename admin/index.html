@@ -226,6 +226,16 @@
     if (b.kind === 'text') return '<p>' + b.html + '</p>';
     if (b.kind === 'instagram') {
       var url = esc(b.url), label = esc(b.label || 'Watch on Instagram');
+      if (b.card_type === 'reel' || b.card_type === 'post') {
+        var thumb = esc(b.thumb || ''), text = esc(b.card_text || label);
+        var play = b.card_type === 'reel' ? '<span class="reel-play"></span>' : '';
+        var cta = b.card_type === 'reel' ? 'Watch on Instagram' : 'See on Instagram';
+        return '<div class="reel-card">' +
+          '<a class="reel-thumb" href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+          '<img src="../' + thumb + '" alt="' + text + '" loading="lazy">' + play + '</a>' +
+          '<div class="reel-body"><p>' + text + '</p>' +
+          '<a class="reel-src" href="' + url + '" target="_blank" rel="noopener noreferrer">' + cta + ' &rarr;</a></div></div>';
+      }
       return '<div class="instagram-embed-wrap">' +
         '<blockquote class="instagram-media" data-instgrm-permalink="' + url + '" data-instgrm-version="14">' +
         '<a href="' + url + '">' + label + '</a></blockquote>' +

@@ -22,7 +22,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/Df5szrvMKLX/",
-        "label": "The Fifth Avenue Snowflake illumination, filmed by Marina"
+        "label": "The Fifth Avenue Snowflake illumination, filmed by Marina",
+        "thumb": "assets/reel-thumbs/Df5szrvMKLX.jpg",
+        "card_text": "Christmas magic has arrived on Fifth Avenue! Tonight, NYC's iconic 30-foot Baccarat Crystal Snowflake lit up with over 16,500 crystal prisms.",
+        "card_type": "reel"
       },
       {
         "kind": "text",
@@ -57,7 +60,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/Df07yM1s4_j/",
-        "label": "Watch Marina's reel from the Vessel Holiday Lighting Ceremony on Instagram"
+        "label": "Watch Marina's reel from the Vessel Holiday Lighting Ceremony on Instagram",
+        "thumb": "assets/reel-thumbs/Df07yM1s4_j.jpg",
+        "card_text": "What a night at Hudson Yards! The 2026 Vessel Holiday Lighting Ceremony lit up the Vessel for the holidays.",
+        "card_type": "reel"
       },
       {
         "kind": "text",
@@ -84,7 +90,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/p/Dfxy6Y4lPNQ/",
-        "label": "See Marina's post from the Meta Creators panel at B&H on Instagram"
+        "label": "See Marina's post from the Meta Creators panel at B&H on Instagram",
+        "thumb": "assets/reel-thumbs/Dfxy6Y4lPNQ.jpg",
+        "card_text": "What a night! Meta invited me to be a panelist at a fireside chat with Meta Creators and B&H, sharing my journey as a content creator.",
+        "card_type": "post"
       },
       {
         "kind": "text",
@@ -133,12 +142,18 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DfcReqmsSye/",
-        "label": "Watch Marina's Rockefeller Center Christmas Tree arrival reel on Instagram"
+        "label": "Watch Marina's Rockefeller Center Christmas Tree arrival reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfcReqmsSye.jpg",
+        "card_text": "It's happening! The Rockefeller Center Christmas Tree is arriving in New York City.",
+        "card_type": "reel"
       },
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DfeLQXXsQqR/",
-        "label": "Watch Marina's reel with CJ, the Mayor of Rockefeller Center, on Instagram"
+        "label": "Watch Marina's reel with CJ, the Mayor of Rockefeller Center, on Instagram",
+        "thumb": "assets/reel-thumbs/DfeLQXXsQqR.jpg",
+        "card_text": "Did you know Rockefeller Center has its own mayor? Meet CJ, the Mayor of Rockefeller Center.",
+        "card_type": "reel"
       },
       {
         "kind": "text",
@@ -191,12 +206,18 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DfLhbM6s086/",
-        "label": "Watch Marina's Thriller dance reel on Instagram"
+        "label": "Watch Marina's Thriller dance reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfLhbM6s086.jpg",
+        "card_text": "Only in New York does Halloween turn into a giant Michael Jackson Thriller dance in the street.",
+        "card_type": "reel"
       },
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DfMC0a2OWH-/",
-        "label": "Watch Marina's Village Halloween Parade reel on Instagram"
+        "label": "Watch Marina's Village Halloween Parade reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfMC0a2OWH-.jpg",
+        "card_text": "There's Halloween. And then there's Halloween in New York City.",
+        "card_type": "reel"
       },
       {
         "kind": "youtube",
@@ -229,7 +250,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DfNrP7HMgrU/",
-        "label": "Watch Marina's Candlelight concert video on Instagram"
+        "label": "Watch Marina's Candlelight concert video on Instagram",
+        "thumb": "assets/reel-thumbs/DfNrP7HMgrU.jpg",
+        "card_text": "Halloween in New York, but make it unforgettable. A Candlelight concert at the Vessel.",
+        "card_type": "reel"
       }
     ]
   },
@@ -264,7 +288,8 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/p/De9IB1tDXnF/",
-        "label": "See Rockefeller Center's 2026 Christmas Tree announcement on Instagram"
+        "label": "See Rockefeller Center's 2026 Christmas Tree announcement on Instagram",
+        "card_type": "embed"
       }
     ]
   },
@@ -295,7 +320,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/De7PtFbM0ua/",
-        "label": "Watch Marina's Herald Square Holiday Fair video on Instagram"
+        "label": "Watch Marina's Herald Square Holiday Fair video on Instagram",
+        "thumb": "assets/reel-thumbs/De7PtFbM0ua.jpg",
+        "card_text": "SAVE THE DATE: Herald Holiday Fair is returning to Midtown Manhattan.",
+        "card_type": "reel"
       }
     ]
   },
@@ -372,7 +400,10 @@
       {
         "kind": "instagram",
         "url": "https://www.instagram.com/reel/DeUVkppsni1/",
-        "label": "Watch Marina's Rockefeller Center reel on Instagram"
+        "label": "Watch Marina's Rockefeller Center reel on Instagram",
+        "thumb": "assets/reel-thumbs/DeUVkppsni1.jpg",
+        "card_text": "Christmas in New York is getting closer! The holiday season at Rockefeller Center officially begins in October.",
+        "card_type": "reel"
       }
     ]
   }
