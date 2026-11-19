@@ -1,5 +1,48 @@
 [
   {
+    "id": "fifth-avenue-snowflake-illumination-2026",
+    "date": "2026-11-18",
+    "type": "original coverage",
+    "headline": "Fifth Avenue Snowflake Lights Up for the Holidays in Support of St. Jude",
+    "lede": "The iconic 30-foot Baccarat crystal snowflake illuminated above Fifth Avenue on Wednesday evening, kicking off the holiday season in support of St. Jude Children's Research Hospital.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<p>New York City's first festive lighting of the season arrived on Wednesday, November 18, as the Fifth Avenue Snowflake lit up above the corner of Fifth Avenue and 57th Street. The annual illumination ceremony, free and open to the public, was hosted by St. Jude Children's Research Hospital, the Fifth Avenue Association, and the Stonbely Family Foundation.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>TV personality and podcaster Paige DeSorbo emceed the celebration. Two St. Jude families joined the program to officially flip the switch: seven-year-old childhood cancer survivor Imani and her family from Dix Hills, Long Island, and 17-year-old Faith and her family from Tulsa, Oklahoma.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The program included performances by the Salvation Army Band, the Marymount School of New York Concert Choir, and The Spence School Select Choir.</p>"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df5szrvMKLX/",
+        "label": "The Fifth Avenue Snowflake illumination, filmed by Marina"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The snowflake itself is a marvel. Standing 30 feet tall and wide and weighing 3,300 pounds, it contains over 16,500 individual Baccarat crystal prisms. It was designed by the late German designer Ingo Maurer, known for transforming light into art, in partnership with Baccarat. The snowflake has shone above Fifth Avenue for over 40 years and has become one of New York City's most cherished winter holiday symbols.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The illumination supports St. Jude's lifesaving mission: Finding cures. Saving children. Thanks to generous donors, families never receive a bill from St. Jude for treatment, travel, housing, or food.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Sponsors of the Fifth Avenue Snowflake include Tiffany &amp; Co., Bergdorf Goodman, and the Fifth Avenue Association. The ceremony was produced by Tim Hayes of ProductionsNewYork.com, and the snowflake is installed and maintained by AMA Electric Sign Company.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>St. Jude will also host its Inaugural St. Jude Snowflake Ball on Thursday, December 3, at 6 PM at The Plaza Hotel, with 10-time GRAMMY Award winner Norah Jones performing. Tickets are available at <a href=\"https://stjude.org/snowflakeball\" target=\"_blank\" rel=\"noopener\">stjude.org/snowflakeball</a>.</p>"
+      }
+    ]
+  },
+  {
     "id": "vessel-holiday-lighting-ceremony-2026",
     "date": "2026-11-17",
     "type": "original coverage",
