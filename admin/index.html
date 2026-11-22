@@ -251,17 +251,30 @@
     }
     return '';
   }
+  function newsFirstThumb(a) {
+    if (a.cover) return a.cover;
+    var blocks = a.blocks || [];
+    for (var i = 0; i < blocks.length; i++) {
+      if (blocks[i].kind === 'instagram' && blocks[i].thumb) return blocks[i].thumb;
+    }
+    return 'assets/news-hero-poster.jpg';
+  }
+  function newsCardHtml(a, featured) {
+    var cls = featured ? 'news-card news-card-featured' : 'news-card';
+    return '<a class="' + cls + '" href="/news/' + esc(a.id) + '">' +
+      '<div class="news-card-img"><img src="/' + esc(newsFirstThumb(a)) + '" alt="' + esc(a.headline) + '" loading="lazy"></div>' +
+      '<div class="news-card-body">' +
+      '<div class="news-card-meta"><time datetime="' + esc(a.date) + '">' + esc(fmtDateLong(a.date)) + '</time><span>' + esc(a.type) + '</span></div>' +
+      '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p>' +
+      '<span class="news-card-link">Read the story &rarr;</span></div></a>';
+  }
   function renderNewsStatic(list) {
     var sorted = list.slice().sort(function (a, b) { return b.date < a.date ? -1 : 1; });
     var out = ['<!-- NEWS-STATIC-START -->'];
-    sorted.forEach(function (a) {
-      var cls = 'article-entry' + (a.featured ? ' featured-story' : '');
-      var body = (a.blocks || []).map(newsBlockHtml).join('');
-      out.push('<article class="' + cls + '" id="' + esc(a.id) + '">' +
-        '<div class="article-meta"><time datetime="' + esc(a.date) + '">' + esc(fmtDateLong(a.date)) + '</time><span>' + esc(a.type) + '</span></div>' +
-        '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p>' +
-        '<details><summary>read more</summary><div class="article-body">' + body + '</div></details></article>');
-    });
+    if (sorted.length) out.push(newsCardHtml(sorted[0], true));
+    out.push('<div class="news-card-grid">');
+    sorted.slice(1).forEach(function (a) { out.push(newsCardHtml(a, false)); });
+    out.push('</div>');
     out.push('<!-- NEWS-STATIC-END -->');
     return out.join('\n');
   }
