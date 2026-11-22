@@ -531,6 +531,201 @@ section h2 em { color: var(--gold); }
 @media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;min-height:0}}
 
   
+
+.route-page[hidden]{display:none!important}.route-page{min-height:70vh;max-width:none;margin:0;padding:0;background:var(--black)}
+.inner-hero{position:relative;max-width:none;min-height:100vh;padding:0;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#0b0908;color:var(--paper)}
+.inner-hero::before{content:"";position:absolute;inset:-8% 0;background:url("/assets/hero.jpg") center/cover no-repeat;opacity:.72;transform:scale(1.08);animation:inner-hero-kenburns 26s ease-in-out infinite alternate}
+@keyframes inner-hero-kenburns{from{transform:scale(1.08)}to{transform:scale(1.2)}}
+@media(prefers-reduced-motion:reduce){.inner-hero::before,.inner-hero-video{animation:none}}
+.inner-hero-video{position:absolute;z-index:0;inset:-8% 0;width:100%;height:116%;object-fit:cover;object-position:center;opacity:.72;transform:scale(1.08);animation:inner-hero-kenburns 26s ease-in-out infinite alternate}
+.inner-hero.video-hero::before{display:none}
+.inner-hero.gallery-hero::before{background-image:url("/assets/gallery-hero.jpg")}
+.inner-hero.shop-hero::before{background-image:url("/assets/gallery-skyline.jpg")}
+.inner-hero.guides-hero::before{background-image:url("/assets/guides-hero.jpg")}
+.inner-hero.about-hero::before{background-image:url("/assets/about-hero.jpg");background-position:center}
+.inner-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,13,12,.55) 0%,rgba(16,13,12,.25) 45%,rgba(16,13,12,.92) 100%)}
+.inner-hero-content{position:relative;z-index:1;width:min(900px,calc(100% - 3rem));margin:0 auto;padding:6rem 1.5rem 4rem}
+.explore-indicator{position:absolute;right:clamp(20px,3vw,32px);bottom:0;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(255,255,255,.82);font-size:11px;font-weight:500;letter-spacing:.12em;line-height:1;text-transform:uppercase;writing-mode:vertical-rl;pointer-events:none}.explore-indicator::after{content:"";width:1px;height:68px;background:var(--gold)}
+.inner-hero .section-kicker{letter-spacing:.5em;font-size:.85rem;margin-bottom:1.25rem;font-weight:600}.inner-hero h1{font-size:clamp(3rem,9vw,6.5rem);color:#fff;margin:0 0 1rem;text-shadow:0 4px 40px rgba(0,0,0,.5)}.inner-hero-content>p:last-child{max-width:650px;margin:0 auto;color:rgba(255,255,255,.85);font-size:1.15rem}
+.content-section{background:var(--black)}.section-heading{margin-bottom:2.25rem}.section-heading .section-lead{margin-top:.65rem}
+.article-list{border-top:1px solid rgba(255,222,89,.18)}.article-entry{padding:2rem 0;border-bottom:1px solid rgba(255,222,89,.18)}
+.sample-label{display:inline-block;margin-bottom:.8rem;padding:.3rem .55rem;border:1px solid rgba(255,222,89,.38);color:var(--gold);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
+.article-meta{display:flex;gap:1rem;color:var(--muted);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}.article-entry h3{font-size:clamp(1.8rem,4vw,2.7rem);margin:.5rem 0}.article-entry>p:not(.sample-label){max-width:760px;color:var(--muted)}
+.article-entry details{margin-top:.9rem}.article-entry summary{color:var(--gold);cursor:pointer;font-weight:500}.article-body{max-width:760px;padding-top:.75rem;color:var(--muted)}
+.article-body p+p{margin-top:1rem}.instagram-embed-wrap{width:min(100%,400px);margin:1.5rem auto 0;padding:10px;border:1px solid rgba(255,222,89,.28);border-radius:8px;background:#0b0908;overflow:hidden}.instagram-embed-wrap .instagram-media{width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;border-radius:4px!important}.instagram-embed-fallback{margin-top:.65rem;font-size:.72rem}.instagram-embed-fallback a{text-decoration:none;border-bottom:1px solid var(--gold)}
+.reel-card{max-width:320px;margin:1.5rem auto 0;background:#1a1512;border:1px solid rgba(255,222,89,.28);border-radius:12px;overflow:hidden}
+.reel-thumb{position:relative;display:block}
+.reel-thumb img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.reel-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;background:rgba(255,222,89,.92);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.reel-play::after{content:'';border-left:16px solid #100D0C;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.article-body::after{content:'';display:block;clear:both}
+@media (min-width:768px){.reel-card{float:right;margin:0 0 1rem 1.5rem}}
+.reel-body{padding:16px 18px 18px}
+.reel-body p{color:#EDE7E1;font-size:.95rem;line-height:1.5;margin:0 0 8px}
+.reel-src{color:#FFDE59;font-size:.8rem;letter-spacing:.5px;text-transform:uppercase;text-decoration:none}
+.article-entry.featured-story{padding:clamp(2.25rem,5vw,4rem) 0}.featured-story .article-body{max-width:940px;color:rgba(250,247,240,.82);font-size:1rem;line-height:1.75}.featured-story>p:not(.sample-label){max-width:880px;color:rgba(250,247,240,.72);font-size:1.02rem}.article-media-grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:1.25rem;align-items:start;margin-top:2rem}.story-media{min-width:0}.story-media-label{margin:0 0 .65rem!important;color:var(--gold);font-size:.65rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase}.social-embed-card{position:relative;width:100%;overflow:hidden;border:1px solid rgba(255,222,89,.28);border-radius:8px;background:#0b0908}.social-embed-card iframe{display:block;width:100%;border:0;background:#0b0908}.instagram-frame iframe{height:650px}.youtube-frame{aspect-ratio:16/9}.youtube-frame iframe{position:absolute;inset:0;height:100%}.social-source-link{display:inline-block;margin-top:.65rem;color:var(--gold);font-size:.72rem;text-decoration:none;border-bottom:1px solid rgba(255,222,89,.72)}
+@media(max-width:760px){.article-media-grid{grid-template-columns:1fr;gap:2rem}.instagram-frame{max-width:420px}.instagram-frame iframe{height:620px}}
+.gallery-masonry{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}.gallery-tile{margin:0;min-width:0}.gallery-thumb{display:block;width:100%;padding:0;border:0;border-radius:8px;background:transparent;overflow:hidden;cursor:zoom-in}.gallery-thumb img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:8px;transition:transform .25s ease,filter .25s ease;-webkit-user-drag:none;user-select:none}.gallery-thumb:hover img{transform:scale(1.035);filter:brightness(1.06)}.gallery-thumb:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.gallery-lightbox[hidden]{display:none}.gallery-lightbox{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:clamp(1rem,4vw,2.5rem);background:rgba(5,4,4,.96)}.gallery-lightbox img{display:block;width:auto;height:auto;max-width:min(900px,92vw);max-height:84vh;object-fit:contain;border-radius:8px;box-shadow:0 28px 72px rgba(0,0,0,.7);-webkit-user-drag:none;user-select:none}.gallery-lightbox-close{position:absolute;top:max(1rem,env(safe-area-inset-top));right:max(1rem,env(safe-area-inset-right));width:44px;height:44px;border:1px solid rgba(255,222,89,.55);border-radius:50%;background:rgba(16,13,12,.72);color:var(--gold);font:300 2rem/1 var(--sans);cursor:pointer}.gallery-lightbox-close:focus-visible{outline:2px solid var(--gold);outline-offset:3px}body.gallery-viewing{overflow:hidden}
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.product-card{display:grid;grid-template-columns:.9fr 1.1fr;border:1px solid rgba(255,222,89,.16);background:#0b0908}.product-visual{min-height:310px;display:grid;place-items:center;padding:2rem;text-align:center;color:var(--gold);background:linear-gradient(145deg,#071211,#2b2420)}.product-copy{padding:2rem}.product-type{color:var(--gold);font-size:.65rem;text-transform:uppercase;letter-spacing:.14em}.product-copy h3,.coming-grid h3{font-size:2rem;margin:.35rem 0}.price{font-weight:500}.product-copy p:not(.product-type):not(.price){color:var(--muted)}
+.guide-feature{background:#0b0908}.guide-layout,.about-page-grid,.two-column,.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,8vw,6rem);align-items:center}.guide-copy h2{font-size:clamp(3rem,7vw,5.2rem)}.guide-copy>p:not(.section-kicker):not(.guide-price){color:var(--muted)}.guide-price{display:flex;align-items:baseline;gap:.8rem}.guide-price del{color:var(--muted)}.guide-price strong{color:var(--gold);font-size:2rem}.guide-price span{color:var(--muted);font-size:.7rem}.guide-demo{min-height:420px;position:relative}.demo-screen{position:absolute;inset:0 70px 20px 0;display:grid;place-items:center;border:1px solid rgba(255,222,89,.35);background:linear-gradient(145deg,#1d1815,#071211);color:var(--gold);text-align:center}.demo-screen.small{inset:125px 0 0 auto;width:180px;background:#171311;box-shadow:0 18px 40px #000}.coming-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,222,89,.16);margin-top:2rem}.coming-grid article{padding:1.5rem;background:#0b0908}.coming-grid p,.about-page-grid p,.two-column p,.contact-layout p{color:var(--muted)}
+.about-page-grid h2,.two-column h2,.contact-layout h2{font-size:clamp(2.4rem,5vw,4rem)}.about-portrait{width:min(390px,78vw);aspect-ratio:1;border-radius:50%;overflow:hidden;margin:auto}.about-portrait img{width:100%;height:100%;object-fit:cover;object-position:60% 45%}.placeholder-note{display:inline-block;padding:.55rem .7rem;border:1px solid rgba(255,222,89,.3);color:var(--gold)!important;font-size:.72rem}.profile-socials{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}.profile-socials a{padding:.55rem 1rem;border:1px solid rgba(255,222,89,.28);border-radius:999px;text-decoration:none;font-size:.75rem}
+.contact-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 1rem;padding:clamp(1.5rem,4vw,2.5rem);background:#0b0908;border:1px solid rgba(255,222,89,.2)}.form-field{display:grid;gap:.45rem;min-width:0}.form-field-wide,.contact-options,.contact-form .form-actions,.form-status{grid-column:1/-1}.contact-form label,.contact-form legend{color:var(--gold);font-size:.7rem;font-weight:500;letter-spacing:.09em}.field-optional{color:var(--muted);font-size:.62rem;font-weight:300;letter-spacing:.03em}.contact-form input:not([type="checkbox"]),.contact-form textarea{width:100%;min-height:48px;padding:.8rem .9rem;border:1px solid rgba(255,222,89,.32);border-radius:4px;background:#171311;color:var(--paper);font:inherit}.contact-form textarea{min-height:150px;resize:vertical}.contact-form input:not([type="checkbox"]):focus,.contact-form textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 2px rgba(255,222,89,.12)}.contact-options{min-width:0;padding:0;border:0}.contact-options legend{margin-bottom:.7rem}.contact-option-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.contact-option{display:flex;align-items:center;gap:.65rem;min-height:46px;padding:.65rem .75rem;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.035));box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 8px 24px rgba(0,0,0,.16);-webkit-backdrop-filter:blur(12px) saturate(135%);backdrop-filter:blur(12px) saturate(135%);color:var(--paper)!important;font-size:.76rem!important;font-weight:300!important;letter-spacing:.01em!important;cursor:pointer}.contact-option:has(input:checked){border-color:rgba(255,222,89,.72);background:linear-gradient(145deg,rgba(255,222,89,.16),rgba(255,255,255,.05));box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 8px 26px rgba(0,0,0,.2)}.contact-option input{width:1rem;height:1rem;margin:0;accent-color:var(--gold)}.contact-form .form-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.contact-form .btn{min-width:150px}.contact-form .btn[disabled]{cursor:wait;opacity:.65;transform:none}.form-note{color:var(--muted);font-size:.7rem}.form-status{display:none;padding:.85rem 1rem;border:1px solid rgba(255,222,89,.32);color:var(--paper);font-size:.82rem}.form-status.is-visible{display:block}.form-status.is-success{border-color:var(--gold);background:rgba(255,222,89,.08)}.form-status.is-error{border-color:#b86d61;background:rgba(184,109,97,.08)}
+.route-page .stats{max-width:none}
+
+.shop-section{background:var(--black)}
+.shop-section+.shop-section{padding-top:1rem}
+.shop-section-head{display:flex;align-items:end;justify-content:space-between;gap:1.5rem;margin-bottom:2rem}
+.shop-section-head h2{margin:0}.shop-section-head p{max-width:520px;color:var(--muted)}
+.shop-catalog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.shop-card{display:flex;flex-direction:column;min-width:0;background:#171311;border:1px solid rgba(255,222,89,.16);border-radius:8px;overflow:hidden;color:var(--paper);text-decoration:none;transition:border-color .2s ease,transform .2s ease}
+.shop-card:hover,.shop-card:focus-visible{border-color:rgba(255,222,89,.62);transform:translateY(-3px)}
+.shop-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.shop-card-media{aspect-ratio:4/3;overflow:hidden;background:#211b18}.shop-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}.shop-card:hover img{transform:scale(1.025)}
+.shop-card-body{display:flex;flex:1;flex-direction:column;padding:1.1rem}.shop-card h3{font-size:1.35rem;font-style:normal;line-height:1.25;margin:0 0 .55rem}.shop-card-price{margin-top:auto;color:var(--gold);font-weight:500}.shop-card-price del{margin-left:.4rem;color:var(--muted);font-size:.78rem;font-weight:300}.shop-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.shop-empty{border-top:1px solid rgba(255,222,89,.2);padding:1.2rem 0 0;color:var(--muted)}
+.guide-preview{position:absolute;inset:0;border-radius:8px;overflow:hidden;border:1px solid rgba(255,222,89,.28);background:#171311}.guide-preview img{width:100%;height:100%;object-fit:cover;object-position:top center}.guide-preview::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(16,13,12,.55))}
+.about-bio p{margin-top:1rem}.services-editorial{background:#0b0908;max-width:none}.services-editorial-inner{width:min(1152px,calc(100% - 3rem));margin:0 auto}.editorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(255,222,89,.17);margin-top:2rem}.editorial-item{background:#0b0908;padding:1.6rem}.editorial-item h3{color:var(--gold);font-style:normal;font-size:1.25rem;text-transform:capitalize}.editorial-item p{margin-top:.65rem;color:var(--muted)}
+.about-clients{max-width:none;padding-top:3.75rem;padding-bottom:3.75rem;overflow:hidden;background:var(--black)}.about-clients h2{width:min(1180px,calc(100% - 3rem));margin:0 auto 2.5rem;color:var(--gold);font-size:clamp(2.3rem,5vw,4.2rem);text-align:left}.client-marquee{width:100%;overflow:hidden}.client-grid{--client-gap:2.25rem;display:flex;align-items:center;width:max-content;animation:clientMarquee 52s linear infinite;will-change:transform}.client-set{display:flex;flex:none;align-items:center;gap:var(--client-gap);padding-right:var(--client-gap)}.client-logo{display:flex;flex:0 0 110px;align-items:center;justify-content:center;height:42px}.client-logo img{width:auto;max-width:100%;max-height:34px;object-fit:contain;opacity:.88;filter:grayscale(1)}.client-logo-apple img{max-height:38px}@keyframes clientMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.profile-socials{gap:.75rem}.profile-socials a{border-radius:8px;padding:.75rem 1rem;background:#171311}.profile-socials a:hover{border-color:var(--gold)}
+.inner-hero-intro{max-width:650px;margin:0 auto;color:rgba(255,255,255,.85);font-size:1.15rem}.hero-contact-action{margin-top:2rem}.work-contact{max-width:none;background:#0b0908;scroll-margin-top:6rem}.work-contact-inner{width:min(1152px,calc(100% - 3rem));margin:0 auto}.work-contact .contact-layout{align-items:start}.contact-social{display:grid;grid-template-columns:minmax(280px,.82fr) minmax(0,1.18fr);gap:clamp(2.5rem,8vw,6rem);align-items:end;padding-bottom:2rem;margin-bottom:2.25rem;border-bottom:1px solid rgba(255,222,89,.18)}.contact-social h2{margin:0}.contact-social .section-kicker{margin-bottom:.55rem}.contact-social .profile-socials{justify-content:flex-start;margin:0}
+@media(max-width:900px){.shop-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.inner-hero{min-height:100svh}.inner-hero-content{padding:6rem 1rem 4rem}.contact-social{grid-template-columns:1fr;gap:1.25rem;padding-bottom:1.6rem;margin-bottom:1.75rem}.gallery-masonry{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.gallery-lightbox{padding:1rem}.gallery-lightbox img{max-width:94vw;max-height:80vh}.product-grid,.guide-layout,.about-page-grid,.two-column,.contact-layout,.coming-grid,.shop-catalog,.editorial-grid,.contact-form,.contact-option-grid{grid-template-columns:1fr}.form-field-wide,.contact-options,.contact-form .form-actions,.form-status{grid-column:1}.product-card{grid-template-columns:1fr}.product-visual{min-height:230px}.guide-demo{min-height:360px}.about-clients{padding-top:3rem;padding-bottom:3rem}.about-clients h2{margin-bottom:2rem;font-size:clamp(2.15rem,12vw,3.15rem)}.client-grid{--client-gap:1.65rem;animation-duration:42s}.client-logo{flex-basis:88px;height:36px}.client-logo img{max-height:28px}.client-logo-apple img{max-height:32px}}
+
+
+@font-face{font-family:'Telegraf';src:url('/assets/telegraf-400.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Telegraf';src:url('/assets/telegraf-200.woff') format('woff');font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:'Telegraf';src:url('/assets/telegraf-700.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+
+
+.footer-column-title{font-family:'Telegraf','Century Gothic',Futura,sans-serif !important}
+.footer-links a{font-family:'Telegraf','Century Gothic',Futura,sans-serif !important}
+.footer-newsletter p{font-family:'Telegraf','Century Gothic',Futura,sans-serif !important}
+.footer-social a{font-family:'Telegraf','Century Gothic',Futura,sans-serif !important}
+.site-footer{font-family:'Telegraf','Century Gothic',Futura,sans-serif}
+
+
+body{font-family:'Telegraf','Century Gothic',Futura,sans-serif !important}
+p,li,a,span,div{font-family:'Telegraf','Century Gothic',Futura,sans-serif}
+h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif !important}
+
+
+/* Mobile menu button - hidden on desktop */
+.mobile-menu-btn { display: none; }
+@media (max-width: 640px) {
+  .mobile-menu-btn {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    background: transparent !important;
+    border: 1px solid rgba(255,222,89,0.4) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+    margin-left: auto !important;
+  }
+  .mobile-menu-btn .menu-text {
+    color: #fff !important;
+    font-size: 0.85rem !important;
+    text-transform: lowercase !important;
+    letter-spacing: 0.05em !important;
+  }
+  .hamburger-icon {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+  .hamburger-icon span {
+    display: block !important;
+    width: 18px !important;
+    height: 2px !important;
+    background: #FFDE59 !important;
+    border-radius: 1px !important;
+    transition: all 0.3s ease !important;
+  }
+  nav[aria-label="Main navigation"] {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(16,13,12,0.98) !important;
+    flex-direction: column !important;
+    padding: 1rem !important;
+    z-index: 100 !important;
+    border-top: 1px solid rgba(255,222,89,0.2) !important;
+  }
+  nav[aria-label="Main navigation"].open { display: flex !important; }
+  nav[aria-label="Main navigation"].open a {
+    padding: 0.7rem 1rem !important;
+    text-align: center !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    font-size: 0.95rem !important;
+  }
+  .mobile-menu-btn[aria-expanded="true"] .hamburger-icon span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg) !important;
+  }
+  .mobile-menu-btn[aria-expanded="true"] .hamburger-icon span:nth-child(2) { opacity: 0 !important; }
+  .mobile-menu-btn[aria-expanded="true"] .hamburger-icon span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg) !important;
+  }
+  .site-header { position: relative !important; }
+  /* Header overlay on hero */
+  .site-header {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 50 !important;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 100%) !important;
+    padding: 0.8rem 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  /* Footer mobile: stacked, links below newsletter in 3 cols */
+  .footer-main {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .footer-brand { max-width: 100% !important; text-align: center !important; order: 1 !important; }
+  .footer-brand-logo { margin: 0 auto !important; }
+  .footer-tagline { text-align: center !important; }
+  .footer-follow-group { text-align: center !important; order: 2 !important; }
+  .footer-socials {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+    order: 3 !important;
+  }
+  .footer-newsletter { max-width: 100% !important; text-align: center !important; order: 4 !important; }
+  .footer-map { text-align: center !important; order: 5 !important; width: 100% !important; }
+  .footer-map ul.footer-links {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 0.6rem 1rem !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+  .footer-map ul.footer-links li a { white-space: nowrap !important; font-size: 0.85rem !important; }
+  /* Disable hero parallax on mobile */
+  .hero-bg-wrap { transform: none !important; }
+}
+
+
+@media (max-width: 640px) {
+  .wordmark img {
+    height: 42px !important;
+    width: auto !important;
+    max-height: 42px !important;
+  }
+}
+
 /* Individual article pages + news listing cards (generated by gen-news.py) */
 .article-page{padding-top:7.5rem}
 .article-crumb{margin-bottom:1.5rem}
@@ -540,8 +735,10 @@ section h2 em { color: var(--gold); }
 .article-header h1{font-size:clamp(2.2rem,5.5vw,3.8rem);margin:.6rem 0 1rem}
 .article-byline{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-top:1rem}
 .article-lede{max-width:820px;margin:0 auto 2rem;color:rgba(250,247,240,.82);font-size:1.15rem;line-height:1.7}
-.article-hero-img{max-width:960px;margin:0 auto 2.5rem;border-radius:12px;overflow:hidden;border:1px solid rgba(255,222,89,.22)}
+.article-hero-img{max-width:600px;margin:0 auto 2.5rem;border-radius:12px;overflow:hidden;border:1px solid rgba(255,222,89,.22)}
 .article-hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.article-hero-card{max-width:760px;margin:0 auto 2rem}
+.article-hero-card .reel-card{margin:0 auto;float:none}
 .article-page-body{max-width:760px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}
 .article-page-body::after{content:"";display:block;clear:both}
@@ -594,8 +791,7 @@ section h2 em { color: var(--gold); }
     <div class="article-byline"><time datetime="2026-10-26">October 26, 2026</time><span>press release</span><span>By Marina Kapler</span></div>
   </div>
   <p class="article-lede">A 76-foot Norway spruce from West Edmeston, New York, will be this year&#x27;s Rockefeller Center Christmas Tree, arriving in Midtown on November 7 before the December 2 lighting.</p>
-  <div class="article-hero-img"><img src="/assets/news-hero-poster.jpg" alt="Rockefeller Center Reveals Its 2026 Christmas Tree"></div>
-  <div class="article-page-body"><p>Rockefeller Center announced the tree on Monday, October 26. The Norway spruce is about 75 years old, 50 feet wide, and weighs roughly 11 tons. It was donated by Rebecca Decker of West Edmeston, a small town in upstate New York, and found by Erik Pauze, Rockefeller Center's head gardener, who has chosen the tree for more than 30 years.</p><p>The tree will be cut on Thursday, November 5, and arrive at Rockefeller Plaza on Saturday, November 7. Its arrival is a public event this year, Meet the Tree Day 2026, back for its second year, with a holiday workshop from Care Bears and FAO Schwarz, meet-and-greets with six Care Bears characters, photo opportunities, and arts and crafts on the plaza.</p><p>Once it goes up, the tree will be dressed in more than 50,000 multicolored LED lights strung across five miles of wire, topped with the 900-pound Swarovski star designed by architect Daniel Libeskind. The star holds more than three million crystals across 70 spikes.</p><p>The lighting ceremony is Wednesday, December 2, broadcast live as Christmas in Rockefeller Center from 7 to 10pm. Performances begin around 8pm, the countdown starts at 9:57pm, and the lights switch on just before 10pm. Public viewing is free.</p><p>The tree stays on display through January 9, 2027. When it comes down, it will be milled into lumber and donated to Habitat for Humanity. The first tree went up in 1931, when construction workers pooled their money for a 20-foot balsam fir, and the first official lighting followed in 1933. The scaffolding is expected to come down before Thanksgiving, so the last days of November are the quiet window to see the tree fully decorated, star in place, before the lighting night crowds arrive.</p><div class="instagram-embed-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/De9IB1tDXnF/" data-instgrm-version="14"><a href="https://www.instagram.com/p/De9IB1tDXnF/">See Rockefeller Center&#x27;s 2026 Christmas Tree announcement on Instagram</a></blockquote><p class="instagram-embed-fallback"><a href="https://www.instagram.com/p/De9IB1tDXnF/" target="_blank" rel="noopener noreferrer">Watch on Instagram</a></p></div></div>
+<div class="article-hero-img"><img src="/assets/news-hero-poster.jpg" alt="Rockefeller Center Reveals Its 2026 Christmas Tree"></div>  <div class="article-page-body"><p>Rockefeller Center announced the tree on Monday, October 26. The Norway spruce is about 75 years old, 50 feet wide, and weighs roughly 11 tons. It was donated by Rebecca Decker of West Edmeston, a small town in upstate New York, and found by Erik Pauze, Rockefeller Center's head gardener, who has chosen the tree for more than 30 years.</p><p>The tree will be cut on Thursday, November 5, and arrive at Rockefeller Plaza on Saturday, November 7. Its arrival is a public event this year, Meet the Tree Day 2026, back for its second year, with a holiday workshop from Care Bears and FAO Schwarz, meet-and-greets with six Care Bears characters, photo opportunities, and arts and crafts on the plaza.</p><p>Once it goes up, the tree will be dressed in more than 50,000 multicolored LED lights strung across five miles of wire, topped with the 900-pound Swarovski star designed by architect Daniel Libeskind. The star holds more than three million crystals across 70 spikes.</p><p>The lighting ceremony is Wednesday, December 2, broadcast live as Christmas in Rockefeller Center from 7 to 10pm. Performances begin around 8pm, the countdown starts at 9:57pm, and the lights switch on just before 10pm. Public viewing is free.</p><p>The tree stays on display through January 9, 2027. When it comes down, it will be milled into lumber and donated to Habitat for Humanity. The first tree went up in 1931, when construction workers pooled their money for a 20-foot balsam fir, and the first official lighting followed in 1933. The scaffolding is expected to come down before Thanksgiving, so the last days of November are the quiet window to see the tree fully decorated, star in place, before the lighting night crowds arrive.</p><div class="instagram-embed-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/De9IB1tDXnF/" data-instgrm-version="14"><a href="https://www.instagram.com/p/De9IB1tDXnF/">See Rockefeller Center&#x27;s 2026 Christmas Tree announcement on Instagram</a></blockquote><p class="instagram-embed-fallback"><a href="https://www.instagram.com/p/De9IB1tDXnF/" target="_blank" rel="noopener noreferrer">Watch on Instagram</a></p></div></div>
   <div class="share-row"><span>Share this story</span><button class="share-btn" type="button" onclick="navigator.clipboard.writeText(location.href).then(function(){this.textContent='Link copied';}.bind(this))">Copy link</button><a class="share-btn" href="https://twitter.com/intent/tweet?url=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026&text=Rockefeller Center Reveals Its 2026 Christmas Tree" target="_blank" rel="noopener noreferrer">X</a><a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026" target="_blank" rel="noopener noreferrer">Facebook</a><a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="share-btn" href="https://pinterest.com/pin/create/button/?url=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026&media=https://marinanewyorkcity.com/assets/news-hero-poster.jpg&description=Rockefeller Center Reveals Its 2026 Christmas Tree" target="_blank" rel="noopener noreferrer">Pinterest</a><a class="share-btn" href="https://wa.me/?text=Rockefeller Center Reveals Its 2026 Christmas Tree%20https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="share-btn" href="https://t.me/share/url?url=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026&text=Rockefeller Center Reveals Its 2026 Christmas Tree" target="_blank" rel="noopener noreferrer">Telegram</a><a class="share-btn" href="mailto:?subject=Rockefeller Center Reveals Its 2026 Christmas Tree&body=https://marinanewyorkcity.com/news/rockefeller-center-christmas-tree-2026">Email</a></div>
   <div class="more-stories"><h2>More <em>stories</em></h2><div class="news-card-grid"><a class="news-card" href="/news/fox-news-all-american-christmas-tree-lighting-2026"><div class="news-card-img"><img src="/assets/reel-thumbs/Df-5zZHsL5t.jpg" alt="FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square</h3><p>FOX News Media kicked off the holiday season with the seventh annual All-American Christmas Tree Lighting at FOX Square, lighting a 50-foot tree with 340,000 lights on Friday, November 20.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card" href="/news/macys-holiday-windows-2026-blue-hippo"><div class="news-card-img"><img src="/assets/reel-thumbs/Df8hfg-shfk.jpg" alt="Macy&#x27;s Unveils 2026 Holiday Windows Starring the Blue Hippopotamus" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Macy&#x27;s Unveils 2026 Holiday Windows Starring the Blue Hippopotamus</h3><p>Macy&#x27;s Herald Square unveiled its 2026 holiday windows on Thursday, November 19, telling the story of the Blue Hippopotamus, a Thanksgiving Day Parade balloon lost since 1931, ahead of the parade&#x27;s 100th edition.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card" href="/news/lightscape-brooklyn-botanic-garden-2026"><div class="news-card-img"><img src="/assets/reel-thumbs/Df8b_jdsa-P.jpg" alt="Lightscape Returns to Brooklyn Botanic Garden With Over One Million Lights" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Lightscape Returns to Brooklyn Botanic Garden With Over One Million Lights</h3><p>Brooklyn Botanic Garden kicked off the holiday season with the sixth annual Lightscape, a reimagined nearly mile-long trail of more than one million lights, open November 20 through January 3.</p><span class="news-card-link">Read the story &rarr;</span></div></a></div></div>
 </section>
