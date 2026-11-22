@@ -630,7 +630,13 @@
     token = $('token-input').value.trim();
     if (!token) return;
     $('login-btn').disabled = true;
-    gh('/').then(function () { return fetch('https://api.github.com/user', { headers: { 'Authorization': 'Bearer ' + token } }).then(function (r) { return r.json(); }); })
+    $('login-error').style.display = 'none';
+    gh('').then(function () { return fetch('https://api.github.com/user', { headers: { 'Authorization': 'Bearer ' + token } }).then(function (r) {
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
+        throw new Error('GitHub ' + r.status + (j.message ? ': ' + j.message : ''));
+      });
+      return r.json();
+    }); })
       .then(function (user) {
         if ($('remember-token').checked) localStorage.setItem('mnyc_admin_token', token);
         else localStorage.removeItem('mnyc_admin_token');
