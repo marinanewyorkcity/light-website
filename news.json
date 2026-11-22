@@ -12,8 +12,20 @@
     "html": "<strong><a href=\"https://bryantpark.org\" target=\"_blank\" rel=\"noopener noreferrer\">Bryant Park</a>, 5:30-6:30 PM.</strong> The first lighting of the night is at Bryant Park, where the ceremony runs 5:30 to 6:30 PM. Entry is from 3:30 PM, first come, first served. Free."
    },
    {
+    "kind": "image",
+    "src": "assets/news-photos/dec1-bryant-park.jpg",
+    "caption": "The Bryant Park Christmas tree, with the ice rink in front of the New York Public Library.",
+    "alt": "The lit Bryant Park Christmas tree at night with ice skaters in front of the New York Public Library"
+   },
+   {
     "kind": "text",
     "html": "<strong><a href=\"https://www.lottehotel.com/new-york-palace/en.html\" target=\"_blank\" rel=\"noopener noreferrer\">Lotte New York Palace</a>, 5:00-7:00 PM.</strong> The Palace lights its spectacular 30-foot Christmas tree in the Courtyard at 455 Madison Avenue, with champagne, passed bites, and a surprise performance. Attendance is by RSVP."
+   },
+   {
+    "kind": "image",
+    "src": "assets/news-photos/dec1-lotte.jpg",
+    "caption": "The Christmas tree in the Courtyard at Lotte New York Palace.",
+    "alt": "The decorated Christmas tree in the Courtyard at Lotte New York Palace at night"
    },
    {
     "kind": "text",
@@ -22,6 +34,12 @@
    {
     "kind": "text",
     "html": "<strong><a href=\"https://theseaport.nyc/events/holiday-tree-lighting/\" target=\"_blank\" rel=\"noopener noreferrer\">The Seaport</a>, 6:00-8:00 PM.</strong> The Seaport transforms the corner of Fulton and Front Streets into a festive gathering with live music from the Brooklyn-based, female-led brass band Brass Queens, DJ-spun holiday classics, and the neighborhood tree lighting at 6:30 PM, followed by a meet-and-greet with Santa. Hot chocolate and chocolate chip cookies from Sadie's Bakery, plus holiday crafts and local pop-ups. Free and family-friendly."
+   },
+   {
+    "kind": "image",
+    "src": "assets/news-photos/dec1-seaport.jpg",
+    "caption": "The Christmas tree at the Seaport, by the tall ships on the waterfront.",
+    "alt": "The lit Christmas tree at the Seaport at night with tall ship masts behind it"
    },
    {
     "kind": "text",
