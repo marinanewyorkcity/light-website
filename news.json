@@ -32,6 +32,12 @@
     "html": "<strong><a href=\"https://www.tavernonthegreen.com\" target=\"_blank\" rel=\"noopener noreferrer\">Tavern on the Green</a>, 5:30-8:30 PM.</strong> The Central Park restaurant celebrates its 10th annual tree lighting, and this year <a href=\"https://www.popmart.com\" target=\"_blank\" rel=\"noopener noreferrer\">POP MART</a>'s Twinkle Twinkle character makes its first-ever U.S. appearance, with a live performance at 6:30 PM and meet-and-greets before and after. DJ Tweed and the Manhattan Carolers perform, with complimentary hot chocolate, hot apple cider, cookies, and passed hors d'oeuvres. The tree lights up at 7:00 PM. Free and open to all, at West 67th Street and Central Park West."
    },
    {
+    "kind": "image",
+    "src": "assets/news-photos/dec1-tavern.jpg",
+    "caption": "The Christmas tree at Tavern on the Green, in the courtyard in Central Park.",
+    "alt": "The decorated Christmas tree at Tavern on the Green at night, with a nutcracker and string lights"
+   },
+   {
     "kind": "text",
     "html": "<strong><a href=\"https://theseaport.nyc/events/holiday-tree-lighting/\" target=\"_blank\" rel=\"noopener noreferrer\">The Seaport</a>, 6:00-8:00 PM.</strong> The Seaport transforms the corner of Fulton and Front Streets into a festive gathering with live music from the Brooklyn-based, female-led brass band Brass Queens, DJ-spun holiday classics, and the neighborhood tree lighting at 6:30 PM, followed by a meet-and-greet with Santa. Hot chocolate and chocolate chip cookies from Sadie's Bakery, plus holiday crafts and local pop-ups. Free and family-friendly."
    },
