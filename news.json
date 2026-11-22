@@ -568,6 +568,12 @@
     "html": "<a href=\"https://www.rockefellercenter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Center</a> announced the tree on Monday, October 26. The Norway spruce is about 75 years old, 50 feet wide, and weighs roughly 11 tons. It was donated by Rebecca Decker of West Edmeston, a small town in upstate New York, and found by Erik Pauze, Rockefeller Center's head gardener, who has chosen the tree for more than 30 years."
    },
    {
+    "kind": "image",
+    "src": "assets/news-photos/rockefeller-tree-west-edmeston.jpg",
+    "caption": "The 2026 Rockefeller Center Christmas tree, a 76-foot Norway spruce, in West Edmeston before its journey to New York City.",
+    "alt": "The 2026 Rockefeller Center Christmas tree, a tall Norway spruce in a field in West Edmeston with a rainbow behind it"
+   },
+   {
     "kind": "text",
     "html": "The tree will be cut on Thursday, November 5, and arrive at Rockefeller Plaza on Saturday, November 7. Its arrival is a public event this year, Meet the Tree Day 2026, back for its second year, with a holiday workshop from Care Bears and FAO Schwarz, meet-and-greets with six Care Bears characters, photo opportunities, and arts and crafts on the plaza."
    },
@@ -593,7 +599,8 @@
     "kind": "text",
     "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
    }
-  ]
+  ],
+  "cover": "assets/news-covers/rockefeller-center-christmas-tree-2026.jpg"
  },
  {
   "id": "herald-square-holiday-fair-2026",
