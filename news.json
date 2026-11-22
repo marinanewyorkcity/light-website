@@ -461,6 +461,12 @@
     "html": "The <a href=\"https://www.nyse.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NYSE</a> announced the date this week. The free public celebration brings more than 35 vendors, holiday performances, and seasonal festivities to Wall and Broad Streets in the Financial District, with the tree lighting expected around 5:15 PM. The Exchange describes the event as an incredible community celebration that marks the start of the holiday season."
    },
    {
+    "kind": "image",
+    "src": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg",
+    "caption": "The NYSE Christmas tree lit up on Wall Street, with the New York Stock Exchange behind it.",
+    "alt": "The NYSE Christmas tree covered in colorful lights on Wall Street at night, with the New York Stock Exchange building lit red and green"
+   },
+   {
     "kind": "text",
     "html": "This year's tree comes from the Town of Beekman in upstate New York. In early October, Town Supervisor Laureen Abbatantuono confirmed that Beekman's tree would go to the New York Stock Exchange, not Rockefeller Center, ending days of speculation after the town first teased the news. The exact location of the tree is being kept private to protect the family's privacy."
    },
@@ -468,7 +474,8 @@
     "kind": "text",
     "html": "The NYSE tree lighting tradition dates back to 1923, nearly a decade before Rockefeller Center's first tree, making it one of New York's oldest holiday traditions. The tree stands outside the Exchange's neoclassical building on Broad Street, a short walk from the Charging Bull and Fearless Girl statues."
    }
-  ]
+  ],
+  "cover": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg"
  },
  {
   "id": "village-halloween-parade-2026",
