@@ -113,6 +113,7 @@
           <label>Location</label><input type="text" id="ev-location">
           <label>Price</label><input type="text" id="ev-price" placeholder="Free">
           <label>Link URL</label><input type="url" id="ev-url">
+          <label>Tickets URL (affiliate link, optional)</label><input type="url" id="ev-tickets" placeholder="https://www.getyourguide.com/...">
           <label>Why go (1-2 sentences)</label><textarea id="ev-why"></textarea>
           <label>Good for (tags, comma separated)</label><input type="text" id="ev-goodfor">
           <label>Tags (comma separated, e.g. Christmas, Pop-up, Tree lighting)</label><input type="text" id="ev-tags" placeholder="Christmas, Tree lighting">
@@ -257,6 +258,7 @@
     }
     return '';
   }
+  function newsFirstThumb(a) {
     if (a.cover) return a.cover;
     var blocks = a.blocks || [];
     for (var i = 0; i < blocks.length; i++) {
@@ -286,6 +288,7 @@
   }
   function eventCardStatic(ev) {
     var dateCls = /^Official date/i.test(ev.dateText || '') ? 'event-date event-date--estimate' : 'event-date';
+    var ticketsHtml = ev.tickets ? '<a class="tickets-link" href="' + esc(ev.tickets) + '" target="_blank" rel="noopener noreferrer">Get tickets<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M18 13v6H5V6h6"></path></svg></a>' : '';
     return '<details class="event-card"><summary><div class="event-card-main">' +
       '<span class="' + dateCls + '">' + esc(ev.dateText || '') + '</span>' +
       '<h3 class="event-title">' + esc(ev.title || '') + '</h3>' +
@@ -298,7 +301,7 @@
       '<div><span class="detail-label">price</span><p class="detail-value">' + esc(ev.price || '') + '</p></div>' +
       '<div><span class="detail-label">why visit</span><p class="detail-value">' + esc(ev.why || '') + '</p></div>' +
       '<div><span class="detail-label">good for</span><p class="detail-value">' + esc(ev.goodFor || '') + '</p></div>' +
-      '<div><a class="official-link" href="' + esc(ev.url || '') + '" target="_blank" rel="noopener noreferrer">official event page<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M18 13v6H5V6h6"></path></svg></a></div>' +
+      '<div><a class="official-link" href="' + esc(ev.url || '') + '" target="_blank" rel="noopener noreferrer">official event page<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M18 13v6H5V6h6"></path></svg></a>' + ticketsHtml + '</div>' +
       '</div></details>';
   }
   function renderPicksStatic(pickList, eventList) {
@@ -424,7 +427,7 @@
   $('event-search').addEventListener('input', function () { renderEventList($('event-search').value); });
   function openEventEditor(i) {
     editingEvent = i;
-    var ev = i >= 0 ? events[i] : { title: '', start: '', end: '', dateText: '', time: '', location: '', price: '', url: '', why: '', goodFor: '', months: [], picks: false };
+    var ev = i >= 0 ? events[i] : { title: '', start: '', end: '', dateText: '', time: '', location: '', price: '', url: '', tickets: '', why: '', goodFor: '', months: [], picks: false };
     $('event-editor-title').textContent = i >= 0 ? 'Edit event' : 'New event';
     $('ev-title').value = ev.title || '';
     $('ev-start').value = ev.start || '';
@@ -434,6 +437,7 @@
     $('ev-location').value = ev.location || '';
     $('ev-price').value = ev.price || '';
     $('ev-url').value = ev.url || '';
+    $('ev-tickets').value = ev.tickets || '';
     $('ev-why').value = ev.why || '';
     $('ev-goodfor').value = ev.goodFor || '';
     $('ev-tags').value = (ev.tags || []).join(', ');
@@ -461,6 +465,8 @@
       months: $('ev-months').value.split(',').map(function (s) { return s.trim(); }).filter(Boolean),
       picks: $('ev-picks').checked
     };
+    var tickets = $('ev-tickets').value.trim();
+    if (tickets) ev.tickets = tickets;
     if (!ev.title) { status('Title is required.', false); return; }
     if (editingEvent >= 0) events[editingEvent] = ev; else events.push(ev);
     $('event-editor').classList.add('hidden');
