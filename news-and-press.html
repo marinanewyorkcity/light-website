@@ -522,10 +522,10 @@ section h2 em { color: var(--gold); }
 .news-card-body h3{font-size:1.35rem;line-height:1.25;margin-bottom:.5rem;color:var(--paper)}
 .news-card-body p{color:var(--muted);font-size:.9rem;line-height:1.55;margin:0}
 .news-card-link{display:inline-block;margin-top:.8rem;color:var(--gold);font-size:.82rem;font-weight:500}
-.news-card-featured{display:grid;grid-template-columns:1.15fr 1fr;margin-bottom:1.5rem}
-.news-card-featured .news-card-img{aspect-ratio:auto;min-height:280px}
-.news-card-featured .news-card-body{padding:1.75rem;display:flex;flex-direction:column;justify-content:center}
-.news-card-featured .news-card-body h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.news-card-featured{display:grid;grid-template-columns:1.15fr 1fr;max-width:880px;margin:0 auto 1.5rem}
+.news-card-featured .news-card-img{aspect-ratio:auto;height:320px}
+.news-card-featured .news-card-body{padding:1.25rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
+.news-card-featured .news-card-body h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
 @media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;min-height:0}}
 
   </style>
