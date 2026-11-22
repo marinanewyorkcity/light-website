@@ -501,8 +501,11 @@ section h2 em { color: var(--gold); }
 .article-header h1{font-size:clamp(2.2rem,5.5vw,3.8rem);margin:.6rem 0 1rem}
 .article-byline{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-top:1rem}
 .article-lede{max-width:820px;margin:0 auto 2rem;color:rgba(250,247,240,.82);font-size:1.15rem;line-height:1.7}
-.article-hero-img{max-width:960px;margin:0 auto 2.5rem;border-radius:12px;overflow:hidden;border:1px solid rgba(255,222,89,.22)}
-.article-hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.article-page-body::after{content:'';display:block;clear:both}
+.article-photo{max-width:320px;margin:0 auto 1.5rem}
+.article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
+.article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+@media (min-width:768px){.article-photo{float:right;margin:0 0 1rem 1.5rem}}
 .article-page-body{max-width:760px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}
 .article-page-body::after{content:"";display:block;clear:both}

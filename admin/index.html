@@ -249,9 +249,14 @@
         'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>' +
         '<a class="social-source-link" href="' + watch + '" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>';
     }
+    if (b.kind === 'image') {
+      var src = esc(b.src || ''), cap = esc(b.caption || ''), alt = esc(b.alt || b.caption || '');
+      var fig = '<figure class="article-photo"><img src="../' + src + '" alt="' + alt + '" loading="lazy">';
+      if (cap) fig += '<figcaption>' + cap + '</figcaption>';
+      return fig + '</figure>';
+    }
     return '';
   }
-  function newsFirstThumb(a) {
     if (a.cover) return a.cover;
     var blocks = a.blocks || [];
     for (var i = 0; i < blocks.length; i++) {
