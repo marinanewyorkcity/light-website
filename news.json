@@ -173,6 +173,40 @@
   ]
  },
  {
+  "id": "sunrise-at-edge-hudson-yards-2026",
+  "date": "2026-11-18",
+  "type": "original coverage",
+  "headline": "Sunrise at Edge: Watching New York Wake Up From 1,131 Feet",
+  "lede": "The alarm went off at 5 AM. By the time the sun rose over New York City on Tuesday, November 18, 2026, Marina Kapler was standing on Edge, the outdoor sky deck on the 100th floor of 30 Hudson Yards, filming the city as it woke up.",
+  "featured": false,
+  "blocks": [
+   {
+    "kind": "text",
+    "html": "The morning started in the dark. She watched the sky and waited for the first light, hoping the weather would hold. Then, for a few minutes, the sun rose over the city, and the view from the deck was, in her words, absolutely breathtaking. Some mornings are worth losing sleep over. This was one of them."
+   },
+   {
+    "kind": "instagram",
+    "url": "https://www.instagram.com/reel/Df5Lz_7sDwt/",
+    "label": "Marina's reel from the sunrise at Edge",
+    "thumb": "assets/reel-thumbs/Df5Lz_7sDwt.jpg",
+    "card_text": "5 AM alarm. Still dark outside. Then the sun rose over New York City, and the view from Edge was absolutely breathtaking.",
+    "card_type": "reel"
+   },
+   {
+    "kind": "text",
+    "html": "<a href=\"https://www.edgenyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Edge</a> is the highest outdoor sky deck in the Western Hemisphere, a triangular terrace jutting out from the 100th floor of 30 Hudson Yards, 1,131 feet above the street, with a glass floor section that looks straight down to the plaza below. Since 2026 the visit begins indoors, with seven installations of light and mirrors on the way to the outdoor terrace."
+   },
+   {
+    "kind": "text",
+    "html": "Edge is open daily, 9 AM to 10 PM, with the last elevator 50 minutes before close. General admission starts at $44, with an Advance Saver fare from $36 when booked at least 14 days ahead. The entrance is at 30 Hudson Yards, a short walk from the 7 train at 34 St-<a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hudson Yards</a>."
+   },
+   {
+    "kind": "text",
+    "html": "Edge, the highest outdoor sky deck in New York City, is at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code MARINANYC10 for a discount at checkout."
+   }
+  ]
+ },
+ {
   "id": "vessel-holiday-lighting-ceremony-2026",
   "date": "2026-11-17",
   "type": "original coverage",
@@ -272,6 +306,36 @@
    }
   ],
   "cover_position": "top"
+ },
+ {
+  "id": "peninsula-new-york-christmas-tree-lighting-2026",
+  "date": "2026-11-17",
+  "type": "original coverage",
+  "headline": "The Peninsula New York Lights Its Christmas Tree on Fifth Avenue",
+  "lede": "The Peninsula New York opened the holiday season on Tuesday, November 17, 2026, with its annual Christmas Tree Lighting at Gotham Lounge, an evening of champagne, hors d'oeuvres and live music on Fifth Avenue.",
+  "featured": false,
+  "blocks": [
+   {
+    "kind": "text",
+    "html": "The celebration ran from 5:30 to 7:30 PM at Gotham Lounge inside <a href=\"https://www.peninsula.com/newyork\" target=\"_blank\" rel=\"noopener noreferrer\">The Peninsula New York</a>, at 700 Fifth Avenue at 55th Street. Marina attended by invitation and filmed the evening, the tree, and the hotel dressed for Christmas."
+   },
+   {
+    "kind": "instagram",
+    "url": "https://www.instagram.com/reel/Df4UENjsfXp/",
+    "label": "Marina's reel from the Peninsula Christmas Tree Lighting",
+    "thumb": "assets/reel-thumbs/Df4UENjsfXp.jpg",
+    "card_text": "Little Christmas magic at The Peninsula New York. Last night, I had the pleasure of attending their annual Christmas Tree Lighting celebration at Gotham Lounge.",
+    "card_type": "reel"
+   },
+   {
+    "kind": "text",
+    "html": "The evening had a charitable side: 50% of the night's proceeds were donated to <a href=\"https://www.newyorkcenterforchildren.org\" target=\"_blank\" rel=\"noopener noreferrer\">The New York Center for Children</a>, a nonprofit that provides free therapy services to child victims of abuse and their families."
+   },
+   {
+    "kind": "text",
+    "html": "The Peninsula New York has stood at Fifth Avenue and 55th Street since 1988, in the landmark building that opened in 1905 as the Gotham Hotel. Marina thanked <a href=\"https://www.instagram.com/thepeninsulanyc\" target=\"_blank\" rel=\"noopener noreferrer\">@thepeninsulanyc</a> for the invitation."
+   }
+  ]
  },
  {
   "id": "rockefeller-center-tree-arrival-2026",
