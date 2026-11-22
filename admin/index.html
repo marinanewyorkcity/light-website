@@ -159,12 +159,17 @@
           <label>URL slug (lowercase, dashes)</label><input type="text" id="nw-id" placeholder="my-new-story-2026">
           <label>Lede (one short paragraph)</label><textarea id="nw-lede"></textarea>
           <label><input type="checkbox" id="nw-featured"> Featured story</label>
+          <label>Cover photo (path, optional)</label><input type="text" id="nw-cover" placeholder="assets/news-covers/my-story.jpg">
+          <p style="font-size:.8rem;color:var(--muted);margin:-.4rem 0 .8rem">The cover shows on the story card and in link previews. 1200x630 JPG. Upload it in the Uploads tab first, then paste the path here. Leave empty to use the first reel thumbnail.</p>
+          <label>Cover crop</label>
+          <select id="nw-cover-pos"><option value="">Center (default)</option><option value="top">Top</option><option value="bottom">Bottom</option></select>
           <h4 style="color:var(--gold);margin:1rem 0 .4rem">Story blocks</h4>
           <div id="nw-blocks"></div>
           <div class="toolbar">
             <button class="btn-ghost btn-small" id="blk-add-text">+ Text</button>
             <button class="btn-ghost btn-small" id="blk-add-ig">+ Instagram</button>
             <button class="btn-ghost btn-small" id="blk-add-yt">+ YouTube</button>
+            <button class="btn-ghost btn-small" id="blk-add-img">+ Photo</button>
           </div>
           <div class="row" style="margin-top:.8rem;flex-wrap:wrap">
             <button class="btn" id="nw-done">Done</button>
@@ -179,12 +184,18 @@
     <!-- UPLOADS -->
     <section class="view" id="view-uploads">
       <div class="card">
-        <label>Upload an image (goes to assets/uploads/)</label>
+        <label>Where should the image go?</label>
+        <select id="upload-folder">
+          <option value="assets/news-photos/">Article photo (assets/news-photos/)</option>
+          <option value="assets/news-covers/">News cover (assets/news-covers/)</option>
+          <option value="assets/uploads/">General upload (assets/uploads/)</option>
+        </select>
+        <label>Upload an image</label>
         <input type="file" id="upload-file" accept="image/*">
         <button class="btn" id="upload-btn">Upload</button>
         <div id="upload-result" style="margin-top:.6rem;font-size:.85rem"></div>
       </div>
-      <h3 style="color:var(--gold)">Existing uploads</h3>
+      <h3 style="color:var(--gold)">Existing files in this folder</h3>
       <div id="uploads-list"><p style="color:var(--muted)">Loading...</p></div>
     </section>
   </div>
@@ -215,7 +226,13 @@
   function b64e(str) { return btoa(unescape(encodeURIComponent(str))); }
   function b64d(b64) { return decodeURIComponent(escape(atob(b64.replace(/\n/g, '')))); }
   function esc(s) {
-    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    // matches Python html.escape(quote=True) so admin output equals gen-news.py output
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
+  }
+  function progress(msg) {
+    var s = $('status');
+    s.textContent = msg;
+    s.className = 'status ok';
   }
 
 
@@ -285,6 +302,244 @@
     out.push('</div>');
     out.push('<!-- NEWS-STATIC-END -->');
     return out.join('\n');
+  }
+  /* ---------- article page generator (JS port of gen-news.py) ----------
+     Keep this in sync with ~/workspace/github-push/gen-news.py: both must
+     produce byte-identical article pages, listing cards, and sitemap entries.
+     Verified with /tmp/admin-gen-test.js (node) against gen-news.py output. */
+  var SITE_URL = 'https://marinanewyorkcity.com';
+  // Python json.dumps default separators (', ', ': ') — matches gen-news.py output byte for byte
+  function pyJson(v) {
+    if (typeof v === 'string') return JSON.stringify(v);
+    if (Array.isArray(v)) return '[' + v.map(pyJson).join(', ') + ']';
+    var keys = Object.keys(v);
+    return '{' + keys.map(function (k) { return JSON.stringify(k) + ': ' + pyJson(v[k]); }).join(', ') + '}';
+  }
+  function newsBlockPage(b, root, pos) {
+    if (b.kind === 'text') return '<p>' + b.html + '</p>';
+    if (b.kind === 'instagram') {
+      var url = esc(b.url), label = esc(b.label || 'Watch on Instagram');
+      var ct = b.card_type;
+      if (ct === 'reel' || ct === 'post') {
+        var thumb = esc(root + (b.thumb || '')), text = esc(b.card_text || label);
+        var play = ct === 'reel' ? '<span class="reel-play"></span>' : '';
+        var cta = ct === 'reel' ? 'Watch on Instagram' : 'See on Instagram';
+        var posAttr = pos ? ' style="object-position: ' + esc(pos) + '"' : '';
+        return '<div class="reel-card">' +
+          '<a class="reel-thumb" href="' + url + '" target="_blank" rel="noopener noreferrer">' +
+          '<img src="' + thumb + '" alt="' + text + '" loading="lazy"' + posAttr + '>' + play + '</a>' +
+          '<div class="reel-body"><p>' + text + '</p>' +
+          '<a class="reel-src" href="' + url + '" target="_blank" rel="noopener noreferrer">' + cta + ' &rarr;</a></div></div>';
+      }
+      return '<div class="instagram-embed-wrap">' +
+        '<blockquote class="instagram-media" data-instgrm-permalink="' + url + '" data-instgrm-version="14">' +
+        '<a href="' + url + '">' + label + '</a></blockquote>' +
+        '<p class="instagram-embed-fallback"><a href="' + url + '" target="_blank" rel="noopener noreferrer">Watch on Instagram</a></p></div>';
+    }
+    if (b.kind === 'youtube') {
+      var vid = esc(b.id), title = esc(b.title || 'YouTube video');
+      var watch = esc(b.watch || ('https://youtu.be/' + b.id));
+      return '<div class="social-embed-card youtube-frame"><iframe src="https://www.youtube.com/embed/' + vid + '" title="' + title + '" ' +
+        'sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation" ' +
+        'referrerpolicy="strict-origin-when-cross-origin" loading="lazy" ' +
+        'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>' +
+        '<a class="social-source-link" href="' + watch + '" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>';
+    }
+    if (b.kind === 'image') {
+      var cap = b.caption || '';
+      var alt = b.alt || cap;
+      var fig = '<figure class="article-photo"><img src="' + root + esc(b.src) + '" alt="' + esc(alt) + '" loading="lazy">';
+      if (cap) fig += '<figcaption>' + esc(cap) + '</figcaption>';
+      return fig + '</figure>';
+    }
+    return '';
+  }
+  function makeAbsolutePaths(htmlText) {
+    htmlText = htmlText.replace(/href="(?!https?:\/\/|#|mailto:|\/)([^"]+)"/g, 'href="/$1"');
+    htmlText = htmlText.replace(/src="(?!https?:\/\/|data:|\/)([^"]+)"/g, 'src="/$1"');
+    return htmlText;
+  }
+  function extractTemplate(src) {
+    var css = [];
+    var re = /<style>([\s\S]*?)<\/style>/g, m;
+    while ((m = re.exec(src)) !== null) css.push(m[1]);
+    var hdrStart = src.indexOf('<header class="site-header">');
+    var hdrEnd = src.indexOf('</header>') + '</header>'.length;
+    var header = src.slice(hdrStart, hdrEnd);
+    var ftrStart = src.indexOf('<footer class="site-footer">');
+    var ftrEnd = src.indexOf('</footer>') + '</footer>'.length;
+    var footer = src.slice(ftrStart, ftrEnd);
+    var mStart = src.indexOf("var btn = document.querySelector('.mobile-menu-btn');");
+    mStart = src.lastIndexOf('<script>', mStart);
+    var mEnd = src.indexOf('<\/script>', mStart) + '<\/script>'.length;
+    var menuScript = src.slice(mStart, mEnd);
+    var favicon = '', fontCss = '';
+    var fm = src.match(/<link rel="icon"[^>]*>/);
+    if (fm) favicon = fm[0];
+    var gm = src.match(/<link href="https:\/\/fonts\.googleapis\.com\/css2[^>]*>/);
+    if (gm) fontCss = gm[0];
+    return { css: css.join('\n'), header: header, footer: footer, menuScript: menuScript, favicon: favicon, fontCss: fontCss };
+  }
+  var ARTICLE_EXTRA_CSS = `
+/* Individual article pages + news listing cards (generated by gen-news.py) */
+.article-page{padding-top:7.5rem}
+.article-crumb{margin-bottom:1.5rem}
+.article-crumb a{color:var(--gold);text-decoration:none;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.article-crumb a:hover{text-decoration:underline}
+.article-header{max-width:820px;margin:0 auto 2rem}
+.article-header h1{font-size:clamp(2.2rem,5.5vw,3.8rem);margin:.6rem 0 1rem}
+.article-byline{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin-top:1rem}
+.article-lede{max-width:820px;margin:0 auto 2rem;color:rgba(250,247,240,.82);font-size:1.15rem;line-height:1.7}
+.article-page-body::after{content:'';display:block;clear:both}
+.article-photo{max-width:320px;margin:0 0 1.5rem}
+.article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
+.article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+/* article photos stay centered blocks on all sizes: floating them beside short paragraphs stacks the floats and crushes the text into a narrow column */
+.article-page-body{max-width:820px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
+.article-page-body p{margin-bottom:1.1rem}
+@media (min-width:768px){.article-page-body .reel-card{float:left;margin:0 1.5rem 1rem 0}}
+.share-row{max-width:820px;margin:2.5rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,222,89,.18);display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.share-row span{color:var(--muted);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-right:.4rem}
+.share-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border:1px solid rgba(255,222,89,.4);border-radius:999px;color:var(--gold);text-decoration:none;font-size:.8rem;background:transparent;cursor:pointer;font-family:var(--sans)}
+.share-btn:hover{background:rgba(255,222,89,.12)}
+.more-stories{max-width:1200px;margin:3rem auto 0;padding-top:2.5rem;border-top:1px solid rgba(255,222,89,.18)}
+.more-stories h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:1.5rem}
+.news-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
+.news-card{display:block;text-decoration:none;color:var(--paper);background:#1a1512;border:1px solid rgba(255,222,89,.18);border-radius:12px;overflow:hidden;transition:border-color .2s ease,transform .2s ease}
+.news-card:hover{border-color:rgba(255,222,89,.5);transform:translateY(-2px)}
+.news-card-img{aspect-ratio:16/9;overflow:hidden}
+.news-card-img img{width:100%;height:100%;object-fit:cover}
+.news-card-body{padding:1.1rem 1.25rem 1.25rem}
+.news-card-meta{display:flex;gap:.8rem;color:var(--muted);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
+.news-card-body h3{font-size:1.35rem;line-height:1.25;margin-bottom:.5rem;color:var(--paper)}
+.news-card-body p{color:var(--muted);font-size:.9rem;line-height:1.55;margin:0}
+.news-card-link{display:inline-block;margin-top:.8rem;color:var(--gold);font-size:.82rem;font-weight:500}
+.news-card-featured{display:grid;grid-template-columns:1.15fr 1fr;max-width:880px;margin:0 auto 1.5rem}
+.news-card-featured .news-card-img{aspect-ratio:auto;height:320px}
+.news-card-featured .news-card-body{padding:1.25rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
+.news-card-featured .news-card-body h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
+@media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;min-height:0}}
+`;
+  function articlePageHtml(a, articles, parts) {
+    var url = SITE_URL + '/news/' + a.id;
+    var thumb = newsFirstThumb(a);
+    var imgUrl = SITE_URL + '/' + thumb;
+    var css = parts.css.replace(/url\((['"]?)assets\//g, 'url($1/assets/');
+    var pos = a.cover_position;
+    var blocks = (a.blocks || []).slice();
+    for (var i = 0; i < blocks.length; i++) {
+      if (blocks[i].kind === 'instagram' && (blocks[i].card_type === 'reel' || blocks[i].card_type === 'post')) {
+        blocks = [blocks[i]].concat(blocks.slice(0, i), blocks.slice(i + 1));
+        break;
+      }
+    }
+    var body = blocks.map(function (b) { return newsBlockPage(b, '/', pos); }).join('');
+    var others = articles.filter(function (x) { return x.id !== a.id; }).slice(0, 3);
+    var more = others.map(function (x) { return newsCardHtml(x, false); }).join('');
+    var authorId = a.type === 'original coverage' ? 'marina-kapler' : 'organization';
+    var ld = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'WebSite', '@id': SITE_URL + '/#website', 'url': SITE_URL + '/',
+          'name': 'Marina New York City',
+          'description': 'Cinematic New York City stories, events, guides, photography, and creator work by Marina Kapler.',
+          'publisher': { '@id': SITE_URL + '/#organization' }, 'inLanguage': 'en-US' },
+        { '@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': 'Marina New York City',
+          'url': SITE_URL + '/', 'logo': { '@type': 'ImageObject', 'url': SITE_URL + '/assets/logo.png' },
+          'founder': { '@id': SITE_URL + '/#marina-kapler' },
+          'sameAs': ['https://instagram.com/marina.newyorkcity', 'https://tiktok.com/@marina.newyorkcity',
+            'https://facebook.com/marina.nycity', 'https://www.youtube.com/@marina.newyorkcity',
+            'https://www.threads.net/@Marina.newyorkcity', 'https://pinterest.com/marinanewyorkcity',
+            'https://profile.google/@marina.newyorkcity'] },
+        { '@type': 'Person', '@id': SITE_URL + '/#marina-kapler', 'name': 'Marina Kapler',
+          'url': SITE_URL + '/work-with-me', 'image': SITE_URL + '/assets/about-portrait.png',
+          'jobTitle': 'New York City Content Creator, Photographer, and Visual Storyteller',
+          'worksFor': { '@id': SITE_URL + '/#organization' },
+          'sameAs': ['https://instagram.com/marina.newyorkcity', 'https://tiktok.com/@marina.newyorkcity',
+            'https://facebook.com/marina.nycity', 'https://www.youtube.com/@marina.newyorkcity',
+            'https://www.threads.net/@Marina.newyorkcity', 'https://pinterest.com/marinanewyorkcity',
+            'https://profile.google/@marina.newyorkcity'] },
+        { '@type': 'NewsArticle', '@id': url + '#article', 'mainEntityOfPage': url,
+          'headline': a.headline, 'description': a.lede,
+          'datePublished': a.date, 'dateModified': a.date,
+          'author': { '@id': SITE_URL + '/#' + authorId },
+          'publisher': { '@id': SITE_URL + '/#organization' },
+          'image': imgUrl, 'inLanguage': 'en-US' }
+      ]
+    };
+    return '<!DOCTYPE html>\n<html lang="en">\n<head>\n' +
+      '  <meta charset="UTF-8">\n' +
+      '  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n' +
+      '  <title>' + esc(a.headline) + ' | Marina New York City</title>\n' +
+      '  <meta name="description" content="' + esc(a.lede) + '">\n' +
+      '  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n' +
+      '  <link rel="canonical" href="' + url + '">\n' +
+      '  <link rel="sitemap" type="application/xml" href="' + SITE_URL + '/sitemap.xml">\n' +
+      '  <meta property="og:type" content="article">\n' +
+      '  <meta property="og:site_name" content="Marina New York City">\n' +
+      '  <meta property="og:locale" content="en_US">\n' +
+      '  <meta property="og:title" content="' + esc(a.headline) + '">\n' +
+      '  <meta property="og:description" content="' + esc(a.lede) + '">\n' +
+      '  <meta property="og:url" content="' + url + '">\n' +
+      '  <meta property="og:image" content="' + imgUrl + '">\n' +
+      '  <meta property="og:image:alt" content="' + esc(a.headline) + '">\n' +
+      '  <meta property="article:published_time" content="' + esc(a.date) + '">\n' +
+      '  <meta property="article:author" content="Marina Kapler">\n' +
+      '  <meta name="twitter:card" content="summary_large_image">\n' +
+      '  <meta name="twitter:title" content="' + esc(a.headline) + '">\n' +
+      '  <meta name="twitter:description" content="' + esc(a.lede) + '">\n' +
+      '  <meta name="twitter:image" content="' + imgUrl + '">\n' +
+      '  <meta name="twitter:image:alt" content="' + esc(a.headline) + '">\n' +
+      '  <script type="application/ld+json">' + pyJson(ld) + '<\/script>\n' +
+      '  <link rel="preconnect" href="https://fonts.googleapis.com">\n' +
+      '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+      (parts.fontCss ? '  ' + parts.fontCss + '\n' : '') +
+      (parts.favicon ? '  ' + parts.favicon + '\n' : '') +
+      '  <style>\n' + css + ARTICLE_EXTRA_CSS + '\n  </style>\n' +
+      '</head>\n' +
+      '<body>' + makeAbsolutePaths(parts.header) + '\n' +
+      '<main id="top">\n' +
+      '<section class="article-page">\n' +
+      '  <div class="article-crumb"><a href="/news-and-press">&larr; All stories</a></div>\n' +
+      '  <div class="article-header">\n' +
+      '    <p class="section-kicker">News and press</p>\n' +
+      '    <h1>' + esc(a.headline) + '</h1>\n' +
+      '    <div class="article-byline"><time datetime="' + esc(a.date) + '">' + esc(fmtDateLong(a.date)) + '</time>' +
+      '<span>' + esc(a.type) + '</span><span>By Marina Kapler</span></div>\n' +
+      '  </div>\n' +
+      '  <p class="article-lede">' + esc(a.lede) + '</p>\n' +
+      '  <div class="article-page-body">' + body + '</div>\n' +
+      '  <div class="share-row"><span>Share this story</span>' +
+      '<button class="share-btn" type="button" onclick="navigator.clipboard.writeText(location.href).then(function(){this.textContent=\'Link copied\';}.bind(this))">Copy link</button>' +
+      '<a class="share-btn" href="https://twitter.com/intent/tweet?url=' + url + '&text=' + esc(a.headline) + '" target="_blank" rel="noopener noreferrer">X</a>' +
+      '<a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=' + url + '" target="_blank" rel="noopener noreferrer">Facebook</a>' +
+      '<a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=' + url + '" target="_blank" rel="noopener noreferrer">LinkedIn</a>' +
+      '<a class="share-btn" href="https://pinterest.com/pin/create/button/?url=' + url + '&media=' + imgUrl + '&description=' + esc(a.headline) + '" target="_blank" rel="noopener noreferrer">Pinterest</a>' +
+      '<a class="share-btn" href="https://wa.me/?text=' + esc(a.headline) + '%20' + url + '" target="_blank" rel="noopener noreferrer">WhatsApp</a>' +
+      '<a class="share-btn" href="https://t.me/share/url?url=' + url + '&text=' + esc(a.headline) + '" target="_blank" rel="noopener noreferrer">Telegram</a>' +
+      '<a class="share-btn" href="mailto:?subject=' + esc(a.headline) + '&body=' + url + '">Email</a>' +
+      '</div>\n' +
+      '  <div class="more-stories"><h2>More <em>stories</em></h2><div class="news-card-grid">' + more + '</div></div>\n' +
+      '</section>\n' +
+      '</main>\n' +
+      makeAbsolutePaths(parts.footer) + '\n' +
+      '<script async src="https://www.instagram.com/embed.js"><\/script>\n' +
+      parts.menuScript + '\n' +
+      '</body></html>\n';
+  }
+  function buildSitemap(sm, articles, today) {
+    sm = sm.replace(/  <url>\n    <loc>https:\/\/marinanewyorkcity\.com\/news\/[^<]*<\/loc>\n[\s\S]*?<\/url>\n/g, '');
+    var entries = [];
+    articles.forEach(function (a) {
+      entries.push('  <url>\n    <loc>' + SITE_URL + '/news/' + a.id + '</loc>\n' +
+        '    <lastmod>' + a.date + '</lastmod>\n' +
+        '    <changefreq>monthly</changefreq>\n' +
+        '    <priority>0.7</priority>\n  </url>\n');
+    });
+    sm = sm.replace('</urlset>', entries.join('') + '</urlset>');
+    sm = sm.replace(/(<loc>https:\/\/marinanewyorkcity\.com\/news-and-press<\/loc>\n    <lastmod>)[0-9-]+(<\/lastmod>)/,
+      '$1' + today + '$2');
+    return sm;
   }
   function eventCardStatic(ev) {
     var dateCls = /^Official date/i.test(ev.dateText || '') ? 'event-date event-date--estimate' : 'event-date';
@@ -356,7 +611,12 @@
     });
   }
   function writeFile(path, text, sha, message) {
-    return gh('/contents/' + path, 'PUT', { message: message, content: b64e(text), sha: sha });
+    var body = { message: message, content: b64e(text) };
+    if (sha) body.sha = sha; // omit sha for new files
+    return gh('/contents/' + path, 'PUT', body);
+  }
+  function deleteFile(path, sha, message) {
+    return gh('/contents/' + path, 'DELETE', { message: message, sha: sha });
   }
 
   /* ---------- login ---------- */
@@ -585,6 +845,8 @@
     $('nw-id').value = a.id || '';
     $('nw-lede').value = a.lede || '';
     $('nw-featured').checked = !!a.featured;
+    $('nw-cover').value = a.cover || '';
+    $('nw-cover-pos').value = a.cover_position || '';
     editBlocks = JSON.parse(JSON.stringify(a.blocks || []));
     renderBlocks();
     $('nw-delete').style.display = i >= 0 ? '' : 'none';
@@ -603,6 +865,11 @@
       if (b.kind === 'youtube') {
         html += '<label>YouTube URL or video ID</label><input type="text" data-blk="' + i + '" data-f="id" value="' + esc(b.id || '') + '" placeholder="https://youtu.be/...">';
         html += '<label>Video title</label><input type="text" data-blk="' + i + '" data-f="title" value="' + esc(b.title || '') + '">';
+      }
+      if (b.kind === 'image') {
+        html += '<label>Photo path</label><input type="text" data-blk="' + i + '" data-f="src" value="' + esc(b.src || '') + '" placeholder="assets/news-photos/my-photo.jpg">';
+        html += '<label>Caption</label><input type="text" data-blk="' + i + '" data-f="caption" value="' + esc(b.caption || '') + '">';
+        html += '<label>Alt text</label><input type="text" data-blk="' + i + '" data-f="alt" value="' + esc(b.alt || '') + '" placeholder="Describe the photo">';
       }
       html += '<div class="row"><button class="btn-ghost btn-small" data-blk-up="' + i + '">↑</button>' +
         '<button class="btn-ghost btn-small" data-blk-down="' + i + '">↓</button>' +
@@ -638,23 +905,34 @@
   $('blk-add-text').addEventListener('click', function () { editBlocks.push({ kind: 'text', html: '' }); renderBlocks(); });
   $('blk-add-ig').addEventListener('click', function () { editBlocks.push({ kind: 'instagram', url: '', label: '' }); renderBlocks(); });
   $('blk-add-yt').addEventListener('click', function () { editBlocks.push({ kind: 'youtube', id: '', title: '', watch: '' }); renderBlocks(); });
+  $('blk-add-img').addEventListener('click', function () { editBlocks.push({ kind: 'image', src: '', caption: '', alt: '' }); renderBlocks(); });
   $('news-add').addEventListener('click', function () { openNewsEditor(-1); });
   $('nw-cancel').addEventListener('click', function () { $('news-editor').classList.add('hidden'); });
   function slugify(s) {
     return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
   }
   $('nw-done').addEventListener('click', function () {
-    var a = {
-      id: $('nw-id').value.trim() || slugify($('nw-headline').value),
-      date: $('nw-date').value,
-      type: $('nw-type').value,
-      headline: $('nw-headline').value.trim(),
-      lede: $('nw-lede').value.trim(),
-      featured: $('nw-featured').checked,
-      blocks: editBlocks.filter(function (b) {
-        return b.kind === 'text' ? b.html.trim() : (b.kind === 'instagram' ? b.url.trim() : b.id.trim());
-      })
-    };
+    // start from the existing article so fields the form does not show (cover,
+    // reel thumbnails, etc.) survive the edit; new articles get canonical order
+    var a = editingNews >= 0 ? JSON.parse(JSON.stringify(articles[editingNews]))
+      : { id: '', date: '', type: 'press release', headline: '', lede: '', featured: false, blocks: [] };
+    a.id = $('nw-id').value.trim() || slugify($('nw-headline').value);
+    a.date = $('nw-date').value;
+    a.type = $('nw-type').value;
+    a.headline = $('nw-headline').value.trim();
+    a.lede = $('nw-lede').value.trim();
+    a.featured = $('nw-featured').checked;
+    var cover = $('nw-cover').value.trim();
+    if (cover) a.cover = cover; else delete a.cover;
+    var coverPos = $('nw-cover-pos').value;
+    if (coverPos) a.cover_position = coverPos; else delete a.cover_position;
+    a.blocks = editBlocks.filter(function (b) {
+      if (b.kind === 'text') return (b.html || '').trim();
+      if (b.kind === 'instagram') return (b.url || '').trim();
+      if (b.kind === 'youtube') return (b.id || '').trim();
+      if (b.kind === 'image') return (b.src || '').trim();
+      return true;
+    });
     if (!a.headline || !a.date) { status('Headline and date are required.', false); return; }
     if (editingNews >= 0) articles[editingNews] = a; else articles.push(a);
     $('news-editor').classList.add('hidden');
@@ -672,10 +950,68 @@
   $('news-save').addEventListener('click', function () {
     articles.sort(function (a, b) { return b.date < a.date ? -1 : 1; });
     $('news-save').disabled = true;
-    writeFile('news.json', JSON.stringify(articles, null, 1), newsSha, 'Admin: update news')
-      .then(function (j) { newsSha = j.content.sha; return updatePageStatic('news-and-press.html', '<!-- NEWS-STATIC-START -->', '<!-- NEWS-STATIC-END -->', renderNewsStatic(articles)); })
+    var today = new Date().toISOString().slice(0, 10);
+    var step = 'saving the article list';
+    progress('Publishing... step 1 of 4: saving the article list.');
+    // re-read news.json first so the write uses a fresh SHA even if the file
+    // changed on the server since this page loaded
+    readFile('news.json').then(function (f) { newsSha = f.sha; })
+      .catch(function () { newsSha = null; })
+      .then(function () {
+        return writeFile('news.json', JSON.stringify(articles, null, 1), newsSha, 'Admin: update news');
+      })
+      .then(function (j) {
+        newsSha = j.content.sha;
+        step = 'reading the news page template';
+        return readFile('news-and-press.html');
+      })
+      .then(function (f) {
+        var parts = extractTemplate(f.text);
+        var listing = replaceBlock(f.text, '<!-- NEWS-STATIC-START -->', '<!-- NEWS-STATIC-END -->', renderNewsStatic(articles));
+        step = 'rebuilding article pages';
+        progress('Publishing... step 2 of 4: rebuilding ' + articles.length + ' article pages.');
+        // regenerate every article page (each page links to the 3 newest others)
+        var chain = Promise.resolve();
+        articles.forEach(function (a, idx) {
+          chain = chain.then(function () {
+            progress('Publishing... step 2 of 4: article page ' + (idx + 1) + ' of ' + articles.length + ' (' + a.id + ').');
+            var page = articlePageHtml(a, articles, parts);
+            var path = 'news/' + a.id + '.html';
+            return readFile(path).then(function (old) {
+              if (old.text === page) return null; // unchanged, skip the write
+              return writeFile(path, page, old.sha, 'Admin: rebuild article page ' + a.id);
+            }).catch(function (e) {
+              if (/404/.test(e.message)) return writeFile(path, page, null, 'Admin: new article page ' + a.id);
+              throw e;
+            });
+          });
+        });
+        return chain.then(function () {
+          step = 'removing deleted article pages';
+          return gh('/contents/news').then(function (items) {
+            var live = {};
+            articles.forEach(function (a) { live[a.id + '.html'] = true; });
+            var dchain = Promise.resolve();
+            items.filter(function (f) { return f.type === 'file' && !live[f.name]; }).forEach(function (f) {
+              dchain = dchain.then(function () { return deleteFile('news/' + f.name, f.sha, 'Admin: remove deleted article page ' + f.name); });
+            });
+            return dchain;
+          }).catch(function () { /* news/ folder listing failed; skip cleanup */ });
+        }).then(function () {
+          step = 'updating the listing page';
+          progress('Publishing... step 3 of 4: updating the listing page.');
+          return writeFile('news-and-press.html', listing, f.sha, 'Admin: refresh static content snapshot');
+        });
+      })
+      .then(function () {
+        step = 'updating the sitemap';
+        progress('Publishing... step 4 of 4: updating the sitemap.');
+        return readFile('sitemap.xml').then(function (sm) {
+          return writeFile('sitemap.xml', buildSitemap(sm.text, articles, today), sm.sha, 'Admin: update sitemap with article URLs');
+        });
+      })
       .then(function () { renderNewsList(); status('News published. ' + articles.length + ' articles live.', true); })
-      .catch(function (e) { status('Publish failed: ' + e.message, false); })
+      .catch(function (e) { status('Publish failed while ' + step + ': ' + e.message, false); })
       .finally(function () { $('news-save').disabled = false; });
   });
   $('nw-preview').addEventListener('click', function () {
@@ -686,36 +1022,35 @@
     };
     var d = new Date(a.date + 'T12:00:00');
     var dateStr = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-    var body = a.blocks.map(function (b) {
-      if (b.kind === 'text') return '<p>' + b.html + '</p>';
-      if (b.kind === 'instagram') return '<p style="color:var(--gold)">[Instagram embed: ' + esc(b.url) + ']</p>';
-      if (b.kind === 'youtube') return '<p style="color:var(--gold)">[YouTube embed: ' + esc(b.id) + ']</p>';
-      return '';
-    }).join('');
+    var body = a.blocks.map(function (b) { return newsBlockHtml(b); }).join('');
+    var coverPath = $('nw-cover').value.trim();
+    var coverHtml = coverPath ? '<p><img src="/' + esc(coverPath) + '" alt="Cover" style="width:100%;border-radius:12px"></p>' : '';
     $('preview-body').innerHTML =
       '<div class="article-meta"><time>' + esc(dateStr) + '</time> <span>' + esc(a.type) + '</span></div>' +
-      '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p><hr>' + body;
+      '<h3>' + esc(a.headline) + '</h3>' + coverHtml + '<p>' + esc(a.lede) + '</p><hr>' + body;
     $('preview-modal').classList.remove('hidden');
   });
   $('preview-close').addEventListener('click', function () { $('preview-modal').classList.add('hidden'); });
 
   /* ---------- uploads ---------- */
   function loadUploads() {
-    gh('/contents/assets/uploads').then(function (items) {
+    var folder = $('upload-folder').value;
+    gh('/contents/' + folder.replace(/\/$/, '')).then(function (items) {
       var html = '';
       items.filter(function (f) { return f.type === 'file'; }).reverse().forEach(function (f) {
-        var url = 'https://marinanewyorkcity.com/assets/uploads/' + f.name;
+        var path = folder + f.name;
         html += '<div class="upload-item"><code>' + esc(f.name) + '</code>' +
-          '<button class="btn-ghost btn-small" data-copy="' + esc(url) + '">Copy URL</button></div>';
+          '<button class="btn-ghost btn-small" data-copy="' + esc(path) + '">Copy path</button></div>';
       });
-      $('uploads-list').innerHTML = html || '<p style="color:var(--muted)">No uploads yet.</p>';
+      $('uploads-list').innerHTML = html || '<p style="color:var(--muted)">No files in this folder yet.</p>';
       $('uploads-list').querySelectorAll('[data-copy]').forEach(function (b) {
         b.addEventListener('click', function () {
-          navigator.clipboard.writeText(b.dataset.copy).then(function () { status('URL copied.', true); });
+          navigator.clipboard.writeText(b.dataset.copy).then(function () { status('Path copied. Paste it into the cover or photo field.', true); });
         });
       });
-    }).catch(function () { $('uploads-list').innerHTML = '<p style="color:var(--muted)">Uploads folder is empty or could not be listed.</p>'; });
+    }).catch(function () { $('uploads-list').innerHTML = '<p style="color:var(--muted)">This folder is empty or could not be listed.</p>'; });
   }
+  $('upload-folder').addEventListener('change', loadUploads);
   $('upload-btn').addEventListener('click', function () {
     var file = $('upload-file').files[0];
     if (!file) { status('Choose a file first.', false); return; }
@@ -724,11 +1059,13 @@
     var reader = new FileReader();
     reader.onload = function () {
       var b64 = reader.result.split(',')[1];
+      var folder = $('upload-folder').value;
       var name = Date.now() + '-' + file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
-      gh('/contents/assets/uploads/' + name, 'PUT', { message: 'Admin: upload ' + name, content: b64 })
+      gh('/contents/' + folder + name, 'PUT', { message: 'Admin: upload ' + name, content: b64 })
         .then(function () {
-          var url = 'https://marinanewyorkcity.com/assets/uploads/' + name;
-          $('upload-result').innerHTML = 'Uploaded: <a href="' + url + '" target="_blank" style="color:var(--gold)">' + esc(name) + '</a>';
+          var path = folder + name;
+          var url = 'https://marinanewyorkcity.com/' + path;
+          $('upload-result').innerHTML = 'Uploaded. Paste this path into the cover or photo field: <code>' + esc(path) + '</code><br><a href="' + url + '" target="_blank" style="color:var(--gold)">View image</a>';
           loadUploads();
         })
         .catch(function (e) { status('Upload failed: ' + e.message, false); })
