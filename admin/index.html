@@ -261,8 +261,9 @@
   }
   function newsCardHtml(a, featured) {
     var cls = featured ? 'news-card news-card-featured' : 'news-card';
+    var posAttr = a.cover_position ? ' style="object-position: ' + esc(a.cover_position) + '"' : '';
     return '<a class="' + cls + '" href="/news/' + esc(a.id) + '">' +
-      '<div class="news-card-img"><img src="/' + esc(newsFirstThumb(a)) + '" alt="' + esc(a.headline) + '" loading="lazy"></div>' +
+      '<div class="news-card-img"><img src="/' + esc(newsFirstThumb(a)) + '" alt="' + esc(a.headline) + '" loading="lazy"' + posAttr + '></div>' +
       '<div class="news-card-body">' +
       '<div class="news-card-meta"><time datetime="' + esc(a.date) + '">' + esc(fmtDateLong(a.date)) + '</time><span>' + esc(a.type) + '</span></div>' +
       '<h3>' + esc(a.headline) + '</h3><p>' + esc(a.lede) + '</p>' +
