@@ -160,6 +160,11 @@ section h2 em { color: var(--gold); }
 .gallery-actions { display: flex; justify-content: center; margin-top: 1.5rem; }
 .gallery-actions .btn { background: transparent; }
 
+.about-intro { max-width: 780px; }
+.about-intro h2 { margin-bottom: 1.5rem; }
+.about-intro p { color: rgba(250,247,240,.82); font-size: 1.03rem; line-height: 1.7; margin-bottom: 1rem; }
+.about-intro p a { color: var(--gold); }
+
 /* Lightbox */
 .lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(10, 8, 7, 0.94); display: none; align-items: center; justify-content: center; padding: 2rem; }
 .lightbox.open { display: flex; }
@@ -711,6 +716,13 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
   </section>
   <div class="gallery-lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" hidden><button class="gallery-lightbox-close" type="button" aria-label="Close image viewer">&times;</button><img alt="" draggable="false"></div>
 </section>
+    <section class="about-intro" aria-label="About the gallery">
+      <p class="section-kicker reveal">About the gallery</p>
+      <h2 class="reveal">Shot on iPhone, all over the city.</h2>
+      <p class="reveal">These are my selected photographs of New York, shot on iPhone across the five boroughs. Skylines at golden hour, rain on Fifth Avenue, snow in Central Park, the Empire State Building in fog, the Brooklyn Bridge at dawn, and the small West Village streets most visitors never find.</p>
+      <p class="reveal">Every frame here was taken the way I film my reels: on foot, in real light, in the city I still look at like a first-time visitor. Click any photo to see it larger.</p>
+      <p class="reveal">If you like the look, the Lightroom presets in my <a href="shop">shop</a> are built from these exact grades, and my <a href="guides">guides</a> map the spots where many of these frames were taken.</p>
+    </section>
 </main>
 <footer class="site-footer">
     <div class="footer-inner">
