@@ -1,724 +1,803 @@
 [
- {
-  "id": "december-1-tree-lightings-2026",
-  "date": "2026-11-22",
-  "type": "original coverage",
-  "headline": "Four New York Christmas Tree Lightings Fall on the Same Night, December 1",
-  "lede": "Tuesday, December 1, 2026, is the busiest tree-lighting night of the New York holiday season. Four ceremonies light up across Manhattan within the same two-hour window, from Midtown to Central Park to the Seaport, and no one can attend them all.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<strong><a href=\"https://bryantpark.org\" target=\"_blank\" rel=\"noopener noreferrer\">Bryant Park</a>, 5:30-6:30 PM.</strong> The first lighting of the night is at Bryant Park, where the ceremony runs 5:30 to 6:30 PM. Entry is from 3:30 PM, first come, first served. Free. In December the park becomes one of the prettiest corners of Midtown: the Winter Village fills the lawn with holiday shops, the ice rink glows under the lights, and the tree stands above it all with the New York Public Library behind it, its marble lions watching over Fifth Avenue. Skaters glide past the tree while the shops sell hot chocolate and gifts, and the whole park smells of pine and roasted nuts. It is the classic New York Christmas scene, and the tree lighting is when it officially begins."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-photos/dec1-bryant-park.jpg",
-    "caption": "The Bryant Park Christmas tree, with the ice rink in front of the New York Public Library.",
-    "alt": "The lit Bryant Park Christmas tree at night with ice skaters in front of the New York Public Library"
-   },
-   {
-    "kind": "text",
-    "html": "<strong><a href=\"https://www.lottehotel.com/new-york-palace/en.html\" target=\"_blank\" rel=\"noopener noreferrer\">Lotte New York Palace</a>, 5:00-7:00 PM.</strong> The Palace lights its spectacular 30-foot Christmas tree in the Courtyard at 455 Madison Avenue, with champagne, passed bites, and a surprise performance. Attendance is by RSVP. The Courtyard is one of the most photographed holiday spots in the city: the tree stands framed by the Villard Houses, the 19th-century brownstone mansions that form the historic heart of the hotel, behind the Palace's famous gold gates on Madison Avenue. When the lights go on, the whole courtyard glows against the old stone facades, and the tree, dressed top to bottom, becomes the centerpiece of the block. It is the most elegant of the four lightings, and the hardest to get into."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-photos/dec1-lotte.jpg",
-    "caption": "The Christmas tree in the Courtyard at Lotte New York Palace.",
-    "alt": "The decorated Christmas tree in the Courtyard at Lotte New York Palace at night"
-   },
-   {
-    "kind": "text",
-    "html": "<strong><a href=\"https://www.tavernonthegreen.com\" target=\"_blank\" rel=\"noopener noreferrer\">Tavern on the Green</a>, 5:30-8:30 PM.</strong> The Central Park restaurant celebrates its 10th annual tree lighting, and this year <a href=\"https://www.popmart.com\" target=\"_blank\" rel=\"noopener noreferrer\">POP MART</a>'s Twinkle Twinkle character makes its first-ever U.S. appearance, with a live performance at 6:30 PM and meet-and-greets before and after. DJ Tweed and the Manhattan Carolers perform, with complimentary hot chocolate, hot apple cider, cookies, and passed hors d'oeuvres. The tree lights up at 7:00 PM. Free and open to all, at West 67th Street and Central Park West. Tavern on the Green has been part of Central Park since 1934, in a building that began life as the park's sheepfold, and at Christmas it is consistently named one of the most beautifully decorated restaurants in the country. The courtyard is strung with lights, nutcrackers stand guard by the tree, and the whole place feels like a holiday card, right in the middle of the park. Of the four ceremonies, this is the one to bring children to."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-photos/dec1-tavern.jpg",
-    "caption": "The Christmas tree at Tavern on the Green, in the courtyard in Central Park.",
-    "alt": "The decorated Christmas tree at Tavern on the Green at night, with a nutcracker and string lights"
-   },
-   {
-    "kind": "text",
-    "html": "<strong><a href=\"https://theseaport.nyc/events/holiday-tree-lighting/\" target=\"_blank\" rel=\"noopener noreferrer\">The Seaport</a>, 6:00-8:00 PM.</strong> The Seaport transforms the corner of Fulton and Front Streets into a festive gathering with live music from the Brooklyn-based, female-led brass band Brass Queens, DJ-spun holiday classics, and the neighborhood tree lighting at 6:30 PM, followed by a meet-and-greet with Santa. Hot chocolate and chocolate chip cookies from Sadie's Bakery, plus holiday crafts and local pop-ups. Free and family-friendly. The Seaport is the most atmospheric of the four settings: cobblestone streets, 19th-century brick buildings, and the tall ships of the Seaport Museum moored at the piers, with the East River and the Brooklyn Bridge just beyond. The tree lights up on the waterfront as the ships' masts rise behind it, and the whole neighborhood feels like old New York at Christmas."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-photos/dec1-seaport.jpg",
-    "caption": "The Christmas tree at the Seaport, by the tall ships on the waterfront.",
-    "alt": "The lit Christmas tree at the Seaport at night with tall ship masts behind it"
-   },
-   {
-    "kind": "text",
-    "html": "The hard part is the overlap. Bryant Park and the Palace are both Midtown and ten blocks apart, so a fast walker could catch the start of one and the end of the other. The Seaport is downtown and Tavern on the Green is uptown, and both light their trees at 6:30 and 7:00 PM, right when the Midtown ceremonies are ending. Pick the one that fits your evening, and get there early, the Seaport and Tavern are first come, first served."
-   }
-  ],
-  "cover": "assets/news-covers/december-1-tree-lightings-2026.jpg"
- },
- {
-  "id": "fox-news-all-american-christmas-tree-lighting-2026",
-  "date": "2026-11-22",
-  "type": "original coverage",
-  "headline": "FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square",
-  "lede": "FOX News Media kicked off the holiday season with the seventh annual All-American Christmas Tree Lighting at FOX Square, lighting a 50-foot tree with 340,000 lights on Friday, November 20.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<p><a href=\"https://www.foxnews.com/\" target=\"_blank\" rel=\"noopener noreferrer\">FOX News Media</a> presented the seventh annual All-<a href=\"https://www.americanchristmas.com/\" target=\"_blank\" rel=\"noopener noreferrer\">American Christmas</a> Tree Lighting on Friday, November 20, during a special edition of \"The Five\" at 5 PM ET. The ceremony was hosted by Emily Compagno, Harold Ford Jr., Greg Gutfeld, Dana Perino, and Jesse Watters, who lit the tree outside the network's New York City headquarters at FOX Square.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>First Lady Melania Trump attended the event, joining children for a festive Christmas celebration. She helped decorate a Christmas tree, enjoyed cookies and hot chocolate with the children, and shared favorite holiday traditions and Christmas wish lists.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The All-American Christmas Tree stands 50 feet tall and is decorated with 18,000 ornaments and 340,000 warm white, true white, and red lights. The tree is topped with a 6-foot dove with 4,800 embedded lights, created by American Christmas, a holiday lighting and display company based in Mount Vernon, New York. The lighting, sponsored by <a href=\"https://www.acehardware.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ace Hardware</a>, included a live performance by Phil Wickham and a blessing by Rev. Franklin Graham.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>FOX News Media is partnering with <a href=\"https://www.asymca.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Armed Services YMCA</a> this holiday season to support junior enlisted service members and their families.</p>"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df-5zZHsL5t/",
-    "label": "Marina's reel from FOX Square",
-    "thumb": "assets/reel-thumbs/Df-5zZHsL5t.jpg",
-    "card_text": "10, 9, 8\u2026 Christmas has officially arrived at FOX Square! Tonight, @foxnews lit up its spectacular 50-foot Christmas tree with 340,000 lights during the 7th Annual All-American Christmas Tree Lighting in NYC!",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Marina filmed the tree at FOX Square.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The tree is on display at FOX Square, 1211 Avenue of the Americas in Midtown Manhattan, free to visit.</p>"
-   }
-  ]
- },
- {
-  "id": "macys-holiday-windows-2026-blue-hippo",
-  "date": "2026-11-22",
-  "type": "original coverage",
-  "headline": "Macy's Unveils 2026 Holiday Windows Starring the Blue Hippopotamus",
-  "lede": "Macy's Herald Square unveiled its 2026 holiday windows on Thursday, November 19, telling the story of the Blue Hippopotamus, a Thanksgiving Day Parade balloon lost since 1931, ahead of the parade's 100th edition.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<p><a href=\"https://www.macys.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> unveiled its 2026 holiday windows on Thursday, November 19, at 6 PM outside Macy's Herald Square, along Broadway between West 34th and West 35th Streets. The unveiling ceremony was free and open to the public. It featured EJAE, the singer-songwriter who provides Rumi's singing voice in Netflix's KPop Demon Hunters, performing her first holiday single, \"Christmas in New York,\" and Darlene Love, best known for her 1963 Christmas classic \"Christmas (Baby Please Come Home).\"</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>This year's six windows along the Broadway side tell the story of the Blue Hippopotamus, one of the earliest character balloons to fly in the Macy's Thanksgiving Day Parade. After flying away and disappearing at the end of the 1931 parade, Blue Hippo embarks on whimsical adventures celebrating wonder, connection, and joyful discovery before making a triumphant return to Herald Square for the holidays and the 100th parade. Each window features a short rhyming passage telling part of Blue's adventure.</p>"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df8hfg-shfk/",
-    "label": "Marina's first look at the Macy's windows",
-    "thumb": "assets/reel-thumbs/Df8hfg-shfk.jpg",
-    "card_text": "FIRST LOOK! @macys 2026 Christmas windows are finally here! Unveiled tonight at Macy's Herald Square, one of New York City's most beloved holiday traditions is back on 34th Street!",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Marina filmed the windows after the unveiling.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Inside the store, Macy's has a reimagined Santaland experience, with reservations opening November 20, and Macy's Holiday Square is back on the lower level with more than 35 vendors. The holiday campaign is themed \"There's Magic Inside.\"</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The windows are free to view at 151 West 34th Street and remain on display through Monday, January 4, 2027. The 100th Macy's Thanksgiving Day Parade takes place on Thursday, November 26.</p>"
-   }
-  ]
- },
- {
-  "id": "lightscape-brooklyn-botanic-garden-2026",
-  "date": "2026-11-22",
-  "type": "original coverage",
-  "headline": "Lightscape Returns to Brooklyn Botanic Garden With Over One Million Lights",
-  "lede": "Brooklyn Botanic Garden kicked off the holiday season with the sixth annual Lightscape, a reimagined nearly mile-long trail of more than one million lights, open November 20 through January 3.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<p>On Thursday, November 19, <a href=\"https://www.bbg.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Brooklyn Botanic Garden</a> President and CEO Sue Donoghue joined New York City officials for a special \"Lights On\" moment in the Japanese Hill-and-Pond Garden, turning on a grand light and music water fountain show to open the sixth annual Lightscape.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>This year's trail is completely reimagined, themed around the garden's four seasons. Visitors follow a nearly mile-long, one-way route past 16 luminous installations, with light-splashed trees, buildings, and water features set to a curated soundtrack. Food and drinks are available along the way. The trail starts and ends at the Visitor Center at 990 Washington Avenue and takes most visitors 60 to 90 minutes.</p>"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df8b_jdsa-P/",
-    "label": "Marina's first look at Lightscape",
-    "thumb": "assets/reel-thumbs/Df8b_jdsa-P.jpg",
-    "card_text": "Over ONE MILLION lights, and a little Christmas magic in Brooklyn! Tonight, I got a first look at the 6th annual Lightscape at Brooklyn Botanic Garden, including a beautiful light and music fountain show!",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Marina attended the press preview and filmed a first look at the trail.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p><strong>Planning your visit:</strong> Lightscape runs on select evenings from November 20, 2026, through January 3, 2027, Wednesdays through Sundays, plus December 21 to 22 and December 28 to 29. It is closed December 2, Thanksgiving, and Christmas Day. The garden closes to daytime visitors at 3:30 PM during the run, and only Lightscape ticket holders are admitted in the evening.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Tickets are timed with 15-minute entry windows and must be bought online in advance at <a href=\"https://www.bbg.org/lightscape\" target=\"_blank\" rel=\"noopener\">bbg.org/lightscape</a>, no tickets are sold at the gate. Adults pay $29 on Value nights, $39 off-peak, and $44 on peak nights. Children 3 to 11 are $15, $22, or $28, and children under 3 are free. Prices include all fees. An Anytime Entry ticket is $59. Tickets are not refundable, and exchanges carry a $10 fee per order.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Two adults-only 21+ nights are scheduled for December 10 and 17. Sensory-friendly early entry at 4 PM is offered on December 3 and 18.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p><strong>Getting there:</strong> Take the 2 or 3 train to Eastern Parkway-Brooklyn Museum, the B or Q to Prospect Park, or the 4 or 5 to Franklin Avenue. On-site attended parking is available at 900 Washington Avenue for about $27, limited and first-come, first-served. The trail is wheelchair accessible and runs in all weather, so dress warmly.</p>"
-   }
-  ],
-  "cover_position": "top"
- },
- {
-  "id": "fifth-avenue-snowflake-illumination-2026",
-  "date": "2026-11-18",
-  "type": "original coverage",
-  "headline": "Fifth Avenue Snowflake Lights Up for the Holidays in Support of St. Jude",
-  "lede": "The iconic 30-foot Baccarat crystal snowflake illuminated above Fifth Avenue on Wednesday evening, kicking off the holiday season in support of St. Jude Children's Research Hospital.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<p>New York City's first festive lighting of the season arrived on Wednesday, November 18, as the Fifth Avenue Snowflake lit up above the corner of Fifth Avenue and 57th Street. The annual illumination ceremony, free and open to the public, was hosted by <a href=\"https://www.stjude.org/\" target=\"_blank\" rel=\"noopener noreferrer\">St. Jude</a> Children's Research Hospital, the Fifth Avenue Association, and the Stonbely Family Foundation.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>TV personality and podcaster Paige DeSorbo emceed the celebration. Two St. Jude families joined the program to officially flip the switch: seven-year-old childhood cancer survivor Imani and her family from Dix Hills, Long Island, and 17-year-old Faith and her family from Tulsa, Oklahoma.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The program included performances by the Salvation Army Band, the Marymount School of New York Concert Choir, and The Spence School Select Choir.</p>"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df5szrvMKLX/",
-    "label": "The Fifth Avenue Snowflake illumination, filmed by Marina",
-    "thumb": "assets/reel-thumbs/Df5szrvMKLX.jpg",
-    "card_text": "Christmas magic has arrived on Fifth Avenue! Tonight, NYC's iconic 30-foot Baccarat Crystal Snowflake lit up with over 16,500 crystal prisms.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The snowflake itself is a marvel. Standing 30 feet tall and wide and weighing 3,300 pounds, it contains over 16,500 individual <a href=\"https://www.baccarat.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Baccarat</a> crystal prisms. It was designed by the late German designer Ingo Maurer, known for transforming light into art, in partnership with Baccarat. The snowflake has shone above Fifth Avenue for over 40 years and has become one of New York City's most cherished winter holiday symbols.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>The illumination supports St. Jude's lifesaving mission: Finding cures. Saving children. Thanks to generous donors, families never receive a bill from St. Jude for treatment, travel, housing, or food.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>Sponsors of the Fifth Avenue Snowflake include <a href=\"https://www.tiffany.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tiffany &amp; Co.</a>, <a href=\"https://www.bergdorfgoodman.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Bergdorf Goodman</a>, and the Fifth Avenue Association. The ceremony was produced by Tim Hayes of <a href=\"https://productionsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">ProductionsNewYork.com</a>, and the snowflake is installed and maintained by AMA Electric Sign Company.</p>"
-   },
-   {
-    "kind": "text",
-    "html": "<p>St. Jude will also host its Inaugural St. Jude Snowflake Ball on Thursday, December 3, at 6 PM at <a href=\"https://www.theplazahotel.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Plaza Hotel</a>, with 10-time GRAMMY Award winner <a href=\"https://www.norahjones.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Norah Jones</a> performing. Tickets are available at <a href=\"https://stjude.org/snowflakeball\" target=\"_blank\" rel=\"noopener\">stjude.org/snowflakeball</a>.</p>"
-   }
-  ]
- },
- {
-  "id": "sunrise-at-edge-hudson-yards-2026",
-  "date": "2026-11-18",
-  "type": "original coverage",
-  "headline": "Sunrise at Edge: Watching New York Wake Up From 1,131 Feet",
-  "lede": "The alarm went off at 5 AM. By the time the sun rose over New York City on Tuesday, November 18, 2026, Marina Kapler was standing on Edge, the outdoor sky deck on the 100th floor of 30 Hudson Yards, filming the city as it woke up.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "The morning started in the dark. She watched the sky and waited for the first light, hoping the weather would hold. Then, for a few minutes, the sun rose over the city, and the view from the deck was, in her words, absolutely breathtaking. Some mornings are worth losing sleep over. This was one of them."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df5Lz_7sDwt/",
-    "label": "Marina's reel from the sunrise at Edge",
-    "thumb": "assets/reel-thumbs/Df5Lz_7sDwt.jpg",
-    "card_text": "5 AM alarm. Still dark outside. Then the sun rose over New York City, and the view from Edge was absolutely breathtaking.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "<a href=\"https://www.edgenyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Edge</a> is the highest outdoor sky deck in the Western Hemisphere, a triangular terrace jutting out from the 100th floor of 30 Hudson Yards, 1,131 feet above the street, with a glass floor section that looks straight down to the plaza below. Since 2026 the visit begins indoors, with seven installations of light and mirrors on the way to the outdoor terrace."
-   },
-   {
-    "kind": "text",
-    "html": "Edge is open daily, 9 AM to 10 PM, with the last elevator 50 minutes before close. General admission starts at $44, with an Advance Saver fare from $36 when booked at least 14 days ahead. The entrance is at 30 Hudson Yards, a short walk from the 7 train at 34 St-<a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hudson Yards</a>."
-   },
-   {
-    "kind": "text",
-    "html": "Edge, the highest outdoor sky deck in New York City, is at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code MARINANYC10 for a discount at checkout."
-   }
-  ]
- },
- {
-  "id": "vessel-holiday-lighting-ceremony-2026",
-  "date": "2026-11-17",
-  "type": "original coverage",
-  "headline": "Vessel Holiday Lighting Ceremony Kicks Off the Christmas Season at Hudson Yards",
-  "lede": "Hudson Yards kicked off the holiday season on Monday, November 16, with the second annual Vessel Holiday Lighting Ceremony, bringing live performances, music, and Christmas magic to the Vessel.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "The ceremony featured <a href=\"https://www.instagram.com/anthonyramosofficial/\" target=\"_blank\" rel=\"noopener noreferrer\">Anthony Ramos</a> headlining the night, with performances by the <a href=\"https://newyorkpops.org/\" target=\"_blank\" rel=\"noopener noreferrer\">New York Pops</a>, NY Vocal Collective, BK United Marching Band, Carolina Rial, and <a href=\"https://www.carnegiehall.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Carnegie Hall Citywide</a>. Helen Little from <a href=\"https://www.litefm.com/\" target=\"_blank\" rel=\"noopener noreferrer\">106.7 LiteFM</a> hosted the evening."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df07yM1s4_j/",
-    "label": "Watch Marina's reel from the Vessel Holiday Lighting Ceremony on Instagram",
-    "thumb": "assets/reel-thumbs/Df07yM1s4_j.jpg",
-    "card_text": "What a night at Hudson Yards! The 2026 Vessel Holiday Lighting Ceremony lit up the Vessel for the holidays.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "Marina filmed the ceremony from the plaza, capturing the performances and the moment the <a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vessel</a> lit up."
-   },
-   {
-    "kind": "text",
-    "html": "The Vessel lit up at 6pm, and the light show will run daily from the plaza through January 7, free to watch. The Vessel interior also reopened for the evening with an 18-foot mistletoe photo spot, included with <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity6gn\" target=\"_blank\" rel=\"noopener noreferrer\">Vessel tickets</a>."
-   },
-   {
-    "kind": "text",
-    "html": "Edge, the highest outdoor sky deck in New York City, is steps from the Vessel at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
-   }
-  ]
- },
- {
-  "id": "meta-bh-edits-club-panel-2026",
-  "date": "2026-11-17",
-  "type": "original coverage",
-  "headline": "I Joined Meta Creators at B&H for a Fireside Chat on Creating Content",
-  "lede": "On Thursday, November 12, I took the stage at B&H in New York City as a panelist for a Meta Creators fireside chat, sharing my journey as a creator, my editing process, and how I use the Edits app.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "Meta invited me to join the panel for an evening with <a href=\"https://creators.instagram.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Meta Creators</a> and <a href=\"https://www.bhphotovideo.com/\" target=\"_blank\" rel=\"noopener noreferrer\">B&H</a>, a fireside chat about creating content on <a href=\"https://www.instagram.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a>. The event brought creators together in person at B&H in Manhattan, with the panelists talking through how we shoot, edit, and grow on the platform."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/p/Dfxy6Y4lPNQ/",
-    "label": "See Marina's post from the Meta Creators panel at B&H on Instagram",
-    "thumb": "assets/reel-thumbs/Dfxy6Y4lPNQ.jpg",
-    "card_text": "What a night! Meta invited me to be a panelist at a fireside chat with Meta Creators and B&H, sharing my journey as a content creator.",
-    "card_type": "post"
-   },
-   {
-    "kind": "text",
-    "html": "I shared my journey as a content creator on Instagram, my editing process, my favorite tips, and how I use <a href=\"https://www.instagram.com/edits/\" target=\"_blank\" rel=\"noopener noreferrer\">Edits</a>, Meta's editing app, in my workflow. I was joined on stage by fellow creators <a href=\"https://www.instagram.com/loconinja/\" target=\"_blank\" rel=\"noopener noreferrer\">@loconinja</a> and <a href=\"https://www.instagram.com/jessdesigningforyou/\" target=\"_blank\" rel=\"noopener noreferrer\">@jessdesigningforyou</a>, who shared their own experiences and creative journeys."
-   },
-   {
-    "kind": "text",
-    "html": "It is still a little surreal to go from creating videos on my phone to sitting in front of a room full of content creators and sharing everything I have learned along the way."
-   },
-   {
-    "kind": "text",
-    "html": "Here are three of the questions I was asked that night, and my answers."
-   },
-   {
-    "kind": "text",
-    "html": "<strong>What was the moment your content shifted from posting to building something? What did you change, and what did you stop doing?</strong>"
-   },
-   {
-    "kind": "text",
-    "html": "I've been filming New York on the way to the office every day because I was always a photographer in my heart. I was carrying a small camera in my bag before iPhones ever existed. And there were moments that I really wanted to share with people because not everyone sees New York the way I do. And I started doing those video cuts and experimenting with different layouts and colors, when Reels just came out on Instagram. There were some point where people I know started telling me that they love what I was doing and I decided to turn my page to a real creative page, post consistently, and my videos started going viral. This is where I decided to create my own look for the videos. It's color grading, if it's fonts, specific hooks, the music that can be perfect with my videos, and I wanted my videos to become recognizable, to look the way that I wanted to see them."
-   },
-   {
-    "kind": "text",
-    "html": "<strong>Take us inside your Edits workflow. What's one feature or technique you use on almost every Reel, and what's one you think creators underuse?</strong>"
-   },
-   {
-    "kind": "text",
-    "html": "I'm posting my videos daily and many times it can be newsworthy events like parades, something that can be relevant only right now. I've been searching for an editing option that could be easier and faster to create and would include everything, so I don't have to use different apps for different purposes like I previously did. Color grading in one, text in another, and so on and so on. When Edits came out, I found my perfect platform. I'm just adding all the videos to a project. I built my own kit where you can upload your own fonts and different styles. I saved my adjustments for different types of videos I'm doing which I can apply by just clicking a button. It's so easy to add the music from Instagram right inside Edits and you don't have to upload a song like in other apps. And I just cut the videos to the music, add the text and post to Instagram right from Edits which also saves a lot of time and effort. I think that not many people know that you can layer different filters to create your own and also to save adjustments."
-   },
-   {
-    "kind": "text",
-    "html": "<strong>What's one thing you'd tell a creator, or even yourself, if you were starting today all over again with 1K, and what's one thing you'd tell yourself at your current level?</strong>"
-   },
-   {
-    "kind": "text",
-    "html": "To someone with 1,000 followers, I will say 1,000 is already a lot. Can you imagine a whole space filled with 1,000 people? We're around 500 here today, right? And that's a lot. But the actual thing is being inspired by other creators is great, but building something that is truly yours is so much better and it will bring you much more than just copying."
-   },
-   {
-    "kind": "text",
-    "html": "To myself right now, I'd say burnout is real. Finding something that can be inspiring every single day is difficult but possible. And we all are going through it. There are ups and downs. There are months that views are really bad but like any other thing in life, it goes back at some point, so just keep up."
-   },
-   {
-    "kind": "text",
-    "html": "A huge thank you to the amazing people at Meta and B&H for inviting me and putting together such a wonderful event. I am so grateful to have been part of it."
-   }
-  ],
-  "cover_position": "top"
- },
- {
-  "id": "peninsula-new-york-christmas-tree-lighting-2026",
-  "date": "2026-11-17",
-  "type": "original coverage",
-  "headline": "The Peninsula New York Lights Its Christmas Tree on Fifth Avenue",
-  "lede": "The Peninsula New York opened the holiday season on Tuesday, November 17, 2026, with its annual Christmas Tree Lighting at Gotham Lounge, an evening of champagne, hors d'oeuvres and live music on Fifth Avenue.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "The celebration ran from 5:30 to 7:30 PM at Gotham Lounge inside <a href=\"https://www.peninsula.com/newyork\" target=\"_blank\" rel=\"noopener noreferrer\">The Peninsula New York</a>, at 700 Fifth Avenue at 55th Street. Marina attended by invitation and filmed the evening, the tree, and the hotel dressed for Christmas."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/Df4UENjsfXp/",
-    "label": "Marina's reel from the Peninsula Christmas Tree Lighting",
-    "thumb": "assets/reel-thumbs/Df4UENjsfXp.jpg",
-    "card_text": "Little Christmas magic at The Peninsula New York. Last night, I had the pleasure of attending their annual Christmas Tree Lighting celebration at Gotham Lounge.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "The evening had a charitable side: 50% of the night's proceeds were donated to <a href=\"https://www.newyorkcenterforchildren.org\" target=\"_blank\" rel=\"noopener noreferrer\">The New York Center for Children</a>, a nonprofit that provides free therapy services to child victims of abuse and their families."
-   },
-   {
-    "kind": "text",
-    "html": "The Peninsula New York has stood at Fifth Avenue and 55th Street since 1988, in the landmark building that opened in 1905 as the Gotham Hotel. Marina thanked <a href=\"https://www.instagram.com/thepeninsulanyc\" target=\"_blank\" rel=\"noopener noreferrer\">@thepeninsulanyc</a> for the invitation."
-   }
-  ]
- },
- {
-  "id": "rockefeller-center-tree-arrival-2026",
-  "date": "2026-11-09",
-  "type": "original coverage",
-  "headline": "The 2026 Rockefeller Center Christmas Tree Has Arrived in New York City",
-  "lede": "New York City officially kicked off the holiday season on Saturday, November 7, as the 2026 Rockefeller Center Christmas Tree arrived in Midtown.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "youtube",
-    "id": "VCBK2mRaBqs",
-    "title": "Rockefeller Center Christmas Tree Arrival NYC 2026 | Best Moments and Highlights",
-    "watch": "https://youtu.be/VCBK2mRaBqs"
-   },
-   {
-    "kind": "text",
-    "html": "Marina filmed the whole arrival from <a href=\"https://www.rockefellercenter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Plaza</a>, from the tree rolling onto Center Plaza to the crane lifting the 76-foot spruce into place in front of 30 Rock. Watch the full 8-minute video above."
-   },
-   {
-    "kind": "text",
-    "html": "The 76-foot Norway spruce comes from West Edmeston, New York, about 200 miles from the city. It was planted around 75 years ago by Carl Camenga, the home's original builder, together with his son Wade. Carl, a local mailman, died on Christmas Day ten years ago, and his family still lives nearby. Rebecca Decker, who moved into the house with her three children five years ago, thought Rockefeller Center was joking when they asked for the tree. She had even considered cutting it down herself, worried it might fall on the house. Head gardener Erik Pauze, who has chosen the Rockefeller tree for more than thirty years, had been eyeing this spruce since before she bought the property, after a tip from Jackie and Matt McGinley, who donated the 2023 tree."
-   },
-   {
-    "kind": "text",
-    "html": "The tree was cut on Thursday, November 5, and arrived in Manhattan on Saturday, November 7. It pulled up on 49th Street at 7am, moved onto Center Plaza around 7:30am, the spike was hammered in at 8:30am, and the crane lifted it into place at about 9am. It weighs about 11 tons."
-   },
-   {
-    "kind": "text",
-    "html": "From the shoot, Marina's two best-viewed reels:"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DfcReqmsSye/",
-    "label": "Watch Marina's Rockefeller Center Christmas Tree arrival reel on Instagram",
-    "thumb": "assets/reel-thumbs/DfcReqmsSye.jpg",
-    "card_text": "It's happening! The Rockefeller Center Christmas Tree is arriving in New York City.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DfeLQXXsQqR/",
-    "label": "Watch Marina's reel with CJ, the Mayor of Rockefeller Center, on Instagram",
-    "thumb": "assets/reel-thumbs/DfeLQXXsQqR.jpg",
-    "card_text": "Did you know Rockefeller Center has its own mayor? Meet CJ, the Mayor of Rockefeller Center.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "The tree will be lit at the 94th annual lighting ceremony on Wednesday, December 2, from 7 to 10 p.m., with 50,000 LED lights and the <a href=\"https://www.swarovski.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Swarovski</a> star, and will stay on display through January 9, 2027. After the holidays, it will be milled into lumber and donated to Habitat for Humanity."
-   },
-   {
-    "kind": "text",
-    "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
-   }
-  ]
- },
- {
-  "id": "nyse-christmas-tree-lighting-2026",
-  "date": "2026-11-02",
-  "type": "press release",
-  "headline": "NYSE Announces 103rd Annual Christmas Tree Lighting",
-  "lede": "The New York Stock Exchange has announced its 103rd Annual Christmas Tree Lighting, set for Thursday, December 3, 2026, from 3:30 to 6:30 PM on Wall and Broad Streets.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "The <a href=\"https://www.nyse.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NYSE</a> announced the date this week. The free public celebration brings more than 35 vendors, holiday performances, and seasonal festivities to Wall and Broad Streets in the Financial District, with the tree lighting expected around 5:15 PM. The Exchange describes the event as an incredible community celebration that marks the start of the holiday season."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg",
-    "caption": "The NYSE Christmas tree lit up on Wall Street, with the New York Stock Exchange behind it.",
-    "alt": "The NYSE Christmas tree covered in colorful lights on Wall Street at night, with the New York Stock Exchange building lit red and green"
-   },
-   {
-    "kind": "text",
-    "html": "This year's tree comes from the Town of Beekman in upstate New York. In early October, Town Supervisor Laureen Abbatantuono confirmed that Beekman's tree would go to the New York Stock Exchange, not Rockefeller Center, ending days of speculation after the town first teased the news. The exact location of the tree is being kept private to protect the family's privacy."
-   },
-   {
-    "kind": "text",
-    "html": "The NYSE tree lighting tradition dates back to 1923, nearly a decade before Rockefeller Center's first tree, making it one of New York's oldest holiday traditions. The tree stands outside the Exchange's neoclassical building on Broad Street, a short walk from the Charging Bull and Fearless Girl statues."
-   }
-  ],
-  "cover": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg"
- },
- {
-  "id": "village-halloween-parade-2026",
-  "date": "2026-10-31",
-  "type": "original coverage",
-  "headline": "53rd Village Halloween Parade Takes Over Sixth Avenue",
-  "lede": "The 53rd Annual Village Halloween Parade marched up Sixth Avenue on Halloween night, with tens of thousands of costumed marchers, giant puppets, and the return of the legendary Thriller dance.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "On Saturday, October 31, the 53rd Annual <a href=\"https://halloween-nyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Village Halloween Parade</a> stepped off at 7pm and marched north up Sixth Avenue from Canal Street to West 15th Street, under this year's theme, Body and Soul. Tens of thousands of costumed marchers joined hundreds of giant puppets and more than 50 bands, while an estimated two million spectators lined the avenue. Watching is free, and anyone in a costume can march."
-   },
-   {
-    "kind": "text",
-    "html": "This year's parade opened with Firehorse!, a new giant puppet commission from MacArthur fellow and master puppeteer <a href=\"https://www.basiltwist.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Basil Twist</a>, choreographed by Julie Atlas Muz. Performance artist Joey Arias served as Grand Marshal."
-   },
-   {
-    "kind": "text",
-    "html": "Marina filmed the parade from Sixth Avenue, including the Thriller dance moment that turns the street into a giant Michael Jackson music video every year, and cut the night into a full YouTube video."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DfLhbM6s086/",
-    "label": "Watch Marina's Thriller dance reel on Instagram",
-    "thumb": "assets/reel-thumbs/DfLhbM6s086.jpg",
-    "card_text": "Only in New York does Halloween turn into a giant Michael Jackson Thriller dance in the street.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DfMC0a2OWH-/",
-    "label": "Watch Marina's Village Halloween Parade reel on Instagram",
-    "thumb": "assets/reel-thumbs/DfMC0a2OWH-.jpg",
-    "card_text": "There's Halloween. And then there's Halloween in New York City.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "youtube",
-    "id": "zfpGq2-9Gfg",
-    "title": "Halloween Parade 2026 New York",
-    "watch": "https://youtu.be/zfpGq2-9Gfg"
-   }
-  ]
- },
- {
-  "id": "candlelight-halloween-vessel-2026",
-  "date": "2026-10-31",
-  "type": "original coverage",
-  "headline": "Candlelight Halloween Concert Lights Up the Vessel",
-  "lede": "For one night only, the Vessel at Hudson Yards glowed with thousands of candles as the Highline String Quartet performed Halloween classics for a Candlelight concert presented by Fever.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "On Halloween night, October 31, the Vessel at <a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hudson Yards</a> hosted a one-night-only Candlelight concert presented by <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1qp\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. The Highline String Quartet performed Halloween classics, including Thriller by Michael Jackson, the Stranger Things theme, the Addams Family theme, and Ghostbusters, surrounded by thousands of flameless candles inside the Vessel's copper-toned structure."
-   },
-   {
-    "kind": "text",
-    "html": "The concert ran from 9 to 10pm, with doors at 8:15pm. Tickets were available exclusively through the Fever app and website, starting at $75.60, and were not sold on site."
-   },
-   {
-    "kind": "text",
-    "html": "Marina attended and filmed the concert, capturing the string performance glowing inside the Vessel."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DfNrP7HMgrU/",
-    "label": "Watch Marina's Candlelight concert video on Instagram",
-    "thumb": "assets/reel-thumbs/DfNrP7HMgrU.jpg",
-    "card_text": "Halloween in New York, but make it unforgettable. A Candlelight concert at the Vessel.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "Edge, the highest outdoor sky deck in New York City, is steps from the Vessel at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
-   }
-  ]
- },
- {
-  "id": "rockefeller-center-christmas-tree-2026",
-  "date": "2026-10-26",
-  "type": "press release",
-  "headline": "Rockefeller Center Reveals Its 2026 Christmas Tree",
-  "lede": "A 76-foot Norway spruce from West Edmeston, New York, will be this year's Rockefeller Center Christmas Tree, arriving in Midtown on November 7 before the December 2 lighting.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "<a href=\"https://www.rockefellercenter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Center</a> announced the tree on Monday, October 26. The Norway spruce is about 75 years old, 50 feet wide, and weighs roughly 11 tons. It was donated by Rebecca Decker of West Edmeston, a small town in upstate New York, and found by Erik Pauze, Rockefeller Center's head gardener, who has chosen the tree for more than 30 years."
-   },
-   {
-    "kind": "image",
-    "src": "assets/news-photos/rockefeller-tree-west-edmeston.jpg",
-    "caption": "The 2026 Rockefeller Center Christmas tree, a 76-foot Norway spruce, in West Edmeston before its journey to New York City.",
-    "alt": "The 2026 Rockefeller Center Christmas tree, a tall Norway spruce in a field in West Edmeston with a rainbow behind it"
-   },
-   {
-    "kind": "text",
-    "html": "The tree will be cut on Thursday, November 5, and arrive at Rockefeller Plaza on Saturday, November 7. Its arrival is a public event this year, Meet the Tree Day 2026, back for its second year, with a holiday workshop from Care Bears and FAO Schwarz, meet-and-greets with six Care Bears characters, photo opportunities, and arts and crafts on the plaza."
-   },
-   {
-    "kind": "text",
-    "html": "Once it goes up, the tree will be dressed in more than 50,000 multicolored LED lights strung across five miles of wire, topped with the 900-pound <a href=\"https://www.swarovski.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Swarovski</a> star designed by architect Daniel Libeskind. The star holds more than three million crystals across 70 spikes."
-   },
-   {
-    "kind": "text",
-    "html": "The lighting ceremony is Wednesday, December 2, broadcast live as Christmas in Rockefeller Center from 7 to 10pm. Performances begin around 8pm, the countdown starts at 9:57pm, and the lights switch on just before 10pm. Public viewing is free."
-   },
-   {
-    "kind": "text",
-    "html": "The tree stays on display through January 9, 2027. When it comes down, it will be milled into lumber and donated to <a href=\"https://www.habitat.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Habitat for Humanity</a>. The first tree went up in 1931, when construction workers pooled their money for a 20-foot balsam fir, and the first official lighting followed in 1933. The scaffolding is expected to come down before Thanksgiving, so the last days of November are the quiet window to see the tree fully decorated, star in place, before the lighting night crowds arrive."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/p/De9IB1tDXnF/",
-    "label": "See Rockefeller Center's 2026 Christmas Tree announcement on Instagram",
-    "card_type": "embed"
-   },
-   {
-    "kind": "text",
-    "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
-   }
-  ],
-  "cover": "assets/news-covers/rockefeller-center-christmas-tree-2026.jpg"
- },
- {
-  "id": "herald-square-holiday-fair-2026",
-  "date": "2026-10-26",
-  "type": "press release",
-  "headline": "Herald Square Holiday Fair Returns to Broadway",
-  "lede": "The Herald Square Holiday Fair returns to Broadway between 32nd and 36th Streets on November 12, with a Christmas carousel, a virtual reality sleigh ride, a snow slide, and the Urbanspace holiday market.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "The fair runs November 12, 2026, through January 3, 2027, across <a href=\"https://www.34thstreet.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Herald Square</a> and Greeley Square Park, on Broadway between 32nd and 36th Streets. Community Board 5 approved the fair on October 19, with conditions on crowd management, bike lane protection, sanitation, and fire safety."
-   },
-   {
-    "kind": "text",
-    "html": "Opening day brings the Christmas Carousel, the Magical Sleigh Ride, and the Snow Slide, open daily from 10am to 10pm and closed on Thanksgiving Day. The Magical Sleigh Ride is a virtual reality experience."
-   },
-   {
-    "kind": "text",
-    "html": "From December 2, the Market by <a href=\"https://www.urbanspacenyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Urbanspace</a> joins the fair on the 34th to 36th Street side, open daily from 11am to 9pm through January 3, with returning holiday shop favorites, new vendors, food and treats from local vendors, and a warm cocktail bar. The Giant Rocking Horse photo op stands nearby, open daily from 10am to 10pm."
-   },
-   {
-    "kind": "text",
-    "html": "<a href=\"https://www.macys.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> Holiday Square, the Urbanspace market beside the flagship store, runs alongside the fair, so the whole 34th Street corridor turns into one long holiday market for the season."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/De7PtFbM0ua/",
-    "label": "Watch Marina's Herald Square Holiday Fair video on Instagram",
-    "thumb": "assets/reel-thumbs/De7PtFbM0ua.jpg",
-    "card_text": "SAVE THE DATE: Herald Holiday Fair is returning to Midtown Manhattan.",
-    "card_type": "reel"
-   }
-  ]
- },
- {
-  "id": "kinlaw-fall-risk-times-square",
-  "date": "2026-10-13",
-  "type": "press release",
-  "headline": "Kinlaw's FALL RISK Takes Over Times Square Tonight",
-  "lede": "Times Square Arts presents the New York City premiere of FALL RISK, a one-night-only performance by artist Kinlaw.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "Tonight at 8pm, Kinlaw will be suspended 150 feet above <a href=\"https://www.timessquarenyc.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Duffy Square</a>, on Broadway between 46th and 47th Streets, in their most extreme and personal work yet."
-   },
-   {
-    "kind": "text",
-    "html": "Originally commissioned by <a href=\"https://www.artomi.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Art Omi</a>, FALL RISK centers on survival staged as monument, with a microphone amplifying the artist's breathing under extreme physical pressure high above the street."
-   },
-   {
-    "kind": "text",
-    "html": "Free and open to the public. Press inquiries: <a href=\"mailto:timessquarearts@culturalcounsel.com\">timessquarearts@culturalcounsel.com</a>."
-   }
-  ]
- },
- {
-  "id": "columbus-day-parade-2026",
-  "date": "2026-10-12",
-  "type": "original coverage",
-  "headline": "82nd Annual Columbus Day Parade Returns to Fifth Avenue",
-  "lede": "Fifth Avenue turned into a river of red, white, and green as the Columbus Day Parade returned to Midtown Manhattan.",
-  "featured": true,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "Fifth Avenue turned into a river of red, white, and green on Monday, October 12, as the 82nd Annual Columbus Day Parade marched from 47th to 72nd Street, back after last year's storm cancellation."
-   },
-   {
-    "kind": "text",
-    "html": "More than 100 groups joined the world's largest celebration of Italian American heritage, which this year honored 250 years of Italian contributions to America during the nation's 250th anniversary year. Grand Marshal Ray Dalio was represented on the route by his son Matt Dalio, joined by honorees Ambassador Leandro Rizzuto and Dr. Evelyn C. Granieri."
-   },
-   {
-    "kind": "text",
-    "html": "Marina filmed the parade from the route for a full-length YouTube video, from the bands warming up before the 11:30 AM step-off to the floats passing the red-carpet performance zone."
-   },
-   {
-    "kind": "youtube",
-    "id": "KwnAr5iiQmU",
-    "title": "82nd Annual Columbus Day Parade on Fifth Avenue",
-    "watch": "https://youtu.be/KwnAr5iiQmU"
-   }
-  ],
-  "cover": "assets/news-covers/columbus-day-parade-2026.jpg"
- },
- {
-  "id": "rockefeller-center-rink-90-years",
-  "date": "2026-09-09",
-  "type": "press release",
-  "headline": "The Rink at Rockefeller Center Celebrates 90 Years",
-  "lede": "The Rink at Rockefeller Center returns October 10 for its 90th season with a reimagined skating experience.",
-  "featured": false,
-  "blocks": [
-   {
-    "kind": "text",
-    "html": "New this year: an expanded Skate House and VIP Skate Lounge opening November 14, the Holiday Chalets presented by <a href=\"https://www.balsamhill.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Balsam Hill</a> returning November 6, and six new 90th Anniversary Lodges debuting November 20 for parties up to eight guests."
-   },
-   {
-    "kind": "text",
-    "html": "Tickets start at $22 per person (rentals not included) and are on sale now at <a href=\"https://rockefellercenter.com\" target=\"_blank\" rel=\"noopener noreferrer\">rockefellercenter.com</a>."
-   },
-   {
-    "kind": "text",
-    "html": "Built as a temporary attraction in 1936, The Rink now welcomes more than a quarter of a million skaters each year."
-   },
-   {
-    "kind": "instagram",
-    "url": "https://www.instagram.com/reel/DeUVkppsni1/",
-    "label": "Watch Marina's Rockefeller Center reel on Instagram",
-    "thumb": "assets/reel-thumbs/DeUVkppsni1.jpg",
-    "card_text": "Christmas in New York is getting closer! The holiday season at Rockefeller Center officially begins in October.",
-    "card_type": "reel"
-   },
-   {
-    "kind": "text",
-    "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
-   }
-  ]
- }
+  {
+    "id": "macys-thanksgiving-day-parade-2026-storm-forecast",
+    "date": "2026-11-22",
+    "type": "original coverage",
+    "headline": "Rain and Gusty Winds Threaten the Balloons at Macy's 100th Thanksgiving Day Parade",
+    "lede": "Forecasters are tracking a potentially significant coastal storm up the East Coast that could bring rain and gusty winds to New York City on Thanksgiving morning, putting the giant balloons of the 100th Macy's Thanksgiving Day Parade at risk.",
+    "featured": false,
+    "cover": "assets/news-covers/macys-thanksgiving-day-parade-2026-storm-forecast-v2.jpg",
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "A coastal storm forming off the Southeast coast late Wednesday is expected to move up the East Coast on Thanksgiving Day, bringing heavy rain and strong winds from the mid-Atlantic to New England. The <a href=\"https://www.weather.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">National Weather Service</a> calls it a potentially significant coastal storm. Its consensus forecast for New York City has east-northeast winds of 20 to 30 mph with gusts of 35 to 45 mph, strongest during the day Thursday, and 1 to 2 inches of rain. Central Park is forecast for rain Thursday with a high near 53. With a full moon on Tuesday bringing king tides, the storm could also cause coastal flooding around the city. The storm's exact track and timing could still shift over the next few days."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DC7B1CbR4mr/",
+        "label": "The Macy's Thanksgiving Day Parade in the rain, 2024",
+        "thumb": "assets/reel-thumbs/DC7B1CbR4mr.jpg",
+        "card_text": "Rain can't dampen the magic of the Macy's Thanksgiving Day Parade 2024 in New York City! From giant balloons and dazzling floats to incredible performances, this cherished holiday tradition brings joy to millions.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-star-balloon.jpg",
+        "caption": "The Macy's star balloon in the rain at the 2024 parade.",
+        "alt": "The gold Macy's star balloon with handlers in rain ponchos on a wet street at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "text",
+        "html": "Under New York City rules, the giant helium balloons cannot fly if sustained winds exceed 23 mph or gusts top 34 mph. Even lower gusts can force handlers to fly the balloons closer to the ground. The forecast gusts sit right at or above that line, so the balloon decision will come down to the wind on Thursday morning. The parade itself goes on no matter what: floats and performances proceed even if the balloons are grounded."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-kalahari-float.jpg",
+        "caption": "The Kalahari Resorts float in the rain at the 2024 parade.",
+        "alt": "The Kalahari Resorts elephant float in the rain at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "text",
+        "html": "This year's parade is the 100th, and <a href=\"https://www.macys.com/parade\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> is marking it with a record 100 inflatable elements, including nine new balloons. Among them is Billie Brightpaw, a bear designed for the centennial, along with Sorcerer's Apprentice Mickey, Underdog flying for the first time since 1984, Bluey, and Hello Kitty. About 3.5 million spectators are expected along the 2.5-mile route. The parade steps off at 8:30 a.m. from West 77th Street and Central Park West, travels south on Central Park West to Columbus Circle, east along Central Park South, then down Sixth Avenue to Macy's Herald Square, ending around noon. It airs live on <a href=\"https://www.nbc.com\" target=\"_blank\" rel=\"noopener noreferrer\">NBC</a> and <a href=\"https://www.telemundo.com\" target=\"_blank\" rel=\"noopener noreferrer\">Telemundo</a> and streams on <a href=\"https://www.peacocktv.com\" target=\"_blank\" rel=\"noopener noreferrer\">Peacock</a>."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-luffy.jpg",
+        "caption": "The Monkey D. Luffy balloon in the rain at the 2024 parade.",
+        "alt": "The Monkey D. Luffy balloon from One Piece in the rain at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-believe-star.jpg",
+        "caption": "The Believe star passes Radio City Music Hall in the rain at the 2024 parade.",
+        "alt": "The red Believe star balloon passing Radio City Music Hall in the rain at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "text",
+        "html": "New York has seen a rainy parade before. In 2024, the parade went ahead in the rain, the balloons flew, and the floats rolled on, with handlers and marching bands in ponchos. Rain alone does not stop the parade. Wind is the deciding factor, and that is what forecasters will be watching right up to Thursday morning."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-marching-band.jpg",
+        "caption": "A marching band in rain ponchos at the 2024 parade.",
+        "alt": "A marching band in clear rain ponchos at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/macys-parade-2024-santa.jpg",
+        "caption": "Santa in his sleigh at the 2024 parade.",
+        "alt": "Santa in his sleigh holding an umbrella in the rain at the 2024 Thanksgiving Day Parade"
+      },
+      {
+        "kind": "text",
+        "html": "The day before the parade, the public can watch the balloons being inflated near the <a href=\"https://www.amnh.org\" target=\"_blank\" rel=\"noopener noreferrer\">American Museum of Natural History</a>, Wednesday from 1 to 6 p.m., with entry at West 72nd Street and Columbus Avenue. Wednesday looks like the better day: mostly sunny with a high near 50 and no rain expected. The storm arrives Wednesday night."
+      },
+      {
+        "kind": "text",
+        "html": "Spectators heading to the route Thursday should dress for rain and wind, and a poncho is a better choice than an umbrella in a packed crowd. The best curbside spots go early, with crowds arriving from around 6 a.m. <a href=\"https://www.accuweather.com\" target=\"_blank\" rel=\"noopener noreferrer\">AccuWeather</a> expects the rain to be steadiest and heaviest in the afternoon and evening, so the morning parade window may be drier than the afternoon, but the wind will be building all morning. Check the forecast again Wednesday night before setting an alarm."
+      }
+    ]
+  },
+  {
+    "id": "december-1-tree-lightings-2026",
+    "date": "2026-11-22",
+    "type": "original coverage",
+    "headline": "Four New York Christmas Tree Lightings Fall on the Same Night, December 1",
+    "lede": "Tuesday, December 1, 2026, is the busiest tree-lighting night of the New York holiday season. Four ceremonies light up across Manhattan within the same two-hour window, from Midtown to Central Park to the Seaport, and no one can attend them all.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<strong><a href=\"https://bryantpark.org\" target=\"_blank\" rel=\"noopener noreferrer\">Bryant Park</a>, 5:30-6:30 PM.</strong> The first lighting of the night is at Bryant Park, where the ceremony runs 5:30 to 6:30 PM. Entry is from 3:30 PM, first come, first served. Free. In December the park becomes one of the prettiest corners of Midtown: the Winter Village fills the lawn with holiday shops, the ice rink glows under the lights, and the tree stands above it all with the New York Public Library behind it, its marble lions watching over Fifth Avenue. Skaters glide past the tree while the shops sell hot chocolate and gifts, and the whole park smells of pine and roasted nuts. It is the classic New York Christmas scene, and the tree lighting is when it officially begins."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/dec1-bryant-park.jpg",
+        "caption": "The Bryant Park Christmas tree, with the ice rink in front of the New York Public Library.",
+        "alt": "The lit Bryant Park Christmas tree at night with ice skaters in front of the New York Public Library"
+      },
+      {
+        "kind": "text",
+        "html": "<strong><a href=\"https://www.lottehotel.com/new-york-palace/en.html\" target=\"_blank\" rel=\"noopener noreferrer\">Lotte New York Palace</a>, 5:00-7:00 PM.</strong> The Palace lights its spectacular 30-foot Christmas tree in the Courtyard at 455 Madison Avenue, with champagne, passed bites, and a surprise performance. Attendance is by RSVP. The Courtyard is one of the most photographed holiday spots in the city: the tree stands framed by the Villard Houses, the 19th-century brownstone mansions that form the historic heart of the hotel, behind the Palace's famous gold gates on Madison Avenue. When the lights go on, the whole courtyard glows against the old stone facades, and the tree, dressed top to bottom, becomes the centerpiece of the block. It is the most elegant of the four lightings, and the hardest to get into."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/dec1-lotte.jpg",
+        "caption": "The Christmas tree in the Courtyard at Lotte New York Palace.",
+        "alt": "The decorated Christmas tree in the Courtyard at Lotte New York Palace at night"
+      },
+      {
+        "kind": "text",
+        "html": "<strong><a href=\"https://www.tavernonthegreen.com\" target=\"_blank\" rel=\"noopener noreferrer\">Tavern on the Green</a>, 5:30-8:30 PM.</strong> The Central Park restaurant celebrates its 10th annual tree lighting, and this year <a href=\"https://www.popmart.com\" target=\"_blank\" rel=\"noopener noreferrer\">POP MART</a>'s Twinkle Twinkle character makes its first-ever U.S. appearance, with a live performance at 6:30 PM and meet-and-greets before and after. DJ Tweed and the Manhattan Carolers perform, with complimentary hot chocolate, hot apple cider, cookies, and passed hors d'oeuvres. The tree lights up at 7:00 PM. Free and open to all, at West 67th Street and Central Park West. Tavern on the Green has been part of Central Park since 1934, in a building that began life as the park's sheepfold, and at Christmas it is consistently named one of the most beautifully decorated restaurants in the country. The courtyard is strung with lights, nutcrackers stand guard by the tree, and the whole place feels like a holiday card, right in the middle of the park. Of the four ceremonies, this is the one to bring children to."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/dec1-tavern.jpg",
+        "caption": "The Christmas tree at Tavern on the Green, in the courtyard in Central Park.",
+        "alt": "The decorated Christmas tree at Tavern on the Green at night, with a nutcracker and string lights"
+      },
+      {
+        "kind": "text",
+        "html": "<strong><a href=\"https://theseaport.nyc/events/holiday-tree-lighting/\" target=\"_blank\" rel=\"noopener noreferrer\">The Seaport</a>, 6:00-8:00 PM.</strong> The Seaport transforms the corner of Fulton and Front Streets into a festive gathering with live music from the Brooklyn-based, female-led brass band Brass Queens, DJ-spun holiday classics, and the neighborhood tree lighting at 6:30 PM, followed by a meet-and-greet with Santa. Hot chocolate and chocolate chip cookies from Sadie's Bakery, plus holiday crafts and local pop-ups. Free and family-friendly. The Seaport is the most atmospheric of the four settings: cobblestone streets, 19th-century brick buildings, and the tall ships of the Seaport Museum moored at the piers, with the East River and the Brooklyn Bridge just beyond. The tree lights up on the waterfront as the ships' masts rise behind it, and the whole neighborhood feels like old New York at Christmas."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/dec1-seaport.jpg",
+        "caption": "The Christmas tree at the Seaport, by the tall ships on the waterfront.",
+        "alt": "The lit Christmas tree at the Seaport at night with tall ship masts behind it"
+      },
+      {
+        "kind": "text",
+        "html": "The hard part is the overlap. Bryant Park and the Palace are both Midtown and ten blocks apart, so a fast walker could catch the start of one and the end of the other. The Seaport is downtown and Tavern on the Green is uptown, and both light their trees at 6:30 and 7:00 PM, right when the Midtown ceremonies are ending. Pick the one that fits your evening, and get there early, the Seaport and Tavern are first come, first served."
+      }
+    ],
+    "cover": "assets/news-covers/december-1-tree-lightings-2026.jpg"
+  },
+  {
+    "id": "fox-news-all-american-christmas-tree-lighting-2026",
+    "date": "2026-11-22",
+    "type": "original coverage",
+    "headline": "FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square",
+    "lede": "FOX News Media kicked off the holiday season with the seventh annual All-American Christmas Tree Lighting at FOX Square, lighting a 50-foot tree with 340,000 lights on Friday, November 20.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<p><a href=\"https://www.foxnews.com/\" target=\"_blank\" rel=\"noopener noreferrer\">FOX News Media</a> presented the seventh annual All-<a href=\"https://www.americanchristmas.com/\" target=\"_blank\" rel=\"noopener noreferrer\">American Christmas</a> Tree Lighting on Friday, November 20, during a special edition of \"The Five\" at 5 PM ET. The ceremony was hosted by Emily Compagno, Harold Ford Jr., Greg Gutfeld, Dana Perino, and Jesse Watters, who lit the tree outside the network's New York City headquarters at FOX Square.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>First Lady Melania Trump attended the event, joining children for a festive Christmas celebration. She helped decorate a Christmas tree, enjoyed cookies and hot chocolate with the children, and shared favorite holiday traditions and Christmas wish lists.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The All-American Christmas Tree stands 50 feet tall and is decorated with 18,000 ornaments and 340,000 warm white, true white, and red lights. The tree is topped with a 6-foot dove with 4,800 embedded lights, created by American Christmas, a holiday lighting and display company based in Mount Vernon, New York. The lighting, sponsored by <a href=\"https://www.acehardware.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ace Hardware</a>, included a live performance by Phil Wickham and a blessing by Rev. Franklin Graham.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>FOX News Media is partnering with <a href=\"https://www.asymca.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Armed Services YMCA</a> this holiday season to support junior enlisted service members and their families.</p>"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df-5zZHsL5t/",
+        "label": "Marina's reel from FOX Square",
+        "thumb": "assets/reel-thumbs/Df-5zZHsL5t.jpg",
+        "card_text": "10, 9, 8… Christmas has officially arrived at FOX Square! Tonight, @foxnews lit up its spectacular 50-foot Christmas tree with 340,000 lights during the 7th Annual All-American Christmas Tree Lighting in NYC!",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Marina filmed the tree at FOX Square.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The tree is on display at FOX Square, 1211 Avenue of the Americas in Midtown Manhattan, free to visit.</p>"
+      }
+    ]
+  },
+  {
+    "id": "macys-holiday-windows-2026-blue-hippo",
+    "date": "2026-11-22",
+    "type": "original coverage",
+    "headline": "Macy's Unveils 2026 Holiday Windows Starring the Blue Hippopotamus",
+    "lede": "Macy's Herald Square unveiled its 2026 holiday windows on Thursday, November 19, telling the story of the Blue Hippopotamus, a Thanksgiving Day Parade balloon lost since 1931, ahead of the parade's 100th edition.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<p><a href=\"https://www.macys.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> unveiled its 2026 holiday windows on Thursday, November 19, at 6 PM outside Macy's Herald Square, along Broadway between West 34th and West 35th Streets. The unveiling ceremony was free and open to the public. It featured EJAE, the singer-songwriter who provides Rumi's singing voice in Netflix's KPop Demon Hunters, performing her first holiday single, \"Christmas in New York,\" and Darlene Love, best known for her 1963 Christmas classic \"Christmas (Baby Please Come Home).\"</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>This year's six windows along the Broadway side tell the story of the Blue Hippopotamus, one of the earliest character balloons to fly in the Macy's Thanksgiving Day Parade. After flying away and disappearing at the end of the 1931 parade, Blue Hippo embarks on whimsical adventures celebrating wonder, connection, and joyful discovery before making a triumphant return to Herald Square for the holidays and the 100th parade. Each window features a short rhyming passage telling part of Blue's adventure.</p>"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df8hfg-shfk/",
+        "label": "Marina's first look at the Macy's windows",
+        "thumb": "assets/reel-thumbs/Df8hfg-shfk.jpg",
+        "card_text": "FIRST LOOK! @macys 2026 Christmas windows are finally here! Unveiled tonight at Macy's Herald Square, one of New York City's most beloved holiday traditions is back on 34th Street!",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Marina filmed the windows after the unveiling.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Inside the store, Macy's has a reimagined Santaland experience, with reservations opening November 20, and Macy's Holiday Square is back on the lower level with more than 35 vendors. The holiday campaign is themed \"There's Magic Inside.\"</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The windows are free to view at 151 West 34th Street and remain on display through Monday, January 4, 2027. The 100th Macy's Thanksgiving Day Parade takes place on Thursday, November 26.</p>"
+      }
+    ]
+  },
+  {
+    "id": "lightscape-brooklyn-botanic-garden-2026",
+    "date": "2026-11-22",
+    "type": "original coverage",
+    "headline": "Lightscape Returns to Brooklyn Botanic Garden With Over One Million Lights",
+    "lede": "Brooklyn Botanic Garden kicked off the holiday season with the sixth annual Lightscape, a reimagined nearly mile-long trail of more than one million lights, open November 20 through January 3.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<p>On Thursday, November 19, <a href=\"https://www.bbg.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Brooklyn Botanic Garden</a> President and CEO Sue Donoghue joined New York City officials for a special \"Lights On\" moment in the Japanese Hill-and-Pond Garden, turning on a grand light and music water fountain show to open the sixth annual Lightscape.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>This year's trail is completely reimagined, themed around the garden's four seasons. Visitors follow a nearly mile-long, one-way route past 16 luminous installations, with light-splashed trees, buildings, and water features set to a curated soundtrack. Food and drinks are available along the way. The trail starts and ends at the Visitor Center at 990 Washington Avenue and takes most visitors 60 to 90 minutes.</p>"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df8b_jdsa-P/",
+        "label": "Marina's first look at Lightscape",
+        "thumb": "assets/reel-thumbs/Df8b_jdsa-P.jpg",
+        "card_text": "Over ONE MILLION lights, and a little Christmas magic in Brooklyn! Tonight, I got a first look at the 6th annual Lightscape at Brooklyn Botanic Garden, including a beautiful light and music fountain show!",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Marina attended the press preview and filmed a first look at the trail.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p><strong>Planning your visit:</strong> Lightscape runs on select evenings from November 20, 2026, through January 3, 2027, Wednesdays through Sundays, plus December 21 to 22 and December 28 to 29. It is closed December 2, Thanksgiving, and Christmas Day. The garden closes to daytime visitors at 3:30 PM during the run, and only Lightscape ticket holders are admitted in the evening.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Tickets are timed with 15-minute entry windows and must be bought online in advance at <a href=\"https://www.bbg.org/lightscape\" target=\"_blank\" rel=\"noopener\">bbg.org/lightscape</a>, no tickets are sold at the gate. Adults pay $29 on Value nights, $39 off-peak, and $44 on peak nights. Children 3 to 11 are $15, $22, or $28, and children under 3 are free. Prices include all fees. An Anytime Entry ticket is $59. Tickets are not refundable, and exchanges carry a $10 fee per order.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Two adults-only 21+ nights are scheduled for December 10 and 17. Sensory-friendly early entry at 4 PM is offered on December 3 and 18.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p><strong>Getting there:</strong> Take the 2 or 3 train to Eastern Parkway-Brooklyn Museum, the B or Q to Prospect Park, or the 4 or 5 to Franklin Avenue. On-site attended parking is available at 900 Washington Avenue for about $27, limited and first-come, first-served. The trail is wheelchair accessible and runs in all weather, so dress warmly.</p>"
+      }
+    ],
+    "cover_position": "top"
+  },
+  {
+    "id": "fifth-avenue-snowflake-illumination-2026",
+    "date": "2026-11-18",
+    "type": "original coverage",
+    "headline": "Fifth Avenue Snowflake Lights Up for the Holidays in Support of St. Jude",
+    "lede": "The iconic 30-foot Baccarat crystal snowflake illuminated above Fifth Avenue on Wednesday evening, kicking off the holiday season in support of St. Jude Children's Research Hospital.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<p>New York City's first festive lighting of the season arrived on Wednesday, November 18, as the Fifth Avenue Snowflake lit up above the corner of Fifth Avenue and 57th Street. The annual illumination ceremony, free and open to the public, was hosted by <a href=\"https://www.stjude.org/\" target=\"_blank\" rel=\"noopener noreferrer\">St. Jude</a> Children's Research Hospital, the Fifth Avenue Association, and the Stonbely Family Foundation.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>TV personality and podcaster Paige DeSorbo emceed the celebration. Two St. Jude families joined the program to officially flip the switch: seven-year-old childhood cancer survivor Imani and her family from Dix Hills, Long Island, and 17-year-old Faith and her family from Tulsa, Oklahoma.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The program included performances by the Salvation Army Band, the Marymount School of New York Concert Choir, and The Spence School Select Choir.</p>"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df5szrvMKLX/",
+        "label": "The Fifth Avenue Snowflake illumination, filmed by Marina",
+        "thumb": "assets/reel-thumbs/Df5szrvMKLX.jpg",
+        "card_text": "Christmas magic has arrived on Fifth Avenue! Tonight, NYC's iconic 30-foot Baccarat Crystal Snowflake lit up with over 16,500 crystal prisms.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The snowflake itself is a marvel. Standing 30 feet tall and wide and weighing 3,300 pounds, it contains over 16,500 individual <a href=\"https://www.baccarat.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Baccarat</a> crystal prisms. It was designed by the late German designer Ingo Maurer, known for transforming light into art, in partnership with Baccarat. The snowflake has shone above Fifth Avenue for over 40 years and has become one of New York City's most cherished winter holiday symbols.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>The illumination supports St. Jude's lifesaving mission: Finding cures. Saving children. Thanks to generous donors, families never receive a bill from St. Jude for treatment, travel, housing, or food.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>Sponsors of the Fifth Avenue Snowflake include <a href=\"https://www.tiffany.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Tiffany &amp; Co.</a>, <a href=\"https://www.bergdorfgoodman.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Bergdorf Goodman</a>, and the Fifth Avenue Association. The ceremony was produced by Tim Hayes of <a href=\"https://productionsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">ProductionsNewYork.com</a>, and the snowflake is installed and maintained by AMA Electric Sign Company.</p>"
+      },
+      {
+        "kind": "text",
+        "html": "<p>St. Jude will also host its Inaugural St. Jude Snowflake Ball on Thursday, December 3, at 6 PM at <a href=\"https://www.theplazahotel.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Plaza Hotel</a>, with 10-time GRAMMY Award winner <a href=\"https://www.norahjones.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Norah Jones</a> performing. Tickets are available at <a href=\"https://stjude.org/snowflakeball\" target=\"_blank\" rel=\"noopener\">stjude.org/snowflakeball</a>.</p>"
+      }
+    ]
+  },
+  {
+    "id": "sunrise-at-edge-hudson-yards-2026",
+    "date": "2026-11-18",
+    "type": "original coverage",
+    "headline": "Sunrise at Edge: Watching New York Wake Up From 1,131 Feet",
+    "lede": "The alarm went off at 5 AM. By the time the sun rose over New York City on Tuesday, November 18, 2026, Marina Kapler was standing on Edge, the outdoor sky deck on the 100th floor of 30 Hudson Yards, filming the city as it woke up.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The morning started in the dark. She watched the sky and waited for the first light, hoping the weather would hold. Then, for a few minutes, the sun rose over the city, and the view from the deck was, in her words, absolutely breathtaking. Some mornings are worth losing sleep over. This was one of them."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df5Lz_7sDwt/",
+        "label": "Marina's reel from the sunrise at Edge",
+        "thumb": "assets/reel-thumbs/Df5Lz_7sDwt.jpg",
+        "card_text": "5 AM alarm. Still dark outside. Then the sun rose over New York City, and the view from Edge was absolutely breathtaking.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "<a href=\"https://www.edgenyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Edge</a> is the highest outdoor sky deck in the Western Hemisphere, a triangular terrace jutting out from the 100th floor of 30 Hudson Yards, 1,131 feet above the street, with a glass floor section that looks straight down to the plaza below. Since 2026 the visit begins indoors, with seven installations of light and mirrors on the way to the outdoor terrace."
+      },
+      {
+        "kind": "text",
+        "html": "Edge is open daily, 9 AM to 10 PM, with the last elevator 50 minutes before close. General admission starts at $44, with an Advance Saver fare from $36 when booked at least 14 days ahead. The entrance is at 30 Hudson Yards, a short walk from the 7 train at 34 St-<a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hudson Yards</a>."
+      },
+      {
+        "kind": "text",
+        "html": "Edge, the highest outdoor sky deck in New York City, is at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code MARINANYC10 for a discount at checkout."
+      }
+    ]
+  },
+  {
+    "id": "vessel-holiday-lighting-ceremony-2026",
+    "date": "2026-11-17",
+    "type": "original coverage",
+    "headline": "Vessel Holiday Lighting Ceremony Kicks Off the Christmas Season at Hudson Yards",
+    "lede": "Hudson Yards kicked off the holiday season on Monday, November 16, with the second annual Vessel Holiday Lighting Ceremony, bringing live performances, music, and Christmas magic to the Vessel.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The ceremony featured <a href=\"https://www.instagram.com/anthonyramosofficial/\" target=\"_blank\" rel=\"noopener noreferrer\">Anthony Ramos</a> headlining the night, with performances by the <a href=\"https://newyorkpops.org/\" target=\"_blank\" rel=\"noopener noreferrer\">New York Pops</a>, NY Vocal Collective, BK United Marching Band, Carolina Rial, and <a href=\"https://www.carnegiehall.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Carnegie Hall Citywide</a>. Helen Little from <a href=\"https://www.litefm.com/\" target=\"_blank\" rel=\"noopener noreferrer\">106.7 LiteFM</a> hosted the evening."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df07yM1s4_j/",
+        "label": "Watch Marina's reel from the Vessel Holiday Lighting Ceremony on Instagram",
+        "thumb": "assets/reel-thumbs/Df07yM1s4_j.jpg",
+        "card_text": "What a night at Hudson Yards! The 2026 Vessel Holiday Lighting Ceremony lit up the Vessel for the holidays.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "Marina filmed the ceremony from the plaza, capturing the performances and the moment the <a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Vessel</a> lit up."
+      },
+      {
+        "kind": "text",
+        "html": "The Vessel lit up at 6pm, and the light show will run daily from the plaza through January 7, free to watch. The Vessel interior also reopened for the evening with an 18-foot mistletoe photo spot, included with <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity6gn\" target=\"_blank\" rel=\"noopener noreferrer\">Vessel tickets</a>."
+      },
+      {
+        "kind": "text",
+        "html": "Edge, the highest outdoor sky deck in New York City, is steps from the Vessel at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
+      }
+    ]
+  },
+  {
+    "id": "meta-bh-edits-club-panel-2026",
+    "date": "2026-11-17",
+    "type": "original coverage",
+    "headline": "I Joined Meta Creators at B&H for a Fireside Chat on Creating Content",
+    "lede": "On Thursday, November 12, I took the stage at B&H in New York City as a panelist for a Meta Creators fireside chat, sharing my journey as a creator, my editing process, and how I use the Edits app.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "Meta invited me to join the panel for an evening with <a href=\"https://creators.instagram.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Meta Creators</a> and <a href=\"https://www.bhphotovideo.com/\" target=\"_blank\" rel=\"noopener noreferrer\">B&H</a>, a fireside chat about creating content on <a href=\"https://www.instagram.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a>. The event brought creators together in person at B&H in Manhattan, with the panelists talking through how we shoot, edit, and grow on the platform."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/p/Dfxy6Y4lPNQ/",
+        "label": "See Marina's post from the Meta Creators panel at B&H on Instagram",
+        "thumb": "assets/reel-thumbs/Dfxy6Y4lPNQ.jpg",
+        "card_text": "What a night! Meta invited me to be a panelist at a fireside chat with Meta Creators and B&H, sharing my journey as a content creator.",
+        "card_type": "post"
+      },
+      {
+        "kind": "text",
+        "html": "I shared my journey as a content creator on Instagram, my editing process, my favorite tips, and how I use <a href=\"https://www.instagram.com/edits/\" target=\"_blank\" rel=\"noopener noreferrer\">Edits</a>, Meta's editing app, in my workflow. I was joined on stage by fellow creators <a href=\"https://www.instagram.com/loconinja/\" target=\"_blank\" rel=\"noopener noreferrer\">@loconinja</a> and <a href=\"https://www.instagram.com/jessdesigningforyou/\" target=\"_blank\" rel=\"noopener noreferrer\">@jessdesigningforyou</a>, who shared their own experiences and creative journeys."
+      },
+      {
+        "kind": "text",
+        "html": "It is still a little surreal to go from creating videos on my phone to sitting in front of a room full of content creators and sharing everything I have learned along the way."
+      },
+      {
+        "kind": "text",
+        "html": "Here are three of the questions I was asked that night, and my answers."
+      },
+      {
+        "kind": "text",
+        "html": "<strong>What was the moment your content shifted from posting to building something? What did you change, and what did you stop doing?</strong>"
+      },
+      {
+        "kind": "text",
+        "html": "I've been filming New York on the way to the office every day because I was always a photographer in my heart. I was carrying a small camera in my bag before iPhones ever existed. And there were moments that I really wanted to share with people because not everyone sees New York the way I do. And I started doing those video cuts and experimenting with different layouts and colors, when Reels just came out on Instagram. There were some point where people I know started telling me that they love what I was doing and I decided to turn my page to a real creative page, post consistently, and my videos started going viral. This is where I decided to create my own look for the videos. It's color grading, if it's fonts, specific hooks, the music that can be perfect with my videos, and I wanted my videos to become recognizable, to look the way that I wanted to see them."
+      },
+      {
+        "kind": "text",
+        "html": "<strong>Take us inside your Edits workflow. What's one feature or technique you use on almost every Reel, and what's one you think creators underuse?</strong>"
+      },
+      {
+        "kind": "text",
+        "html": "I'm posting my videos daily and many times it can be newsworthy events like parades, something that can be relevant only right now. I've been searching for an editing option that could be easier and faster to create and would include everything, so I don't have to use different apps for different purposes like I previously did. Color grading in one, text in another, and so on and so on. When Edits came out, I found my perfect platform. I'm just adding all the videos to a project. I built my own kit where you can upload your own fonts and different styles. I saved my adjustments for different types of videos I'm doing which I can apply by just clicking a button. It's so easy to add the music from Instagram right inside Edits and you don't have to upload a song like in other apps. And I just cut the videos to the music, add the text and post to Instagram right from Edits which also saves a lot of time and effort. I think that not many people know that you can layer different filters to create your own and also to save adjustments."
+      },
+      {
+        "kind": "text",
+        "html": "<strong>What's one thing you'd tell a creator, or even yourself, if you were starting today all over again with 1K, and what's one thing you'd tell yourself at your current level?</strong>"
+      },
+      {
+        "kind": "text",
+        "html": "To someone with 1,000 followers, I will say 1,000 is already a lot. Can you imagine a whole space filled with 1,000 people? We're around 500 here today, right? And that's a lot. But the actual thing is being inspired by other creators is great, but building something that is truly yours is so much better and it will bring you much more than just copying."
+      },
+      {
+        "kind": "text",
+        "html": "To myself right now, I'd say burnout is real. Finding something that can be inspiring every single day is difficult but possible. And we all are going through it. There are ups and downs. There are months that views are really bad but like any other thing in life, it goes back at some point, so just keep up."
+      },
+      {
+        "kind": "text",
+        "html": "A huge thank you to the amazing people at Meta and B&H for inviting me and putting together such a wonderful event. I am so grateful to have been part of it."
+      }
+    ],
+    "cover_position": "top"
+  },
+  {
+    "id": "peninsula-new-york-christmas-tree-lighting-2026",
+    "date": "2026-11-17",
+    "type": "original coverage",
+    "headline": "The Peninsula New York Lights Its Christmas Tree on Fifth Avenue",
+    "lede": "The Peninsula New York opened the holiday season on Tuesday, November 17, 2026, with its annual Christmas Tree Lighting at Gotham Lounge, an evening of champagne, hors d'oeuvres and live music on Fifth Avenue.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The celebration ran from 5:30 to 7:30 PM at Gotham Lounge inside <a href=\"https://www.peninsula.com/newyork\" target=\"_blank\" rel=\"noopener noreferrer\">The Peninsula New York</a>, at 700 Fifth Avenue at 55th Street. Marina attended by invitation and filmed the evening, the tree, and the hotel dressed for Christmas."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/Df4UENjsfXp/",
+        "label": "Marina's reel from the Peninsula Christmas Tree Lighting",
+        "thumb": "assets/reel-thumbs/Df4UENjsfXp.jpg",
+        "card_text": "Little Christmas magic at The Peninsula New York. Last night, I had the pleasure of attending their annual Christmas Tree Lighting celebration at Gotham Lounge.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "The evening had a charitable side: 50% of the night's proceeds were donated to <a href=\"https://www.newyorkcenterforchildren.org\" target=\"_blank\" rel=\"noopener noreferrer\">The New York Center for Children</a>, a nonprofit that provides free therapy services to child victims of abuse and their families."
+      },
+      {
+        "kind": "text",
+        "html": "The Peninsula New York has stood at Fifth Avenue and 55th Street since 1988, in the landmark building that opened in 1905 as the Gotham Hotel. Marina thanked <a href=\"https://www.instagram.com/thepeninsulanyc\" target=\"_blank\" rel=\"noopener noreferrer\">@thepeninsulanyc</a> for the invitation."
+      }
+    ]
+  },
+  {
+    "id": "rockefeller-center-tree-arrival-2026",
+    "date": "2026-11-09",
+    "type": "original coverage",
+    "headline": "The 2026 Rockefeller Center Christmas Tree Has Arrived in New York City",
+    "lede": "New York City officially kicked off the holiday season on Saturday, November 7, as the 2026 Rockefeller Center Christmas Tree arrived in Midtown.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "youtube",
+        "id": "VCBK2mRaBqs",
+        "title": "Rockefeller Center Christmas Tree Arrival NYC 2026 | Best Moments and Highlights",
+        "watch": "https://youtu.be/VCBK2mRaBqs"
+      },
+      {
+        "kind": "text",
+        "html": "Marina filmed the whole arrival from <a href=\"https://www.rockefellercenter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Plaza</a>, from the tree rolling onto Center Plaza to the crane lifting the 76-foot spruce into place in front of 30 Rock. Watch the full 8-minute video above."
+      },
+      {
+        "kind": "text",
+        "html": "The 76-foot Norway spruce comes from West Edmeston, New York, about 200 miles from the city. It was planted around 75 years ago by Carl Camenga, the home's original builder, together with his son Wade. Carl, a local mailman, died on Christmas Day ten years ago, and his family still lives nearby. Rebecca Decker, who moved into the house with her three children five years ago, thought Rockefeller Center was joking when they asked for the tree. She had even considered cutting it down herself, worried it might fall on the house. Head gardener Erik Pauze, who has chosen the Rockefeller tree for more than thirty years, had been eyeing this spruce since before she bought the property, after a tip from Jackie and Matt McGinley, who donated the 2023 tree."
+      },
+      {
+        "kind": "text",
+        "html": "The tree was cut on Thursday, November 5, and arrived in Manhattan on Saturday, November 7. It pulled up on 49th Street at 7am, moved onto Center Plaza around 7:30am, the spike was hammered in at 8:30am, and the crane lifted it into place at about 9am. It weighs about 11 tons."
+      },
+      {
+        "kind": "text",
+        "html": "From the shoot, Marina's two best-viewed reels:"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DfcReqmsSye/",
+        "label": "Watch Marina's Rockefeller Center Christmas Tree arrival reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfcReqmsSye.jpg",
+        "card_text": "It's happening! The Rockefeller Center Christmas Tree is arriving in New York City.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DfeLQXXsQqR/",
+        "label": "Watch Marina's reel with CJ, the Mayor of Rockefeller Center, on Instagram",
+        "thumb": "assets/reel-thumbs/DfeLQXXsQqR.jpg",
+        "card_text": "Did you know Rockefeller Center has its own mayor? Meet CJ, the Mayor of Rockefeller Center.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "The tree will be lit at the 94th annual lighting ceremony on Wednesday, December 2, from 7 to 10 p.m., with 50,000 LED lights and the <a href=\"https://www.swarovski.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Swarovski</a> star, and will stay on display through January 9, 2027. After the holidays, it will be milled into lumber and donated to Habitat for Humanity."
+      },
+      {
+        "kind": "text",
+        "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
+      }
+    ]
+  },
+  {
+    "id": "nyse-christmas-tree-lighting-2026",
+    "date": "2026-11-02",
+    "type": "press release",
+    "headline": "NYSE Announces 103rd Annual Christmas Tree Lighting",
+    "lede": "The New York Stock Exchange has announced its 103rd Annual Christmas Tree Lighting, set for Thursday, December 3, 2026, from 3:30 to 6:30 PM on Wall and Broad Streets.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The <a href=\"https://www.nyse.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NYSE</a> announced the date this week. The free public celebration brings more than 35 vendors, holiday performances, and seasonal festivities to Wall and Broad Streets in the Financial District, with the tree lighting expected around 5:15 PM. The Exchange describes the event as an incredible community celebration that marks the start of the holiday season."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg",
+        "caption": "The NYSE Christmas tree lit up on Wall Street, with the New York Stock Exchange behind it.",
+        "alt": "The NYSE Christmas tree covered in colorful lights on Wall Street at night, with the New York Stock Exchange building lit red and green"
+      },
+      {
+        "kind": "text",
+        "html": "This year's tree comes from the Town of Beekman in upstate New York. In early October, Town Supervisor Laureen Abbatantuono confirmed that Beekman's tree would go to the New York Stock Exchange, not Rockefeller Center, ending days of speculation after the town first teased the news. The exact location of the tree is being kept private to protect the family's privacy."
+      },
+      {
+        "kind": "text",
+        "html": "The NYSE tree lighting tradition dates back to 1923, nearly a decade before Rockefeller Center's first tree, making it one of New York's oldest holiday traditions. The tree stands outside the Exchange's neoclassical building on Broad Street, a short walk from the Charging Bull and Fearless Girl statues."
+      }
+    ],
+    "cover": "assets/news-covers/nyse-christmas-tree-lighting-2026.jpg"
+  },
+  {
+    "id": "village-halloween-parade-2026",
+    "date": "2026-10-31",
+    "type": "original coverage",
+    "headline": "53rd Village Halloween Parade Takes Over Sixth Avenue",
+    "lede": "The 53rd Annual Village Halloween Parade marched up Sixth Avenue on Halloween night, with tens of thousands of costumed marchers, giant puppets, and the return of the legendary Thriller dance.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "On Saturday, October 31, the 53rd Annual <a href=\"https://halloween-nyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Village Halloween Parade</a> stepped off at 7pm and marched north up Sixth Avenue from Canal Street to West 15th Street, under this year's theme, Body and Soul. Tens of thousands of costumed marchers joined hundreds of giant puppets and more than 50 bands, while an estimated two million spectators lined the avenue. Watching is free, and anyone in a costume can march."
+      },
+      {
+        "kind": "text",
+        "html": "This year's parade opened with Firehorse!, a new giant puppet commission from MacArthur fellow and master puppeteer <a href=\"https://www.basiltwist.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Basil Twist</a>, choreographed by Julie Atlas Muz. Performance artist Joey Arias served as Grand Marshal."
+      },
+      {
+        "kind": "text",
+        "html": "Marina filmed the parade from Sixth Avenue, including the Thriller dance moment that turns the street into a giant Michael Jackson music video every year, and cut the night into a full YouTube video."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DfLhbM6s086/",
+        "label": "Watch Marina's Thriller dance reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfLhbM6s086.jpg",
+        "card_text": "Only in New York does Halloween turn into a giant Michael Jackson Thriller dance in the street.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DfMC0a2OWH-/",
+        "label": "Watch Marina's Village Halloween Parade reel on Instagram",
+        "thumb": "assets/reel-thumbs/DfMC0a2OWH-.jpg",
+        "card_text": "There's Halloween. And then there's Halloween in New York City.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "youtube",
+        "id": "zfpGq2-9Gfg",
+        "title": "Halloween Parade 2026 New York",
+        "watch": "https://youtu.be/zfpGq2-9Gfg"
+      }
+    ]
+  },
+  {
+    "id": "candlelight-halloween-vessel-2026",
+    "date": "2026-10-31",
+    "type": "original coverage",
+    "headline": "Candlelight Halloween Concert Lights Up the Vessel",
+    "lede": "For one night only, the Vessel at Hudson Yards glowed with thousands of candles as the Highline String Quartet performed Halloween classics for a Candlelight concert presented by Fever.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "On Halloween night, October 31, the Vessel at <a href=\"https://www.hudsonyardsnewyork.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Hudson Yards</a> hosted a one-night-only Candlelight concert presented by <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1qp\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. The Highline String Quartet performed Halloween classics, including Thriller by Michael Jackson, the Stranger Things theme, the Addams Family theme, and Ghostbusters, surrounded by thousands of flameless candles inside the Vessel's copper-toned structure."
+      },
+      {
+        "kind": "text",
+        "html": "The concert ran from 9 to 10pm, with doors at 8:15pm. Tickets were available exclusively through the Fever app and website, starting at $75.60, and were not sold on site."
+      },
+      {
+        "kind": "text",
+        "html": "Marina attended and filmed the concert, capturing the string performance glowing inside the Vessel."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DfNrP7HMgrU/",
+        "label": "Watch Marina's Candlelight concert video on Instagram",
+        "thumb": "assets/reel-thumbs/DfNrP7HMgrU.jpg",
+        "card_text": "Halloween in New York, but make it unforgettable. A Candlelight concert at the Vessel.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "Edge, the highest outdoor sky deck in New York City, is steps from the Vessel at Hudson Yards. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity1j9\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
+      }
+    ]
+  },
+  {
+    "id": "rockefeller-center-christmas-tree-2026",
+    "date": "2026-10-26",
+    "type": "press release",
+    "headline": "Rockefeller Center Reveals Its 2026 Christmas Tree",
+    "lede": "A 76-foot Norway spruce from West Edmeston, New York, will be this year's Rockefeller Center Christmas Tree, arriving in Midtown on November 7 before the December 2 lighting.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "<a href=\"https://www.rockefellercenter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Center</a> announced the tree on Monday, October 26. The Norway spruce is about 75 years old, 50 feet wide, and weighs roughly 11 tons. It was donated by Rebecca Decker of West Edmeston, a small town in upstate New York, and found by Erik Pauze, Rockefeller Center's head gardener, who has chosen the tree for more than 30 years."
+      },
+      {
+        "kind": "image",
+        "src": "assets/news-photos/rockefeller-tree-west-edmeston.jpg",
+        "caption": "The 2026 Rockefeller Center Christmas tree, a 76-foot Norway spruce, in West Edmeston before its journey to New York City.",
+        "alt": "The 2026 Rockefeller Center Christmas tree, a tall Norway spruce in a field in West Edmeston with a rainbow behind it"
+      },
+      {
+        "kind": "text",
+        "html": "The tree will be cut on Thursday, November 5, and arrive at Rockefeller Plaza on Saturday, November 7. Its arrival is a public event this year, Meet the Tree Day 2026, back for its second year, with a holiday workshop from Care Bears and FAO Schwarz, meet-and-greets with six Care Bears characters, photo opportunities, and arts and crafts on the plaza."
+      },
+      {
+        "kind": "text",
+        "html": "Once it goes up, the tree will be dressed in more than 50,000 multicolored LED lights strung across five miles of wire, topped with the 900-pound <a href=\"https://www.swarovski.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Swarovski</a> star designed by architect Daniel Libeskind. The star holds more than three million crystals across 70 spikes."
+      },
+      {
+        "kind": "text",
+        "html": "The lighting ceremony is Wednesday, December 2, broadcast live as Christmas in Rockefeller Center from 7 to 10pm. Performances begin around 8pm, the countdown starts at 9:57pm, and the lights switch on just before 10pm. Public viewing is free."
+      },
+      {
+        "kind": "text",
+        "html": "The tree stays on display through January 9, 2027. When it comes down, it will be milled into lumber and donated to <a href=\"https://www.habitat.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Habitat for Humanity</a>. The first tree went up in 1931, when construction workers pooled their money for a 20-foot balsam fir, and the first official lighting followed in 1933. The scaffolding is expected to come down before Thanksgiving, so the last days of November are the quiet window to see the tree fully decorated, star in place, before the lighting night crowds arrive."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/p/De9IB1tDXnF/",
+        "label": "See Rockefeller Center's 2026 Christmas Tree announcement on Instagram",
+        "card_type": "embed"
+      },
+      {
+        "kind": "text",
+        "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
+      }
+    ],
+    "cover": "assets/news-covers/rockefeller-center-christmas-tree-2026.jpg"
+  },
+  {
+    "id": "herald-square-holiday-fair-2026",
+    "date": "2026-10-26",
+    "type": "press release",
+    "headline": "Herald Square Holiday Fair Returns to Broadway",
+    "lede": "The Herald Square Holiday Fair returns to Broadway between 32nd and 36th Streets on November 12, with a Christmas carousel, a virtual reality sleigh ride, a snow slide, and the Urbanspace holiday market.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "The fair runs November 12, 2026, through January 3, 2027, across <a href=\"https://www.34thstreet.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Herald Square</a> and Greeley Square Park, on Broadway between 32nd and 36th Streets. Community Board 5 approved the fair on October 19, with conditions on crowd management, bike lane protection, sanitation, and fire safety."
+      },
+      {
+        "kind": "text",
+        "html": "Opening day brings the Christmas Carousel, the Magical Sleigh Ride, and the Snow Slide, open daily from 10am to 10pm and closed on Thanksgiving Day. The Magical Sleigh Ride is a virtual reality experience."
+      },
+      {
+        "kind": "text",
+        "html": "From December 2, the Market by <a href=\"https://www.urbanspacenyc.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Urbanspace</a> joins the fair on the 34th to 36th Street side, open daily from 11am to 9pm through January 3, with returning holiday shop favorites, new vendors, food and treats from local vendors, and a warm cocktail bar. The Giant Rocking Horse photo op stands nearby, open daily from 10am to 10pm."
+      },
+      {
+        "kind": "text",
+        "html": "<a href=\"https://www.macys.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> Holiday Square, the Urbanspace market beside the flagship store, runs alongside the fair, so the whole 34th Street corridor turns into one long holiday market for the season."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/De7PtFbM0ua/",
+        "label": "Watch Marina's Herald Square Holiday Fair video on Instagram",
+        "thumb": "assets/reel-thumbs/De7PtFbM0ua.jpg",
+        "card_text": "SAVE THE DATE: Herald Holiday Fair is returning to Midtown Manhattan.",
+        "card_type": "reel"
+      }
+    ]
+  },
+  {
+    "id": "kinlaw-fall-risk-times-square",
+    "date": "2026-10-13",
+    "type": "press release",
+    "headline": "Kinlaw's FALL RISK Takes Over Times Square Tonight",
+    "lede": "Times Square Arts presents the New York City premiere of FALL RISK, a one-night-only performance by artist Kinlaw.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "Tonight at 8pm, Kinlaw will be suspended 150 feet above <a href=\"https://www.timessquarenyc.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Duffy Square</a>, on Broadway between 46th and 47th Streets, in their most extreme and personal work yet."
+      },
+      {
+        "kind": "text",
+        "html": "Originally commissioned by <a href=\"https://www.artomi.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Art Omi</a>, FALL RISK centers on survival staged as monument, with a microphone amplifying the artist's breathing under extreme physical pressure high above the street."
+      },
+      {
+        "kind": "text",
+        "html": "Free and open to the public. Press inquiries: <a href=\"mailto:timessquarearts@culturalcounsel.com\">timessquarearts@culturalcounsel.com</a>."
+      }
+    ]
+  },
+  {
+    "id": "columbus-day-parade-2026",
+    "date": "2026-10-12",
+    "type": "original coverage",
+    "headline": "82nd Annual Columbus Day Parade Returns to Fifth Avenue",
+    "lede": "Fifth Avenue turned into a river of red, white, and green as the Columbus Day Parade returned to Midtown Manhattan.",
+    "featured": true,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "Fifth Avenue turned into a river of red, white, and green on Monday, October 12, as the 82nd Annual Columbus Day Parade marched from 47th to 72nd Street, back after last year's storm cancellation."
+      },
+      {
+        "kind": "text",
+        "html": "More than 100 groups joined the world's largest celebration of Italian American heritage, which this year honored 250 years of Italian contributions to America during the nation's 250th anniversary year. Grand Marshal Ray Dalio was represented on the route by his son Matt Dalio, joined by honorees Ambassador Leandro Rizzuto and Dr. Evelyn C. Granieri."
+      },
+      {
+        "kind": "text",
+        "html": "Marina filmed the parade from the route for a full-length YouTube video, from the bands warming up before the 11:30 AM step-off to the floats passing the red-carpet performance zone."
+      },
+      {
+        "kind": "youtube",
+        "id": "KwnAr5iiQmU",
+        "title": "82nd Annual Columbus Day Parade on Fifth Avenue",
+        "watch": "https://youtu.be/KwnAr5iiQmU"
+      }
+    ],
+    "cover": "assets/news-covers/columbus-day-parade-2026.jpg"
+  },
+  {
+    "id": "rockefeller-center-rink-90-years",
+    "date": "2026-09-09",
+    "type": "press release",
+    "headline": "The Rink at Rockefeller Center Celebrates 90 Years",
+    "lede": "The Rink at Rockefeller Center returns October 10 for its 90th season with a reimagined skating experience.",
+    "featured": false,
+    "blocks": [
+      {
+        "kind": "text",
+        "html": "New this year: an expanded Skate House and VIP Skate Lounge opening November 14, the Holiday Chalets presented by <a href=\"https://www.balsamhill.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Balsam Hill</a> returning November 6, and six new 90th Anniversary Lodges debuting November 20 for parties up to eight guests."
+      },
+      {
+        "kind": "text",
+        "html": "Tickets start at $22 per person (rentals not included) and are on sale now at <a href=\"https://rockefellercenter.com\" target=\"_blank\" rel=\"noopener noreferrer\">rockefellercenter.com</a>."
+      },
+      {
+        "kind": "text",
+        "html": "Built as a temporary attraction in 1936, The Rink now welcomes more than a quarter of a million skaters each year."
+      },
+      {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/reel/DeUVkppsni1/",
+        "label": "Watch Marina's Rockefeller Center reel on Instagram",
+        "thumb": "assets/reel-thumbs/DeUVkppsni1.jpg",
+        "card_text": "Christmas in New York is getting closer! The holiday season at Rockefeller Center officially begins in October.",
+        "card_type": "reel"
+      },
+      {
+        "kind": "text",
+        "html": "Top of the Rock, the observation deck at the top of 30 Rockefeller Plaza, looks out over the tree and Midtown. Tickets are available on <a href=\"https://glnk.io/x9qvw/feverxmarinanewyorkcity9hw\" target=\"_blank\" rel=\"noopener noreferrer\">Fever</a>. Use code <strong>MARINANYC10</strong> for a discount at checkout."
+      }
+    ]
+  }
 ]
