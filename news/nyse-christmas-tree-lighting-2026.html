@@ -510,6 +510,11 @@ section h2 em { color: var(--gold); }
 .article-photo{max-width:320px;margin:0 0 1.5rem}
 .article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
 .article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+.article-gallery{columns:3;column-gap:1rem;margin:0 0 1.5rem}
+.article-gallery figure{break-inside:avoid;margin:0 0 1rem}
+.article-gallery img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28);display:block}
+.article-gallery figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+@media (max-width:767px){.article-gallery{columns:2}}
 /* article photos stay centered blocks on all sizes: floating them beside short paragraphs stacks the floats and crushes the text into a narrow column */
 .article-page-body{max-width:820px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}
@@ -525,6 +530,9 @@ section h2 em { color: var(--gold); }
 .news-card:hover{border-color:rgba(255,222,89,.5);transform:translateY(-2px)}
 .news-card-img{aspect-ratio:16/9;overflow:hidden}
 .news-card-img img{width:100%;height:100%;object-fit:cover}
+/* covers are 1200x630: show them at their exact ratio so the headline text is never cropped */
+.news-card.has-cover .news-card-img{aspect-ratio:1200/630}
+.news-card-featured.has-cover .news-card-img{aspect-ratio:1200/630;height:auto}
 .news-card-body{padding:1.1rem 1.25rem 1.25rem}
 .news-card-meta{display:flex;gap:.8rem;color:var(--muted);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
 .news-card-body h3{font-size:1.35rem;line-height:1.25;margin-bottom:.5rem;color:var(--paper)}
@@ -534,7 +542,7 @@ section h2 em { color: var(--gold); }
 .news-card-featured .news-card-img{aspect-ratio:auto;height:320px}
 .news-card-featured .news-card-body{padding:1.25rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
 .news-card-featured .news-card-body h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
-@media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;min-height:0}}
+@media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;height:auto;min-height:0}}
 
   
 
@@ -745,6 +753,11 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
 .article-photo{max-width:320px;margin:0 0 1.5rem}
 .article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
 .article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+.article-gallery{columns:3;column-gap:1rem;margin:0 0 1.5rem}
+.article-gallery figure{break-inside:avoid;margin:0 0 1rem}
+.article-gallery img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28);display:block}
+.article-gallery figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+@media (max-width:767px){.article-gallery{columns:2}}
 /* article photos stay centered blocks on all sizes: floating them beside short paragraphs stacks the floats and crushes the text into a narrow column */
 .article-page-body{max-width:820px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}
@@ -760,6 +773,9 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
 .news-card:hover{border-color:rgba(255,222,89,.5);transform:translateY(-2px)}
 .news-card-img{aspect-ratio:16/9;overflow:hidden}
 .news-card-img img{width:100%;height:100%;object-fit:cover}
+/* covers are 1200x630: show them at their exact ratio so the headline text is never cropped */
+.news-card.has-cover .news-card-img{aspect-ratio:1200/630}
+.news-card-featured.has-cover .news-card-img{aspect-ratio:1200/630;height:auto}
 .news-card-body{padding:1.1rem 1.25rem 1.25rem}
 .news-card-meta{display:flex;gap:.8rem;color:var(--muted);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
 .news-card-body h3{font-size:1.35rem;line-height:1.25;margin-bottom:.5rem;color:var(--paper)}
@@ -769,7 +785,7 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
 .news-card-featured .news-card-img{aspect-ratio:auto;height:320px}
 .news-card-featured .news-card-body{padding:1.25rem 1.5rem;display:flex;flex-direction:column;justify-content:center}
 .news-card-featured .news-card-body h3{font-size:clamp(1.4rem,2.4vw,1.8rem)}
-@media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;min-height:0}}
+@media(max-width:768px){.news-card-featured{grid-template-columns:1fr}.news-card-featured .news-card-img{aspect-ratio:16/9;height:auto;min-height:0}}
 
   </style>
 </head>
@@ -800,7 +816,7 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
   <p class="article-lede">The New York Stock Exchange has announced its 103rd Annual Christmas Tree Lighting, set for Thursday, December 3, 2026, from 3:30 to 6:30 PM on Wall and Broad Streets.</p>
   <div class="article-page-body"><p>The <a href="https://www.nyse.com/" target="_blank" rel="noopener noreferrer">NYSE</a> announced the date this week. The free public celebration brings more than 35 vendors, holiday performances, and seasonal festivities to Wall and Broad Streets in the Financial District, with the tree lighting expected around 5:15 PM. The Exchange describes the event as an incredible community celebration that marks the start of the holiday season.</p><figure class="article-photo"><img src="/assets/news-covers/nyse-christmas-tree-lighting-2026.jpg" alt="The NYSE Christmas tree covered in colorful lights on Wall Street at night, with the New York Stock Exchange building lit red and green" loading="lazy"><figcaption>The NYSE Christmas tree lit up on Wall Street, with the New York Stock Exchange behind it.</figcaption></figure><p>This year's tree comes from the Town of Beekman in upstate New York. In early October, Town Supervisor Laureen Abbatantuono confirmed that Beekman's tree would go to the New York Stock Exchange, not Rockefeller Center, ending days of speculation after the town first teased the news. The exact location of the tree is being kept private to protect the family's privacy.</p><p>The NYSE tree lighting tradition dates back to 1923, nearly a decade before Rockefeller Center's first tree, making it one of New York's oldest holiday traditions. The tree stands outside the Exchange's neoclassical building on Broad Street, a short walk from the Charging Bull and Fearless Girl statues.</p></div>
   <div class="share-row"><span>Share this story</span><button class="share-btn" type="button" onclick="navigator.clipboard.writeText(location.href).then(function(){this.textContent='Link copied';}.bind(this))">Copy link</button><a class="share-btn" href="https://twitter.com/intent/tweet?url=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026&text=NYSE Announces 103rd Annual Christmas Tree Lighting" target="_blank" rel="noopener noreferrer">X</a><a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026" target="_blank" rel="noopener noreferrer">Facebook</a><a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="share-btn" href="https://pinterest.com/pin/create/button/?url=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026&media=https://marinanewyorkcity.com/assets/news-covers/nyse-christmas-tree-lighting-2026.jpg&description=NYSE Announces 103rd Annual Christmas Tree Lighting" target="_blank" rel="noopener noreferrer">Pinterest</a><a class="share-btn" href="https://wa.me/?text=NYSE Announces 103rd Annual Christmas Tree Lighting%20https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026" target="_blank" rel="noopener noreferrer">WhatsApp</a><a class="share-btn" href="https://t.me/share/url?url=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026&text=NYSE Announces 103rd Annual Christmas Tree Lighting" target="_blank" rel="noopener noreferrer">Telegram</a><a class="share-btn" href="mailto:?subject=NYSE Announces 103rd Annual Christmas Tree Lighting&body=https://marinanewyorkcity.com/news/nyse-christmas-tree-lighting-2026">Email</a></div>
-  <div class="more-stories"><h2>More <em>stories</em></h2><div class="news-card-grid"><a class="news-card" href="/news/macys-thanksgiving-day-parade-2026-storm-forecast"><div class="news-card-img"><img src="/assets/news-covers/macys-thanksgiving-day-parade-2026-storm-forecast-v2.jpg" alt="Rain and Gusty Winds Threaten the Balloons at Macy&#x27;s 100th Thanksgiving Day Parade" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Rain and Gusty Winds Threaten the Balloons at Macy&#x27;s 100th Thanksgiving Day Parade</h3><p>Forecasters are tracking a potentially significant coastal storm up the East Coast that could bring rain and gusty winds to New York City on Thanksgiving morning, putting the giant balloons of the 100th Macy&#x27;s Thanksgiving Day Parade at risk.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card" href="/news/december-1-tree-lightings-2026"><div class="news-card-img"><img src="/assets/news-covers/december-1-tree-lightings-2026.jpg" alt="Four New York Christmas Tree Lightings Fall on the Same Night, December 1" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Four New York Christmas Tree Lightings Fall on the Same Night, December 1</h3><p>Tuesday, December 1, 2026, is the busiest tree-lighting night of the New York holiday season. Four ceremonies light up across Manhattan within the same two-hour window, from Midtown to Central Park to the Seaport, and no one can attend them all.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card" href="/news/fox-news-all-american-christmas-tree-lighting-2026"><div class="news-card-img"><img src="/assets/reel-thumbs/Df-5zZHsL5t.jpg" alt="FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square</h3><p>FOX News Media kicked off the holiday season with the seventh annual All-American Christmas Tree Lighting at FOX Square, lighting a 50-foot tree with 340,000 lights on Friday, November 20.</p><span class="news-card-link">Read the story &rarr;</span></div></a></div></div>
+  <div class="more-stories"><h2>More <em>stories</em></h2><div class="news-card-grid"><a class="news-card has-cover" href="/news/macys-thanksgiving-day-parade-2026-storm-forecast"><div class="news-card-img"><img src="/assets/news-covers/macys-thanksgiving-day-parade-2026-storm-forecast-v2.jpg" alt="Rain and Gusty Winds Threaten the Balloons at Macy&#x27;s 100th Thanksgiving Day Parade" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Rain and Gusty Winds Threaten the Balloons at Macy&#x27;s 100th Thanksgiving Day Parade</h3><p>Forecasters are tracking a potentially significant coastal storm up the East Coast that could bring rain and gusty winds to New York City on Thanksgiving morning, putting the giant balloons of the 100th Macy&#x27;s Thanksgiving Day Parade at risk.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card has-cover" href="/news/december-1-tree-lightings-2026"><div class="news-card-img"><img src="/assets/news-covers/december-1-tree-lightings-2026.jpg" alt="Four New York Christmas Tree Lightings Fall on the Same Night, December 1" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>Four New York Christmas Tree Lightings Fall on the Same Night, December 1</h3><p>Tuesday, December 1, 2026, is the busiest tree-lighting night of the New York holiday season. Four ceremonies light up across Manhattan within the same two-hour window, from Midtown to Central Park to the Seaport, and no one can attend them all.</p><span class="news-card-link">Read the story &rarr;</span></div></a><a class="news-card" href="/news/fox-news-all-american-christmas-tree-lighting-2026"><div class="news-card-img"><img src="/assets/reel-thumbs/Df-5zZHsL5t.jpg" alt="FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square" loading="lazy"></div><div class="news-card-body"><div class="news-card-meta"><time datetime="2026-11-22">November 22, 2026</time><span>original coverage</span></div><h3>FOX News Lights Its 50-Foot All-American Christmas Tree at FOX Square</h3><p>FOX News Media kicked off the holiday season with the seventh annual All-American Christmas Tree Lighting at FOX Square, lighting a 50-foot tree with 340,000 lights on Friday, November 20.</p><span class="news-card-link">Read the story &rarr;</span></div></a></div></div>
 </section>
 </main>
 <footer class="site-footer">
