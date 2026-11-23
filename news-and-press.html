@@ -506,6 +506,11 @@ section h2 em { color: var(--gold); }
 .article-photo{max-width:320px;margin:0 0 1.5rem}
 .article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
 .article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+.article-gallery{columns:3;column-gap:1rem;margin:0 0 1.5rem}
+.article-gallery figure{break-inside:avoid;margin:0 0 1rem}
+.article-gallery img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28);display:block}
+.article-gallery figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+@media (max-width:767px){.article-gallery{columns:2}}
 /* article photos stay centered blocks on all sizes: floating them beside short paragraphs stacks the floats and crushes the text into a narrow column */
 .article-page-body{max-width:820px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}

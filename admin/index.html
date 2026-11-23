@@ -86,6 +86,10 @@
   .article-preview .article-photo { max-width: 320px; margin: 0 0 1.5rem; }
   .article-preview .article-photo img { width: 100%; border-radius: 8px; display: block; }
   .article-preview .article-photo figcaption { font-size: .82rem; color: var(--muted); margin-top: .35rem; }
+  .article-preview .article-gallery { columns: 3; column-gap: .8rem; margin: 0 0 1.2rem; }
+  .article-preview .article-gallery figure { break-inside: avoid; margin: 0 0 .8rem; }
+  .article-preview .article-gallery img { width: 100%; border-radius: 8px; display: block; }
+  .article-preview .article-gallery figcaption { font-size: .82rem; color: var(--muted); margin-top: .35rem; text-align: center; }
   .article-preview .social-embed-card iframe { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px; }
   .article-preview .instagram-embed-wrap { margin: 0 0 1.2rem; }
 </style>
@@ -335,6 +339,15 @@
       if (cap) fig += '<figcaption>' + cap + '</figcaption>';
       return fig + '</figure>';
     }
+    if (b.kind === 'gallery') {
+      var figs = (b.photos || []).map(function (ph) {
+        var cap = esc(ph.caption || ''), alt = esc(ph.alt || ph.caption || '');
+        var fig = '<figure><img src="../' + esc(ph.src) + '" alt="' + alt + '" loading="lazy">';
+        if (cap) fig += '<figcaption>' + cap + '</figcaption>';
+        return fig + '</figure>';
+      });
+      return '<div class="article-gallery">' + figs.join('') + '</div>';
+    }
     return '';
   }
   function newsFirstThumb(a) {
@@ -414,6 +427,15 @@
       if (cap) fig += '<figcaption>' + esc(cap) + '</figcaption>';
       return fig + '</figure>';
     }
+    if (b.kind === 'gallery') {
+      var figs = (b.photos || []).map(function (ph) {
+        var cap = ph.caption || '', alt = ph.alt || cap;
+        var fig = '<figure><img src="' + root + esc(ph.src) + '" alt="' + esc(alt) + '" loading="lazy">';
+        if (cap) fig += '<figcaption>' + esc(cap) + '</figcaption>';
+        return fig + '</figure>';
+      });
+      return '<div class="article-gallery">' + figs.join('') + '</div>';
+    }
     return '';
   }
   function makeAbsolutePaths(htmlText) {
@@ -456,6 +478,11 @@
 .article-photo{max-width:320px;margin:0 0 1.5rem}
 .article-photo img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28)}
 .article-photo figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+.article-gallery{columns:3;column-gap:1rem;margin:0 0 1.5rem}
+.article-gallery figure{break-inside:avoid;margin:0 0 1rem}
+.article-gallery img{width:100%;border-radius:12px;border:1px solid rgba(255,222,89,.28);display:block}
+.article-gallery figcaption{font-size:.85rem;color:#a89a8a;margin-top:.5rem;text-align:center}
+@media (max-width:767px){.article-gallery{columns:2}}
 /* article photos stay centered blocks on all sizes: floating them beside short paragraphs stacks the floats and crushes the text into a narrow column */
 .article-page-body{max-width:820px;margin:0 auto;color:rgba(250,247,240,.82);font-size:1.02rem;line-height:1.75}
 .article-page-body p{margin-bottom:1.1rem}
@@ -1001,6 +1028,13 @@
         html += '<label>Photo path</label><input type="text" data-blk="' + i + '" data-f="src" value="' + esc(b.src || '') + '" placeholder="assets/news-photos/my-photo.jpg">';
         html += '<label>Caption</label><input type="text" data-blk="' + i + '" data-f="caption" value="' + esc(b.caption || '') + '">';
         html += '<label>Alt text</label><input type="text" data-blk="' + i + '" data-f="alt" value="' + esc(b.alt || '') + '" placeholder="Describe the photo">';
+      }
+      if (b.kind === 'gallery') {
+        var n = (b.photos || []).length;
+        html += '<p style="color:var(--muted)">Gallery with ' + n + ' photo' + (n === 1 ? '' : 's') + '.</p>';
+        (b.photos || []).forEach(function (ph) {
+          html += '<p style="font-size:.85rem;margin:.2rem 0">' + esc(ph.src || '') + (ph.caption ? ' &mdash; ' + esc(ph.caption) : '') + '</p>';
+        });
       }
       html += '<div class="row"><button class="btn-ghost btn-small" data-blk-up="' + i + '">↑</button>' +
         '<button class="btn-ghost btn-small" data-blk-down="' + i + '">↓</button>' +

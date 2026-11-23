@@ -21,52 +21,16 @@
         "card_type": "reel"
       },
       {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-star-balloon.jpg",
-        "caption": "The Macy's star balloon in the rain at the 2024 parade.",
-        "alt": "The gold Macy's star balloon with handlers in rain ponchos on a wet street at the 2024 Thanksgiving Day Parade"
-      },
-      {
         "kind": "text",
         "html": "Under New York City rules, the giant helium balloons cannot fly if sustained winds exceed 23 mph or gusts top 34 mph. Even lower gusts can force handlers to fly the balloons closer to the ground. The forecast gusts sit right at or above that line, so the balloon decision will come down to the wind on Thursday morning. The parade itself goes on no matter what: floats and performances proceed even if the balloons are grounded."
-      },
-      {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-kalahari-float.jpg",
-        "caption": "The Kalahari Resorts float in the rain at the 2024 parade.",
-        "alt": "The Kalahari Resorts elephant float in the rain at the 2024 Thanksgiving Day Parade"
       },
       {
         "kind": "text",
         "html": "This year's parade is the 100th, and <a href=\"https://www.macys.com/parade\" target=\"_blank\" rel=\"noopener noreferrer\">Macy's</a> is marking it with a record 100 inflatable elements, including nine new balloons. Among them is Billie Brightpaw, a bear designed for the centennial, along with Sorcerer's Apprentice Mickey, Underdog flying for the first time since 1984, Bluey, and Hello Kitty. About 3.5 million spectators are expected along the 2.5-mile route. The parade steps off at 8:30 a.m. from West 77th Street and Central Park West, travels south on Central Park West to Columbus Circle, east along Central Park South, then down Sixth Avenue to Macy's Herald Square, ending around noon. It airs live on <a href=\"https://www.nbc.com\" target=\"_blank\" rel=\"noopener noreferrer\">NBC</a> and <a href=\"https://www.telemundo.com\" target=\"_blank\" rel=\"noopener noreferrer\">Telemundo</a> and streams on <a href=\"https://www.peacocktv.com\" target=\"_blank\" rel=\"noopener noreferrer\">Peacock</a>."
       },
       {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-luffy.jpg",
-        "caption": "The Monkey D. Luffy balloon in the rain at the 2024 parade.",
-        "alt": "The Monkey D. Luffy balloon from One Piece in the rain at the 2024 Thanksgiving Day Parade"
-      },
-      {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-believe-star.jpg",
-        "caption": "The Believe star passes Radio City Music Hall in the rain at the 2024 parade.",
-        "alt": "The red Believe star balloon passing Radio City Music Hall in the rain at the 2024 Thanksgiving Day Parade"
-      },
-      {
         "kind": "text",
         "html": "New York has seen a rainy parade before. In 2024, the parade went ahead in the rain, the balloons flew, and the floats rolled on, with handlers and marching bands in ponchos. Rain alone does not stop the parade. Wind is the deciding factor, and that is what forecasters will be watching right up to Thursday morning."
-      },
-      {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-marching-band.jpg",
-        "caption": "A marching band in rain ponchos at the 2024 parade.",
-        "alt": "A marching band in clear rain ponchos at the 2024 Thanksgiving Day Parade"
-      },
-      {
-        "kind": "image",
-        "src": "assets/news-photos/macys-parade-2024-santa.jpg",
-        "caption": "Santa in his sleigh at the 2024 parade.",
-        "alt": "Santa in his sleigh holding an umbrella in the rain at the 2024 Thanksgiving Day Parade"
       },
       {
         "kind": "text",
@@ -75,6 +39,41 @@
       {
         "kind": "text",
         "html": "Spectators heading to the route Thursday should dress for rain and wind, and a poncho is a better choice than an umbrella in a packed crowd. The best curbside spots go early, with crowds arriving from around 6 a.m. <a href=\"https://www.accuweather.com\" target=\"_blank\" rel=\"noopener noreferrer\">AccuWeather</a> expects the rain to be steadiest and heaviest in the afternoon and evening, so the morning parade window may be drier than the afternoon, but the wind will be building all morning. Check the forecast again Wednesday night before setting an alarm."
+      },
+      {
+        "kind": "gallery",
+        "photos": [
+          {
+            "src": "assets/news-photos/macys-parade-2024-star-balloon.jpg",
+            "caption": "The Macy's star balloon in the rain at the 2024 parade.",
+            "alt": "The gold Macy's star balloon with handlers in rain ponchos on a wet street at the 2024 Thanksgiving Day Parade"
+          },
+          {
+            "src": "assets/news-photos/macys-parade-2024-kalahari-float.jpg",
+            "caption": "The Kalahari Resorts float in the rain at the 2024 parade.",
+            "alt": "The Kalahari Resorts elephant float in the rain at the 2024 Thanksgiving Day Parade"
+          },
+          {
+            "src": "assets/news-photos/macys-parade-2024-luffy.jpg",
+            "caption": "The Monkey D. Luffy balloon in the rain at the 2024 parade.",
+            "alt": "The Monkey D. Luffy balloon from One Piece in the rain at the 2024 Thanksgiving Day Parade"
+          },
+          {
+            "src": "assets/news-photos/macys-parade-2024-believe-star.jpg",
+            "caption": "The Believe star passes Radio City Music Hall in the rain at the 2024 parade.",
+            "alt": "The red Believe star balloon passing Radio City Music Hall in the rain at the 2024 Thanksgiving Day Parade"
+          },
+          {
+            "src": "assets/news-photos/macys-parade-2024-marching-band.jpg",
+            "caption": "A marching band in rain ponchos at the 2024 parade.",
+            "alt": "A marching band in clear rain ponchos at the 2024 Thanksgiving Day Parade"
+          },
+          {
+            "src": "assets/news-photos/macys-parade-2024-santa.jpg",
+            "caption": "Santa in his sleigh at the 2024 parade.",
+            "alt": "Santa in his sleigh holding an umbrella in the rain at the 2024 Thanksgiving Day Parade"
+          }
+        ]
       }
     ]
   },
