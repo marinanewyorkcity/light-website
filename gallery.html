@@ -804,38 +804,12 @@ h1,h2,h3,h4{font-family:'Noto Serif Display','Noto Serif Display',Georgia,serif 
   </footer>
 <script async src="https://www.instagram.com/embed.js"></script>
 <script>
-/* Shared gallery manifest. Add new photos at the end so the home page always shows the latest three. */
-window.MARINA_GALLERY_PHOTOS = [
-  { thumb: "assets/gallery-thumb-01.jpg", medium: "assets/gallery-medium-01.jpg", alt: "Gothic cathedral spires rising against the Manhattan skyline" },
-  { thumb: "assets/gallery-thumb-02.jpg", medium: "assets/gallery-medium-02.jpg", alt: "Visitors overlooking New York City at sunset" },
-  { thumb: "assets/gallery-thumb-03.jpg", medium: "assets/gallery-medium-03.jpg", alt: "Warm sunset framed by dark architectural lines" },
-  { thumb: "assets/gallery-thumb-04.jpg", medium: "assets/gallery-medium-04.jpg", alt: "Chrysler Building against a clear blue sky" },
-  { thumb: "assets/gallery-thumb-05.jpg", medium: "assets/gallery-medium-05.jpg", alt: "Empire State Building rising through a hazy Manhattan skyline" },
-  { thumb: "assets/gallery-thumb-06.jpg", medium: "assets/gallery-medium-06.jpg", alt: "Pink cherry blossoms framing a Manhattan landmark" },
-  { thumb: "assets/gallery-thumb-07.jpg", medium: "assets/gallery-medium-07.jpg", alt: "Statue of Liberty silhouetted against a golden sky" },
-  { thumb: "assets/gallery-thumb-08.jpg", medium: "assets/gallery-medium-08.jpg", alt: "Midtown Manhattan facades in afternoon light" },
-  { thumb: "assets/gallery-thumb-09.jpg", medium: "assets/gallery-medium-09.jpg", alt: "Empire State Building seen through a misty Manhattan skyline" },
-  { thumb: "assets/gallery-thumb-10.jpg", medium: "assets/gallery-medium-10.jpg", alt: "Chrysler Building illuminated between Midtown towers at night" },
-  { thumb: "assets/gallery-thumb-11.jpg", medium: "assets/gallery-medium-11.jpg", alt: "Nighttime Midtown facade with illuminated windows" },
-  { thumb: "assets/gallery-thumb-12.jpg", medium: "assets/gallery-medium-12.jpg", alt: "Manhattan skyline glowing at sunset" },
-  { thumb: "assets/gallery-thumb-13.jpg", medium: "assets/gallery-medium-13.jpg", alt: "Statue of Liberty silhouetted against an orange sky" },
-  { thumb: "assets/gallery-thumb-14.jpg", medium: "assets/gallery-medium-14.jpg", alt: "Orange sunset between Manhattan towers" },
-  { thumb: "assets/gallery-thumb-15.jpg", medium: "assets/gallery-medium-15.jpg", alt: "New York architecture framed by diagonal steel lines" },
-  { thumb: "assets/gallery-thumb-16.jpg", medium: "assets/gallery-medium-16.jpg", alt: "New York cityscape seen from an observation deck" },
-  { thumb: "assets/gallery-thumb-17.jpg", medium: "assets/gallery-medium-17.jpg", alt: "Empire State Building illuminated in purple twilight" },
-  { thumb: "assets/gallery-thumb-18.jpg", medium: "assets/gallery-medium-18.jpg", alt: "A New York building reflected in a rain puddle" },
-  { thumb: "assets/gallery-thumb-19.jpg", medium: "assets/gallery-medium-19.jpg", alt: "A shaded West Village street corner surrounded by ivy" },
-  { thumb: "assets/gallery-thumb-20.jpg", medium: "assets/gallery-medium-20.jpg", alt: "Brooklyn Bridge stone arch and suspension cables from the pedestrian path" },
-  { thumb: "assets/gallery-thumb-21.jpg", medium: "assets/gallery-medium-21.jpg", alt: "Empire State Building framed by the Manhattan Bridge in DUMBO" },
-  { thumb: "assets/gallery-thumb-22.jpg", medium: "assets/gallery-medium-22.jpg", alt: "Manhattan Bridge framed by brick buildings on Washington Street in DUMBO" },
-  { thumb: "assets/gallery-thumb-23.jpg", medium: "assets/gallery-medium-23.jpg", alt: "Lower Manhattan skyline beneath dramatic storm clouds" },
-  { thumb: "assets/gallery-thumb-24.jpg", medium: "assets/gallery-medium-24.jpg", alt: "One World Trade Center rising through dark clouds" },
-  { thumb: "assets/gallery-thumb-25.jpg", medium: "assets/gallery-medium-25.jpg", alt: "Manhattan skyline under layered storm clouds" },
-  { thumb: "assets/gallery-thumb-26.jpg", medium: "assets/gallery-medium-26.jpg", alt: "Manhattan skyline and Hudson River under a moody sky" },
-  { thumb: "assets/gallery-thumb-27.jpg", medium: "assets/gallery-medium-27.jpg", alt: "Midtown Manhattan towers glowing after dark" },
-  { thumb: "assets/gallery-thumb-28.jpg", medium: "assets/gallery-medium-28.jpg", alt: "New Yorker hotel sign and Midtown rooftops at dusk" }
-];
-
+/* Gallery photos live in gallery.json (edited from the admin dashboard). */
+window.MARINA_GALLERY_PHOTOS = [];
+fetch('gallery.json').then(function (r) { return r.json(); }).then(function (data) {
+  window.MARINA_GALLERY_PHOTOS = data;
+  document.dispatchEvent(new CustomEvent('gallery-manifest-ready'));
+}).catch(function () { /* gallery.json failed to load; the gallery stays empty */ });
 </script>
 <script>
 (function(){
@@ -846,7 +820,10 @@ window.MARINA_GALLERY_PHOTOS = [
  var contactTrigger=document.querySelector("[data-scroll-contact]"),contactSection=document.getElementById("contact-form-section");if(contactTrigger&&contactSection)contactTrigger.addEventListener("click",function(){var reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;contactSection.scrollIntoView({behavior:reduceMotion?"auto":"smooth",block:"start"});});
  var form=document.getElementById("contact-form"),formStatus=document.getElementById("contact-form-status");if(form&&formStatus)form.addEventListener("submit",function(e){e.preventDefault();if(!form.reportValidity())return;var button=form.querySelector('button[type="submit"]'),buttonLabel=button.textContent,endpoint=form.getAttribute("action");formStatus.className="form-status";formStatus.textContent="";button.disabled=true;button.textContent="Sending...";fetch(endpoint,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}}).then(function(response){if(!response.ok)throw new Error("submission failed");form.reset();formStatus.className="form-status is-visible is-success";formStatus.textContent="Thank you. Your message has been sent, and I’ll be in touch soon.";}).catch(function(){formStatus.className="form-status is-visible is-error";formStatus.textContent="Your message could not be sent. Please try again.";}).then(function(){button.disabled=false;button.textContent=buttonLabel;});});
  var gallery=document.querySelector(".gallery-masonry"),lightbox=document.getElementById("gallery-lightbox"),lightboxImage=lightbox&&lightbox.querySelector("img"),lightboxClose=lightbox&&lightbox.querySelector(".gallery-lightbox-close"),lastGalleryFocus=null;
- if(gallery){(window.MARINA_GALLERY_PHOTOS||[]).forEach(function(photo,index){var figure=document.createElement("figure"),button=document.createElement("button"),image=document.createElement("img");figure.className="gallery-tile";button.className="gallery-thumb";button.type="button";button.setAttribute("data-large",photo.medium);button.setAttribute("aria-label","Open image "+(index+1)+" of "+window.MARINA_GALLERY_PHOTOS.length);image.src=photo.thumb;image.alt=photo.alt;image.loading="lazy";image.decoding="async";image.draggable=false;button.appendChild(image);figure.appendChild(button);gallery.appendChild(figure);});}
+ var galleryTilesBuilt=false;
+ function renderGalleryTiles(){if(galleryTilesBuilt||!gallery)return;var photos=window.MARINA_GALLERY_PHOTOS||[];if(!photos.length)return;galleryTilesBuilt=true;photos.forEach(function(photo,index){var figure=document.createElement("figure"),button=document.createElement("button"),image=document.createElement("img");figure.className="gallery-tile";button.className="gallery-thumb";button.type="button";button.setAttribute("data-large",photo.medium);button.setAttribute("aria-label","Open image "+(index+1)+" of "+photos.length);image.src=photo.thumb;image.alt=photo.alt;image.loading="lazy";image.decoding="async";image.draggable=false;button.appendChild(image);figure.appendChild(button);gallery.appendChild(figure);});}
+ document.addEventListener("gallery-manifest-ready",renderGalleryTiles);
+ renderGalleryTiles();
  function closeGallery(){if(!lightbox||lightbox.hidden)return;lightbox.hidden=true;lightboxImage.removeAttribute("src");document.body.classList.remove("gallery-viewing");if(lastGalleryFocus&&document.contains(lastGalleryFocus))lastGalleryFocus.focus();}
  if(gallery&&lightbox&&lightboxImage&&lightboxClose){
    gallery.addEventListener("click",function(e){var button=e.target.closest(".gallery-thumb");if(!button)return;var thumb=button.querySelector("img");lastGalleryFocus=button;lightboxImage.src=new URL(button.getAttribute("data-large"),document.baseURI).href;lightboxImage.alt=thumb.alt;lightbox.hidden=false;document.body.classList.add("gallery-viewing");lightboxClose.focus();});

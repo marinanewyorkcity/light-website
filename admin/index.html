@@ -124,6 +124,7 @@
     <button data-tab="events" class="active">Events</button>
     <button data-tab="picks">Top Picks</button>
     <button data-tab="news">News</button>
+    <button data-tab="gallery">Gallery</button>
     <button data-tab="uploads">Uploads</button>
   </nav>
 
@@ -223,6 +224,23 @@
         </div>
         </div>
       </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="view" id="view-gallery">
+      <div class="card">
+        <h3 style="color:var(--gold);margin-top:0">Add a photo</h3>
+        <label>Photo</label>
+        <input type="file" id="gal-file" accept="image/*">
+        <label>Description (alt text, for search engines and screen readers)</label>
+        <input type="text" id="gal-alt" placeholder="e.g. Empire State Building in fog at sunrise">
+        <p style="font-size:.8rem;color:var(--muted);margin:-.4rem 0 .8rem">The photo is resized automatically into two sizes (small for the grid, large for the lightbox) and added at the end of the gallery. The home page always shows the last 5 photos.</p>
+        <button class="btn" id="gal-add-btn">Add to gallery</button>
+        <div id="gal-add-result" style="margin-top:.6rem;font-size:.85rem"></div>
+      </div>
+      <h3 style="color:var(--gold)">Gallery photos (<span id="gal-count">0</span>)</h3>
+      <p style="font-size:.85rem;color:var(--muted)">Photos are shown in order. Use the arrows to reorder, or remove a photo (this also deletes its two image files).</p>
+      <div id="gallery-list"><p style="color:var(--muted)">Loading...</p></div>
     </section>
 
     <!-- UPLOADS -->
@@ -668,7 +686,7 @@
     $('login-view').classList.add('hidden');
     $('app-view').classList.remove('hidden');
     $('who').textContent = user ? ('@' + user.login) : '';
-    loadEvents(); loadPicks(); loadNews(); loadUploads();
+    loadEvents(); loadPicks(); loadNews(); loadGallery(); loadUploads();
   }
   function tryLogin() {
     token = $('token-input').value.trim();
@@ -1250,6 +1268,143 @@
     $('preview-modal').classList.remove('hidden');
   });
   $('preview-close').addEventListener('click', function () { $('preview-modal').classList.add('hidden'); });
+
+  /* ---------- gallery ---------- */
+  var galleryPhotos = [], gallerySha = null;
+  function loadGallery() {
+    readFile('gallery.json').then(function (f) {
+      gallerySha = f.sha;
+      galleryPhotos = JSON.parse(f.text);
+      renderGalleryList();
+    }).catch(function (e) { status('Could not load gallery: ' + e.message, false); });
+  }
+  function renderGalleryList() {
+    $('gal-count').textContent = galleryPhotos.length;
+    var html = '';
+    galleryPhotos.forEach(function (p, i) {
+      html += '<div class="card"><div class="row"><img src="/' + esc(p.thumb) + '" alt="" style="width:64px;height:80px;object-fit:cover;border-radius:6px;flex:none">' +
+        '<div class="grow"><div style="font-size:.9rem">' + esc(p.alt) + '</div>' +
+        '<div class="meta">#' + (i + 1) + ' &middot; ' + esc(p.thumb) + '</div></div>' +
+        '<button class="btn-ghost btn-small" data-gal-up="' + i + '"' + (i === 0 ? ' disabled' : '') + '>&uarr;</button>' +
+        '<button class="btn-ghost btn-small" data-gal-down="' + i + '"' + (i === galleryPhotos.length - 1 ? ' disabled' : '') + '>&darr;</button>' +
+        '<button class="btn-danger btn-small" data-gal-del="' + i + '">Remove</button></div></div>';
+    });
+    $('gallery-list').innerHTML = html || '<p style="color:var(--muted)">No photos yet.</p>';
+    $('gallery-list').querySelectorAll('[data-gal-up]').forEach(function (b) {
+      b.addEventListener('click', function () { moveGalleryPhoto(parseInt(b.dataset.galUp, 10), -1); });
+    });
+    $('gallery-list').querySelectorAll('[data-gal-down]').forEach(function (b) {
+      b.addEventListener('click', function () { moveGalleryPhoto(parseInt(b.dataset.galDown, 10), 1); });
+    });
+    $('gallery-list').querySelectorAll('[data-gal-del]').forEach(function (b) {
+      b.addEventListener('click', function () { removeGalleryPhoto(parseInt(b.dataset.galDel, 10)); });
+    });
+  }
+  function saveGallery(msg) {
+    // re-read for a fresh SHA, then write
+    return readFile('gallery.json').then(function (f) {
+      return writeFile('gallery.json', JSON.stringify(galleryPhotos, null, 2) + '\n', f.sha, msg || 'Admin: update gallery');
+    }).then(function () { return readFile('gallery.json'); }).then(function (f) { gallerySha = f.sha; });
+  }
+  function moveGalleryPhoto(i, dir) {
+    var j = i + dir;
+    if (j < 0 || j >= galleryPhotos.length) return;
+    var tmp = galleryPhotos[i]; galleryPhotos[i] = galleryPhotos[j]; galleryPhotos[j] = tmp;
+    renderGalleryList();
+    saveGallery('Admin: reorder gallery photos')
+      .then(function () { status('Gallery order saved.', true); })
+      .catch(function (e) { status('Could not save order: ' + e.message, false); });
+  }
+  function deleteImageFile(path) {
+    return gh('/contents/' + path).then(function (j) {
+      return deleteFile(path, j.sha, 'Admin: remove gallery photo ' + path);
+    });
+  }
+  function removeGalleryPhoto(i) {
+    var p = galleryPhotos[i];
+    if (!p) return;
+    if (!confirm('Remove this photo from the gallery?\n\n' + p.alt + '\n\nIts two image files will also be deleted.')) return;
+    progress('Removing photo...');
+    var thumbP = deleteImageFile(p.thumb).catch(function () { /* file may already be gone */ });
+    var medP = deleteImageFile(p.medium).catch(function () { /* file may already be gone */ });
+    Promise.all([thumbP, medP]).then(function () {
+      galleryPhotos.splice(i, 1);
+      return saveGallery('Admin: remove gallery photo');
+    }).then(function () {
+      renderGalleryList();
+      status('Photo removed from the gallery.', true);
+    }).catch(function (e) { status('Could not remove photo: ' + e.message, false); });
+  }
+  function nextGalleryNumber() {
+    var max = 0;
+    galleryPhotos.forEach(function (p) {
+      var m = /gallery-thumb-(\d+)\.jpg$/.exec(p.thumb || '');
+      if (m) max = Math.max(max, parseInt(m[1], 10));
+    });
+    var n = String(max + 1);
+    return n.length < 2 ? '0' + n : n;
+  }
+  function resizeToJpeg(img, maxWidth) {
+    // returns a Promise of a base64 JPEG (no data URL prefix)
+    return new Promise(function (resolve, reject) {
+      var w = img.naturalWidth, h = img.naturalHeight;
+      if (w > maxWidth) { h = Math.round(h * maxWidth / w); w = maxWidth; }
+      var canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, w, h);
+      canvas.toBlob(function (blob) {
+        if (!blob) { reject(new Error('Could not encode image')); return; }
+        var r = new FileReader();
+        r.onload = function () { resolve(r.result.split(',')[1]); };
+        r.onerror = function () { reject(new Error('Could not read resized image')); };
+        r.readAsDataURL(blob);
+      }, 'image/jpeg', 0.85);
+    });
+  }
+  $('gal-add-btn').addEventListener('click', function () {
+    var file = $('gal-file').files[0];
+    var alt = $('gal-alt').value.trim();
+    if (!file) { status('Choose a photo first.', false); return; }
+    if (!alt) { status('Add a short description for the photo first.', false); return; }
+    $('gal-add-btn').disabled = true;
+    $('gal-add-result').textContent = 'Resizing...';
+    var reader = new FileReader();
+    reader.onload = function () {
+      var img = new Image();
+      img.onload = function () {
+        var nn = nextGalleryNumber();
+        var thumbPath = 'assets/gallery-thumb-' + nn + '.jpg';
+        var medPath = 'assets/gallery-medium-' + nn + '.jpg';
+        $('gal-add-result').textContent = 'Resizing and uploading...';
+        resizeToJpeg(img, 540).then(function (thumbB64) {
+          return gh('/contents/' + thumbPath, 'PUT', { message: 'Admin: add gallery photo ' + nn, content: thumbB64 });
+        }).then(function () { return resizeToJpeg(img, 1320); })
+          .then(function (medB64) {
+            return gh('/contents/' + medPath, 'PUT', { message: 'Admin: add gallery photo ' + nn, content: medB64 });
+          })
+          .then(function () {
+            galleryPhotos.push({ thumb: thumbPath, medium: medPath, alt: alt });
+            return saveGallery('Admin: add gallery photo ' + nn);
+          })
+          .then(function () {
+            renderGalleryList();
+            $('gal-file').value = '';
+            $('gal-alt').value = '';
+            $('gal-add-result').innerHTML = 'Added as photo #' + galleryPhotos.length + '. It will show on the gallery page and, as one of the last 5, on the home page.';
+            status('Photo added to the gallery.', true);
+          })
+          .catch(function (e) { status('Could not add photo: ' + e.message, false); })
+          .finally(function () { $('gal-add-btn').disabled = false; });
+      };
+      img.onerror = function () {
+        $('gal-add-btn').disabled = false;
+        status('This photo could not be read. If it is HEIC, export it as JPG first (in Photos, share the photo and choose JPG) or open the admin in Safari.', false);
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
 
   /* ---------- uploads ---------- */
   function loadUploads() {
