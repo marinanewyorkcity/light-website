@@ -499,7 +499,7 @@
   "dateText": "Oct 17, 2026",
   "start": "2026-10-17",
   "end": "2026-10-17",
-  "time": "11 AM\u20133 PM; VIP 5\u20137 PM",
+  "time": "11 AM–3 PM; VIP 5–7 PM",
   "location": "Halo, 28 Pine Street, Manhattan",
   "price": "Ticketed; price varies",
   "why": "Beauty activations, treatments, consultations, masterclasses, samples and an evening VIP gathering.",
@@ -533,7 +533,7 @@
   ]
  },
  {
-  "title": "D\u00eda de los Muertos at NYBG",
+  "title": "Día de los Muertos at NYBG",
   "months": [
    "2026-10",
    "2026-11"
@@ -544,7 +544,7 @@
   "time": "Garden hours; special weekend programming varies",
   "location": "New York Botanical Garden, The Bronx",
   "price": "Included with garden admission",
-  "why": "Marigolds, ofrendas, calaveras and live weekend programming celebrating D\u00eda de los Muertos.",
+  "why": "Marigolds, ofrendas, calaveras and live weekend programming celebrating Día de los Muertos.",
   "goodFor": "Exhibition",
   "url": "https://www.nybg.org/event/dia-de-los-muertos/",
   "picks": true,
@@ -561,7 +561,7 @@
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "11 AM\u20135 PM",
+  "time": "11 AM–5 PM",
   "location": "188 Lafayette Street, Manhattan",
   "price": "About $20",
   "why": "Beauty and personal-care sampling from EWG Verified brands with product activations.",
@@ -580,7 +580,7 @@
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "11 AM\u20136 PM",
+  "time": "11 AM–6 PM",
   "location": "430 West Broadway, SoHo, Manhattan",
   "price": "Free",
   "why": "Vintage American diner environment with Fall/Holiday fashion, NYC merchandise and special daily programming.",
@@ -592,17 +592,17 @@
   ]
  },
  {
-  "title": "Lanolips x Ulta Ceramide Caf\u00e9",
+  "title": "Lanolips x Ulta Ceramide Café",
   "months": [
    "2026-10"
   ],
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "8 AM\u20135 PM",
+  "time": "8 AM–5 PM",
   "location": "Bedford Studio, 62 Bedford Street, Manhattan",
   "price": "Free",
-  "why": "Milkshake-themed beauty caf\u00e9 with samples, drinks, personalized keychains and pastel photo installations.",
+  "why": "Milkshake-themed beauty café with samples, drinks, personalized keychains and pastel photo installations.",
   "goodFor": "Pop-up",
   "url": "https://www.eventbrite.com/e/welcome-to-the-lanolips-ceramide-cafe-tickets-2002965540851",
   "picks": true,
@@ -619,7 +619,7 @@
   "dateText": "Oct 17 - Nov 30, 2026",
   "start": "2026-10-17",
   "end": "2026-11-30",
-  "time": "Sun\u2013Thu 10 AM\u20137 PM; Fri\u2013Sat 10 AM\u20138 PM",
+  "time": "Sun–Thu 10 AM–7 PM; Fri–Sat 10 AM–8 PM",
   "location": "423 West 14th Street, Meatpacking District, Manhattan",
   "price": "Free",
   "why": "Three immersive rooms based on emotional states, followed by a retail space.",
@@ -638,7 +638,7 @@
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "2 Rivington Street, Lower East Side, Manhattan",
   "price": "Free",
   "why": "Peanuts-inspired nostalgic sets centered on Linus and the Snuggle Bear, with photo moments and giveaways.",
@@ -658,7 +658,7 @@
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "10 AM\u201310 PM",
+  "time": "10 AM–10 PM",
   "location": "Times Square, Manhattan",
   "price": "Free",
   "why": "Large Indian cultural celebration with religious displays, traditional clothing, music and performances.",
@@ -697,7 +697,7 @@
   "dateText": "Oct 17-18, 2026",
   "start": "2026-10-17",
   "end": "2026-10-18",
-  "time": "Saturday 10 AM\u20136 PM; Sunday 12\u20135 PM",
+  "time": "Saturday 10 AM–6 PM; Sunday 12–5 PM",
   "location": "Center415, 415 Fifth Avenue, Manhattan",
   "price": "Free",
   "why": "Large consumer watch fair with more than 160 brands, launches and installations.",
@@ -716,7 +716,7 @@
   "dateText": "Oct 18, 2026",
   "start": "2026-10-18",
   "end": "2026-10-18",
-  "time": "1\u20133 PM",
+  "time": "1–3 PM",
   "location": "Carl Schurz Park, East End Avenue at East 86th Street, Manhattan",
   "price": "Free",
   "why": "Neighborhood Halloween celebration and dog-costume gathering.",
@@ -735,7 +735,7 @@
   "dateText": "Oct 18, 2026",
   "start": "2026-10-18",
   "end": "2026-10-18",
-  "time": "11 AM\u20133 PM",
+  "time": "11 AM–3 PM",
   "location": "Madison Square Park to Union Square, Manhattan",
   "price": "Free",
   "why": "Annual disability-pride march followed by a public block party and performances.",
@@ -806,17 +806,17 @@
   ]
  },
  {
-  "title": "Better Homes & Gardens Red Plaid Caf\u00e9",
+  "title": "Better Homes & Gardens Red Plaid Café",
   "months": [
    "2026-10"
   ],
   "dateText": "Oct 23-24, 2026",
   "start": "2026-10-23",
   "end": "2026-10-24",
-  "time": "Oct 23: 9 AM\u20135 PM; Oct 24: 10 AM\u20134 PM",
+  "time": "Oct 23: 9 AM–5 PM; Oct 24: 10 AM–4 PM",
   "location": "21 Greene Street, SoHo, Manhattan",
   "price": "Ticketed; listed at $25",
-  "why": "Autumn caf\u00e9 with crafts, seasonal drinks, baked goods, bouquet bar and photo booth.",
+  "why": "Autumn café with crafts, seasonal drinks, baked goods, bouquet bar and photo booth.",
   "goodFor": "Pop-up",
   "url": "https://bhgredplaidcafe.com/",
   "picks": true,
@@ -833,7 +833,7 @@
   "dateText": "Oct 24, 2026",
   "start": "2026-10-24",
   "end": "2026-10-24",
-  "time": "11 AM\u20135 PM; last entry 4:30 PM",
+  "time": "11 AM–5 PM; last entry 4:30 PM",
   "location": "Brooklyn Botanic Garden, Brooklyn",
   "price": "Included with garden admission; member benefits vary",
   "why": "Seasonal garden festival with fall activities and a costume-friendly atmosphere.",
@@ -873,7 +873,7 @@
   "dateText": "Oct 24-25, 2026",
   "start": "2026-10-24",
   "end": "2026-10-25",
-  "time": "10 AM\u20135 PM",
+  "time": "10 AM–5 PM",
   "location": "Nolan Park, Governors Island, Manhattan",
   "price": "Free; ferry fare may apply",
   "why": "Large pumpkin patch with arts, crafts, trick-or-treating, performances and seasonal food.",
@@ -910,30 +910,6 @@
   ]
  },
  {
-  "title": "Bryant Park Winter Village Ice Rink",
-  "months": [
-   "2026-10",
-   "2026-11",
-   "2026-12",
-   "2027-01",
-   "2027-02"
-  ],
-  "dateText": "Oct 28, 2026 - Feb 28, 2027",
-  "start": "2026-10-28",
-  "end": "2027-02-28",
-  "time": "Daily 8 AM-10 PM; until midnight Nov 19 - Jan 3",
-  "location": "Bryant Park, Midtown",
-  "price": "FREE ADMISSION, rentals extra",
-  "why": "Skate beneath the skyline at the Winter Village rink, free admission with skate rental extra.",
-  "goodFor": "Families, couples, skaters, visitors",
-  "url": "https://bryantpark.org",
-  "picks": false,
-  "tags": [
-   "Ice skating",
-   "Christmas"
-  ]
- },
- {
   "title": "Court Street Spectacular",
   "months": [
    "2026-10"
@@ -941,7 +917,7 @@
   "dateText": "Oct 25, 2026",
   "start": "2026-10-25",
   "end": "2026-10-25",
-  "time": "11 AM\u20136 PM",
+  "time": "11 AM–6 PM",
   "location": "Court Street, Atlantic Avenue to Joralemon Street, Brooklyn",
   "price": "Free",
   "why": "Large neighborhood fair with merchants, food vendors and family attractions.",
@@ -960,7 +936,7 @@
   "dateText": "Oct 25, 2026",
   "start": "2026-10-25",
   "end": "2026-10-25",
-  "time": "10 AM\u20135 PM",
+  "time": "10 AM–5 PM",
   "location": "Broadway, West 96th to West 106th Streets, Manhattan",
   "price": "Free",
   "why": "Neighborhood street fair with food, merchandise and fall-season activity.",
@@ -994,6 +970,53 @@
    "Christmas",
    "Holiday market",
    "Ice skating"
+  ]
+ },
+ {
+  "title": "Bryant Park Holiday Shops",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Oct 28, 2026 - Jan 3, 2027",
+  "start": "2026-10-28",
+  "end": "2027-01-03",
+  "time": "Mon-Fri 11 AM-8 PM; Sat-Sun 10 AM-8 PM",
+  "location": "Bryant Park, Midtown",
+  "price": "FREE ENTRY",
+  "why": "Browse artisan shops and seasonal food around the Winter Village rink.",
+  "goodFor": "Shoppers, families, food lovers, visitors",
+  "url": "https://bryantpark.org/activities/holiday-shops",
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Holiday market"
+  ]
+ },
+ {
+  "title": "Bryant Park Winter Village Ice Rink",
+  "months": [
+   "2026-10",
+   "2026-11",
+   "2026-12",
+   "2027-01",
+   "2027-02"
+  ],
+  "dateText": "Oct 28, 2026 - Feb 28, 2027",
+  "start": "2026-10-28",
+  "end": "2027-02-28",
+  "time": "Daily 8 AM-10 PM; until midnight Nov 19 - Jan 3",
+  "location": "Bryant Park, Midtown",
+  "price": "FREE ADMISSION, rentals extra",
+  "why": "Skate beneath the skyline at the Winter Village rink, free admission with skate rental extra.",
+  "goodFor": "Families, couples, skaters, visitors",
+  "url": "https://bryantpark.org",
+  "picks": false,
+  "tags": [
+   "Ice skating",
+   "Christmas"
   ]
  },
  {
@@ -1049,7 +1072,7 @@
   "dateText": "Oct 30-31, 2026",
   "start": "2026-10-30",
   "end": "2026-10-31",
-  "time": "10:15 PM\u2013about 3:15 AM",
+  "time": "10:15 PM–about 3:15 AM",
   "location": "Mercer Labs, 21 Dey Street, Manhattan",
   "price": "From about $86; Oct 31 higher",
   "why": "Twelve zodiac-inspired rooms with projections, LEDs, performers, 4D sound and a ballroom dance party.",
@@ -1165,29 +1188,6 @@
   ]
  },
  {
-  "title": "Bryant Park Holiday Shops",
-  "months": [
-   "2026-10",
-   "2026-11",
-   "2026-12",
-   "2027-01"
-  ],
-  "dateText": "Oct 28, 2026 - Jan 3, 2027",
-  "start": "2026-10-28",
-  "end": "2027-01-03",
-  "time": "Mon-Fri 11 AM-8 PM; Sat-Sun 10 AM-8 PM",
-  "location": "Bryant Park, Midtown",
-  "price": "FREE ENTRY",
-  "why": "Browse artisan shops and seasonal food around the Winter Village rink.",
-  "goodFor": "Shoppers, families, food lovers, visitors",
-  "url": "https://bryantpark.org/activities/holiday-shops",
-  "picks": true,
-  "tags": [
-   "Christmas",
-   "Holiday market"
-  ]
- },
- {
   "title": "Candy Land NYC",
   "months": [
    "2026-11",
@@ -1258,7 +1258,7 @@
   "dateText": "Nov 4, 2026",
   "start": "2026-11-04",
   "end": "2026-11-04",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "Lawrence Street, Fulton to Willoughby Streets, Brooklyn",
   "price": "Free",
   "why": "Downtown Brooklyn market with vendors, handmade goods, food and live music.",
@@ -1482,7 +1482,7 @@
   "dateText": "Nov 8, 2026",
   "start": "2026-11-08",
   "end": "2026-11-08",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "East 17th Street, Broadway to Park Avenue South, Manhattan",
   "price": "Free",
   "why": "Fall market with produce, food, clothing and local vendors.",
@@ -1604,7 +1604,7 @@
   "dateText": "Nov 11, 2026",
   "start": "2026-11-11",
   "end": "2026-11-11",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "Broadway, Liberty Street to Battery Place, Manhattan",
   "price": "Free",
   "why": "Lower Manhattan street festival scheduled alongside Veterans Day activities.",
@@ -1623,7 +1623,7 @@
   "dateText": "Nov 12, 2026",
   "start": "2026-11-12",
   "end": "2026-11-12",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "Park Place, Broadway to Church Street, Manhattan",
   "price": "Free",
   "why": "Financial District fall fair with food and merchandise vendors.",
@@ -1696,6 +1696,27 @@
   "tags": [
    "Christmas",
    "Holiday market"
+  ]
+ },
+ {
+  "title": "100 ABOVE at Edge",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 13 - Dec 26, 2026",
+  "start": "2026-11-13",
+  "end": "2026-12-26",
+  "time": "Fri and Sat nights, 11 PM-3 AM; 21+",
+  "location": "Edge, 30 Hudson Yards, Manhattan",
+  "price": "From $45; separate ticket required",
+  "why": "Tao Group turns Edge into a late-night party 100 floors up: live DJs, a full bar, light installations and skyline views, with outdoor deck access when weather allows. The holiday season's only weekend-night event at Hudson Yards.",
+  "goodFor": "Night owls, holiday fans, nightlife",
+  "url": "https://www.edgenyc.com/100-above",
+  "picks": false,
+  "tags": [
+   "Nightlife",
+   "Christmas"
   ]
  },
  {
@@ -1872,6 +1893,27 @@
   ]
  },
  {
+  "title": "Santa's Secret",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 14 - Dec 30, 2026",
+  "start": "2026-11-14",
+  "end": "2026-12-30",
+  "time": "Evening performances; check calendar for dates",
+  "location": "The Thomas, 62 Thomas Street, Tribeca, Manhattan",
+  "price": "From $80",
+  "why": "An adults-only holiday cabaret in Tribeca's brand-new $10 million venue: six immersive installations lead to a vintage speakeasy showroom with a live band, holiday cocktails and a variety show. 18+ only.",
+  "goodFor": "Holiday fans, nightlife, date nights",
+  "url": "https://feverup.com/en/new-york/venue/62-thomas-st?seasonal=p3995fp",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Nightlife"
+  ]
+ },
+ {
   "title": "The Elf Experience",
   "months": [
    "2026-11",
@@ -1891,6 +1933,32 @@
   "tags": [
    "Christmas",
    "Pop-up"
+  ]
+ },
+ {
+  "title": "Urban Civil Rights Museum",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01",
+   "2027-02",
+   "2027-03",
+   "2027-04",
+   "2027-05"
+  ],
+  "dateText": "Opened Nov 14, 2026",
+  "start": "2026-11-14",
+  "end": "2027-05-17",
+  "time": "Wed-Sat 10 AM-5 PM; Sun 12-5 PM; closed Mon-Tue",
+  "location": "117 West 125th Street, Harlem, Manhattan",
+  "price": "$20 adults; free for kids 12 and under",
+  "why": "New York's first civil rights museum and the nation's first dedicated to the Northern Civil Rights Movement opened November 14 in Harlem. Eight galleries trace more than four centuries of Black history in Northern cities, from the Great Migration and Harlem Renaissance to today, plus the rotating exhibition Thriving! Harlem as Homeplace through May 17, 2027. Note: closed Nov 25-29 for Thanksgiving.",
+  "goodFor": "Families, culture seekers, locals",
+  "url": "https://urbancivilrightsmuseum.org/",
+  "picks": false,
+  "tags": [
+   "Museum",
+   "Culture"
   ]
  },
  {
@@ -1940,7 +2008,7 @@
   "dateText": "Nov 15, 2026",
   "start": "2026-11-15",
   "end": "2026-11-15",
-  "time": "10 AM\u20136 PM",
+  "time": "10 AM–6 PM",
   "location": "Sixth Avenue, West 23rd to West 34th Streets, Manhattan",
   "price": "Free",
   "why": "Late-season street fair with food and merchandise vendors through Chelsea, Flatiron and NoMad.",
@@ -1971,6 +2039,50 @@
   "tags": [
    "Christmas",
    "Lights"
+  ]
+ },
+ {
+  "title": "Holiday Light Show at Edge",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 16, 2026 - Jan 3, 2027",
+  "start": "2026-11-16",
+  "end": "2027-01-03",
+  "time": "Included with Edge admission; evening light-and-music show",
+  "location": "Edge, 30 Hudson Yards, Manhattan",
+  "price": "Included with Edge admission, from $44",
+  "why": "Edge's immersive indoor experience gets a holiday transformation: a seasonal light-and-music show with the city's largest kaleidoscope reimagined for Christmas, plus sunset performances by Juilliard artists on select weekends and Santa visits.",
+  "goodFor": "Holiday lights",
+  "url": "https://www.edgenyc.com/",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
+ },
+ {
+  "title": "Jingle Jangle at The Dead Rabbit",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 16, 2026 - Jan 3, 2027",
+  "start": "2026-11-16",
+  "end": "2027-01-03",
+  "time": "Sun-Thu 11 AM-2 AM; Fri-Sat 11 AM-3 AM",
+  "location": "The Dead Rabbit, 30 Water Street, Financial District, Manhattan",
+  "price": "Free entry; drinks for purchase; walk-ins only after 6 PM",
+  "why": "One of the city's best bars goes full Irish Christmas across all three floors: over-the-top decor, a 12-drink festive cocktail menu and seasonal dishes, with bookings two weeks out and walk-ins kept for the evening.",
+  "goodFor": "Holiday fans, nightlife, festive photos",
+  "url": "https://www.thedeadrabbit.com/",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Food"
   ]
  },
  {
@@ -2176,35 +2288,13 @@
   "time": "Showtimes vary",
   "location": "Perelman Performing Arts Center, 251 Fulton Street, Manhattan",
   "price": "From $45",
-  "why": "A holiday-stage adaptation of Dickens\u2019 classic. Run continues to January 3, 2027.",
+  "why": "A holiday-stage adaptation of Dickens’ classic. Run continues to January 3, 2027.",
   "goodFor": "Theater",
   "url": "https://pacnyc.org/whats-on/a-christmas-carol/",
   "picks": false,
   "tags": [
    "Christmas",
    "Theater"
-  ]
- },
- {
-  "title": "Bronx Zoo Holiday Lights",
-  "months": [
-   "2026-11",
-   "2026-12",
-   "2027-01"
-  ],
-  "dateText": "Select nights Nov 21, 2026 - Jan 3, 2027",
-  "start": "2026-11-21",
-  "end": "2027-01-03",
-  "time": "1:00-9:00 PM (last entry 8 PM); lights on at 4:30 PM",
-  "location": "Bronx Zoo",
-  "price": "From $29.95 (Deal Days); $37.95 adult, $22.95 child",
-  "why": "See animal lantern trails, performers and a synchronized holiday-tree show. Select nights only; tickets online in advance, none sold at the gate.",
-  "goodFor": "Families, kids, animal lovers, holiday outings",
-  "url": "https://bronxzoo.com/holiday-lights",
-  "picks": false,
-  "tags": [
-   "Christmas",
-   "Lights"
   ]
  },
  {
@@ -2219,7 +2309,7 @@
   "time": "Best after dusk; storefront hours vary",
   "location": "Fifth Avenue, Midtown, Manhattan",
   "price": "Free",
-  "why": "Seasonal d\u00e9cor, photo moments, the Fifth Avenue snowflake, major windows and the expected Saks light show.",
+  "why": "Seasonal décor, photo moments, the Fifth Avenue snowflake, major windows and the expected Saks light show.",
   "goodFor": "Holiday sights",
   "url": "https://fifthavenue.nyc/holiday",
   "picks": true,
@@ -2334,6 +2424,28 @@
   ]
  },
  {
+  "title": "Bronx Zoo Holiday Lights",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Select nights Nov 21, 2026 - Jan 3, 2027",
+  "start": "2026-11-21",
+  "end": "2027-01-03",
+  "time": "1:00-9:00 PM (last entry 8 PM); lights on at 4:30 PM",
+  "location": "Bronx Zoo",
+  "price": "From $29.95 (Deal Days); $37.95 adult, $22.95 child",
+  "why": "See animal lantern trails, performers and a synchronized holiday-tree show. Select nights only; tickets online in advance, none sold at the gate.",
+  "goodFor": "Families, kids, animal lovers, holiday outings",
+  "url": "https://bronxzoo.com/holiday-lights",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
+ },
+ {
   "title": "Brooklyn Holiday Market at Industry City",
   "months": [
    "2026-11"
@@ -2392,6 +2504,30 @@
   "tags": [
    "Pop-up",
    "Christmas"
+  ]
+ },
+ {
+  "title": "artport: A History of Internet Art",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01",
+   "2027-02",
+   "2027-03"
+  ],
+  "dateText": "Nov 21, 2026 - Mar 28, 2027",
+  "start": "2026-11-21",
+  "end": "2027-03-28",
+  "time": "10:30 AM-6 PM; Fri until 10 PM; closed Tue",
+  "location": "Whitney Museum of American Art, 99 Gansevoort Street, Manhattan",
+  "price": "Included with museum admission, from $30; free under 25",
+  "why": "The Whitney marks 25 years of artport, its online gallery for net art, with more than 100 commissioned works spanning code, games, data visualization and AI, shown on the sixth floor and restaged online. A sharp, screen-friendly show for the Meatpacking District.",
+  "goodFor": "Art lovers, museum visitors, modern art fans",
+  "url": "https://whitney.org/exhibitions/artport-25",
+  "picks": false,
+  "tags": [
+   "Exhibition",
+   "Art"
   ]
  },
  {
@@ -2507,6 +2643,48 @@
   ]
  },
  {
+  "title": "Downtown Brooklyn Gets Lit!",
+  "months": [
+   "2026-11"
+  ],
+  "dateText": "Nov 24, 2026",
+  "start": "2026-11-24",
+  "end": "2026-11-24",
+  "time": "6-7 PM",
+  "location": "Albee Square, Fulton Street, Downtown Brooklyn",
+  "price": "Free",
+  "why": "Downtown Brooklyn switches on its holiday lights with a live DJ, singers and a countdown in Albee Square, plus a street light installation glowing along Fulton Mall all season.",
+  "goodFor": "Tree lighting, families, evening walks",
+  "url": "https://heyfreenyc.com/events/free-tree-lighting-downtown-brooklyn-2026",
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Tree Lighting"
+  ]
+ },
+ {
+  "title": "The Met Christmas Tree and Neapolitan Baroque Crèche",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 24, 2026 - Jan 6, 2027",
+  "start": "2026-11-24",
+  "end": "2027-01-06",
+  "time": "Museum hours; closed Wednesdays",
+  "location": "The Metropolitan Museum of Art, 1000 Fifth Avenue, Manhattan",
+  "price": "Included with museum admission, from $30",
+  "why": "The Met's beloved holiday tradition returns: a lit twenty-foot blue spruce hung with cherubs and angels, rising above an eighteenth-century Neapolitan Nativity scene with more than 200 figures in the Medieval Sculpture Hall. No public lighting ceremony this year, the tree simply appears for the season.",
+  "goodFor": "Holiday exhibition",
+  "url": "https://www.metmuseum.org/exhibitions/christmas-tree-and-neapolitan-baroque-creche-2025/exhibition-objects",
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Exhibition"
+  ]
+ },
+ {
   "title": "Brookfield Place Holiday Installation",
   "months": [
    "2026-11",
@@ -2590,48 +2768,6 @@
   ]
  },
  {
-  "title": "George Balanchine\u2019s The Nutcracker",
-  "months": [
-   "2026-11",
-   "2026-12",
-   "2027-01"
-  ],
-  "dateText": "Nov 27, 2026 - Jan 3, 2027",
-  "start": "2026-11-27",
-  "end": "2027-01-03",
-  "time": "Showtimes vary",
-  "location": "David H. Koch Theater, Lincoln Center, Manhattan",
-  "price": "Ticketed; prices vary",
-  "why": "New York City Ballet\u2019s classic holiday production. Run continues to January 3, 2027.",
-  "goodFor": "Ballet",
-  "url": "https://www.nycballet.com/discover/ballet-repertory/george-balanchines-the-nutcracker/",
-  "picks": true,
-  "tags": [
-   "Christmas",
-   "Theater"
-  ]
- },
- {
-  "title": "Macy\u2019s Santaland NYC",
-  "months": [
-   "2026-11",
-   "2026-12"
-  ],
-  "dateText": "Nov 27 - Dec 24, 2026",
-  "start": "2026-11-27",
-  "end": "2026-12-24",
-  "time": "Daily hours vary; timed reservations",
-  "location": "Macy\u2019s Herald Square, Floor 8, Manhattan",
-  "price": "General reservation free; photos from $44.99; VIP $250 per group",
-  "why": "Completely reimagined immersive journey to meet Santa at Herald Square.",
-  "goodFor": "Holiday attraction",
-  "url": "https://www.macys.com/s/holiday-celebrations/nyc-santaland/",
-  "picks": true,
-  "tags": [
-   "Christmas"
-  ]
- },
- {
   "title": "Big Apple Circus",
   "months": [
    "2026-11",
@@ -2654,6 +2790,69 @@
   ]
  },
  {
+  "title": "George Balanchine’s The Nutcracker",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 27, 2026 - Jan 3, 2027",
+  "start": "2026-11-27",
+  "end": "2027-01-03",
+  "time": "Showtimes vary",
+  "location": "David H. Koch Theater, Lincoln Center, Manhattan",
+  "price": "Ticketed; prices vary",
+  "why": "New York City Ballet’s classic holiday production. Run continues to January 3, 2027.",
+  "goodFor": "Ballet",
+  "url": "https://www.nycballet.com/discover/ballet-repertory/george-balanchines-the-nutcracker/",
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Theater"
+  ]
+ },
+ {
+  "title": "Macy’s Santaland NYC",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 27 - Dec 24, 2026",
+  "start": "2026-11-27",
+  "end": "2026-12-24",
+  "time": "Daily hours vary; timed reservations",
+  "location": "Macy’s Herald Square, Floor 8, Manhattan",
+  "price": "General reservation free; photos from $44.99; VIP $250 per group",
+  "why": "Completely reimagined immersive journey to meet Santa at Herald Square.",
+  "goodFor": "Holiday attraction",
+  "url": "https://www.macys.com/s/holiday-celebrations/nyc-santaland/",
+  "picks": true,
+  "tags": [
+   "Christmas"
+  ]
+ },
+ {
+  "title": "Passport to Santa Brunch",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 27 - Dec 24, 2026",
+  "start": "2026-11-27",
+  "end": "2026-12-24",
+  "time": "Brunch seatings; check calendar for dates",
+  "location": "The Thomas, 62 Thomas Street, Tribeca, Manhattan",
+  "price": "From $48",
+  "why": "A family brunch inside the North Pole at Tribeca's new purpose-built venue: a full holiday dining experience with Santa, in the same building as the adults-only Santa's Secret show.",
+  "goodFor": "Families, kids, holiday outings",
+  "url": "https://tiqway.com/attraction/new-york-passport-to-santa-brunch-nyc-2026-733030",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Family"
+  ]
+ },
+ {
   "title": "Holiday Trees & Wreaths at Queens Farm",
   "months": [
    "2026-11",
@@ -2672,6 +2871,28 @@
   "tags": [
    "Christmas",
    "Holiday market"
+  ]
+ },
+ {
+  "title": "PaleyLand",
+  "months": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ],
+  "dateText": "Nov 28, 2026 - Jan 10, 2027",
+  "start": "2026-11-28",
+  "end": "2027-01-10",
+  "time": "Wed-Sun, 12-6 PM",
+  "location": "The Paley Museum, 25 West 52nd Street, Manhattan",
+  "price": "Included with museum admission; Santa photo $15",
+  "why": "A five-floor immersive holiday takeover steps from Rockefeller Center, with character meet-and-greets, classic holiday screenings, a magical train display, free hot chocolate and photos with Santa. Opening day brings PAW Patrol, with Disney and Snoopy family days to follow.",
+  "goodFor": "Families, holiday fans, immersive experiences",
+  "url": "https://www.paleycenter.org/events/paleyland",
+  "picks": true,
+  "tags": [
+   "Christmas",
+   "Family"
   ]
  },
  {
@@ -2716,6 +2937,27 @@
   ]
  },
  {
+  "title": "FAD Market: DUMBO Holiday Market",
+  "months": [
+   "2026-11",
+   "2026-12"
+  ],
+  "dateText": "Nov 30 - Dec 20, 2026",
+  "start": "2026-11-30",
+  "end": "2026-12-20",
+  "time": "Daily",
+  "location": "Empire Stores, 55 Water Street, DUMBO, Brooklyn",
+  "price": "Free entry",
+  "why": "A daily holiday market inside Empire Stores with a rotating cast of independent designers, jewelry makers and homeware artisans under the DUMBO archway. Good for gifts you will not find at the big Manhattan markets.",
+  "goodFor": "Holiday shopping, local makers, food",
+  "url": "https://secretnyc.co/nyc-holiday-markets-2026-christmas-markets-schedule/",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Market"
+  ]
+ },
+ {
   "title": "Bryant Park Tree Lighting",
   "months": [
    "2026-12"
@@ -2756,6 +2998,46 @@
   ]
  },
  {
+  "title": "Holidays in Lincoln Square Magical Lights Ceremony",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 1, 2026",
+  "start": "2026-12-01",
+  "end": "2026-12-01",
+  "time": "4:30 PM",
+  "location": "Dante Park, Broadway & 64th St, Manhattan",
+  "price": "FREE",
+  "why": "Lincoln Square switches on hundreds of music-synced lights in Dante and Richard Tucker Parks, with circus acts, a children's chorus, free hot chocolate and swing dancing. Nightly light and sound shows run 4:30-8 PM through February.",
+  "goodFor": "Families, evening walks, holiday lights",
+  "url": "https://www.lincolnsquarebid.org/holidays/",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Lights"
+  ]
+ },
+ {
+  "title": "Lotte New York Palace Tree Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 1, 2026",
+  "start": "2026-12-01",
+  "end": "2026-12-01",
+  "time": "5:00-7:00 PM",
+  "location": "The Courtyard, Lotte New York Palace, 455 Madison Avenue, Manhattan",
+  "price": "Free with RSVP",
+  "why": "The Palace lights its spectacular 30-foot Christmas tree in the Courtyard, with champagne, passed bites, and a surprise performance.",
+  "goodFor": "Tree lighting",
+  "url": "https://www.lottehotel.com/new-york-palace/en.html",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting"
+  ]
+ },
+ {
   "title": "Seaport Christmas Tree Lighting",
   "months": [
    "2026-12"
@@ -2786,33 +3068,13 @@
   "time": "5:30-8:30 PM; tree lit at 7:00 PM",
   "location": "Tavern on the Green, Central Park West at 67th St, Manhattan",
   "price": "FREE",
-  "why": "The landmark Central Park restaurant celebrates its 10th annual tree lighting with POP MART\u2019s Twinkle Twinkle character in its first-ever U.S. appearance, plus DJ Tweed, the Manhattan Carolers, and complimentary hot chocolate, hot apple cider, and cookies. Free and open to all.",
+  "why": "The landmark Central Park restaurant celebrates its 10th annual tree lighting with POP MART’s Twinkle Twinkle character in its first-ever U.S. appearance, plus DJ Tweed, the Manhattan Carolers, and complimentary hot chocolate, hot apple cider, and cookies. Free and open to all.",
   "goodFor": "Tree lighting, families, evening walks",
   "url": "https://www.tavernonthegreen.com/",
   "picks": false,
   "tags": [
    "Christmas",
    "Tree lighting"
-  ]
- },
- {
-  "title": "Holidays in Lincoln Square Magical Lights Ceremony",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Dec 1, 2026",
-  "start": "2026-12-01",
-  "end": "2026-12-01",
-  "time": "4:30 PM",
-  "location": "Dante Park, Broadway & 64th St, Manhattan",
-  "price": "FREE",
-  "why": "Lincoln Square switches on hundreds of music-synced lights in Dante and Richard Tucker Parks, with circus acts, a children's chorus, free hot chocolate and swing dancing. Nightly light and sound shows run 4:30-8 PM through February.",
-  "goodFor": "Families, evening walks, holiday lights",
-  "url": "https://www.lincolnsquarebid.org/holidays/",
-  "picks": false,
-  "tags": [
-   "Christmas",
-   "Lights"
   ]
  },
  {
@@ -2844,7 +3106,7 @@
   "dateText": "Dec 3, 2026",
   "start": "2026-12-03",
   "end": "2026-12-03",
-  "time": "3:30\u20136:30 PM",
+  "time": "3:30–6:30 PM",
   "location": "New York Stock Exchange, 11 Wall Street, Manhattan",
   "price": "Free",
   "why": "Public Wall Street celebration with the iconic NYSE tree, live performances, activations and refreshments.",
@@ -2854,6 +3116,48 @@
   "tags": [
    "Christmas",
    "Tree lighting"
+  ]
+ },
+ {
+  "title": "Candlelight Concerts",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "December 2026; Christmas programs Dec 17-20",
+  "start": "2026-12-03",
+  "end": "2026-12-20",
+  "time": "Evening performances; times vary by concert",
+  "location": "Various venues: Angel Orensanz Foundation, St. Ann & the Holy Trinity Church, Sony Hall, Paradise Theater",
+  "price": "From $35",
+  "why": "Live string quartets play by candlelight in historic venues across three boroughs. Christmas programs include Christmas Carols on Strings and Christmas Classics, Dec 17-20; the December calendar also has Vivaldi, Queen vs. ABBA, a Michael Jackson tribute and a Frank Sinatra tribute.",
+  "goodFor": "Couples, music lovers, holiday evenings",
+  "url": "https://feverup.com/en/new-york/candlelight",
+  "tickets": "https://glnk.io/x9qvw/feverxmarinanewyorkcity1qp",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Concert"
+  ]
+ },
+ {
+  "title": "Central Park Holiday Lighting",
+  "months": [
+   "2026-12"
+  ],
+  "dateText": "Dec 3, 2026",
+  "start": "2026-12-03",
+  "end": "2026-12-03",
+  "time": "5:30-7:30 PM",
+  "location": "Charles A. Dana Discovery Center, Harlem Meer, Central Park at 110th St",
+  "price": "FREE",
+  "why": "The 30th annual lighting at Harlem Meer, with caroling, hot cocoa, seasonal activities, Santa and friends, and a flotilla of lit trees on the water.",
+  "goodFor": "Families, tree lighting, holiday outings",
+  "url": "https://www.centralparknyc.org/LOCATIONS/CHARLES-A-DANA-DISCOVERY-CENTER",
+  "picks": false,
+  "tags": [
+   "Christmas",
+   "Tree lighting",
+   "Lights"
   ]
  },
  {
@@ -2894,48 +3198,6 @@
   "tags": [
    "Christmas",
    "Tree lighting"
-  ]
- },
- {
-  "title": "Central Park Holiday Lighting",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Dec 3, 2026",
-  "start": "2026-12-03",
-  "end": "2026-12-03",
-  "time": "5:30-7:30 PM",
-  "location": "Charles A. Dana Discovery Center, Harlem Meer, Central Park at 110th St",
-  "price": "FREE",
-  "why": "The 30th annual lighting at Harlem Meer, with caroling, hot cocoa, seasonal activities, Santa and friends, and a flotilla of lit trees on the water.",
-  "goodFor": "Families, tree lighting, holiday outings",
-  "url": "https://www.centralparknyc.org/LOCATIONS/CHARLES-A-DANA-DISCOVERY-CENTER",
-  "picks": false,
-  "tags": [
-   "Christmas",
-   "Tree lighting",
-   "Lights"
-  ]
- },
- {
-  "title": "Candlelight Concerts",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "December 2026; Christmas programs Dec 17-20",
-  "start": "2026-12-03",
-  "end": "2026-12-20",
-  "time": "Evening performances; times vary by concert",
-  "location": "Various venues: Angel Orensanz Foundation, St. Ann & the Holy Trinity Church, Sony Hall, Paradise Theater",
-  "price": "From $35",
-  "why": "Live string quartets play by candlelight in historic venues across three boroughs. Christmas programs include Christmas Carols on Strings and Christmas Classics, Dec 17-20; the December calendar also has Vivaldi, Queen vs. ABBA, a Michael Jackson tribute and a Frank Sinatra tribute.",
-  "goodFor": "Couples, music lovers, holiday evenings",
-  "url": "https://feverup.com/en/new-york/candlelight",
-  "tickets": "https://glnk.io/x9qvw/feverxmarinanewyorkcity1qp",
-  "picks": false,
-  "tags": [
-   "Christmas",
-   "Concert"
   ]
  },
  {
@@ -3186,7 +3448,7 @@
   "start": "2026-12-08",
   "end": "2026-12-31",
   "time": "Museum hours",
-  "location": "Children\u2019s Museum of Manhattan, Manhattan",
+  "location": "Children’s Museum of Manhattan, Manhattan",
   "price": "Included with museum admission",
   "why": "Collaborative hand-built winter city that grows as children add glowing decorations and miniature structures.",
   "goodFor": "Family installation",
@@ -3228,7 +3490,7 @@
   "time": "Performance times vary",
   "location": "David Geffen Hall, Lincoln Center, Manhattan",
   "price": "Ticketed; prices vary",
-  "why": "Seasonal lineup including Handel\u2019s Messiah, film-with-orchestra programming and family matinees.",
+  "why": "Seasonal lineup including Handel’s Messiah, film-with-orchestra programming and family matinees.",
   "goodFor": "Concert series",
   "url": "https://www.nyphil.org/concerts-tickets/",
   "picks": false,
@@ -3238,7 +3500,7 @@
   ]
  },
  {
-  "title": "Princess Lockerooo\u2019s The NutWAACKer",
+  "title": "Princess Lockerooo’s The NutWAACKer",
   "months": [
    "2026-12"
   ],
@@ -3258,7 +3520,7 @@
   ]
  },
  {
-  "title": "Omnium Circus: I\u2019mPossible Holiday Wonders",
+  "title": "Omnium Circus: I’mPossible Holiday Wonders",
   "months": [
    "2026-12"
   ],
@@ -3407,8 +3669,8 @@
   "time": "Countdown 11:59 PM; four-mile race at midnight",
   "location": "Central Park, Manhattan",
   "price": "Spectating free; runner registration paid",
-  "why": "Four-mile New Year\u2019s race beginning with midnight fireworks.",
-  "goodFor": "New Year\u2019s Eve",
+  "why": "Four-mile New Year’s race beginning with midnight fireworks.",
+  "goodFor": "New Year’s Eve",
   "url": "https://www.nyrr.org/races/nyrrmidnightrun",
   "picks": true,
   "tags": [
@@ -3436,7 +3698,7 @@
   ]
  },
  {
-  "title": "New Year\u2019s Eve Concert for Peace",
+  "title": "New Year’s Eve Concert for Peace",
   "months": [
    "2026-12"
   ],
@@ -3446,7 +3708,7 @@
   "time": "Evening; time on cathedral calendar",
   "location": "Cathedral Church of Saint John the Divine, Manhattan",
   "price": "Ticketing or suggested contribution varies",
-  "why": "Long-running New Year\u2019s Eve concert followed by the cathedral\u2019s Watchnight observance.",
+  "why": "Long-running New Year’s Eve concert followed by the cathedral’s Watchnight observance.",
   "goodFor": "Concert",
   "url": "https://www.stjohndivine.org/calendar/",
   "picks": false,
@@ -3572,6 +3834,26 @@
   ]
  },
  {
+  "title": "NYC Broadway Week: Winter 2027",
+  "months": [
+   "2027-01",
+   "2027-02"
+  ],
+  "dateText": "Jan 19 - Feb 11, 2027",
+  "start": "2027-01-19",
+  "end": "2027-02-11",
+  "time": "Performance times vary by show",
+  "location": "Broadway theaters, Theater District, Manhattan",
+  "price": "2-for-1 tickets (50% off each ticket, min. 2)",
+  "why": "Two-for-one tickets to some of Broadway's biggest shows, musicals and comedies. Promo code and full show list available Jan 6 at 10 AM.",
+  "goodFor": "Theater fans, visitors, date nights",
+  "url": "https://www.nyctourism.com/broadway-week/",
+  "picks": false,
+  "tags": [
+   "Theater"
+  ]
+ },
+ {
   "title": "NYC Restaurant Week: Winter 2027",
   "months": [
    "2027-01",
@@ -3590,26 +3872,6 @@
   "tags": [
    "Food",
    "Cultural"
-  ]
- },
- {
-  "title": "NYC Broadway Week: Winter 2027",
-  "months": [
-   "2027-01",
-   "2027-02"
-  ],
-  "dateText": "Jan 19 - Feb 11, 2027",
-  "start": "2027-01-19",
-  "end": "2027-02-11",
-  "time": "Performance times vary by show",
-  "location": "Broadway theaters, Theater District, Manhattan",
-  "price": "2-for-1 tickets (50% off each ticket, min. 2)",
-  "why": "Two-for-one tickets to some of Broadway's biggest shows, musicals and comedies. Promo code and full show list available Jan 6 at 10 AM.",
-  "goodFor": "Theater fans, visitors, date nights",
-  "url": "https://www.nyctourism.com/broadway-week/",
-  "picks": false,
-  "tags": [
-   "Theater"
   ]
  },
  {
@@ -3748,26 +4010,6 @@
   "tags": [
    "Parade",
    "Cultural"
-  ]
- },
- {
-  "title": "Lotte New York Palace Tree Lighting",
-  "months": [
-   "2026-12"
-  ],
-  "dateText": "Dec 1, 2026",
-  "start": "2026-12-01",
-  "end": "2026-12-01",
-  "time": "5:00-7:00 PM",
-  "location": "The Courtyard, Lotte New York Palace, 455 Madison Avenue, Manhattan",
-  "price": "Free with RSVP",
-  "why": "The Palace lights its spectacular 30-foot Christmas tree in the Courtyard, with champagne, passed bites, and a surprise performance.",
-  "goodFor": "Tree lighting",
-  "url": "https://www.lottehotel.com/new-york-palace/en.html",
-  "picks": false,
-  "tags": [
-   "Christmas",
-   "Tree lighting"
   ]
  }
 ]
