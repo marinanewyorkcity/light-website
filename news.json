@@ -1,5 +1,55 @@
 [
   {
+    "blocks": [
+      {
+        "html": "On Monday, November 23, 2026, crowds gathered on Fifth Avenue as the curtains rose on <a href=\"https://www.saksfifthavenue.com\" target=\"_blank\" rel=\"noopener noreferrer\">Saks Fifth Avenue</a>'s holiday windows and the flagship's facade lit up for the first time this season. The unveiling at 611 Fifth Avenue, across from <a href=\"https://www.rockefellercenter.com\" target=\"_blank\" rel=\"noopener noreferrer\">Rockefeller Center</a>, marks the return of a 22-year-old New York tradition. The light show began in 2004 with 50 giant illuminated snowflakes, and has been a fixture of the city's holiday season ever since.",
+        "kind": "text"
+      },
+      {
+        "card_text": "Christmas magic is back on Fifth Avenue! Tonight, Saks Fifth Avenue unveiled its 2026 Holiday Light Show and Christmas windows, bringing one of NYC's most iconic holiday traditions back to life!",
+        "card_type": "reel",
+        "kind": "instagram",
+        "label": "Saks Fifth Avenue unveils its 2026 holiday windows and light show",
+        "thumb": "assets/reel-thumbs/DgGqOmfsp9K.jpg",
+        "url": "https://www.instagram.com/reel/DgGqOmfsp9K/"
+      },
+      {
+        "html": "This year's theme is Main Character Energy, a campaign photographed and directed by Nadine Ijewere and set inside the flagship. It follows six friends, Ruby Lyn, Stella Jones, Solange Smith, Luna Yohannan, Divine Mugisha and George McNally, on a holiday shopping excursion through the store, finding the perfect gift and the standout outfit for the season's celebrations. The campaign celebrates festive fashion, inspired gifting, and the joy of discovering something extraordinary.",
+        "kind": "text"
+      },
+      {
+        "html": "The six center windows bring that idea to life as an animated journey through New York. The scenes include a snowman, gingerbread cookies baking in an oven, one shaped like I love NY, a big green Christmas tree dressed with candy, and a yellow New York taxi loaded with red gift boxes. The gallery windows show a classic New York holiday shopping trip, with looks from the season's campaign.",
+        "kind": "text"
+      },
+      {
+        "card_text": "Saks Fifth Avenue just lit up New York tonight! The iconic holiday light show is back, and the brand-new Christmas windows look incredible.",
+        "card_type": "reel",
+        "kind": "instagram",
+        "label": "The Saks Fifth Avenue light show on Fifth Avenue",
+        "thumb": "assets/reel-thumbs/DgHGrzIgjKP.jpg",
+        "url": "https://www.instagram.com/reel/DgHGrzIgjKP/"
+      },
+      {
+        "html": "As the curtains rose, a large ensemble of dancers performed a choreographed street show in front of the flagship in festive holiday dress. Above them, the ten-story limestone facade became a screen of light: diamond shapes, blue cascades, snowflakes and falling sparkles in pink, purple, blue and white, with the glowing Saks script at the center. The show is set to Taylor Swift's \"Welcome to New York,\" fireworks launched from the roof through the night, and it closes with a voiceover: \"Wishing you the happiest of holidays from all of us at Saks.\"",
+        "kind": "text"
+      },
+      {
+        "html": "The light show runs nightly, every 10 minutes from 5 to 11pm, each sequence about 3 to 4 minutes, free to watch from the sidewalk, through early January. The best view is from the Channel Gardens at Rockefeller Center, directly across Fifth Avenue. The windows and light show are presented by Bread Financial.",
+        "kind": "text"
+      },
+      {
+        "html": "Inside the flagship, the Saks Holiday Market offers holiday decor, gifts and special finds from around the world, with a life-size Santa, dancing penguins and an exclusive Saks snow globe. New this season, the Epicure program offers gourmet treats in keepsake tins celebrating New York City icons. Saks is also partnering with <a href=\"https://wish.org\" target=\"_blank\" rel=\"noopener noreferrer\">Make-A-Wish</a> this season, with an in-store fundraising campaign for children facing critical illnesses.",
+        "kind": "text"
+      }
+    ],
+    "date": "2026-11-24",
+    "featured": false,
+    "headline": "Saks Fifth Avenue Unveils Its 2026 Holiday Windows and Light Show",
+    "id": "saks-fifth-avenue-holiday-windows-light-show-2026",
+    "lede": "Monday night, Saks Fifth Avenue brought its 2026 holiday campaign, Main Character Energy, to Fifth Avenue: six animated windows on a journey through New York, a facade light show set to Taylor Swift's \"Welcome to New York,\" dancers in the street, and fireworks over the roof.",
+    "type": "original coverage"
+  },
+  {
     "id": "macys-thanksgiving-day-parade-2026-storm-forecast",
     "date": "2026-11-22",
     "type": "original coverage",
